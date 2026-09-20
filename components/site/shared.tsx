@@ -8,9 +8,9 @@ export function Header({ onQuote, home = false }: { onQuote: () => void; home?: 
   const [menu, setMenu] = useState(false);
   return <header className={`site-header ${home?'':'detail-header'}`}>
     <a href="/" className="brand" aria-label="AFFORDA Technologies home"><img src="/images/afforda-logo.jpeg" alt="AFFORDA Technologies" width={164} height={94}/></a>
-    <nav aria-label="Main navigation"><a href="/#equipment">Equipment <span>⌄</span></a><a href="/#finder">Equipment finder</a><a href="/#contact">Contact</a></nav>
+    <nav aria-label="Main navigation"><a href="/#equipment">Category <span>⌄</span></a><a href="/products">Products</a><a href="/careers">Careers</a><a href="/about">About</a></nav>
     <div className="header-actions"><button onClick={onQuote} className="button button-yellow nav-quote">Request a quote <ArrowUpRight size={17}/></button><button className="menu-toggle" aria-label={menu?'Close navigation':'Open navigation'} aria-expanded={menu} aria-controls="mobile-nav" onClick={()=>setMenu(!menu)}>{menu?<X/>:<Menu/>}</button></div>
-    {menu&&<nav className="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">{[['Equipment','equipment'],['Equipment finder','finder'],['Contact','contact']].map(([name,id])=><a key={id} href={`/#${id}`} onClick={()=>setMenu(false)}>{name}<ArrowUpRight size={18}/></a>)}</nav>}
+    {menu&&<nav className="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">{[['Category','equipment'],['Products','products'],['Careers','careers'],['About','about']].map(([name,id])=><a key={id} href={id === 'equipment' ? '/#equipment' : `/${id}`} onClick={()=>setMenu(false)}>{name}<ArrowUpRight size={18}/></a>)}</nav>}
   </header>;
 }
 

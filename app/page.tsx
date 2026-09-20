@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { ArrowUpRight, ArrowDown, ArrowRight, ArrowLeft, Crosshair, Trees, Mountain, Compass, Radio, ScanLine, Satellite, Laptop, Focus, ChevronRight, MapPin, Check, Layers, Navigation } from 'lucide-react';
-import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
 import Terrain from '@/components/site/terrain';
@@ -32,7 +32,6 @@ function ProductLink({product, compact=false}: {product:Product;compact?:boolean
 export default function Home() {
  const [quote,setQuote]=useState(false);
  const [quoteEquipment,setQuoteEquipment]=useState('');
- const [category,setCategory]=useState<string|null>(null);
  const [mode,setMode]=useState<'terrain'|'field'>('terrain');
  const [industry,setIndustry]=useState('Forestry & Wildlife');
  const [requirement,setRequirement]=useState('Wildlife monitoring');
@@ -40,8 +39,6 @@ export default function Home() {
  const productRail=useRef<HTMLDivElement>(null);
  const [railIndex,setRailIndex]=useState(0);
  const [railAtEnd,setRailAtEnd]=useState(false);
- const selectedCategory=categories.find(c=>c.id===category);
- const categoryProducts=products.filter(p=>p.category===category||(category==='surveying'&&p.category==='navigation'));
  const recommendations=finderResult?findEquipment(finderResult.industry,finderResult.requirement):[];
  function openQuote(equipment=''){setQuoteEquipment(equipment);setQuote(true);}
  function advanceProducts(direction:number){const rail=productRail.current;if(!rail)return;const first=rail.firstElementChild as HTMLElement;const gap=parseFloat(getComputedStyle(rail).columnGap)||0;rail.scrollBy({left:direction*(first.offsetWidth+gap),behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}
@@ -67,19 +64,20 @@ export default function Home() {
    <div className="hero-landscape"/><div className="hero-shade"/><Terrain mode={mode}/>
    <div className="hero-topline"><span><i className="status-dot"/> ENGINEERED FOR THE EXTRAORDINARY</span><span>FIELD TECHNOLOGY / INDIA</span></div>
    <div className="hero-content"><div className="eyebrow"><span className="yellow-rule"/> THE WORLD IS YOUR FIELD.</div><h1>EXPLORE<br/>BEYOND<br/><em>LIMITS.</em></h1><p>Precision technology for forestry, surveying,<br className="desktop-break"/> geology, mapping and field operations.</p><div className="hero-actions"><a className="button button-yellow" href="#equipment">Explore equipment <ArrowUpRight size={19}/></a><button className="button button-outline" onClick={()=>openQuote()}>Request a quote <ArrowUpRight size={18}/></button></div></div>
-   <CategorySlider onSelectCategory={(catId) => setCategory(catId)} />
+   <CategorySlider onSelectCategory={(catId) => window.location.href = catId === 'forestry' ? '/categories/forest-wildlife' : `/category/${catId}`} />
    <div className="terrain-label" aria-label="Illustrative expedition coordinates"><span>+ 30°44′ N / 79°04′ E</span><span>ELEV. 3,840 M <i/></span><span className="terrain-simulation">EXPEDITION VISUALIZATION</span></div>
    <div className="terrain-controls" role="group" aria-label="Terrain view"><button aria-pressed={mode==='terrain'} onClick={()=>setMode('terrain')}><Layers size={14}/> Terrain</button><button aria-pressed={mode==='field'} onClick={()=>setMode('field')}><Mountain size={14}/> Field</button></div>
    <div className="hero-bottom"><a href="#equipment"><ArrowDown size={16}/> SCROLL TO EXPLORE</a><span>PRECISE BY DESIGN. &nbsp; READY FOR ANY TERRAIN.</span><span className="compass">N <Navigation size={22}/></span></div>
  </section>
  <div className="field-strip"><span><Crosshair size={17}/> PURPOSE-BUILT EQUIPMENT</span><span><Mountain size={17}/> REAL-WORLD CAPABILITY</span><span><Compass size={17}/> EXPERT PRODUCT GUIDANCE</span><a href="#finder">FIND YOUR FIELD ADVANTAGE <ArrowUpRight size={16}/></a></div>
  <section className="categories-section section-padding" id="equipment">
-  <div className="section-heading reveal"><div><span className="eyebrow"><span className="section-number">01</span> EXPLORE BY CATEGORY</span><h2>YOUR MISSION.<br/><span>YOUR EQUIPMENT.</span></h2></div><div className="section-intro"><p>From the forest floor to the furthest ridgeline.<br/>Find the tools that belong in your field.</p><button className="text-link" onClick={()=>setCategory('all')}>Explore all equipment <ArrowUpRight size={19}/></button></div></div>
+  <div className="section-heading reveal"><div><span className="eyebrow"><span className="section-number">01</span> EXPLORE BY CATEGORY</span><h2>YOUR MISSION.<br/><span>YOUR EQUIPMENT.</span></h2></div><div className="section-intro"><p>From the forest floor to the furthest ridgeline.<br/>Find the tools that belong in your field.</p><a className="text-link" href="/products">Explore all equipment <ArrowUpRight size={19}/></a></div></div>
    <div className="mission-grid">
      {categories.map((c, index) => {
        const Icon = icons[categories.indexOf(c)];
        const reticleLabel = reticleLabels[c.id] || 'ACQUIRED';
-       return <button key={c.id} className={`mission mission-${c.id} reveal`} onClick={() => setCategory(c.id)} style={{ '--delay': `${(index % 3) * 90}ms` } as CSSProperties} onPointerMove={e => {
+       const href = c.id === 'forestry' ? '/categories/forest-wildlife' : `/category/${c.id}`;
+       return <a key={c.id} href={href} className={`mission mission-${c.id} reveal`} style={{ '--delay': `${(index % 3) * 90}ms`, textDecoration: 'none', display: 'block' } as CSSProperties} onPointerMove={e => {
          const r = e.currentTarget.getBoundingClientRect();
          e.currentTarget.style.setProperty('--lens-x', `${e.clientX - r.left}px`);
          e.currentTarget.style.setProperty('--lens-y', `${e.clientY - r.top}px`);
@@ -94,7 +92,7 @@ export default function Home() {
            <h3>{c.name}</h3>
            <div><span>Explore mission</span><ArrowUpRight size={22}/></div>
          </div>
-       </button>;
+       </a>;
      })}
    </div>
   </section>
@@ -111,6 +109,5 @@ export default function Home() {
  </section>
  <Footer onQuote={()=>openQuote()}/>
  <QuoteDialog open={quote} onOpenChange={setQuote} equipment={quoteEquipment}/>
- <Dialog open={category!==null} onOpenChange={open=>{if(!open)setCategory(null);}}><DialogContent className="catalogue-dialog"><div className={`catalogue-dialog-banner ${category==='thermal'?'thermal-banner':''}`} style={{backgroundImage:`linear-gradient(90deg,#111b12e8,#111b1280),url('/images/${selectedCategory?.image||'terrain'}.webp')`}}><span className="eyebrow">{selectedCategory?.code||'AFFORDA / FIELD EQUIPMENT'}</span><DialogTitle className="dialog-heading">{selectedCategory?.name||'Explore all equipment'}</DialogTitle><DialogDescription className="dialog-description">{selectedCategory?.mission||'Purpose-built equipment for your next field operation.'}</DialogDescription>{category==='surveying'&&<button className="button button-yellow" onClick={()=>{setCategory(null);openQuote('DGPS solutions');}}>Discuss DGPS requirements <ArrowUpRight size={16}/></button>}</div><div className="catalogue-grid">{(category==='all'?products:categoryProducts).map(p=><ProductLink key={p.slug} product={p} compact/>)}</div><div className="catalogue-dialog-footer"><span>Need a specific model or configuration?</span><button className="text-link" onClick={()=>{const equipment=selectedCategory?.name||'';setCategory(null);openQuote(equipment);}}>Ask our team <ArrowUpRight size={17}/></button></div></DialogContent></Dialog>
- </main>;
+  </main>;
 }

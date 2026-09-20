@@ -1,6 +1,6 @@
-﻿# AFFORDA Technologies
+# AFFORDA Technologies
 
-Premium field technology catalogue built with React, TypeScript and Vinext.
+Premium field technology catalogue built with Next.js, React, and TypeScript.
 
 ## Run locally
 
@@ -9,37 +9,47 @@ npm install
 npm run dev
 ```
 
-## Production
+## Production Build
 
 ```sh
 npm run build
 ```
 
-For Vercel deployments from GitHub, `vercel.json` selects the Next.js preset and runs `npm run build:vercel`. The repository root is the Vercel project root, and Vercel should use its default Next.js output directory. The regular `npm run build` command remains the Sites/Vinext build.
+This generates an optimized static export in the `out/` directory with pre-rendered HTML for all routes.
 
-## Content
+## Deployment on Hostinger
 
-- `lib/catalogue.ts`: 15 catalogue products, nine categories, brand descriptions and equipment finder mappings.
-- `public/afforda-catalogue.pdf`: supplied product catalogue.
-- `public/images`: original logo, extracted catalogue imagery and project artwork.
-- `app/products/[slug]`: addressable product detail pages with metadata, galleries, features and specifications.
+This project is configured as a fully static Next.js export (`output: 'export'`), making it 100% compatible with Hostinger Web Hosting, Cloud Hosting, and Node.js Web Apps without requiring a database, backend, or dynamic server runtime.
 
-## Inquiries
+### Deployment Method 1: Hostinger Static Web Hosting / Git Deployment (Recommended)
+1. **GitHub Connection**: In Hostinger hPanel, navigate to **Websites** -> **Git**.
+2. **Repository**: Connect your GitHub repository (`main` branch).
+3. **Target / Deployment**:
+   - Hostinger serves static files directly from `public_html`.
+   - Build output directory: `out`.
+   - The included `public/.htaccess` automatically configures directory indexing, caching, compression, and clean 404 routing on Hostinger's LiteSpeed/Apache servers.
 
-Quote forms validate details, prepare a message, and let the visitor review and send it through WhatsApp to +91 98183 20178. No form data is stored or sent automatically. A server-side CRM/email integration has not been configured. Phone links also include +91 95559 03186.
+### Deployment Method 2: Hostinger Node.js Web App
+If using Hostinger's Node.js Application manager in hPanel:
+- **Node.js version**: 20.x or 22.x LTS
+- **Application root**: `/`
+- **Application startup file**: `server.js`
+- **Build command**: `npm run build`
+- **Start command**: `npm start` (runs `node server.js` to serve `out/`)
 
-## Visuals and motion
+## Content & Routes
 
-The hero combines commissioned terrain artwork, a cleaned catalogue product image, CSS parallax and an interactive projected elevation mesh drawn with native Canvas. Coordinates and elevation are illustrative expedition graphics, not live telemetry. Mesh rendering is visibility-aware, pixel density is capped, and reduced-motion preferences are respected. The original supplied product images are retained in the catalogue.
+- `/`: Home page with hero, interactive category slider, mission grid, and equipment finder.
+- `/products`: Full equipment selection with category and type filters.
+- `/products/[slug]`: 15 dynamic product detail pages with specifications and WhatsApp inquiry.
+- `/categories/forest-wildlife`: Specialized Forest & Wildlife category page.
+- `/categories/forest-wildlife/[subcategory]`: 15 pre-rendered subcategory pages with equipment tagging.
+- `/category/[id]`: 9 pre-rendered primary category pages (Forestry, Geology, Surveying, Navigation, Thermal, Optics, Inspection, Computing, Communication).
+- `/about`: Company overview and mission.
+- `/careers`: Career inquiries and WhatsApp link.
+- `public/afforda-catalogue.pdf`: Official product catalogue PDF.
+- `public/images`: Product and equipment photography.
 
-## Validation
+## Inquiries & WhatsApp Integration
 
-- TypeScript checking and production compilation pass.
-- Product IDs, category membership, asset references, all 15 finder combinations and invalid selections checked.
-- WhatsApp URL encoding and destination checked.
-- Root, representative product pages, image and PDF routes return 200; an unknown product returns 404.
-- Browser UI automation was unavailable in this session. The optional, feature-detected WebMCP equipment finder was not verified in a supporting browser.
-
-## Catalogue caveats
-
-All product information is based on the supplied catalogue; availability and configuration are confirmed at inquiry. The PDF's TOUGHBOOK specifications appear inconsistent with its model label, so only the catalogue model name and configuration consultation are presented. DGPS selection is handled by consultation rather than attributing survey-grade accuracy to handheld navigation units.
+Quote forms validate details, prepare an inquiry message, and allow the user to send it via WhatsApp to +91 98183 20178. No database or server-side CRM is required.
