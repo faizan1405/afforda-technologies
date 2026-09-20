@@ -1,0 +1,2 @@
+import { ArrowUpRight } from 'lucide-react';
+export default function NotFound(){return <main className="not-found"><span className="eyebrow">AFFORDA / OFF THE MAP</span><h1>New terrain.<br/>Wrong coordinates.</h1><p>This equipment page could not be found. Return to the catalogue to find the right tools for your field.</p><a href="/#equipment" className="button button-yellow">Explore equipment <ArrowUpRight size={18}/></a></main>;}
