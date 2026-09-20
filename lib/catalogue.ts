@@ -6,14 +6,14 @@ export type Product = {
 
 export const categories = [
   { id: 'forestry', name: 'Forestry & Wildlife', short: 'Into the wild.', subtitle: 'Observe without disturbing.', mission: 'Wildlife monitoring, habitat research and remote observation.', image: 'forest', code: 'BIO / 01' },
-  { id: 'geology', name: 'Geological Equipment', short: 'Read the earth.', subtitle: 'Every layer tells a story.', mission: 'Map structures, measure bearings and document the ground beneath your feet.', image: 'terrain', code: 'GEO / 02' },
-  { id: 'surveying', name: 'Surveying & DGPS', short: 'Every point matters.', subtitle: 'Find your position. Define your ground.', mission: 'Field positioning and navigation. Talk to our team about DGPS and survey-specific requirements.', image: 'terrain', code: 'GNSS / 03' },
-  { id: 'navigation', name: 'Mapping & Navigation', short: 'Know your next move.', subtitle: 'Confidence in every coordinate.', mission: 'Handheld GPS and dependable navigation instruments for unfamiliar ground.', image: 'terrain', code: 'NAV / 04' },
-  { id: 'thermal', name: 'Thermal & Night Vision', short: 'Beyond the visible.', subtitle: 'A different way to see.', mission: 'Reveal heat signatures and observe in low light with dedicated field imaging equipment.', image: 'forest', code: 'IR / 05' },
-  { id: 'optics', name: 'Optics', short: 'Bring the distant closer.', subtitle: 'Clarity changes everything.', mission: 'High-definition binoculars and observation optics for detail at a distance.', image: 'forest', code: 'OPT / 06' },
-  { id: 'inspection', name: 'Inspection / Borescope Systems', short: 'Reach the unseen.', subtitle: 'Answers in the smallest spaces.', mission: 'Articulating inspection cameras for engines, machinery and difficult-to-access spaces.', image: 'terrain', code: 'INS / 07' },
-  { id: 'computing', name: 'Rugged Computing', short: 'Work beyond the office.', subtitle: 'Your field is your workspace.', mission: 'Rugged mobile computing for collecting, managing and using data on location.', image: 'terrain', code: 'RUG / 08' },
-  { id: 'communication', name: 'Field Communication', short: 'Keep your team connected.', subtitle: 'A clear line in challenging terrain.', mission: 'Portable radio equipment for coordinated operations in the field.', image: 'forest', code: 'COM / 09' },
+  { id: 'geology', name: 'Geological Equipment', short: 'Read the earth.', subtitle: 'Every layer tells a story.', mission: 'Map structures, measure bearings and document the ground beneath your feet.', image: 'geology', code: 'GEO / 02' },
+  { id: 'surveying', name: 'Surveying & DGPS', short: 'Every point matters.', subtitle: 'Find your position. Define your ground.', mission: 'Field positioning and navigation. Talk to our team about DGPS and survey-specific requirements.', image: 'surveying', code: 'GNSS / 03' },
+  { id: 'navigation', name: 'Mapping & Navigation', short: 'Know your next move.', subtitle: 'Confidence in every coordinate.', mission: 'Handheld GPS and dependable navigation instruments for unfamiliar ground.', image: 'navigation', code: 'NAV / 04' },
+  { id: 'thermal', name: 'Thermal & Night Vision', short: 'Beyond the visible.', subtitle: 'A different way to see.', mission: 'Reveal heat signatures and observe in low light with dedicated field imaging equipment.', image: 'thermal', code: 'IR / 05' },
+  { id: 'optics', name: 'Optics', short: 'Bring the distant closer.', subtitle: 'Clarity changes everything.', mission: 'High-definition binoculars and observation optics for detail at a distance.', image: 'optics', code: 'OPT / 06' },
+  { id: 'inspection', name: 'Inspection / Borescope Systems', short: 'Reach the unseen.', subtitle: 'Answers in the smallest spaces.', mission: 'Articulating inspection cameras for engines, machinery and difficult-to-access spaces.', image: 'inspection', code: 'INS / 07' },
+  { id: 'computing', name: 'Rugged Computing', short: 'Work beyond the office.', subtitle: 'Your field is your workspace.', mission: 'Rugged mobile computing for collecting, managing and using data on location.', image: 'computing', code: 'RUG / 08' },
+  { id: 'communication', name: 'Field Communication', short: 'Keep your team connected.', subtitle: 'A clear line in challenging terrain.', mission: 'Portable radio equipment for coordinated operations in the field.', image: 'communication', code: 'COM / 09' },
 ] as const;
 
 export const products: Product[] = [
