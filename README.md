@@ -15,6 +15,8 @@ npm run dev
 npm run build
 ```
 
+For Vercel deployments from GitHub, `vercel.json` selects the Next.js preset and runs `npm run build:vercel`. The repository root is the Vercel project root, and Vercel should use its default Next.js output directory. The regular `npm run build` command remains the Sites/Vinext build.
+
 ## Content
 
 - `lib/catalogue.ts`: 15 catalogue products, nine categories, brand descriptions and equipment finder mappings.
