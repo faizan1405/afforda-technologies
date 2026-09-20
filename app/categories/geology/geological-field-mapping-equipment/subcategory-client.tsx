@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { ArrowUpRight, ArrowLeft } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
 import { products, type Product } from '@/lib/catalogue';
-import { forestTagsBySubcategory } from '@/lib/forest-categories';
+import { geologyTagsBySubcategory } from '@/lib/geology-categories';
 
 function ProductLink({product}: {product:Product}) {
  return <a className="product-panel" href={`/products/${product.slug}`}>
@@ -17,10 +17,10 @@ export default function SubcategoryClient({ subcategory }: { subcategory: { id: 
   const [quoteEquipment, setQuoteEquipment] = useState('');
   const [activeTag, setActiveTag] = useState<string | null>(null);
 
-  const tags = forestTagsBySubcategory[subcategory.id] || [];
-  
+  const tags = geologyTagsBySubcategory[subcategory.id] || [];
+
   let subProducts = products.filter(p => p.subcategories?.includes(subcategory.id));
-  
+
   if (activeTag) {
     subProducts = subProducts.filter(p => p.tags?.includes(activeTag));
   }
@@ -36,11 +36,11 @@ export default function SubcategoryClient({ subcategory }: { subcategory: { id: 
       <div className="product-breadcrumb">
         <a href="/#equipment"><ArrowLeft size={14}/> Products</a>
         <span>/</span>
-        <a href="/categories/forest-wildlife">Forest & Wildlife</a>
+        <a href="/categories/geology">Geology</a>
         <span>/</span>
         <span>{subcategory.name}</span>
       </div>
-      
+
       <section className="section-padding" style={{ paddingTop: '4rem', paddingBottom: '2rem' }}>
         <div className="section-heading" style={{ marginBottom: '2rem' }}>
           <div>
@@ -51,14 +51,14 @@ export default function SubcategoryClient({ subcategory }: { subcategory: { id: 
 
         {tags.length > 0 && (
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '3rem' }}>
-             <button 
+             <button
                 onClick={() => setActiveTag(null)}
                 className={`button ${activeTag === null ? 'button-yellow' : 'button-outline'}`}
              >
                 All Products
              </button>
              {tags.map(tag => (
-               <button 
+               <button
                   key={tag}
                   onClick={() => setActiveTag(tag)}
                   className={`button ${activeTag === tag ? 'button-yellow' : 'button-outline'}`}
@@ -83,7 +83,7 @@ export default function SubcategoryClient({ subcategory }: { subcategory: { id: 
           </div>
         )}
       </section>
-      
+
       <Footer onQuote={() => openQuote()} />
       <QuoteDialog open={quote} onOpenChange={setQuote} equipment={quoteEquipment}/>
     </main>

@@ -6,7 +6,7 @@ import ProductDetail from './product-detail';
 export function generateStaticParams(){return products.map(p=>({slug:p.slug}));}
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{
   const {slug}=await params;const product=products.find(p=>p.slug===slug);
-  return {title:product?`${product.brand} ${product.name} | AFFORDA Technologies`:'Equipment not found | AFFORDA',description:product?.summary};
+  return {title:product?`${product.brand} ${product.name} | AFFORDA Technologies`:'Product not found | AFFORDA',description:product?.summary};
 }
 export default async function ProductPage({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params;const product=products.find(p=>p.slug===slug);

@@ -59,7 +59,7 @@ export default function CategoryClient({ category }: CategoryClientProps) {
 
       <div className="product-breadcrumb">
         <a href="/#equipment">
-          <ArrowLeft size={14} /> Equipment
+          <ArrowLeft size={14} /> Products
         </a>
         <span>/</span>
         <span>{category.name}</span>
@@ -187,6 +187,48 @@ export default function CategoryClient({ category }: CategoryClientProps) {
         </section>
       )}
 
+      {category.id === 'geology' && (
+        <section
+          style={{
+            maxWidth: '1200px',
+            margin: '2rem auto 0',
+            padding: '1.5rem 2rem',
+            background: 'rgba(221, 237, 160, 0.08)',
+            border: '1px solid rgba(221, 237, 160, 0.25)',
+            borderRadius: '8px',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '1rem',
+          }}
+        >
+          <div>
+            <span
+              style={{
+                fontFamily: 'var(--font-geist-mono), monospace',
+                fontSize: '0.8rem',
+                letterSpacing: '1px',
+                color: 'var(--yellow)',
+                display: 'block',
+                marginBottom: '0.25rem',
+              }}
+            >
+              SPECIALIZED CATALOGUE
+            </span>
+            <strong style={{ fontSize: '1.1rem', color: '#fff' }}>
+              Looking for specialized Geological products categories?
+            </strong>
+            <p style={{ margin: '0.25rem 0 0', color: 'var(--muted)', fontSize: '0.9rem' }}>
+              Browse our detailed subcategory breakdown for geological field and mapping products.
+            </p>
+          </div>
+          <a className="button button-yellow" href="/categories/geology">
+            View Geology Subcategories <ArrowUpRight size={17} />
+          </a>
+        </section>
+      )}
+
       <section className="section-padding" style={{ paddingTop: '4rem', paddingBottom: '2rem' }}>
         <div className="section-heading" style={{ marginBottom: '2rem' }}>
           <div>
@@ -195,7 +237,7 @@ export default function CategoryClient({ category }: CategoryClientProps) {
             </span>
             <h2>
               FEATURED<br />
-              <span>EQUIPMENT.</span>
+              <span>PRODUCTS.</span>
             </h2>
           </div>
         </div>
@@ -218,7 +260,7 @@ export default function CategoryClient({ category }: CategoryClientProps) {
           >
             <h3>Custom configuration required for this category.</h3>
             <p style={{ color: 'var(--muted)', marginTop: '10px', marginBottom: '20px' }}>
-              Our complete catalogue includes professional equipment for {category.name.toLowerCase()}.
+              Our complete catalogue includes professional products for {category.name.toLowerCase()}.
             </p>
             <button className="button button-yellow" onClick={() => openQuote(category.name)}>
               Inquire about {category.name} <ArrowUpRight size={18} />
@@ -259,7 +301,7 @@ export default function CategoryClient({ category }: CategoryClientProps) {
               marginRight: 'auto',
             }}
           >
-            We supply equipment to government institutions, research organizations, and field teams across India.
+            We supply products to government institutions, research organizations, and field teams across India.
             Contact us for formal quotes, technical datasheets, and availability.
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
