@@ -1,5 +1,7 @@
 'use client';
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 import { ArrowUpRight, ArrowDown, ArrowRight, ArrowLeft, Crosshair, Trees, Mountain, Compass, Radio, ScanLine, Satellite, Laptop, Focus, ChevronRight, MapPin, Check, Layers, Navigation } from 'lucide-react';
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -9,7 +11,13 @@ import CategorySlider from '@/components/site/category-slider';
 import { categories, products, finderOptions, findEquipment, type Product } from '@/lib/catalogue';
 
 const icons = [Trees, Mountain, Satellite, Compass, ScanLine, Focus, Crosshair, Laptop, Radio];
-const featured = products.slice(0,6);
+const featuredSlugs = new Set([
+  'vortex-viper-hd', 'garmin-gpsmap-65s', 'hikmicro-lynx-lh25',
+  'browning-strike-force-pro-dcl', 'brunton-geolite', 'panasonic-toughbook',
+  'ralcam-h408b', 'brutforce-field-radio', 'minox-nvd-650',
+  'suunto-mc2', 'audiomoth', 'hikmicro-e20-plus',
+]);
+const featured = products.filter(product => featuredSlugs.has(product.slug));
 const reticleLabels: Record<string, string> = {
   forestry: 'OBSERVATION ZONE',
   geology: 'STRATA / STRIKE',
@@ -36,18 +44,25 @@ export default function Home() {
  const [industry,setIndustry]=useState('Forestry & Wildlife');
  const [requirement,setRequirement]=useState('Wildlife monitoring');
  const [finderResult,setFinderResult]=useState<{industry:string;requirement:string}|null>(null);
- const productRail=useRef<HTMLDivElement>(null);
+ const autoplay=useRef(Autoplay({delay:2000,stopOnMouseEnter:true,stopOnInteraction:false}));
+ const [productRail,productRailApi]=useEmblaCarousel({loop:true,align:'start'},[autoplay.current]);
  const [railIndex,setRailIndex]=useState(0);
- const [railAtEnd,setRailAtEnd]=useState(false);
  const recommendations=finderResult?findEquipment(finderResult.industry,finderResult.requirement):[];
  function openQuote(equipment=''){setQuoteEquipment(equipment);setQuote(true);}
- function advanceProducts(direction:number){const rail=productRail.current;if(!rail)return;const first=rail.firstElementChild as HTMLElement;const gap=parseFloat(getComputedStyle(rail).columnGap)||0;rail.scrollBy({left:direction*(first.offsetWidth+gap),behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}
+ function advanceProducts(direction:number){if(!productRailApi)return;direction<0?productRailApi.scrollPrev():productRailApi.scrollNext();autoplay.current.reset();}
  function chooseIndustry(value:string){setIndustry(value);setRequirement(Object.keys(finderOptions[value])[0]);setFinderResult(null);}
  useEffect(()=>{
    const els=document.querySelectorAll('.reveal');
    const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');observer.unobserve(e.target);}}),{threshold:.08});
    els.forEach(el=>observer.observe(el));return()=>observer.disconnect();
  },[]);
+ useEffect(()=>{
+   if(!productRailApi)return;
+   const updateIndex=()=>setRailIndex(productRailApi.selectedScrollSnap());
+   updateIndex();
+   productRailApi.on('select',updateIndex).on('reInit',updateIndex);
+   return()=>{productRailApi.off('select',updateIndex).off('reInit',updateIndex);};
+ },[productRailApi]);
  useEffect(()=>{
    type ModelContext={registerTool:(tool:unknown,options:{signal:AbortSignal})=>unknown};
    const context=(document as unknown as {modelContext?:ModelContext}).modelContext;
@@ -97,9 +112,9 @@ export default function Home() {
    </div>
   </section>
  <section className="product-section section-padding" id="products">
-   <div className="section-heading reveal"><div><span className="eyebrow"><span className="section-number">02</span> THE FIELD SELECTION</span><h2>EXCEPTIONAL TOOLS.<br/><span>EXTRAORDINARY POSSIBILITIES.</span></h2></div><div className="rail-controls"><button aria-label="Previous products" onClick={()=>advanceProducts(-1)} disabled={railIndex===0}><ArrowLeft size={20}/></button><button aria-label="Next products" onClick={()=>advanceProducts(1)} disabled={railAtEnd}><ArrowRight size={20}/></button></div></div>
-   <div className="product-rail" ref={productRail} tabIndex={0} aria-label="Featured products, scroll horizontally for more products" onScroll={e=>{const rail=e.currentTarget;const first=rail.firstElementChild as HTMLElement;const gap=parseFloat(getComputedStyle(rail).columnGap)||0;setRailIndex(Math.round(rail.scrollLeft/(first.offsetWidth+gap)));setRailAtEnd(rail.scrollLeft+rail.clientWidth>=rail.scrollWidth-5);}}>{featured.map(p=><ProductLink key={p.slug} product={p}/>)}</div>
-   <div className="rail-footer"><span>SELECTED FOR YOUR NEXT EXPEDITION</span><div className="rail-track"><i style={{width:`${100/featured.length}%`,left:`${Math.min(railIndex,featured.length-1)/featured.length*100}%`}}/></div><span>{String(railIndex+1).padStart(2,'0')} <span className="muted">/ 06</span></span></div>
+   <div className="section-heading reveal"><div><span className="eyebrow"><span className="section-number">02</span> THE FIELD SELECTION</span><h2>EXCEPTIONAL TOOLS.<br/><span>EXTRAORDINARY POSSIBILITIES.</span></h2></div><div className="rail-controls"><button aria-label="Previous products" onClick={()=>advanceProducts(-1)}><ArrowLeft size={20}/></button><button aria-label="Next products" onClick={()=>advanceProducts(1)}><ArrowRight size={20}/></button></div></div>
+   <div className="product-rail" ref={productRail} aria-label="Featured products, swipe horizontally for more products"><div className="product-rail-inner">{featured.map(p=><ProductLink key={p.slug} product={p}/>)}</div></div>
+   <div className="rail-footer"><span>SELECTED FOR YOUR NEXT EXPEDITION</span><div className="rail-track"><i style={{width:`${100/featured.length}%`,left:`${railIndex/featured.length*100}%`}}/></div><span>{String(railIndex+1).padStart(2,'0')} <span className="muted">/ {String(featured.length).padStart(2,'0')}</span></span></div>
  </section>
  <section className="finder-section section-padding" id="finder">
   <div className="finder-map" aria-hidden="true"/>
