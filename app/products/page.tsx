@@ -2,7 +2,7 @@
 import { useState, useMemo } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
-import { categories, products, type Product } from '@/lib/catalogue';
+import { categories, products, productBelongsToCategory, type Product } from '@/lib/catalogue';
 
 export default function ProductsPage() {
   const [quote, setQuote] = useState(false);
@@ -12,7 +12,7 @@ export default function ProductsPage() {
   const filteredProducts = useMemo(() => {
     let result = products;
     if (activeCategory !== 'all') {
-      result = result.filter(p => p.category === activeCategory);
+      result = result.filter(p => productBelongsToCategory(p, activeCategory));
     }
     if (activeTag !== 'all') {
       result = result.filter(p => p.tags?.includes(activeTag));

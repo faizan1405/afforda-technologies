@@ -10,7 +10,7 @@ import Terrain from '@/components/site/terrain';
 import CategorySlider from '@/components/site/category-slider';
 import { categories, products, finderOptions, findEquipment, type Product } from '@/lib/catalogue';
 
-const icons = [Trees, Mountain, Satellite, Compass, ScanLine, Focus, Crosshair, Laptop, Radio];
+const icons = [Trees, Mountain, Satellite, Compass, ScanLine, Focus, Crosshair, Laptop, Radio, Crosshair, Mountain];
 const featuredSlugs = new Set([
   'vortex-viper-hd', 'garmin-gpsmap-65s', 'hikmicro-lynx-lh25',
   'browning-strike-force-pro-dcl', 'brunton-geolite', 'panasonic-toughbook',
@@ -28,6 +28,8 @@ const reticleLabels: Record<string, string> = {
   inspection: 'BORE PROBE',
   computing: 'TELEMETRY ACTIVE',
   communication: 'RF LINK ACTIVE',
+  defense: 'FIELD AWARENESS',
+  mining: 'GROUND SURVEY',
 };
 
 function ProductLink({product, compact=false}: {product:Product;compact?:boolean}) {
@@ -91,7 +93,7 @@ export default function Home() {
      {categories.map((c, index) => {
        const Icon = icons[categories.indexOf(c)];
        const reticleLabel = reticleLabels[c.id] || 'ACQUIRED';
-       const href = c.id === 'forestry' ? '/categories/forest-wildlife' : c.id === 'geology' ? '/categories/geology' : `/category/${c.id}`;
+       const href = c.id === 'forestry' ? '/categories/forest-wildlife' : c.id === 'geology' ? '/categories/geology' : c.id === 'defense' ? '/categories/defense-paramilitary' : c.id === 'mining' ? '/categories/mining-geology' : `/category/${c.id}`;
        return <a key={c.id} href={href} className={`mission mission-${c.id} reveal`} style={{ '--delay': `${(index % 3) * 90}ms`, textDecoration: 'none', display: 'block' } as CSSProperties} onPointerMove={e => {
          const r = e.currentTarget.getBoundingClientRect();
          e.currentTarget.style.setProperty('--lens-x', `${e.clientX - r.left}px`);

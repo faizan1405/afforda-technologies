@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { ArrowUpRight, ArrowLeft } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
-import { products, type Product } from '@/lib/catalogue';
+import { products, productBelongsToCategory, type Product } from '@/lib/catalogue';
 
 function ProductLink({ product }: { product: Product }) {
   return (
@@ -46,7 +46,7 @@ export default function CategoryClient({ category }: CategoryClientProps) {
   const [quote, setQuote] = useState(false);
   const [quoteEquipment, setQuoteEquipment] = useState('');
 
-  const categoryProducts = products.filter(p => p.category === category.id);
+  const categoryProducts = products.filter(p => productBelongsToCategory(p, category.id));
 
   function openQuote(equipment = '') {
     setQuoteEquipment(equipment || category.name);
