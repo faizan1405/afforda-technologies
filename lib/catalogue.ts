@@ -58,6 +58,23 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
   'Geology & Research': { 'Compass & transit measurement':['brunton-geolite','brunton-compro-transit','brunton-f-5012-axis'], 'Navigation & positioning':['suunto-mc2','garmin-gpsmap-65s'] },
   'Industrial Inspection': { 'Confined-space inspection':['ralcam-h408b'], 'Thermal observation':['hikmicro-e20-plus','hikmicro-lynx-lh25'], 'Field computing':['panasonic-toughbook'] },
   'Field Operations': { 'Team communication':['brutforce-field-radio'], 'Navigation':['garmin-gpsmap-65s','suunto-mc2'], 'Night observation':['hikmicro-lynx-lh25','minox-nvd-650'] },
+  'Defense & Paramilitary': {
+    'Thermal Imaging':['hikmicro-lynx-lh25'],
+    'Night Vision':['minox-nvd-650'],
+    'GPS / Navigation':['garmin-gpsmap-65s','garmin-montana-700','suunto-mc2'],
+    'Binoculars / Optics':['vortex-viper-hd','vortex-diamondback-hd'],
+    'Communication':['brutforce-field-radio'],
+    'Rugged Computing':['panasonic-toughbook'],
+    'Surveillance / Monitoring':['browning-strike-force-pro-dcl','hikmicro-lynx-lh25','minox-nvd-650'],
+  },
+  'Mining & Geology': {
+    'Geological Survey':['brunton-geolite','brunton-compro-transit','brunton-f-5012-axis'],
+    'Mapping / GNSS':['garmin-gpsmap-65s','garmin-montana-700'],
+    'Compasses / Pocket Transits':['brunton-geolite','brunton-compro-transit','brunton-f-5012-axis'],
+    'Distance Measurement':['garmin-gpsmap-65s','garmin-montana-700'],
+    'Rugged Computing':['panasonic-toughbook'],
+    'Field Inspection':['ralcam-h408b'],
+  },
 };
 
 export function findEquipment(industry: string, requirement: string) {
