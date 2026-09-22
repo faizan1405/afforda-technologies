@@ -77,7 +77,7 @@ export default function SubcategoryClient({ subcategory }: { subcategory: { id: 
               {subcategory.name}
             </h1>
             <p style={{ color: 'var(--muted-foreground)', fontSize: '15px', margin: 0 }}>
-              {subProducts.length} verified products available in this sector.
+              {subProducts.length} products available in this sector.
             </p>
           </div>
         </div>

@@ -41,7 +41,7 @@ export default function ForestWildlifeCategory() {
             <h2>CHOOSE YOUR<br/><span>PRODUCTS.</span></h2>
           </div>
           <div className="section-intro">
-            <p>Explore our 3 dedicated forest and wildlife sectors.<br/>Select a subcategory to browse products and technical specifications.</p>
+            <p>Explore our 3 dedicated forest and wildlife sectors.<br/>Select a subcategory to browse products and equipment options.</p>
           </div>
         </div>
         <div className="mission-grid">
