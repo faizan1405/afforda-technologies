@@ -39,8 +39,8 @@ export const products: Product[] = [
   // --- Existing Field Technology Products (Preserved & Cleaned of Legacy Subcategories) ---
   { slug:'vortex-viper-hd',name:'Viper® HD',brand:'Vortex Optics',category:'optics',image:'viper',gallery:['viper','viper-front'],label:'HD BINOCULARS',summary:'An HD optical system, rugged rubber armor and a comfortable field harness. A clear view of the details that matter.',specs:[['Available configurations','8×42 / 10×50 / 12×50'],['Optical system','High definition'],['Lens coating','XR™ fully multi-coated'],['Protection','ArmorTek®'],['Carry system','GlassPak harness included']],features:['HD glass for resolution and color fidelity','Phase-corrected roof prisms for contrast','Rubber armor for a secure grip','GlassPak chest harness for comfortable field carry'],page:5,subcategories:['defense-optics'],categoryIds:['optics','defense'],tags:['Binoculars'] },
   { slug:'garmin-gpsmap-65s',name:'Handheld GPS (GPSMAP® 65s)',brand:'Garmin',category:'navigation',image:'gpsmap',gallery:['gpsmap'],label:'MULTI-BAND GPS',summary:'Find your way in challenging environments with multi-band positioning, expanded satellite support and a sunlight-readable color display.',specs:[['Display','2.6-inch color'],['Positioning','Multi-band GNSS'],['Battery life','Up to 16 hours in GPS mode'],['Navigation','Built-in navigation sensors (ABC)'],['Planning','Garmin Explore compatibility']],features:['Multi-band technology for challenging locations','Sunlight-readable color display','Built-in 3-axis compass & barometric altimeter','Plan and organize with the Garmin Explore app'],page:12,subcategories:['geological-field-mapping','gps-survey-mapping-products','defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','geology','defense','mining','surveying'],tags:['Handheld GPS','GPS/GNSS Devices','GPS','GPS / GNSS Receivers'] },
-  { slug:'hikmicro-lynx-lh25',name:'LYNX LH25 2.0',brand:'HIKMICRO',category:'thermal',image:'lynx',gallery:['lynx','lynx-side'],label:'THERMAL MONOCULAR',summary:'A compact thermal monocular that reveals subtle heat signatures, with a sensitive detector and a detailed OLED view.',specs:[['Detector resolution','384 × 288'],['Lens','25 mm, F1.0'],['Thermal sensitivity','NETD <20 mK'],['Detection range','Up to 1,200 m'],['Weight','275 g'],['Battery life','Up to 6.5 hours']],features:['12 μm detector with high thermal sensitivity','1024 × 768 OLED display','Replaceable rechargeable Li-ion battery','Compact and ergonomic field design'],page:40,subcategories:['defense-thermal','defense-surveillance'],categoryIds:['thermal','defense'],tags:['Thermal Cameras','Thermal Monoculars'] },
-  { slug:'browning-strike-force-pro-dcl',name:'Strike Force Pro DCL',brand:'Browning',category:'forestry',image:'browning',gallery:['browning'],label:'WILDLIFE TRAIL CAMERA',summary:'Dual camera lens technology captures the field by day and night, with a fast trigger for fleeting wildlife encounters.',specs:[['Image resolution','26 megapixels'],['Trigger speed','0.15 seconds'],['Flash range','Up to 130 ft'],['Viewing screen','1.5-inch color'],['Lens system','Dual camera lens technology']],features:['Separate lens technology optimized for day and night','Fast trigger for wildlife monitoring','On-camera color viewing screen','Long-range flash capability'],page:21,subcategories:['defense-surveillance'],categoryIds:['forestry','defense'],tags:['Camera Traps'] },
+  { slug:'hikmicro-lynx-lh25',name:'LYNX LH25 2.0',brand:'HIKMICRO',category:'thermal',image:'lynx',gallery:['lynx','lynx-side'],label:'THERMAL MONOCULAR',summary:'A compact thermal monocular that reveals subtle heat signatures, with a sensitive detector and a detailed OLED view.',specs:[['Detector resolution','384 × 288'],['Lens','25 mm, F1.0'],['Thermal sensitivity','NETD <20 mK'],['Detection range','Up to 1,200 m'],['Weight','275 g'],['Battery life','Up to 6.5 hours']],features:['12 μm detector with high thermal sensitivity','1024 × 768 OLED display','Replaceable rechargeable Li-ion battery','Compact and ergonomic field design'],page:40,subcategories:['defense-thermal','defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['thermal','defense','forestry'],tags:['Thermal & Night Observation','Thermal Cameras','Thermal Monoculars','Infrared Observation'] },
+  { slug:'browning-strike-force-pro-dcl',name:'Strike Force Pro DCL',brand:'Browning',category:'forestry',image:'browning',gallery:['browning'],label:'WILDLIFE TRAIL CAMERA',summary:'Dual camera lens technology captures the field by day and night, with a fast trigger for fleeting wildlife encounters.',specs:[['Image resolution','26 megapixels'],['Trigger speed','0.15 seconds'],['Flash range','Up to 130 ft'],['Viewing screen','1.5-inch color'],['Lens system','Dual camera lens technology']],features:['Separate lens technology optimized for day and night','Fast trigger for wildlife monitoring','On-camera color viewing screen','Long-range flash capability'],page:21,subcategories:['defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['forestry','defense'],tags:['Camera Traps'] },
   { slug:'brunton-geolite',name:'Geo Lite™ Transit F-5030',brand:'Brunton',category:'geology',image:'geolite-open',gallery:['geolite-open','geolite'],label:'GEOLOGICAL TRANSIT COMPASS',summary:'Compact aluminum geological transit combining direct-read azimuth measurement with a hinge clinometer for strike and dip field readings.',specs:[['Model','Geo Lite™ Transit F-5030'],['Body Construction','Compact aluminum body (approx. 30% smaller than full-size transit)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° azimuth scale)'],['Vertical Angle','±1° with 1° graduations (±90° range)'],['Declination Adjustment','Tool-free magnetic declination adjustment ±180°'],['Needle Dampening','Induction damped needle on sapphire jewel suspension'],['Leveling Vials','Dual bubble vials (circular and tubular)'],['Sighting System','Precision mirror with sighting hole and sighting line'],['Protection','Silicone protective cover included'],['Mounting','Tripod mountable with 1/4-20 threading']],features:['Compact lightweight aluminum body roughly 30% smaller than traditional pocket transits','High-precision azimuth accuracy of ±0.5° with 1° graduations on a 0–360° scale','Integrated vertical clinometer reads slope and dip to ±1° across ±90° range','User-friendly tool-free magnetic declination adjustment with ±180° range','Induction damped needle stabilizes quickly for fast and repeatable field readings','Dual bubble vials (tubular and circular) ensure perfect level alignment','Reflective sighting mirror with center sighting hole for accurate bearing acquisition','Supplied with custom silicone protective cover for field impact resistance'],page:27,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Geological Compasses / Pocket Transits','Field Compasses / Baseplate Compasses'] },
   { slug:'panasonic-toughbook',name:'TOUGHBOOK FZ-55',brand:'Panasonic Toughbook',category:'computing',image:'toughbook',gallery:['toughbook'],label:'RUGGED FIELD COMPUTING',summary:'A modular laptop platform for demanding mobile work. Ask our team to configure a TOUGHBOOK around your field applications.',specs:[['Product family','Panasonic TOUGHBOOK'],['Catalogue model','FZ-55'],['Form factor','Rugged laptop'],['Configuration','Confirmed with your quotation']],features:['Built for mobile field workflows','Flexible configuration options','Suitable for field data collection and review','Project-specific configuration support'],page:47,subcategories:['defense-rugged','defense-field-operations','mining-rugged'],categoryIds:['computing','defense','mining'],tags:['Rugged Tablets'] },
   { slug:'vortex-diamondback-hd',name:'Diamondback® HD',brand:'Vortex Optics',category:'optics',image:'diamondback',gallery:['diamondback','diamondback-side'],label:'HD BINOCULARS',summary:'Rugged observation optics with HD glass, protective lens coatings and a ready-to-deploy harness.',specs:[['Available configurations','8×42 / 10×50 / 10×42'],['Optical system','High definition'],['Lenses','Fully multi-coated'],['Protection','ArmorTek® coating'],['Carry system','GlassPak harness included']],features:['Phase correction for enhanced resolution','Rubber armor for a non-slip grip','Scratch-resistant exterior lens coating','Shock-resistant construction'],page:4,subcategories:['defense-optics'],categoryIds:['optics','defense'],tags:['Binoculars'] },
@@ -49,9 +49,9 @@ export const products: Product[] = [
   { slug:'brutforce-field-radio',name:'BFR-001 License-Free Walkie-Talkie',brand:'BRUTFORCE',category:'communication',image:'radio',gallery:['radio','radio-side'],label:'LICENSE-FREE FIELD RADIO',summary:'License-free two-way field radio operating on the 446 MHz band with 16 channels, up to 5 km line-of-sight range, and a long-life 2,600 mAh Li-ion battery.',specs:[['Model','BFR-001'],['Frequency range','446.00–446.02 MHz (License-free UHF)'],['Channels','16 pre-programmed channels with CTCSS/DCS'],['Operating range','Up to 5 km (line-of-sight depending on terrain)'],['Battery','2,600 mAh Li-ion rechargeable battery'],['Operating temperature','−25°C to +55°C'],['Compliance','WPC Approved (License-free in India)']],features:['16 pre-set channels with CTCSS/DCS sub-codes for private team coordination','Up to 5 km range depending on line-of-sight for field and mountain operations','WPC approved for license-free professional operation across India','Rugged compact housing with voice-operated VOX and emergency alert'],page:34,subcategories:['field-communication-expedition-support','defense-communication','defense-field-operations'],categoryIds:['communication','geology','defense'],tags:['Field Radios'] },
   { slug:'brunton-compro-transit',name:'ComPro™ Composite Transit F-5008',brand:'Brunton',category:'geology',image:'compro',gallery:['compro'],label:'COMPOSITE POCKET TRANSIT',summary:'Ultralight composite transit housing professional transit internals with induction dampening, precision NdFeB cast magnet, and dual sighting tools.',specs:[['Model','ComPro™ Composite Transit F-5008'],['Body Material','Composite body material (reduces weight & protects against magnetic interference)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° or quad options)'],['Clinometer Accuracy','±0.5° with 1° graduations (90° range or 100% grade scale)'],['Declination Adjustment','Tool-free magnetic declination adjustment (±180°)'],['Magnetic System','NdFeB rare-earth cast magnet needle on sapphire jewel bearing'],['Dampening','Induction dampening for rapid needle settling'],['Sighting System','Precision sighting mirror with sighting hole and sighting line'],['Environmental','Waterproof sealed housing'],['Mounting','Tripod mountable with standard ball-and-socket tripod mount']],features:['Composite body reduces overall carry weight and eliminates local magnetic interference','Precision compass azimuth accuracy of ±0.5° with 1° graduations','Vertical clinometer provides ±0.5° accuracy with 1° graduations and 10-minute vernier reading','Cast NdFeB rare-earth disc magnet on sapphire jewel bearing delivers rapid, reliable settling','Tool-free magnetic declination adjustment allows swift true north calibration in the field','Waterproof sealed body designed to withstand harsh outdoor geological and mine environments','Precision sighting mirror with see-through window and front/rear sighting guides','Ball and socket tripod mount compatibility for stabilized station mapping'],page:30,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining','surveying'],tags:['Geological Compasses / Pocket Transits'] },
   { slug:'brunton-f-5012-axis',name:'Axis™ Pocket Transit F-5012',brand:'Brunton',category:'geology',image:'placeholder',gallery:['placeholder'],label:'AXIS POCKET TRANSIT',summary:'Patented dual-axis pocket transit enabling simultaneous measurement of strike and dip, trend and plunge, dip and dip direction, and bearings on a single setup.',specs:[['Model','Axis™ Pocket Transit F-5012'],['Hinge Design','Dual-axis hollow hinge allows measurement of strike & dip simultaneously'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° or 0–90° quad)'],['Clinometer Accuracy','±0.5° with 1° graduations'],['Declination Adjustment','Tool-free adjustable magnetic declination ±180°'],['Bearing / Dampening','Sapphire jewel bearing with induction damping'],['Level Vials','Internal tubular and circular level vials'],['Water Resistance','IPX7 / waterproof and submersible to 3 m for 30 min'],['Body Construction','CNC-machined hard-anodized aluminum body'],['Mounting','Tripod mountable with standard ball-and-socket mount']],features:['Dual-axis hollow hinge allows simultaneous measurement of strike and dip on any bedding surface (contact, foliation, or lineation)','High-precision compass azimuth accuracy of ±0.5° with 1° graduations','Vertical clinometer accuracy of ±0.5° with 1° graduations for dip and vertical angles','NdFeB cast rare-earth magnet mounted on sapphire jewel bearing with induction damping','Tool-free magnetic declination adjustment adjustable to ±180°','IPX7 waterproof construction submersible to 3 meters for 30 minutes','CNC-machined hard-anodized aluminum body designed for rugged field longevity','Internal circular and tubular level vials for stabilized direct-contact and sighting operations'],page:31,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Geological Compasses / Pocket Transits'] },
-  { slug:'minox-nvd-650',name:'NVD 650',brand:'MINOX',category:'thermal',image:'minox',gallery:['minox','minox-back'],label:'DIGITAL NIGHT VISION',summary:'A digital monocular with an IR emitter and recording capability for observation in low-light field conditions.',specs:[['Optical magnification','6×'],['Digital magnification','5×'],['IR wavelength','850 nm'],['IR range','Up to 350 m'],['Use','Day and night']],features:['Built-in IR emitter','Night recording functionality','Rail for additional IR illumination','Daytime use supported'],page:45,subcategories:['defense-night','defense-surveillance'],categoryIds:['thermal','defense'],tags:['Night Vision Devices'] },
+  { slug:'minox-nvd-650',name:'NVD 650',brand:'MINOX',category:'thermal',image:'minox',gallery:['minox','minox-back'],label:'DIGITAL NIGHT VISION',summary:'A digital monocular with an IR emitter and recording capability for observation in low-light field conditions.',specs:[['Optical magnification','6×'],['Digital magnification','5×'],['IR wavelength','850 nm'],['IR range','Up to 350 m'],['Use','Day and night']],features:['Built-in IR emitter','Night recording functionality','Rail for additional IR illumination','Daytime use supported'],page:45,subcategories:['defense-night','defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['thermal','defense','forestry'],tags:['Thermal & Night Observation','Night Vision Devices','Infrared Observation'] },
   { slug:'suunto-mc2',name:'MC-2 Mirror Compass',brand:'Suunto',category:'navigation',image:'suunto',gallery:['suunto'],label:'PRECISION NAVIGATION',summary:'A sighting compass with a mirror, clinometer and adjustable declination correction for considered route finding.',specs:[['Needle','Jewel-bearing steel'],['Capsule','Liquid-filled'],['Declination','Adjustable correction'],['Measurement','Sighting and clinometer'],['Variant','Confirm hemisphere and scale']],features:['Sighting mirror and notch for bearings','Luminescent markings for low light','Baseplate with magnifying lens','Detachable snap-lock lanyard'],page:41,subcategories:['defense-navigation','defense-field-operations'],categoryIds:['navigation','defense'],tags:['Compasses','Forestry Compasses'] },
-  { slug:'audiomoth',name:'AudioMoth',brand:'Open Acoustic Devices',category:'forestry',image:'audiomoth',gallery:['audiomoth','audiomoth-case'],label:'ACOUSTIC MONITORING',summary:'A compact full-spectrum acoustic logger for listening to the natural world, with an optional protective field case.',specs:[['Sample rate','Up to 384 kHz'],['Processor','EFM32 Gecko'],['Microphone','Analog MEMS'],['Protective option','IPX7 waterproof case']],features:['Full-spectrum acoustic logging','Compact field-deployment format','Protective case with compression O-ring','Case strap for straightforward installation'],page:44,tags:['Acoustic Monitoring Devices'] },
+  { slug:'audiomoth',name:'AudioMoth',brand:'Open Acoustic Devices',category:'forestry',image:'audiomoth',gallery:['audiomoth','audiomoth-case'],label:'ACOUSTIC MONITORING',summary:'A compact full-spectrum acoustic logger for listening to the natural world, with an optional protective field case.',specs:[['Sample rate','Up to 384 kHz'],['Processor','EFM32 Gecko'],['Microphone','Analog MEMS'],['Protective option','IPX7 waterproof case']],features:['Full-spectrum acoustic logging','Compact field-deployment format','Protective case with compression O-ring','Case strap for straightforward installation'],page:44,subcategories:['wildlife-monitoring-surveillance'],categoryIds:['forestry'],tags:['Bioacoustics & Acoustic Monitoring','Autonomous Recording Units','Acoustic Recorders'] },
   { slug:'hikmicro-e20-plus',name:'E20 Plus',brand:'HIKMICRO',category:'thermal',image:'e20',gallery:['e20','e20-side'],label:'SMARTPHONE THERMAL CAMERA',summary:'A lightweight thermal accessory for compatible Android phones, with USB-C connection and HIKMICRO Sight app support.',specs:[['Connection','USB Type-C'],['Power consumption','360 mW'],['Weight','26 g'],['Operating temperature','−10°C to 50°C'],['Protection level','IP40']],features:['Compact thermal module for mobile observation','Powered through the connected device','HIKMICRO Sight app compatibility','Lightweight 26 g design'],page:39,tags:['Thermal Cameras'] },
 
   // =========================================================================
@@ -999,8 +999,8 @@ export const products: Product[] = [
     name: 'Measuring Rod',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'measuring-rod',
+    gallery: ['measuring-rod'],
     label: 'SURVEY LEVELING ROD',
     summary: 'Telescopic or folding graduated rod designed for optical leveling sightings, grade verification, and height measurements in surveying operations.',
     specs: [
@@ -1027,8 +1027,8 @@ export const products: Product[] = [
     name: 'Plot Markers',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'plot-markers',
+    gallery: ['plot-markers'],
     label: 'SURVEY GROUND MARKERS',
     summary: 'Durable ground markers designed for designating permanent sample plots, survey control points, boundary corners, and forestry research stations.',
     specs: [
@@ -1641,6 +1641,649 @@ export const products: Product[] = [
     categoryIds: ['forestry'],
     tags: ['Forest Fire-Fighting Products', 'PPE']
   },
+
+  // =========================================================================
+  // 4. WILDLIFE MONITORING & SURVEILLANCE (Subcategory ID: wildlife-monitoring-surveillance)
+  // =========================================================================
+
+  // --- Camera Traps (Generic Families) ---
+  {
+    slug: 'ir-camera-trap',
+    name: 'IR Camera Trap',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'INFRARED TRAIL CAMERA',
+    summary: 'Infrared camera trap designed for non-invasive day and night wildlife monitoring and covert perimeter surveillance.',
+    specs: [
+      ['Product Type', 'Infrared Camera Trap'],
+      ['Primary Use', 'Non-Invasive Wildlife Monitoring'],
+      ['Flash Type', 'Infrared (IR) Illumination'],
+      ['Application', 'Fauna Surveys & Forest Surveillance'],
+      ['Monitoring Method', 'Motion-Activated Passive Infrared (PIR)'],
+      ['Field Category', 'Wildlife Monitoring & Surveillance']
+    ],
+    features: [
+      'Motion-activated infrared imaging for low-disturbance nocturnal recording',
+      'Designed for wildlife population census and ecological research',
+      'Weatherproof field enclosure engineered for remote outdoor deployments',
+      'Supports daytime color capture and covert nighttime monochrome capture'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry'],
+    tags: ['Camera Traps', 'Infrared Observation']
+  },
+  {
+    slug: 'white-flash-camera-trap',
+    name: 'White Flash Camera Trap',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'COLOR FLASH TRAIL CAMERA',
+    summary: 'Color flash camera trap designed to capture high-clarity full-color wildlife imagery by day and night for species identification.',
+    specs: [
+      ['Product Type', 'White Flash Camera Trap'],
+      ['Primary Use', 'Full-Color Night Wildlife Photography'],
+      ['Flash Type', 'White Xenon / LED Flash'],
+      ['Application', 'Species Identification & Coat Pattern Analysis'],
+      ['Monitoring Method', 'Motion-Activated Sensor'],
+      ['Field Category', 'Wildlife Monitoring & Surveillance']
+    ],
+    features: [
+      'Full-color nocturnal photographic capture for definitive specimen identification',
+      'Essential for individual animal marking and coat pattern identification studies',
+      'Automatic daylight and nocturnal switching mechanism',
+      'Durable field-deployable housing for long-term ecological monitoring'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry'],
+    tags: ['Camera Traps']
+  },
+  {
+    slug: 'gsm-camera-trap',
+    name: 'GSM Camera Trap',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'CELLULAR TRAIL CAMERA',
+    summary: 'Cellular-enabled camera trap designed to transmit wildlife and surveillance images directly from the field over mobile networks.',
+    specs: [
+      ['Product Type', 'Cellular / GSM Camera Trap'],
+      ['Primary Use', 'Real-Time Remote Field Monitoring'],
+      ['Data Transmission', 'Cellular Wireless Network (SIM-based)'],
+      ['Application', 'Anti-Poaching Patrol & Remote Habitat Surveillance'],
+      ['Monitoring Method', 'Motion-Triggered Remote Alert & Capture'],
+      ['Field Category', 'Wildlife Monitoring & Surveillance']
+    ],
+    features: [
+      'Remote image transmission to mobile devices and email servers',
+      'Ideal for anti-poaching operations and real-time animal activity monitoring',
+      'Remote configuration and status reporting capabilities',
+      'Rugged weather-sealed construction for harsh field environments'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry'],
+    tags: ['Camera Traps', 'Wildlife Tracking']
+  },
+  {
+    slug: 'solar-camera-trap',
+    name: 'Solar Camera Trap',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'SOLAR-POWERED TRAIL CAMERA',
+    summary: 'Self-sustaining camera trap equipped with integrated solar charging for extended remote deployments without frequent battery servicing.',
+    specs: [
+      ['Product Type', 'Solar-Powered Camera Trap'],
+      ['Primary Use', 'Extended-Duration Autonomous Monitoring'],
+      ['Power Solution', 'Integrated Solar Panel & Rechargeable Power System'],
+      ['Application', 'Long-Term Ecological Studies & Remote Field Research'],
+      ['Monitoring Method', 'Continuous Motion-Activated Surveillance'],
+      ['Field Category', 'Wildlife Monitoring & Surveillance']
+    ],
+    features: [
+      'Continuous autonomous operation enabled by solar power harvesting',
+      'Minimizes human disturbance in sensitive habitats by reducing battery-check visits',
+      'All-weather field construction engineered for year-round remote deployment',
+      'Automatic power management for uninterrupted wildlife recording'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry'],
+    tags: ['Camera Traps']
+  },
+
+  // --- Binoculars (Official Vortex Optics) ---
+  {
+    slug: 'vortex-triumph-hd-10x42',
+    name: 'Triumph® HD 10x42',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-triumph-hd-10x42',
+    gallery: ['vortex-triumph-hd-10x42'],
+    label: 'HD FIELD BINOCULARS',
+    summary: 'Entry-level high-definition observation binoculars featuring select glass elements, fully multi-coated lenses, and an ergonomic True Open Hinge design.',
+    specs: [
+      ['Magnification', '10x'],
+      ['Objective Lens Diameter', '42 mm'],
+      ['Linear Field of View', '334 ft / 1000 yds (6.4°)'],
+      ['Eye Relief', '17.0 mm'],
+      ['Close Focus', '15.3 ft'],
+      ['Interpupillary Distance', '55 mm – 75 mm'],
+      ['Weight', '22.9 oz (649 g)'],
+      ['Environmental', 'Waterproof, Fogproof (Nitrogen gas purged), Shockproof']
+    ],
+    features: [
+      'HD Optical System with select glass elements for resolution and color fidelity',
+      'Fully multi-coated lenses with anti-reflective coatings on all air-to-glass surfaces',
+      'True Open Hinge roof prism design for superior ergonomics and reduced fatigue',
+      'Rubber armor provides a secure non-slip grip and durable external protection',
+      'Includes GlassPak binocular harness, comfort neck strap, and protective covers'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'optics'],
+    tags: ['Binoculars', 'Optics & Observation']
+  },
+  {
+    slug: 'vortex-crossfire-hd-10x50',
+    name: 'Crossfire® HD 10x50',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-crossfire-hd-10x50',
+    gallery: ['vortex-crossfire-hd-10x50'],
+    label: 'HD OBSERVATION BINOCULARS',
+    summary: 'Full-sized 50 mm objective binoculars engineered for outstanding low-light observation, high resolution, and wide-angle wildlife reconnaissance.',
+    specs: [
+      ['Magnification', '10x'],
+      ['Objective Lens Diameter', '50 mm'],
+      ['Linear Field of View', '320 ft / 1000 yds (6.1°)'],
+      ['Eye Relief', '17.0 mm'],
+      ['Close Focus', '6.0 ft'],
+      ['Interpupillary Distance', '60 mm – 76 mm'],
+      ['Weight', '30.4 oz (862 g)'],
+      ['Environmental', 'Waterproof, Fogproof (Nitrogen gas purged), Shockproof']
+    ],
+    features: [
+      'Large 50 mm objective lenses collect maximum light for dawn and dusk observation',
+      'HD Optical System optimized for edge-to-edge sharpness and reduced chromatic aberration',
+      'Fully multi-coated optical surfaces for elevated light transmission',
+      'True Open Hinge body with non-slip rubber armor and tripod adapter compatibility',
+      'Includes GlassPak binocular harness case, rainguard, and tethered lens caps'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'optics'],
+    tags: ['Binoculars', 'Optics & Observation']
+  },
+  {
+    slug: 'vortex-diamondback-hd-10x50',
+    name: 'Diamondback® HD 10x50',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-diamondback-hd-10x50',
+    gallery: ['vortex-diamondback-hd-10x50'],
+    label: 'HD HUNTING & OBSERVATION BINOCULARS',
+    summary: 'High-performance field binoculars featuring dielectric prism coatings, ArmorTek scratch resistance, and an argon-purged chassis for demanding field conditions.',
+    specs: [
+      ['Magnification', '10x'],
+      ['Objective Lens Diameter', '50 mm'],
+      ['Linear Field of View', '315 ft / 1000 yds (6.0°)'],
+      ['Eye Relief', '17.0 mm'],
+      ['Close Focus', '6.0 ft'],
+      ['Interpupillary Distance', '60 mm – 75 mm'],
+      ['Weight', '29.6 oz (839 g)'],
+      ['Environmental', 'Waterproof & Fogproof (Argon gas purged), Shockproof']
+    ],
+    features: [
+      'HD Optical System with dielectric multilayer prism coatings for high contrast and brightness',
+      'ArmorTek ultra-hard exterior coating protects lenses from scratches, oil, and dirt',
+      'Phase-corrected roof prisms for enhanced resolution and true color reproduction',
+      'Argon purged and O-ring sealed for dependable fogproof and waterproof performance',
+      'Includes GlassPak binocular chest harness for hands-free field carry'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'optics'],
+    tags: ['Binoculars', 'Optics & Observation']
+  },
+
+  // --- Spotting Scopes (Official Vortex Optics) ---
+  {
+    slug: 'vortex-diamondback-hd-20-60x85',
+    name: 'Diamondback® HD 20-60x85',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-diamondback-hd-20-60x85',
+    gallery: ['vortex-diamondback-hd-20-60x85'],
+    label: 'HD SPOTTING SCOPE',
+    summary: 'Long-range spotting scope equipped with an 85 mm objective lens and smooth helical focus for high-definition wildlife observation across distant horizons.',
+    specs: [
+      ['Magnification', '20-60x'],
+      ['Objective Lens Diameter', '85 mm'],
+      ['Linear Field of View', '108 ft – 60 ft / 1000 yds (2.1° – 1.1°)'],
+      ['Eye Relief', '18.3 mm – 20.3 mm'],
+      ['Close Focus', '24.6 ft'],
+      ['Length', '16.0 in (Angled)'],
+      ['Weight', '60.9 oz (1,726 g)'],
+      ['Mounting', 'Arca-Swiss compatible tripod foot & 1/4"-20 socket'],
+      ['Environmental', 'Waterproof & Fogproof (Argon gas purged), Shockproof']
+    ],
+    features: [
+      'Large 85 mm objective gathers exceptional light in dawn and dusk conditions',
+      'Helical focus wheel delivers smooth snag-free focusing in field situations',
+      'Built-in Arca-Swiss compatible tripod foot mounts directly without extra adapter plates',
+      'ArmorTek coating protects exterior lenses from scratches, dirt, and water droplets',
+      'Argon gas purged and O-ring sealed for extreme weatherproof reliability'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'optics'],
+    tags: ['Spotting Scopes', 'Optics & Observation']
+  },
+  {
+    slug: 'vortex-razor-hd-27-60x85',
+    name: 'Razor® HD 27-60x85',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-razor-hd-27-60x85',
+    gallery: ['vortex-razor-hd-27-60x85'],
+    label: 'PREMIUM HD SPOTTING SCOPE',
+    summary: 'Flagship spotting scope featuring an apochromatic APO optical system, index-matched lenses, and XR Plus coatings for edge-to-edge optical resolution.',
+    specs: [
+      ['Magnification', '27-60x'],
+      ['Objective Lens Diameter', '85 mm'],
+      ['Linear Field of View', '117 ft – 68 ft / 1000 yds (2.2° – 1.3°)'],
+      ['Eye Relief', '16.7 mm – 17.0 mm'],
+      ['Close Focus', '16.4 ft'],
+      ['Length', '15.5 in'],
+      ['Weight', '65.6 oz (1,860 g)'],
+      ['Optical System', 'APO Apochromatic with HD Glass'],
+      ['Environmental', 'Waterproof & Fogproof (Argon gas purged), ArmorTek']
+    ],
+    features: [
+      'APO Apochromatic System corrects chromatic aberration across the visual spectrum',
+      'XR Plus fully multi-coated lenses provide maximum light transmission in low light',
+      'Dielectric prism coatings provide bright, clear, color-accurate viewing',
+      'Directly mounts to Arca-Swiss tripod heads with integrated foot',
+      'Magnesium alloy chassis with rugged protective rubber armor'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'optics'],
+    tags: ['Spotting Scopes', 'Optics & Observation']
+  },
+
+  // --- Monocular (Official Vortex Optics) ---
+  {
+    slug: 'vortex-solo-8x36',
+    name: 'Solo® 8x36',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-solo-8x36',
+    gallery: ['vortex-solo-8x36'],
+    label: 'COMPACT FIELD MONOCULAR',
+    summary: 'Compact 8x36 monocular offering bright views, full weatherproofing, and an integrated utility clip for agile field scouting and wildlife observation.',
+    specs: [
+      ['Magnification', '8x'],
+      ['Objective Lens Diameter', '36 mm'],
+      ['Linear Field of View', '393 ft / 1000 yds (7.5°)'],
+      ['Eye Relief', '18.0 mm'],
+      ['Close Focus', '16.4 ft'],
+      ['Length', '4.9 in (12.4 cm)'],
+      ['Weight', '9.7 oz (275 g)'],
+      ['Optical System', 'Super-Definition (SD) Optical System'],
+      ['Environmental', 'Waterproof & Fogproof (Nitrogen gas purged)']
+    ],
+    features: [
+      'Fully multi-coated lenses deliver bright images and reduced glare',
+      'Integrated multi-position utility clip attaches securely to belts, webbing, or vest',
+      'Generous 18.0 mm eye relief with adjustable twist-up eyecup for eyeglass wearers',
+      'Rubber armor casing delivers a non-slip grip and exterior impact protection',
+      'Nitrogen purged and O-ring sealed for dependable waterproof performance'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'optics'],
+    tags: ['Monoculars', 'Optics & Observation']
+  },
+
+  // --- Laser Rangefinders (Official Vortex Optics) ---
+  {
+    slug: 'vortex-razor-hd-4000-gb',
+    name: 'Razor® HD 4000 GB',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-razor-hd-4000-gb',
+    gallery: ['vortex-razor-hd-4000-gb'],
+    label: 'BALLISTIC LASER RANGEFINDER',
+    summary: 'Extreme-distance 4,000-yard laser rangefinder with an integrated GeoBallistics solver, on-board environmental sensors, and Bluetooth device pairing.',
+    specs: [
+      ['Max Range (Reflective)', 'Up to 4,000 yards'],
+      ['Range (Tree)', 'Up to 2,500 yards'],
+      ['Range (Deer)', 'Up to 2,200 yards'],
+      ['Magnification', '7x'],
+      ['Objective Lens Diameter', '25 mm'],
+      ['Linear Field of View', '341 ft / 1000 yds (6.5°)'],
+      ['Accuracy', '±0.5 yds (<200 yds) / ±1 yd (200–1000 yds) / ±2 yds (>1000 yds)'],
+      ['Ballistic Engine', 'On-board GeoBallistics® Solver'],
+      ['Sensors', 'Built-in Temperature, Pressure, and Humidity Sensors'],
+      ['Weight', '10.1 oz (286 g)']
+    ],
+    features: [
+      'On-board GeoBallistics solver computes real-time wind and elevation corrections',
+      'Internal environmental sensors monitor temperature, barometric pressure, and humidity',
+      'Bluetooth connectivity synchronizes with the GeoBallistics app and Kestrel wind meters',
+      'Four targeting modes: Normal, First, Last, and Extended Laser Range (ELR)',
+      'Rugged magnesium chassis with rubber armor and waterproof construction'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'optics'],
+    tags: ['Laser Rangefinders', 'Optics & Observation']
+  },
+  {
+    slug: 'vortex-triumph-hd-850',
+    name: 'Triumph® HD 850',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-triumph-hd-850',
+    gallery: ['vortex-triumph-hd-850'],
+    label: 'COMPACT LASER RANGEFINDER',
+    summary: 'Lightweight 850-yard laser rangefinder featuring HD glass, angle-compensated Horizontal Component Distance mode, and rapid scan ranging.',
+    specs: [
+      ['Max Range (Reflective)', 'Up to 850 yards'],
+      ['Range (Tree)', 'Up to 500 yards'],
+      ['Range (Deer)', 'Up to 350 yards'],
+      ['Magnification', '5x'],
+      ['Objective Lens Diameter', '21 mm'],
+      ['Accuracy', '±0.5 yds at 100 yards'],
+      ['Ranging Modes', 'HCD (Angle-Compensated) & LOS (Line of Sight)'],
+      ['Target Modes', 'Normal, First, Last'],
+      ['Weight', '4.6 oz (130 g)']
+    ],
+    features: [
+      'Horizontal Component Distance (HCD) mode provides true angle-compensated distance',
+      'Scan feature provides continuous distance readings while panning across terrain',
+      'First and Last targeting modes isolate foreground targets or animals in brush',
+      'HD Optical System with fully multi-coated lenses for crisp target acquisition',
+      'Ultra-lightweight 4.6 oz pocket-sized chassis with waterproof protection'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'optics'],
+    tags: ['Laser Rangefinders', 'Optics & Observation']
+  },
+  {
+    slug: 'vortex-diamondback-hd-2000',
+    name: 'Diamondback® HD 2000',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-diamondback-hd-2000',
+    gallery: ['vortex-diamondback-hd-2000'],
+    label: 'LONG-RANGE LASER RANGEFINDER',
+    summary: 'Versatile 2,000-yard laser rangefinder with red OLED display, 7x magnification, and ArmorTek lens coatings for fast distance acquisition.',
+    specs: [
+      ['Max Range (Reflective)', 'Up to 2,000 yards'],
+      ['Range (Tree)', 'Up to 1,800 yards'],
+      ['Range (Deer)', 'Up to 1,400 yards'],
+      ['Magnification', '7x'],
+      ['Objective Lens Diameter', '24 mm'],
+      ['Linear Field of View', '335 ft / 1000 yds (6.4°)'],
+      ['Display Type', 'High-contrast Red OLED'],
+      ['Accuracy', '±1 yd at 100 yards'],
+      ['Weight', '7.6 oz (215 g)']
+    ],
+    features: [
+      'Rapid laser engine accurately ranges trees out to 1,800 yards and reflective targets to 2,000 yards',
+      'Red OLED display maintains clear visibility in low-light forest and field scenarios',
+      'HCD angle-compensated mode and Line of Sight (LOS) mode with continuous scan',
+      'ArmorTek ultra-hard lens coating resists scratches, rain, and field grime',
+      'Waterproof and shockproof construction with soft-touch rubber armor'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'optics'],
+    tags: ['Laser Rangefinders', 'Optics & Observation']
+  },
+
+  // --- Thermal & Night Observation Products ---
+  {
+    slug: 'seek-thermal-camera',
+    name: 'Seek Thermal Camera',
+    brand: 'Seek Thermal',
+    category: 'thermal',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'THERMAL IMAGING CAMERA',
+    summary: 'Handheld thermal imaging product family engineered for heat signature detection, wildlife tracking, search and rescue, and forest surveillance.',
+    specs: [
+      ['Product Family', 'Seek Thermal Handheld Imaging Series'],
+      ['Manufacturer', 'Seek Thermal'],
+      ['Primary Use', 'Thermal Observation & Heat Signature Detection'],
+      ['Application', 'Wildlife Surveys, Forest Patrol & Search and Rescue'],
+      ['Sensor Type', 'Long-Wave Infrared (LWIR) Thermal Sensor'],
+      ['Field Category', 'Thermal & Night Observation / Forest Surveillance']
+    ],
+    features: [
+      'Detects animal and human thermal signatures in complete darkness, dense brush, and foliage',
+      'Compact handheld form factor suitable for mobile field patrol and scouting',
+      'Provides real-time thermal contrast for ecological research and security monitoring',
+      'Project-specific configuration supported based on operational range requirements'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'thermal'],
+    tags: ['Thermal & Night Observation', 'Thermal Cameras', 'Infrared Observation']
+  },
+  {
+    slug: 'hikmicro-habrok-multi-spectrum-binocular',
+    name: 'HIKMICRO HABROK Multi-Spectrum Binocular',
+    brand: 'HIKMICRO',
+    category: 'thermal',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'MULTI-SPECTRUM BINOCULARS',
+    summary: 'All-in-one multi-spectrum binocular series integrating thermal imaging, digital day and night cameras, and laser rangefinding for 24/7 wildlife observation.',
+    specs: [
+      ['Product Family', 'HIKMICRO HABROK Multi-Spectrum Series'],
+      ['Manufacturer', 'HIKMICRO'],
+      ['Imaging Technology', 'Multi-Spectrum (Thermal + Digital Daytime & Night Vision)'],
+      ['Primary Use', '24/7 Wildlife Observation & Field Surveillance'],
+      ['Integrated Tools', 'Thermal Sensor, Optical Camera & Laser Rangefinder'],
+      ['Application', 'Wildlife Census, Anti-Poaching Patrol & Habitat Research']
+    ],
+    features: [
+      'Combines high-sensitivity thermal detector with high-resolution digital optical camera',
+      'Integrated laser rangefinder delivers rapid distance measurement to observed subjects',
+      'Traditional binocular form factor delivers comfortable two-eye viewing over long vigils',
+      'Built-in infrared illuminator and smart digital processing for total darkness monitoring',
+      'Supports HIKMICRO Sight app for field recording, streaming, and firmware updates'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'thermal', 'optics'],
+    tags: ['Thermal & Night Observation', 'Thermal Binoculars', 'Infrared Observation', 'Binoculars']
+  },
+
+  // --- Bioacoustics & Acoustic Monitoring Products ---
+  {
+    slug: 'song-meter-micro-2',
+    name: 'Song Meter Micro 2',
+    brand: 'Wildlife Acoustics',
+    category: 'forestry',
+    image: 'song-meter-micro-2',
+    gallery: ['song-meter-micro-2'],
+    label: 'AUTONOMOUS ACOUSTIC RECORDER',
+    summary: 'Compact, weatherproof passive acoustic recording unit designed for autonomous long-term audio monitoring of birds, amphibians, and terrestrial wildlife.',
+    specs: [
+      ['Microphone', 'Built-in omnidirectional acoustic microphone'],
+      ['Audio Format', 'Single-channel 16-bit PCM (.WAV)'],
+      ['Sample Rates', '8, 12, 16, 22.05, 24, 32, 44.1, 48, 96, 192, 256 kHz'],
+      ['Battery Life', 'Up to 280 hours recording (4 AA alkaline batteries)'],
+      ['Storage Capacity', '1 microSD card slot (supports up to 2 TB)'],
+      ['Weather Rating', 'IP67 waterproof and weatherproof enclosure'],
+      ['Dimensions', '4.0 in × 2.8 in × 1.4 in (102 mm × 71 mm × 35 mm)'],
+      ['Weight', '0.26 lb / 118 g (without batteries)'],
+      ['Configuration', 'Wireless Bluetooth via Song Meter Configurator App (iOS/Android)']
+    ],
+    features: [
+      'Autonomous scheduled recording for bioacoustic surveys of birds, frogs, and mammals',
+      'Rugged IP67 weatherproof polycarbonate housing requires no secondary protective case',
+      'Wireless Bluetooth configuration via free iOS and Android mobile applications',
+      'Up to 280 hours of recording time powered by four standard AA batteries',
+      'Full software compatibility with Wildlife Acoustics Kaleidoscope Pro analysis suite'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry'],
+    tags: ['Bioacoustics & Acoustic Monitoring', 'Autonomous Recording Units', 'Acoustic Recorders']
+  },
+  {
+    slug: 'wildlife-microphone',
+    name: 'Wildlife Microphone',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'ACOUSTIC FIELD MICROPHONE',
+    summary: 'Field-grade directional and omnidirectional microphone designed for recording wildlife vocalizations and environmental soundscapes.',
+    specs: [
+      ['Product Type', 'Wildlife Field Microphone'],
+      ['Primary Use', 'Bioacoustic Field Recording & Vocalization Capture'],
+      ['Application', 'Birdsong, Mammal & Amphibian Acoustic Monitoring'],
+      ['Frequency Response', 'Audible Spectrum Sound Capture'],
+      ['Field Category', 'Bioacoustics & Acoustic Monitoring']
+    ],
+    features: [
+      'Low-noise acoustic element tailored for capturing faint animal calls in the wild',
+      'Weather-resistant outdoor construction for wet field and canopy environments',
+      'Compatible with standard field recorders and autonomous recording units',
+      'Includes wind-noise dampening foam shield for blustery outdoor conditions'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry'],
+    tags: ['Bioacoustics & Acoustic Monitoring', 'Acoustic Recorders']
+  },
+  {
+    slug: 'ultrasonic-wildlife-detector',
+    name: 'Ultrasonic Wildlife Detector',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'ULTRASONIC FIELD DETECTOR',
+    summary: 'Broadband ultrasonic detection system designed to monitor, detect, and record high-frequency echolocation calls and insect bioacoustics.',
+    specs: [
+      ['Product Type', 'Ultrasonic Wildlife Detector'],
+      ['Primary Use', 'Ultrasonic Echolocation & Insect Bioacoustics'],
+      ['Detection Range', 'Ultrasonic Acoustic Frequencies'],
+      ['Application', 'Chiroptera Surveys & High-Frequency Wildlife Research'],
+      ['Field Category', 'Bioacoustics & Acoustic Monitoring']
+    ],
+    features: [
+      'Broadband frequency detection engineered for high-frequency animal vocalizations',
+      'Real-time frequency division and heterodyne listening capabilities',
+      'Field-portable design suitable for nighttime transects and stationary logging',
+      'Output formats compatible with standard bioacoustic sound analysis software'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry'],
+    tags: ['Bioacoustics & Acoustic Monitoring', 'Autonomous Recording Units', 'Acoustic Recorders']
+  },
+  {
+    slug: 'bat-detector',
+    name: 'Bat Detector',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'FIELD BAT DETECTOR',
+    summary: 'Handheld and static bat detection instrument for identifying bat species by converting inaudible ultrasonic echolocation calls into audible sound.',
+    specs: [
+      ['Product Type', 'Electronic Bat Detector'],
+      ['Primary Use', 'Bat Echolocation Monitoring & Species Identification'],
+      ['Audio Conversion', 'Heterodyne / Frequency Division Audio Output'],
+      ['Application', 'Nocturnal Biodiversity Surveys & Forest Roost Studies'],
+      ['Field Category', 'Bioacoustics & Acoustic Monitoring']
+    ],
+    features: [
+      'Converts high-frequency bat echolocation pulses into audible acoustic signals',
+      'Adjustable tuning frequency for discriminating between sympatric bat species',
+      'Headphone output and auxiliary recording jack for simultaneous audio logging',
+      'Compact lightweight format designed for nighttime forest bat inventory'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry'],
+    tags: ['Bioacoustics & Acoustic Monitoring', 'Acoustic Recorders']
+  },
+  {
+    slug: 'acoustic-sensor',
+    name: 'Acoustic Sensor',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'FIELD ACOUSTIC SENSOR',
+    summary: 'Continuous acoustic sensing node engineered for habitat noise monitoring, gun-shot detection, chainsaw monitoring, and forest health auditing.',
+    specs: [
+      ['Product Type', 'Autonomous Acoustic Sensing Node'],
+      ['Primary Use', 'Eco-Acoustic Monitoring & Threat Detection'],
+      ['Application', 'Chainsaw / Gunshot Detection & Soundscape Analysis'],
+      ['Monitoring Mode', 'Continuous Environmental Acoustic Sensing'],
+      ['Field Category', 'Bioacoustics & Acoustic Monitoring']
+    ],
+    features: [
+      'Continuous acoustic environmental sampling for passive ecological monitoring',
+      'Capable of detecting anomalous forest noises including illegal logging and gunshots',
+      'Low-power consumption engineered for multi-week field deployment',
+      'Weather-sealed enclosure resistant to humidity, rain, and temperature swings'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry'],
+    tags: ['Bioacoustics & Acoustic Monitoring', 'Autonomous Recording Units']
+  },
+
+  // --- Wildlife Tracking (GPS Collars) ---
+  {
+    slug: 'gps-wildlife-tracking-collar',
+    name: 'GPS Wildlife Tracking Collar',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'WILDLIFE TELEMETRY COLLAR',
+    summary: 'Animal-borne GPS telemetry collar designed for spatial tracking, home-range mapping, and movement ecology research in terrestrial wildlife.',
+    specs: [
+      ['Product Type', 'GPS Wildlife Telemetry Collar'],
+      ['Primary Use', 'Animal Tracking & Movement Ecology Research'],
+      ['Positioning Method', 'Satellite-Based GPS Positioning'],
+      ['Application', 'Terrestrial Mammal Migration & Territory Mapping'],
+      ['Field Category', 'Wildlife Tracking & Telemetry']
+    ],
+    features: [
+      'Satellite-based position logging for spatial movement and home-range analysis',
+      'Durable weather-resistant collar strap designed for wild animal deployment',
+      'Activity sensor for behavioral state recording and mortality monitoring',
+      'Configured to operational study specifications based on target species requirements'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'navigation'],
+    tags: ['Wildlife Tracking', 'GPS Wildlife Collars']
+  },
+
   // =========================================================================
   // GEOLOGICAL PRODUCTS CATALOGUE
   // =========================================================================
@@ -2907,6 +3550,8 @@ export const brandDescriptions: Record<string,string> = {
   'Staedtler':'Renowned drafting, mapping, and indelible pigment liner pens designed for professional accuracy.',
   'Faithfull':'Dependable precision scribers, marking instruments, and trades tools for demanding field use.',
   'LifeStraw':'Advanced membrane microfiltration systems providing safe drinking water in remote field and expedition environments.',
+  'Wildlife Acoustics':'Pioneering autonomous bioacoustic and ultrasonic monitoring systems designed for wildlife ecological research.',
+  'Seek Thermal':'High-performance infrared thermal imaging sensors and handheld cameras for field observation and surveillance.',
 };
 
 export const finderOptions: Record<string, Record<string, string[]>> = {
@@ -2914,7 +3559,7 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
     'Forest Measurement': ['diameter-tape-dbh-tape', 'digital-tree-caliper', 'clinometer', 'hypsometer', 'laser-rangefinder'],
     'Mapping & Navigation': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'garmin-gpsmap-65s', 'professional-gnss-receiver', 'rtk-dgps', 'laser-rangefinder'],
     'Fire Suppression': ['backpack-fire-pump', 'portable-fire-pump', 'pulaski-forestry-axe', 'drip-torch', 'fire-weather-meter'],
-    'Wildlife monitoring': ['browning-strike-force-pro-dcl', 'audiomoth'],
+    'Wildlife monitoring': ['browning-strike-force-pro-dcl', 'audiomoth', 'song-meter-micro-2', 'vortex-triumph-hd-10x42', 'ir-camera-trap', 'gps-wildlife-tracking-collar'],
     'Night observation': ['hikmicro-lynx-lh25', 'minox-nvd-650'],
   },
   'Surveying & Mapping': {

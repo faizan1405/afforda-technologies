@@ -176,7 +176,7 @@ export function matchProductBrand(product: Product, brandFilter: string): boolea
   const name = product.name.toLowerCase();
 
   if (filter === 'audiomoth' || filter.includes('wildlife acoustics') || filter.includes('audiomoth')) {
-    return pb === 'open acoustic devices' || slug.includes('audiomoth') || name.includes('audiomoth');
+    return pb === 'open acoustic devices' || pb.includes('wildlife acoustics') || slug.includes('audiomoth') || name.includes('audiomoth') || slug.includes('song-meter');
   }
   if (filter.includes('panasonic') || filter.includes('toughbook')) {
     return pb.includes('panasonic') || name.includes('toughbook');

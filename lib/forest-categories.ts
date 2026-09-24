@@ -32,6 +32,14 @@ export const forestSubcategories: ForestSubcategory[] = [
     description: 'Wildfire suppression pumps, Pulaski axes, McLeod tools, drip torches, fire shelters and weather kits.',
     image: '/images/thermal.webp',
   },
+  {
+    id: 'wildlife-monitoring-surveillance',
+    name: 'Wildlife Monitoring & Surveillance',
+    slug: 'wildlife-monitoring-surveillance',
+    code: 'SUB / 04',
+    description: 'Wildlife monitoring, observation, acoustic recording, thermal imaging, tracking and surveillance products for ecological research, forest patrol and field studies.',
+    image: '/images/optics.webp',
+  },
 ];
 
 export const forestTagsBySubcategory: Record<string, string[]> = {
@@ -55,5 +63,16 @@ export const forestTagsBySubcategory: Record<string, string[]> = {
     'Pulaski Axes & Fire Hand Tools',
     'Drip Torches & Ignition',
     'Fire Weather & Safety',
+  ],
+  'wildlife-monitoring-surveillance': [
+    'Camera Traps',
+    'Binoculars',
+    'Spotting Scopes',
+    'Monoculars',
+    'Laser Rangefinders',
+    'Thermal & Night Observation',
+    'Bioacoustics & Acoustic Monitoring',
+    'Wildlife Tracking',
+    'Infrared Observation',
   ],
 };

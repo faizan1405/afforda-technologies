@@ -1,10 +1,10 @@
 'use client';
 import { useState } from 'react';
-import { ArrowUpRight, Trees, Navigation, Flame, ArrowLeft } from 'lucide-react';
+import { ArrowUpRight, Trees, Navigation, Flame, ArrowLeft, Binoculars } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
 import { forestSubcategories } from '@/lib/forest-categories';
 
-const subcategoryIcons = [Trees, Navigation, Flame];
+const subcategoryIcons = [Trees, Navigation, Flame, Binoculars];
 
 export default function ForestWildlifeCategory() {
   const [quote, setQuote] = useState(false);
@@ -41,10 +41,10 @@ export default function ForestWildlifeCategory() {
             <h2>CHOOSE YOUR<br/><span>PRODUCTS.</span></h2>
           </div>
           <div className="section-intro">
-            <p>Explore our 3 dedicated forest and wildlife sectors.<br/>Select a subcategory to browse products and equipment options.</p>
+            <p>Explore our {forestSubcategories.length} dedicated forest and wildlife sectors.<br/>Select a subcategory to browse products and equipment options.</p>
           </div>
         </div>
-        <div className="mission-grid">
+        <div className="mission-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))' }}>
           {forestSubcategories.map((sub, index) => {
             const Icon = subcategoryIcons[index % subcategoryIcons.length];
             const bgImage = sub.image || '/images/forest.webp';
