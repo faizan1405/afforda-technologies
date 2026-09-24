@@ -51,9 +51,20 @@ export const products: Product[] = [
     image: 'diameter-tape-dbh-tape',
     gallery: ['diameter-tape-dbh-tape'],
     label: 'FORESTRY MEASUREMENT',
-    summary: 'Specialized measuring tape for tree diameter and circumference measurements in forestry applications.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Direct reading scale for tree diameter measurement', 'Built for field use in forest inventory', 'Suitable for timber cruising and forestry applications'],
+    summary: 'Forestry measuring tape designed for quick measurement of tree diameter and circumference during forest inventory and field surveys.',
+    specs: [
+      ['Product Type', 'Forestry Diameter Tape'],
+      ['Primary Use', 'Tree Diameter / DBH Measurement'],
+      ['Measurement Application', 'Diameter & Circumference'],
+      ['Field Application', 'Forest Inventory & Stand Cruising'],
+      ['Format', 'Portable Measuring Tape']
+    ],
+    features: [
+      'Direct-reading diameter at breast height (DBH) scale',
+      'Dual graduations for tree diameter and circumference',
+      'Flexible durable blade suitable for rough tree bark',
+      'Compact and portable design for daily forest inventory'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -67,9 +78,21 @@ export const products: Product[] = [
     image: 'digital-tree-caliper',
     gallery: ['digital-tree-caliper'],
     label: 'FORESTRY CALIPER',
-    summary: 'Electronic caliper for measuring tree diameters and log dimensions in forest inventory.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Digital display for reading diameter measurements', 'Designed for timber cruising and forest inventory', 'Suitable for outdoor field conditions'],
+    summary: 'Electronic forestry caliper designed for measuring tree stem diameters and timber logs with rapid digital readout during forest inventory.',
+    specs: [
+      ['Product Type', 'Electronic Tree Caliper'],
+      ['Primary Use', 'Tree Diameter Measurement'],
+      ['Display Type', 'Digital LCD Screen'],
+      ['Measurement Application', 'Stem Diameter & Log Scaling'],
+      ['Field Application', 'Forest Mensuration & Inventory'],
+      ['Operation', 'Electronic Sliding Caliper']
+    ],
+    features: [
+      'Digital display for rapid and clear diameter readings',
+      'Sliding beam caliper mechanism for standing trees and logs',
+      'Designed for timber cruising and forest mensuration',
+      'Lightweight field-ready construction for outdoor inventory'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -83,9 +106,21 @@ export const products: Product[] = [
     image: 'wheeler-caliper',
     gallery: ['wheeler-caliper'],
     label: 'OPTICAL DENDROMETER',
-    summary: 'Optical dendrometer instrument for measuring upper-stem tree diameters from the ground.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Measures upper-stem diameters without climbing', 'Optical sighting scale for standing trees', 'Compact instrument designed for field forestry'],
+    summary: 'Optical dendrometer instrument designed for measuring upper-stem diameters of standing trees from the ground without climbing.',
+    specs: [
+      ['Product Type', 'Optical Dendrometer'],
+      ['Primary Use', 'Upper-Stem Diameter Measurement'],
+      ['Measurement Method', 'Ground-Based Optical Sighting'],
+      ['Application', 'Standing Tree Volume Estimation'],
+      ['Field Application', 'Forest Mensuration & Research'],
+      ['Format', 'Handheld Optical Instrument']
+    ],
+    features: [
+      'Measures upper-stem diameters directly from ground level',
+      'Pentaprism optical sighting system for standing timber',
+      'Eliminates need for tree climbing during stem analysis',
+      'Supports tree volume estimation and upper-log assessment'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -99,9 +134,21 @@ export const products: Product[] = [
     image: 'tree-height-meter',
     gallery: ['tree-height-meter'],
     label: 'HEIGHT MEASUREMENT',
-    summary: 'Field instrument for measuring tree heights and vertical angles in forest stands.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Designed for tree height determination in forest stands', 'Compact handheld unit for field use', 'Aids in forest inventory and mensuration'],
+    summary: 'Specialized forestry sighting instrument designed for calculating tree heights and vertical elevations in forest inventory and stand management.',
+    specs: [
+      ['Product Type', 'Forestry Height Meter'],
+      ['Primary Use', 'Tree Height & Vertical Elevation'],
+      ['Measurement Method', 'Optical Trigonometric Sighting'],
+      ['Application', 'Timber Volume & Stand Profiling'],
+      ['Field Application', 'Forest Inventory & Cruising'],
+      ['Format', 'Handheld Sighting Tool']
+    ],
+    features: [
+      'Direct sighting scale for vertical angle and tree height',
+      'Calculates standing tree heights from measured baseline distances',
+      'Compact handheld form factor for all-day field cruising',
+      'Aids in timber volume estimation and stand profiling'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -115,9 +162,21 @@ export const products: Product[] = [
     image: 'clinometer',
     gallery: ['clinometer'],
     label: 'SLOPE & HEIGHT SIGHTING',
-    summary: 'Handheld instrument for measuring angles of slope, elevation, and tree heights.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Measures vertical angles and degrees of slope', 'Optical sighting for field readings', 'Compact handheld design for foresters and surveyors'],
+    summary: 'Handheld optical instrument designed for measuring slope angles, vertical gradients, and elevations during forestry surveying and trail layout.',
+    specs: [
+      ['Product Type', 'Handheld Clinometer'],
+      ['Primary Use', 'Slope & Gradient Measurement'],
+      ['Measurement Type', 'Angular Degrees & Percentage Slope'],
+      ['Application', 'Topographic & Forestry Sighting'],
+      ['Field Application', 'Trail Layout & Stand Cruising'],
+      ['Operation', 'Optical Direct Sighting']
+    ],
+    features: [
+      'Measures terrain slope angles and vertical gradients',
+      'Supports height calculations from known baseline distances',
+      'Damped scale movement for quick and stable sighting readings',
+      'Rugged pocket-sized housing for forestry timber surveys'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -131,9 +190,21 @@ export const products: Product[] = [
     image: 'hypsometer',
     gallery: ['hypsometer'],
     label: 'FORESTRY HYPSOMETER',
-    summary: 'Forestry instrument used for measuring tree heights and elevations.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Calculates tree heights and inclination', 'Designed for field mensuration and stand evaluation', 'Portable format for timber cruisers'],
+    summary: 'Precision forestry instrument designed for measuring standing tree heights, slope inclinations, and canopy levels during timber cruising.',
+    specs: [
+      ['Product Type', 'Forestry Hypsometer'],
+      ['Primary Use', 'Standing Tree Height Measurement'],
+      ['Measurement Application', 'Tree Height & Canopy Levels'],
+      ['Target Environment', 'Forest Stands & Woodlands'],
+      ['Field Application', 'Timber Cruising & Mensuration'],
+      ['Format', 'Handheld Field Instrument']
+    ],
+    features: [
+      'Calculates tree heights using distance and inclination angles',
+      'Supports multi-point height and canopy layer measurements',
+      'Streamlines standing timber volume inventory and stand profiling',
+      'Compact handheld unit suited for dense woodland terrain'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -147,9 +218,21 @@ export const products: Product[] = [
     image: 'relaskop',
     gallery: ['relaskop'],
     label: 'STAND CRUISE INSTRUMENT',
-    summary: 'Optical instrument for forest inventory, basal area estimation, and tree measurement.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Multi-functional optical device for forest inventory', 'Used for basal area estimation and tree measurement', 'Field instrument for professional foresters'],
+    summary: 'Specialized optical point-sampling instrument designed for estimating forest basal area, tree height, and stand volume without fixed plot boundaries.',
+    specs: [
+      ['Product Type', 'Optical Relascope Instrument'],
+      ['Primary Use', 'Basal Area & Stand Volume Estimation'],
+      ['Measurement Method', 'Bitterlich Point Sampling'],
+      ['Slope Compensation', 'Internal Automatic Scale Correction'],
+      ['Field Application', 'Forest Mensuration & Stand Cruising'],
+      ['Format', 'Precision Optical Instrument']
+    ],
+    features: [
+      'Variable radius plot sampling per Bitterlich relascope method',
+      'Automatic slope angle correction for basal area estimation',
+      'Measures upper-stem tree diameters and tree heights',
+      'Suitable for professional forest inventory and stand cruising'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -163,9 +246,21 @@ export const products: Product[] = [
     image: 'wedge-prism',
     gallery: ['wedge-prism'],
     label: 'VARIABLE RADIUS CRUISING',
-    summary: 'Optical prism used for variable radius plot sampling and basal area estimation.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Used for point sampling and stand basal area determination', 'Compact optical tool for pocket carry', 'Essential tool for timber cruisers'],
+    summary: 'Precision optical glass prism used in forest inventory for variable-radius plot sampling and rapid basal area factor determination.',
+    specs: [
+      ['Product Type', 'Forestry Optical Wedge Prism'],
+      ['Primary Use', 'Variable-Radius Plot Sampling'],
+      ['Measurement Application', 'Basal Area Factor (BAF) Tally'],
+      ['Optical Principle', 'Refractive Image Displacement'],
+      ['Field Application', 'Forest Stand Cruising'],
+      ['Format', 'Compact Optical Prism']
+    ],
+    features: [
+      'Optical light refraction for tree tallying in point sampling',
+      'Facilitates rapid basal area calculation without measuring tape',
+      'Precision ground optical glass for clear displacement sighting',
+      'Compact pocket-sized tool essential for timber cruising kits'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -179,9 +274,21 @@ export const products: Product[] = [
     image: 'densiometer',
     gallery: ['densiometer'],
     label: 'CANOPY COVER ESTIMATION',
-    summary: 'Field instrument for estimating forest canopy cover and overstory density.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Estimates forest overstory coverage and canopy density', 'Handheld instrument for ecological and forestry surveys', 'Protective case for field transport'],
+    summary: 'Forestry canopy instrument designed for estimating overstory forest canopy cover and solar exposure during ecological and wildlife habitat studies.',
+    specs: [
+      ['Product Type', 'Spherical Densiometer'],
+      ['Primary Use', 'Forest Canopy Cover Estimation'],
+      ['Measurement Type', 'Canopy Density & Overstory Closure'],
+      ['Application', 'Ecological Surveys & Habitat Monitoring'],
+      ['Field Application', 'Forestry & Watershed Assessment'],
+      ['Format', 'Handheld Sighting Mirror']
+    ],
+    features: [
+      'Reflective grid mirror for forest canopy density estimation',
+      'Supports forest light penetration and cover monitoring',
+      'Assists wildlife habitat and stream buffer evaluations',
+      'Pocket-sized field instrument with protective closure'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -195,9 +302,21 @@ export const products: Product[] = [
     image: 'bark-gauge',
     gallery: ['bark-gauge'],
     label: 'BARK THICKNESS GAUGE',
-    summary: 'Specialized hand tool for measuring tree bark thickness in forestry studies.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Direct penetration measurement for bark depth', 'Aids in wood volume and growth calculation', 'Durable hand tool for field foresters'],
+    summary: 'Specialized forestry hand tool designed for measuring the thickness of tree bark to determine wood volume under bark.',
+    specs: [
+      ['Product Type', 'Forestry Bark Thickness Gauge'],
+      ['Primary Use', 'Tree Bark Thickness Measurement'],
+      ['Measurement Application', 'Wood Volume Under Bark (DUB)'],
+      ['Application', 'Forest Inventory & Growth Assessment'],
+      ['Field Application', 'Timber Scaling & Forestry Studies'],
+      ['Operation', 'Manual Penetration Gauge']
+    ],
+    features: [
+      'Graduated shaft penetrates bark to indicate thickness',
+      'Aids in accurate timber volume calculations under bark',
+      'Helps assess bark thickness for tree health and fire vulnerability',
+      'Durable hand tool with comfortable wood or composite handle'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -211,9 +330,21 @@ export const products: Product[] = [
     image: 'increment-borer',
     gallery: ['increment-borer'],
     label: 'TREE CORE SAMPLER',
-    summary: 'Specialized forestry tool for extracting wood core samples to assess tree growth and age.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Extracts core samples without felling the tree', 'Used for dendrochronology, growth, and sound wood assessment', 'Includes coring auger and extractor'],
+    summary: 'Precision core sampling tool designed for extracting clean wood cores from living trees to evaluate annual rings, age, and growth rates.',
+    specs: [
+      ['Product Type', 'Tree Core Increment Borer'],
+      ['Primary Use', 'Tree Age & Growth Rate Sampling'],
+      ['Sampling Application', 'Wood Core Extraction & Ring Analysis'],
+      ['Field Application', 'Dendrochronology & Forest Ecology'],
+      ['Tool Components', 'Hollow Auger Bit, Extractor & Handle'],
+      ['Operation', 'Manual Hand Corer']
+    ],
+    features: [
+      'Extracts wood cores with minimal damage to living trees',
+      'Allows counting of annual growth rings for age determination',
+      'Assists in dendrochronology, wood decay, and health inspection',
+      'Includes hollow threaded auger bit, extractor spoon, and handle'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -227,9 +358,21 @@ export const products: Product[] = [
     image: 'tally-counter',
     gallery: ['tally-counter'],
     label: 'FIELD COUNTING TOOL',
-    summary: 'Handheld counter for timber cruising, stem counting, and field inventory work.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Pushbutton increment counting', 'Reset knob for clearing counts', 'Compact handheld design with finger ring'],
+    summary: 'Handheld mechanical tally counter designed for tracking stem counts, wildlife sightings, seed numbers, and inventory units in outdoor environments.',
+    specs: [
+      ['Product Type', 'Handheld Tally Counter'],
+      ['Primary Use', 'Field Counting & Unit Tracking'],
+      ['Operation', 'Manual Mechanical Push-Button'],
+      ['Reset Mechanism', 'Rotary Quick-Reset Knob'],
+      ['Field Application', 'Timber Cruising, Wildlife & Plant Census'],
+      ['Power Requirement', 'None (Mechanical Operation)']
+    ],
+    features: [
+      'Push-button mechanical click mechanism for incremental counting',
+      'Instant reset knob to return counter to zero',
+      'Comfortable finger ring for secure handling during cruising',
+      'Operates reliably without batteries in all weather conditions'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -243,9 +386,21 @@ export const products: Product[] = [
     image: 'loggers-tape',
     gallery: ['loggers-tape'],
     label: 'TIMBER & LOG MEASURING',
-    summary: 'Retractable measuring tape designed for log scaling and forestry field measurements.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Spring-rewind mechanism for field operation', 'Designed for log scaling and timber cruising', 'Belt clip for convenient field carry'],
+    summary: 'Heavy-duty retractable measuring tape designed for measuring log lengths and tree diameters during timber scaling and logging operations.',
+    specs: [
+      ['Product Type', 'Logger’s Retractable Measuring Tape'],
+      ['Primary Use', 'Log Length & Timber Diameter Measurement'],
+      ['Measurement Application', 'Log Scaling & Bucking'],
+      ['Retraction Mechanism', 'Automatic Spring Rewind'],
+      ['Field Application', 'Timber Harvesting & Forestry Scaling'],
+      ['Format', 'Belt-Mountable Heavy-Duty Reel']
+    ],
+    features: [
+      'Spring-rewind mechanism for quick blade retraction in brush',
+      'Equipped with release hook or horseshoe nail for log ends',
+      'Graduated for direct measurement of lengths and tree diameters',
+      'Rugged casing engineered for rough timber harvesting environments'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -259,9 +414,21 @@ export const products: Product[] = [
     image: 'measuring-tape',
     gallery: ['measuring-tape'],
     label: 'LONG REEL TAPE',
-    summary: 'Field measuring tape for layout, plot establishment, and distance measurement.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Reel tape designed for forestry plot layout and transects', 'Manual rewind handle for quick retrieval', 'Durable housing for field survey work'],
+    summary: 'Long-length field measuring tape designed for survey layout, plot boundary establishment, transect lines, and distance measurement across rugged ground.',
+    specs: [
+      ['Product Type', 'Long Reel Measuring Tape'],
+      ['Primary Use', 'Field Distance Measurement'],
+      ['Measurement Application', 'Sample Plot Layout & Transect Lines'],
+      ['Retraction Type', 'Manual Folding Rewind Handle'],
+      ['Field Application', 'Forest Inventory & Survey Layout'],
+      ['Format', 'Portable Reel Tape']
+    ],
+    features: [
+      'Open-reel or closed-casing design for distance layout',
+      'Dual metric and imperial measurement graduations',
+      'Non-conductive flexible blade resists moisture and stretching',
+      'Folding rewind crank for smooth tape retrieval in the field'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
@@ -275,9 +442,21 @@ export const products: Product[] = [
     image: 'laser-rangefinder',
     gallery: ['laser-rangefinder'],
     label: 'DISTANCE & HEIGHT MEASUREMENT',
-    summary: 'Handheld rangefinder for measuring distances and heights in forestry and field surveying.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Measures line-of-sight distance and height angles', 'Handheld design for field mobility', 'Suitable for plot layout and forest survey work'],
+    summary: 'Compact electro-optical rangefinder designed for rapid distance and height measurements across woodland terrain, open fields, and survey plots.',
+    specs: [
+      ['Product Type', 'Handheld Laser Rangefinder'],
+      ['Primary Use', 'Distance & Height Measurement'],
+      ['Measurement Technology', 'Electro-Optical Laser Ranging'],
+      ['Application', 'Plot Boundary & Tree Height Layout'],
+      ['Field Application', 'Forestry Mensuration & Surveying'],
+      ['Format', 'Monocular Handheld Unit']
+    ],
+    features: [
+      'Rapid optical laser distance measurement to field targets',
+      'Supports vertical angle and horizontal distance calculation',
+      'Aids in establishing plot radii and measuring tree heights',
+      'Handheld ergonomic body with weather-resistant sealing'
+    ],
     page: 1,
     subcategories: ['forest-measurement-inventory', 'gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -295,9 +474,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'GNSS SURVEY RECEIVER',
-    summary: 'Field GNSS receiver for mapping, surveying, and position data collection.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Collects geospatial positioning data in the field', 'Designed for mapping and field survey workflows', 'Compatible with survey rods and field controllers'],
+    summary: 'High-precision multi-constellation GNSS receiver designed for geodetic surveying, topographic mapping, and reliable precision field positioning operations.',
+    specs: [
+      ['Product Type', 'Survey GNSS Receiver'],
+      ['Primary Use', 'Geodetic Surveying & Precision Mapping'],
+      ['Positioning Mode', 'Base, Rover & Static Operations'],
+      ['Constellation Support', 'Multi-Constellation GNSS'],
+      ['Field Application', 'Cadastral, Topographic & Boundary Surveys'],
+      ['Housing Rating', 'Rugged Field Enclosure']
+    ],
+    features: [
+      'Multi-constellation satellite tracking for field positioning',
+      'Designed for base and rover survey workflows',
+      'Rugged weatherproof housing for harsh environmental conditions',
+      'Integrates with survey controllers and mapping software'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -311,9 +502,20 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'RTK POSITIONING SYSTEM',
-    summary: 'Differential positioning system for high-accuracy surveying and mapping applications.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Designed for boundary mapping and control points', 'Supports real-time differential corrections', 'Configuration details confirmed upon inquiry'],
+    summary: 'High-accuracy satellite positioning system used for professional surveying, boundary mapping, and precise field data collection.',
+    specs: [
+      ['System Type', 'GNSS RTK / DGPS'],
+      ['Primary Use', 'Precision Positioning'],
+      ['Application', 'Surveying & Mapping'],
+      ['Typical Configuration', 'Base + Rover'],
+      ['Field Workflow', 'Real-Time Positioning']
+    ],
+    features: [
+      'RTK / DGPS positioning workflow',
+      'Suitable for professional surveying',
+      'Supports base and rover operation',
+      'Designed for high-accuracy mapping'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -327,9 +529,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'SUB-METER MAPPING GPS',
-    summary: 'Handheld GPS unit for field mapping, asset location, and GIS data collection.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Handheld unit for GIS data collection and field mapping', 'Designed for utility and forestry asset location', 'Built for outdoor operating environments'],
+    summary: 'Field-ready handheld GNSS mapping receiver designed for GIS data collection, asset management, and environmental resource surveys requiring sub-meter precision.',
+    specs: [
+      ['Product Type', 'GIS Mapping GPS Receiver'],
+      ['Primary Use', 'Sub-Meter Field Mapping & Asset Logging'],
+      ['Differential Support', 'SBAS / DGPS Differential Processing'],
+      ['Application', 'Natural Resources & Utility Inventory'],
+      ['Field Workflow', 'GIS Data Collection & Waypoint Logging'],
+      ['Format', 'Rugged Handheld Field Unit']
+    ],
+    features: [
+      'Optimized for GIS asset mapping and utility inventory',
+      'Differential correction support for sub-meter mapping workflows',
+      'Integrated antenna and sunlight-readable display interface',
+      'Rugged drop-resistant casing built for all-weather fieldwork'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -343,9 +557,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'HIGH-PRECISION GNSS',
-    summary: 'High-precision GNSS positioning equipment for surveying and geodetic measurements.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Geodetic survey receiver for high-precision mapping', 'Suitable for boundary and engineering surveys', 'Configuration details confirmed upon inquiry'],
+    summary: 'Geodetic-grade satellite positioning system designed for boundary surveying, geodetic control networks, and engineering applications demanding centimeter-to-millimeter precision.',
+    specs: [
+      ['Product Type', 'High-Precision Geodetic GNSS'],
+      ['Primary Use', 'Control Surveys & Geodetic Measurement'],
+      ['Workflow Modes', 'Real-Time Kinematic (RTK) & Static'],
+      ['Application', 'Boundary, Cadastral & Engineering Layout'],
+      ['Mounting Compatibility', 'Survey Tribrach & Range Pole'],
+      ['Field Enclosure', 'Weatherproof Geodetic Housing']
+    ],
+    features: [
+      'Geodetic survey positioning for engineering control points',
+      'Supports static post-processing and real-time kinematic modes',
+      'Multi-frequency signal tracking for robust multipath mitigation',
+      'Compatible with precision survey tripods and tribrachs'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -359,9 +585,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'SURVEY FIELD CONTROLLER',
-    summary: 'Field data controller for logging measurements and managing geospatial survey data.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Handheld unit for logging field survey observations', 'Designed for pairing with GNSS receivers and total stations', 'Rugged housing with touchscreen and keypad input'],
+    summary: 'Rugged handheld field controller designed for logging survey observations, managing coordinate databases, and operating GNSS and total station instruments.',
+    specs: [
+      ['Product Type', 'Survey Field Controller / Data Collector'],
+      ['Primary Use', 'Survey Instrument Control & Data Logging'],
+      ['Input Interface', 'Touchscreen & Physical Alpha-Numeric Keypad'],
+      ['Supported Equipment', 'GNSS Receivers & Total Stations'],
+      ['Application', 'Field Stakeout, Topo Mapping & COGO'],
+      ['Enclosure Style', 'Rugged Handheld Field Controller']
+    ],
+    features: [
+      'Directly interfaces with GNSS receivers and total stations',
+      'Sunlight-readable touchscreen with physical survey keypad',
+      'Runs industry-standard field survey and stakeout software',
+      'All-weather drop-proof and dustproof field construction'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -375,9 +613,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'ELECTRONIC BEARING COMPASS',
-    summary: 'Electronic compass for field orientation, direction finding, and survey bearings.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Digital display for directional bearings and headings', 'Assists in field navigation and orientation', 'Compact handheld unit for field crews'],
+    summary: 'Electronic sighting compass designed for orientation, bearing measurement, and azimuth data capture during geological and topographic field surveys.',
+    specs: [
+      ['Product Type', 'Electronic Digital Compass'],
+      ['Primary Use', 'Field Heading & Azimuth Measurement'],
+      ['Display Type', 'Digital LCD Screen'],
+      ['Declination Support', 'Adjustable Magnetic Declination'],
+      ['Application', 'Orientation, Sighting & Field Navigation'],
+      ['Format', 'Handheld Electronic Instrument']
+    ],
+    features: [
+      'Digital electronic sensor for magnetic and true azimuths',
+      'Backlit LCD screen for reading bearings in poor light',
+      'Integrated declination adjustment for accurate directional work',
+      'Pocket-sized handheld casing suited for field navigation'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -391,9 +641,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'MOUNTABLE SURVEY COMPASS',
-    summary: 'Mountable survey compass for taking bearings and angles in forestry and boundary surveys.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Survey compass mountable on staff or tripod', 'Used for taking directional bearings and survey angles', 'Designed for forestry and boundary layout'],
+    summary: 'Mountable survey compass designed for attaching to a Jacob’s staff or tripod to shoot precise bearings in forestry and boundary surveys.',
+    specs: [
+      ['Product Type', 'Staff / Forestry Survey Compass'],
+      ['Primary Use', 'Boundary Line Layout & Survey Bearings'],
+      ['Mounting Interface', 'Jacob’s Staff & Tripod Socket'],
+      ['Sighting Mechanism', 'Folding Sighting Vanes'],
+      ['Field Application', 'Timber Boundary Surveys & Cruising'],
+      ['Operation', 'Damped Magnetic Sighting']
+    ],
+    features: [
+      'Mounts onto Jacob’s staff or ball-and-socket tripod adaptors',
+      'Large graduated dial with folding sighting vanes for alignments',
+      'Needle dampening mechanism for fast, stable settling in the field',
+      'Engineered for timber cruising and forest boundary line running'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -407,9 +669,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'BAROMETRIC ALTIMETER',
-    summary: 'Field instrument for measuring altitude and elevation changes during field surveys.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Measures altitude and elevation differences in the field', 'Assists in topographic surveys and elevation profiling', 'Compact format for field carry'],
+    summary: 'Barometric field instrument designed for determining elevations, altitude changes, and atmospheric pressure gradients during mountainous field surveying and ecological mapping.',
+    specs: [
+      ['Product Type', 'Barometric Field Altimeter'],
+      ['Primary Use', 'Elevation & Altitude Profiling'],
+      ['Measurement Principle', 'Barometric Atmospheric Pressure'],
+      ['Adjustment', 'Calibratable Zero / Reference Bezel'],
+      ['Field Application', 'Mountain Surveys & Topographic Profiling'],
+      ['Format', 'Pocket-Sized Field Instrument']
+    ],
+    features: [
+      'Measures atmospheric pressure to indicate relative elevations',
+      'Rotary bezel for zeroing and altitude calibration at known points',
+      'Ideal for topographical profiling in remote mountainous terrain',
+      'Mechanical analog or digital design needing no external connections'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -423,9 +697,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'OPTICAL SURVEY INSTRUMENT',
-    summary: 'Electronic optical instrument used in surveying for measuring angles and distances.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Measures angles and distances for survey layouts', 'Designed for engineering and boundary surveys', 'Mounts on standard survey tripods'],
+    summary: 'Electronic optical survey instrument combining an electronic theodolite and distance meter for measuring precise angles and slopes in construction and land surveying.',
+    specs: [
+      ['Product Type', 'Electronic Total Station'],
+      ['Primary Use', 'Angular & Distance Survey Measurement'],
+      ['Measurement Components', 'Electronic Theodolite & EDM'],
+      ['Targeting Modes', 'Prism & Reflectorless Sighting'],
+      ['Field Application', 'Boundary, Topographic & Engineering Surveys'],
+      ['Mounting Interface', 'Standard Survey Tribrach & Tripod']
+    ],
+    features: [
+      'Measures horizontal angles, vertical angles, and slope distances',
+      'Integrated microprocessor computes coordinates and elevations',
+      'Prism and reflectorless targeting options for diverse field targets',
+      'Mounts on standard survey tripods with optical or laser plummet'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -439,9 +725,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'OPTICAL SURVEY LEVEL',
-    summary: 'Optical leveling instrument used for establishing horizontal lines of sight in survey work.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Establishes horizontal level lines for elevation surveys', 'Optical sighting system for leveling runs', 'Mounts to standard survey tripods'],
+    summary: 'Optical surveying instrument featuring an internal self-leveling compensator for establishing accurate horizontal lines of sight and differential elevation leveling.',
+    specs: [
+      ['Product Type', 'Optical Automatic Level'],
+      ['Primary Use', 'Differential Leveling & Elevation Transfer'],
+      ['Leveling Mechanism', 'Internal Self-Leveling Compensator'],
+      ['Targeting System', 'Optical Telescope with Sighting Reticle'],
+      ['Field Application', 'Construction, Grade & Topographic Leveling'],
+      ['Mounting Base', 'Standard 5/8-inch Tripod Thread']
+    ],
+    features: [
+      'Internal magnetically or air-damped compensator for self-leveling',
+      'High-clarity optical telescope with crosshair reticle',
+      'Endless horizontal tangent drives for precise staff targeting',
+      'Rugged baseplate designed for standard flat- or dome-head tripods'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -455,9 +753,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'INSTRUMENT FIELD TRIPOD',
-    summary: 'Mounting tripod for supporting survey instruments, total stations, and levels in the field.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Provides stable mounting for survey instruments', 'Adjustable legs for uneven field terrain', 'Standard instrument mount threading'],
+    summary: 'Stable field tripod engineered to support total stations, GNSS base receivers, automatic levels, and survey targets across uneven terrain.',
+    specs: [
+      ['Product Type', 'Survey Instrument Tripod'],
+      ['Primary Use', 'Instrument Stabilization & Ground Setup'],
+      ['Mounting Head', 'Flat / Dome Head with 5/8-inch Thread'],
+      ['Leg Mechanism', 'Extendable Legs with Quick-Lock Clamps'],
+      ['Ground Interface', 'Pointed Metal Spurred Feet'],
+      ['Supported Instruments', 'Total Stations, Levels & GNSS Antennas']
+    ],
+    features: [
+      'Heavy-duty legs with pointed metal feet for firm ground anchor',
+      'Quick-clamp or screw-lock leg extension mechanisms',
+      'Standard 5/8-inch thread mount compatible with survey equipment',
+      'Shoulder carry strap and leg retainers for convenient transit'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -471,9 +781,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'SURVEY LEVELING ROD',
-    summary: 'Graduated leveling rod for elevation readings and height measurements in field surveys.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Graduated rod for elevation and height readings', 'Extensible sections for convenient transport', 'Clear markings for optical leveling'],
+    summary: 'Telescopic or folding graduated rod designed for optical leveling sightings, grade verification, and height measurements in surveying operations.',
+    specs: [
+      ['Product Type', 'Surveying Leveling Rod'],
+      ['Primary Use', 'Elevation Sightings & Grade Measurement'],
+      ['Graduation Style', 'High-Contrast Metric / Imperial Scales'],
+      ['Section Mechanism', 'Telescopic Extension with Positive Lock'],
+      ['Application', 'Differential Leveling & Height Verification'],
+      ['Field Pairing', 'Optical Levels & Rotary Laser Receivers']
+    ],
+    features: [
+      'Graduated with bold, high-contrast leveling markings',
+      'Telescopic interlocking sections with secure locking buttons',
+      'Durable non-conductive and weather-resistant construction',
+      'Pairs with automatic levels, laser detectors, and total stations'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -487,9 +809,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'SURVEY GROUND MARKERS',
-    summary: 'Boundary markers and survey stakes for identifying sample plots and field boundaries.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Identifies survey corners and sample plot centers', 'Designed for ground placement in field terrain', 'Aids in relocating field plots and boundary points'],
+    summary: 'Durable ground markers designed for designating permanent sample plots, survey control points, boundary corners, and forestry research stations.',
+    specs: [
+      ['Product Type', 'Survey & Plot Ground Markers'],
+      ['Primary Use', 'Sample Plot & Boundary Station Identification'],
+      ['Installation Method', 'Ground Insertion Stake / Pin'],
+      ['Surface Feature', 'Stampable Identification Cap / Flag'],
+      ['Field Application', 'Forest Inventory Plots & Cadastral Points'],
+      ['Durability Focus', 'Corrosion-Resistant Outdoor Ground Placement']
+    ],
+    features: [
+      'High-visibility marker heads for quick identification in dense brush',
+      'Corrosion-resistant ground stake or pin designed for long-term placement',
+      'Suitable for stamping or scribing station numbers and coordinates',
+      'Resists displacement from weather, wildlife, and ground movement'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -503,9 +837,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'HIGH-VISIBILITY MARKING',
-    summary: 'High-visibility tape for marking trees, boundary lines, and survey stations.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['High-visibility marking for trees and boundaries', 'Non-adhesive roll format for easy tying', 'Ideal for forestry layout and trail marking'],
+    summary: 'High-visibility non-adhesive marking tape designed for flagging timber boundaries, sample trees, trail layouts, and survey lines in outdoor environments.',
+    specs: [
+      ['Product Type', 'High-Visibility Flagging Ribbon'],
+      ['Primary Use', 'Visual Boundary & Target Marking'],
+      ['Tape Format', 'Non-Adhesive Flexible Roll'],
+      ['Handling', 'Hand-Tearable & Easy-Knotting'],
+      ['Field Application', 'Forestry Cruising, Trail Layout & Survey Lines'],
+      ['Visibility', 'Bright Outdoor Fluorescent & Standard Tones']
+    ],
+    features: [
+      'Vibrant high-contrast coloration visible through dense forest canopy',
+      'Flexible non-adhesive ribbon easy to tie and tear by hand',
+      'Weather-resistant material maintains color against sunlight and rain',
+      'Supplied in compact rolls suitable for pocket or vest carry'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -519,9 +865,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'ELECTRONIC FIELD RECORDER',
-    summary: 'Handheld digital device for recording notes, observations, and field inventory data.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Digital recording for notes and inventory data', 'Designed for mobile outdoor workflows', 'Helps reduce manual paper transcription in the field'],
+    summary: 'Rugged mobile data collection unit engineered for capturing forestry measurements, ecological observations, and geographic records under outdoor field conditions.',
+    specs: [
+      ['Product Type', 'Rugged Field Data Recorder'],
+      ['Primary Use', 'Field Observation & Forestry Data Capture'],
+      ['User Interface', 'Sunlight-Readable Display & Field Controls'],
+      ['Data Handling', 'Digital Form Entry & Database Export'],
+      ['Field Application', 'Forest Inventory & Environmental Monitoring'],
+      ['Protection Class', 'Ruggedized Weatherproof Construction']
+    ],
+    features: [
+      'Dedicated field form software support for rapid attribute entry',
+      'High-durability casing resistant to drops, dust, and rainfall',
+      'Sunlight-readable display designed for outdoor readability',
+      'Wireless connectivity for exporting collected field databases'
+    ],
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
@@ -539,9 +897,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'PORTABLE WATER APPARATUS',
-    summary: 'Backpack-mounted water container and hand pump for wildland fire suppression and mop-up.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Backpack container with manual slide-action pump', 'Designed for mop-up and initial attack operations', 'Harness straps for field transport across rough terrain'],
+    summary: 'Collapsible or rigid backpack reservoir with hand-operated slide trombone pump, designed for mop-up and initial attack on wildland spot fires.',
+    specs: [
+      ['Product Type', 'Wildland Backpack Fire Pump'],
+      ['Primary Use', 'Mop-Up & Spot Fire Suppression'],
+      ['Pump Mechanism', 'Manual Slide Trombone Pump'],
+      ['Nozzle Function', 'Adjustable Stream & Cone Spray'],
+      ['Field Application', 'Wildland Firefighting & Line Patrol'],
+      ['Portability', 'Wearable Backpack Harness']
+    ],
+    features: [
+      'Dual-action brass hand slide pump delivers steady water spray',
+      'Ergonomic backpack harness with padded straps for hiking steep lines',
+      'Adjustable nozzle switches between straight stream and wide spray',
+      'Wide-mouth fill opening with internal debris filter screen'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -555,9 +925,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'FORESTRY FIRE PUMP',
-    summary: 'Portable pump unit designed for moving water to supply wildland fire suppression efforts.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Compact pump unit for remote water delivery', 'Designed for wildland fire suppression', 'Handles water transfer from natural sources'],
+    summary: 'Engine-driven portable water pump designed for wildland firefighting crews to draft water from natural sources and supply pressurized attack lines.',
+    specs: [
+      ['Product Type', 'Portable Wildland Fire Pump'],
+      ['Primary Use', 'Wildfire Water Delivery & Drafting'],
+      ['Operation', 'Gasoline Engine Centrifugal Pump'],
+      ['Suction Application', 'Natural Water Bodies & Folding Tanks'],
+      ['Field Application', 'Wildland Hose Lays & Remote Fire Attack'],
+      ['Format', 'Packable Tubular Steel Carry Frame']
+    ],
+    features: [
+      'High-pressure centrifugal pump head engineered for forestry hose lays',
+      'Equipped with transport frame or pack harness for remote line carry',
+      'Capable of drafting water from streams, lakes, and portable tanks',
+      'Spark-arrested exhaust suitable for hazardous dry forest zones'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -571,9 +953,20 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'FIRELINE HAND TOOL',
-    summary: 'Heavy-duty fireline rake designed for clearing duff, litter, and fuels during wildland firefighting.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Heavy-duty tines for cutting roots and raking duff', 'Used to construct firelines and mineral fuel breaks', 'Durable handle built for wildland crews'],
+    summary: 'Wildland firefighting hand tool used for clearing vegetation, loose debris and combustible material while preparing fire lines.',
+    specs: [
+      ['Product Type', 'Wildland Fire Rake'],
+      ['Primary Use', 'Fire-Line Preparation'],
+      ['Application', 'Vegetation & Debris Clearing'],
+      ['Operation', 'Manual'],
+      ['Field Category', 'Forest Fire Fighting']
+    ],
+    features: [
+      'Designed for fire-line preparation',
+      'Helps clear vegetation and debris',
+      'Suitable for wildfire field operations',
+      'Long-handle manual tool'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -587,9 +980,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'FLAME SMOTHERING TOOL',
-    summary: 'Flap-style smothering tool for knocking down grass and surface flames along firelines.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Heavy flexible flap for smothering surface flames', 'Effective on grass and light brush firelines', 'Long handle for operator safety'],
+    summary: 'Manual firefighting tool equipped with a flexible reinforced rubber flap, designed for smothering grass fires, ground embers, and low-intensity brush blazes.',
+    specs: [
+      ['Product Type', 'Wildland Fire Flapper / Swatter'],
+      ['Primary Use', 'Grass Fire Suppression & Embers Smothering'],
+      ['Tool Mechanism', 'Oxygen Deprivation Surface Impact'],
+      ['Working Head', 'Heavy-Duty Reinforced Rubber Flap'],
+      ['Field Application', 'Grassland & Low-Fuel Wildfire Initial Attack'],
+      ['Operation', 'Long-Handle Manual Swatting']
+    ],
+    features: [
+      'Flexible heat-resistant rubber flap smothers surface fires by oxygen starvation',
+      'Heavy-duty steel socket connection secures flap to handle',
+      'Long wooden or fiberglass handle keeps firefighter at safe distance',
+      'Effective for fast knockdown in open grass and brush fields'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -603,9 +1008,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'DUAL-PURPOSE FIRE AXE',
-    summary: 'Dual-purpose tool combining an axe blade and grubbing mattock for fireline construction.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Dual head with cutting axe and grubbing hoe', 'Standard hand tool for wildland fireline digging', 'Balanced design for chopping roots and soil'],
+    summary: 'Dual-purpose wildland firefighting hand tool combining a sharp cutting axe blade with a narrow grubbing mattock for digging and chopping.',
+    specs: [
+      ['Product Type', 'Pulaski Forestry Axe'],
+      ['Primary Use', 'Fire-Line Trenching & Root Chopping'],
+      ['Blade Configuration', 'Combination Axe Blade & Grubbing Mattock'],
+      ['Tool Head', 'Solid Forged High-Carbon Steel'],
+      ['Field Application', 'Wildland Control Line Construction'],
+      ['Operation', 'Heavy-Duty Manual Hand Tool']
+    ],
+    features: [
+      'Single forged head with axe bit for chopping roots and logs',
+      'Integrated mattock adze blade for trenching and digging mineral soil',
+      'Essential tool for cutting containment lines down to bare dirt',
+      'Mounted on durable hickory or reinforced fiberglass handle'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -619,9 +1036,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'TIMBER & CLEARING AXE',
-    summary: 'Chopping and clearing axe for trail clearance and wildland fireline operations.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Chopping axe for clearing logs, limbs, and brush', 'Built for forestry work and trail maintenance', 'Durable handle and forged cutting head'],
+    summary: 'Specialized cutting axe designed for limbing, felling small timber, and clearing brush while establishing wildfire containment lines and access trails.',
+    specs: [
+      ['Product Type', 'Single-Bit Forestry Axe'],
+      ['Primary Use', 'Fuel Clearing, Chopping & Limbing'],
+      ['Head Construction', 'Drop-Forged High-Strength Steel'],
+      ['Handle Style', 'Curved Ergonomic Forestry Pattern'],
+      ['Field Application', 'Wildland Handline Construction & Trail Clearing'],
+      ['Operation', 'Manual Chopping Tool']
+    ],
+    features: [
+      'Thin, razor-sharp forged bit profiled for efficient wood cutting',
+      'Ergonomic curved handle balances swing power and control',
+      'Designed for clearing downed timber, snags, and heavy fuel lines',
+      'Essential cutting gear for wildland hand crews and forestry scouts'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -635,9 +1064,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'RAKE & HOE COMBINATION',
-    summary: 'Dual-purpose rake and hoe tool for digging firelines and scraping vegetation.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Combination wide rake tines and sharp hoe blade', 'Designed for scraping firelines down to mineral soil', 'Heavy-duty construction for wildland crews'],
+    summary: 'Two-in-one wildland firefighting tool featuring a wide scraping hoe blade on one side and heavy rake tines on the other for fire-line clearing.',
+    specs: [
+      ['Product Type', 'McLeod Fire Tool / Rake-Hoe'],
+      ['Primary Use', 'Scraping Mineral Soil & Raking Litter'],
+      ['Head Design', 'Combination Scraping Blade & Rake Tines'],
+      ['Tool Material', 'Tempered High-Strength Steel'],
+      ['Field Application', 'Wildland Firebreak Preparation'],
+      ['Operation', 'Heavy-Duty Manual Hoeing & Raking']
+    ],
+    features: [
+      'Hoe edge cuts duff, roots, and scrapes soil to mineral earth',
+      'Sturdy rake tines gather combustible litter and loose pine needles',
+      'Reversible single head for efficient dual-purpose line construction',
+      'Fitted with long handle for maximum leverage and ergonomic stance'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -651,9 +1092,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'FIRE SUPPRESSION BEATER',
-    summary: 'Manual fire suppression tool for extinguishing low-intensity ground fires.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Manual tool for knocking down low ground flames', 'Flexible beater head for grass and undergrowth', 'Extended handle provides operating reach'],
+    summary: 'Handheld fire suppression tool with flexible metal or mesh tines designed for beating out grass fires and suppressing surface flames on wildland lines.',
+    specs: [
+      ['Product Type', 'Wildland Fire Beater'],
+      ['Primary Use', 'Extinguishing Surface Flames & Grass Fires'],
+      ['Head Construction', 'Flexible Beater Assembly'],
+      ['Handle Type', 'Long Insulated Hand Grip'],
+      ['Field Application', 'Wildland Perimeter Control & Mop-Up'],
+      ['Operation', 'Manual Flame Beating']
+    ],
+    features: [
+      'Flexible beating head dampens and extinguishes surface flames',
+      'Effective for controlling perimeter grass fires and smoldering brush',
+      'Long heat-insulated handle provides safe standoff from heat and smoke',
+      'Lightweight manual design for continuous patrolling along firebreaks'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -667,9 +1120,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'PRESCRIBED BURNING TORCH',
-    summary: 'Specialized torch for controlled burning, backfiring, and burn-out operations in wildland fire management.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Designed for controlled backfiring and burning out', 'Dispenses fuel along designated firelines', 'Standard equipment for wildfire burn operations'],
+    summary: 'Liquid-fuel backfiring and burnout canister designed for igniting controlled prescribed burns and burning out fuel ahead of advancing wildfires.',
+    specs: [
+      ['Product Type', 'Forestry Drip Torch'],
+      ['Primary Use', 'Backfiring & Controlled Burnout Operations'],
+      ['Ignition Mechanism', 'Reversible Burner Wand with Fuel Loop'],
+      ['Safety Features', 'Flashback Check Valve & Tank Breather'],
+      ['Field Application', 'Prescribed Burning & Wildfire Containment'],
+      ['Fuel Compatibility', 'Standard Diesel / Fuel Mix']
+    ],
+    features: [
+      'Pours burning fuel droplets onto forest litter to initiate controlled fire',
+      'Reversible burner spout with check valve prevents flashback into tank',
+      'Heavy-duty fuel canister with secure seal and breather valve',
+      'Standard equipment for burnout crews and prescribed fire operations'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -683,9 +1148,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'EMERGENCY SAFETY SHELTER',
-    summary: 'Emergency shelter deployed by wildland firefighters for entrapment protection.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Emergency deployment shelter for wildland firefighters', 'Designed for entrapment protection', 'Compact packable format with carrying case'],
+    summary: 'Emergency deployable personal survival shelter engineered to reflect radiant heat and trap breathable air during catastrophic wildfire entrapment situations.',
+    specs: [
+      ['Product Type', 'Emergency Wildland Fire Shelter'],
+      ['Primary Use', 'Wildland Firefighter Entrapment Survival'],
+      ['Protection Principle', 'Radiant Heat Reflection & Air Trapping'],
+      ['Deployment Mechanism', 'Rapid-Pull Deployment Straps'],
+      ['Field Application', 'Wildfire Personal Safety Equipment'],
+      ['Carry Format', 'Folded Belt-Pack Deployment Case']
+    ],
+    features: [
+      'Reflects radiant heat and insulates against convective gas exposure',
+      'Rapid deployment pull-straps allow quick entry in emergency burnovers',
+      'Compact folded format fits inside dedicated web gear belt pouches',
+      'Hold-down floor flaps maintain ground seal using body weight'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -699,9 +1176,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'HANDHELD WEATHER METER',
-    summary: 'Handheld weather meter for assessing ambient conditions and fire weather in the field.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Handheld unit for monitoring weather conditions on scene', 'Measures temperature, wind, and relative humidity', 'Assists in assessing fire behavior factors'],
+    summary: 'Handheld environmental weather meter designed for monitoring relative humidity, wind speed, air temperature, and fuel moisture conditions on wildfire incidents.',
+    specs: [
+      ['Product Type', 'Fire Weather Environmental Meter'],
+      ['Primary Use', 'Fire Behavior Weather Monitoring'],
+      ['Monitored Parameters', 'Wind Speed, Temperature & Relative Humidity'],
+      ['Calculated Indices', 'Dew Point & Fuel Moisture Potential'],
+      ['Field Application', 'Incident Safety, Prescribed Burns & Behavior Forecasting'],
+      ['Format', 'Rugged Handheld Environmental Instrument']
+    ],
+    features: [
+      'Measures key fire weather indices including wind speed and relative humidity',
+      'Calculates dew point and probability of ignition for behavior modeling',
+      'Compact handheld sensor designed for line scouts and safety officers',
+      'High-contrast backlit display for clear reading in smoke and sunlight'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -715,9 +1204,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'FIELD WEATHER KIT',
-    summary: 'Field weather kit for monitoring temperature, wind, and relative humidity.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Field kit for measuring atmospheric conditions', 'Includes instruments for wind and humidity checks', 'Portable carry case for field operations'],
+    summary: 'Comprehensive field weather kit equipped with psychrometer, wind gauge, and tables for evaluating localized microclimates and wildfire fire danger indices.',
+    specs: [
+      ['Product Type', 'Wildland Weather Monitoring Kit'],
+      ['Primary Use', 'Localized Fire Danger & Microclimate Assessment'],
+      ['Included Instruments', 'Sling Psychrometer, Wind Meter & Calculator'],
+      ['Assessment Capability', 'Relative Humidity, Wet Bulb & Wind Velocity'],
+      ['Field Application', 'Wildfire Field Command & Prescribed Burns'],
+      ['Packaging', 'Durable Field Storage Case']
+    ],
+    features: [
+      'Measures ambient temperature, wet bulb temperature, and wind speed',
+      'Includes psychrometric tables for manual relative humidity determination',
+      'Encased in a protective belt kit or durable canvas field pouch',
+      'Essential gear for fire behavior analysts and division supervisors'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -731,9 +1232,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'MOBILE WATER STORAGE',
-    summary: 'Water storage container for vehicle mounting or temporary fireline staging.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Water storage container for field supply points', 'Suitable for vehicle mounting or temporary staging', 'Equipped with fill and discharge ports'],
+    summary: 'Portable self-supporting or rigid water storage tank designed for relay pumping, helicopter bucket dipping, and staging water reserves at wildland firelines.',
+    specs: [
+      ['Product Type', 'Portable Wildland Water Storage Tank'],
+      ['Primary Use', 'Fireline Water Staging & Relay Pumping'],
+      ['Structure Style', 'Self-Supporting / Collapsible Reservoir'],
+      ['Plumbing Ports', 'Drafting & Discharge Flange Connections'],
+      ['Field Application', 'Helicopter Dipping & Forestry Hose Support'],
+      ['Transport Format', 'Compact Foldable Storage']
+    ],
+    features: [
+      'Rapidly sets up on remote staging pads without rigid frame assembly',
+      'Heavy-duty abrasion and puncture-resistant fabric lining',
+      'Equipped with discharge fittings for drafting pumps and hose lines',
+      'Folds compactly for vehicle transport or aerial drop deployment'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -747,9 +1260,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'WILDLAND FIRE HOSE',
-    summary: 'Flexible delivery hose designed for wildland fire operations.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Delivery hose designed for wildland fire applications', 'Built for field deployment across rugged terrain', 'Compatible with standard forestry hose fittings'],
+    summary: 'Lightweight single-jacket synthetic fire hose engineered for high-pressure water delivery across steep, rocky, and rough wildland firefighting terrain.',
+    specs: [
+      ['Product Type', 'Wildland Forestry Fire Hose'],
+      ['Primary Use', 'Pressurized Water Delivery on Wildfires'],
+      ['Jacket Construction', 'High-Tenacity Synthetic Single Jacket'],
+      ['Coupling Compatibility', 'Standard Forestry Thread / Quarter-Turn Quick-Connect'],
+      ['Field Application', 'Remote Hose Lays & Lateral Attack Lines'],
+      ['Handling', 'Lightweight Flexible Pack-In Line']
+    ],
+    features: [
+      'Engineered for lightweight pack-in and steep grade deployment',
+      'High abrasion resistance against rocks, thorns, and brush',
+      'Compatible with standard forestry threaded or quick-connect couplings',
+      'Resistant to mildew, rot, and ozone degradation without drying'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -763,9 +1288,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'FIELD HOSE REEL',
-    summary: 'Reel unit for storing, deploying, and retrieving hose lines during field operations.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Organizes, deploys, and retrieves hose lines', 'Suitable for vehicle beds and utility apparatus', 'Prevents kinks and tangled hose lays'],
+    summary: 'Heavy-duty field hose reel designed for rapid deployment, storage, and retrieval of wildland booster and delivery hose lines on fire attack vehicles.',
+    specs: [
+      ['Product Type', 'Wildland Fire Hose Reel'],
+      ['Primary Use', 'Hose Deployment, Storage & Retrieval'],
+      ['Drive Mechanism', 'Manual Hand Crank / Auxiliary Rewind'],
+      ['Mounting Compatibility', 'Vehicle Beds, Trailers & Pump Skids'],
+      ['Swivel Assembly', 'High-Pressure Continuous Flow Joint'],
+      ['Field Application', 'Wildland Mobile Apparatus & Fire Skids']
+    ],
+    features: [
+      'Smooth rewind mechanism for rapid retrieval of forestry hose',
+      'High-pressure fluid swivel joint prevents kinking under active pressure',
+      'Locking pin and drag brake prevent unintended spooling in rough transit',
+      'Mounts onto fire utility vehicles, pump skids, and trailers'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -779,9 +1316,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'PORTABLE WATER PUMP',
-    summary: 'Portable pumping equipment for drafting water from natural sources or storage tanks.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Portable pump for drafting and moving water in the field', 'Designed for remote wildland fire support', 'Compact frame for transport to water sources'],
+    summary: 'Compact lightweight water pump designed for wildland crews to draft water from streams, ponds, or shallow springs to supply fireline sprinkler setups.',
+    specs: [
+      ['Product Type', 'Portable Forestry Water Drafting Pump'],
+      ['Primary Use', 'Water Transfer & Remote Sprinkler Supply'],
+      ['Suction Source', 'Rivers, Streams, Ponds & Shallow Wells'],
+      ['Power Unit', 'Compact Spark-Arrested Gasoline Engine'],
+      ['Field Application', 'Wildland Mop-Up & Water Supply Relays'],
+      ['Portability', 'Hand-Carry Frame / Backpack Compatible']
+    ],
+    features: [
+      'High-suction drafting capability from natural water sources',
+      'Spark-arrested engine design for safe operation in dry forest zones',
+      'Abrasion-resistant impeller handles sandy and sedimented natural water',
+      'Equipped with carry handle or backpack harness for remote transport'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -795,9 +1344,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'EQUIPMENT EXTINGUISHER',
-    summary: 'Portable extinguisher unit for emergency fire response on field vehicles and equipment.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Handheld extinguisher for equipment and vehicles', 'Provides immediate response on field machinery', 'Includes mounting bracket for transport'],
+    summary: 'Rugged multi-purpose fire extinguisher designed for immediate first-response fire suppression on forestry machinery, harvesting equipment, and field base camps.',
+    specs: [
+      ['Product Type', 'Equipment Fire Extinguisher'],
+      ['Primary Use', 'Machinery & Field Camp Emergency Suppression'],
+      ['Target Hazards', 'Fuels, Timber Residues & Electrical Fires'],
+      ['Mounting Interface', 'Heavy-Duty Shock-Resistant Vehicle Bracket'],
+      ['Readiness Indicator', 'Visual Dial Pressure Gauge'],
+      ['Field Application', 'Forestry Machinery, Utility Trucks & Base Camps']
+    ],
+    features: [
+      'Fast discharge of extinguishing agent for rapid fuel knockdown',
+      'Corrosion-resistant metal valve assembly and durable steel cylinder',
+      'Integrated pressure gauge provides instant visual readiness verification',
+      'Supplied with heavy-duty vehicle mounting bracket to resist vibrations'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -811,9 +1372,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'WILDLAND PACK',
-    summary: 'Load-bearing pack designed for carrying wildland fire equipment, gear, and supplies.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Designed to carry wildland gear, hydration, and tools', 'Padded harness balances load across rough terrain', 'Multiple compartments for field essentials'],
+    summary: 'Ergonomic load-bearing field pack designed for wildland firefighters to carry fire shelters, hydration reservoirs, hand tools, and emergency line gear.',
+    specs: [
+      ['Product Type', 'Wildland Firefighter Line Pack'],
+      ['Primary Use', 'Gear, Water & Fire Shelter Transport'],
+      ['Dedicated Pouches', 'Emergency Fire Shelter & Hydration Reservoir'],
+      ['Harness System', 'Padded Ergonomic Hip & Shoulder Suspension'],
+      ['Fabric Durability', 'Heat-Resistant Ballistic Textile'],
+      ['Field Application', 'Wildland Firefighting Line Operations']
+    ],
+    features: [
+      'Dedicated quick-access deployment pouch for emergency fire shelter',
+      'Ergonomic hip belt transfers heavy pack weight away from shoulders',
+      'Integrated sleeves for hydration bladders and fireline accessories',
+      'Constructed with heat-resistant, high-abrasion ballistic fabric'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -827,9 +1400,21 @@ export const products: Product[] = [
     image: 'placeholder',
     gallery: ['placeholder'],
     label: 'WILDLAND PPE',
-    summary: 'Protective gear ensemble for wildland firefighting and field operations.',
-    specs: [['Specifications', 'Available on request']],
-    features: ['Protective clothing and gear for wildland crews', 'Designed for heat and outdoor field hazards', 'Sizing and configuration confirmed upon inquiry'],
+    summary: 'Comprehensive wildland firefighting protective ensemble designed to protect crews from radiant heat, falling embers, sharp debris, and rugged terrain hazards.',
+    specs: [
+      ['Product Type', 'Wildland Firefighter PPE Ensemble'],
+      ['Primary Use', 'Thermal & Physical Protection on Firelines'],
+      ['Core Components', 'FR Apparel, Forestry Helmet, Goggles & Gloves'],
+      ['Thermal Defense', 'Flame-Resistant Construction'],
+      ['Field Application', 'Wildfire Suppression & Prescribed Burn Operations'],
+      ['Design Focus', 'Heat Protection & Field Breathability']
+    ],
+    features: [
+      'Flame-resistant protective apparel designed for high heat and breathability',
+      'High-impact forestry helmet shields against overhead branches and snags',
+      'Heat-resistant eye protection goggles and neck shroud for ember defense',
+      'Heavy-duty leather gloves engineered for tool handling and heat protection'
+    ],
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
@@ -1169,15 +1754,21 @@ export const products: Product[] = [
     image: 'leica-disto-laser-distance-meter',
     gallery: ['leica-disto-laser-distance-meter'],
     label: 'LASER DISTANCE METER',
-    summary: 'Precision handheld laser distance meters engineered by Leica Geosystems for geological section measuring, survey offsets, and quarry profiles.',
+    summary: 'Professional handheld laser distance meter engineered by Leica Geosystems for millimeter-accurate distance, height, and area measurements in surveying and geology.',
     specs: [
-      ['Specifications', 'Available on request']
+      ['Product Type', 'Handheld Laser Distance Meter'],
+      ['Brand / Series', 'Leica Geosystems DISTO™ Series'],
+      ['Standard Accuracy', '±1.0 mm to ±1.5 mm (ISO 16331-1)'],
+      ['Typical Range', '0.05 m to 150 m (variant dependent)'],
+      ['Connectivity', 'Bluetooth® Smart'],
+      ['Protection Class', 'IP54 / IP65 Dust & Splash Water Resistant']
     ],
     features: [
-      'Millimeter-precision laser distance measurement for field surveys',
-      'Engineered for indoor, outdoor, and harsh geological environments',
-      'Bluetooth Smart integration for digital sketch and data logging apps',
-      'Model configurations and range options confirmed during quotation'
+      'Millimeter-accurate laser distance measurement tested to ISO 16331-1',
+      'Integrated tilt sensor for indirect heights and horizontal distances',
+      'Clear backlit display optimized for indoor and outdoor field readability',
+      'Bluetooth® Smart interface for rapid wireless data transfer to mobile apps',
+      'Rugged drop-tested housing with dust and water spray protection'
     ],
     page: 14,
     subcategories: ['gps-mapping-distance-measurement', 'mining-survey', 'mining-distance'],
