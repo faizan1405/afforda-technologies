@@ -24,17 +24,17 @@ export const categories = [
 export const products: Product[] = [
   // --- Existing Field Technology Products (Preserved & Cleaned of Legacy Subcategories) ---
   { slug:'vortex-viper-hd',name:'Viper® HD',brand:'Vortex Optics',category:'optics',image:'viper',gallery:['viper','viper-front'],label:'HD BINOCULARS',summary:'An HD optical system, rugged rubber armor and a comfortable field harness. A clear view of the details that matter.',specs:[['Available configurations','8×42 / 10×50 / 12×50'],['Optical system','High definition'],['Lens coating','XR™ fully multi-coated'],['Protection','ArmorTek®'],['Carry system','GlassPak harness included']],features:['HD glass for resolution and color fidelity','Phase-corrected roof prisms for contrast','Rubber armor for a secure grip','GlassPak chest harness for comfortable field carry'],page:5,subcategories:['defense-optics'],categoryIds:['optics','defense'],tags:['Binoculars'] },
-  { slug:'garmin-gpsmap-65s',name:'Handheld GPS (GPSMAP® 65s)',brand:'Garmin',category:'navigation',image:'gpsmap',gallery:['gpsmap'],label:'MULTI-BAND GPS',summary:'Find your way in challenging environments with multi-band positioning, expanded satellite support and a sunlight-readable color display.',specs:[['Display','2.6-inch color'],['Positioning','Multi-band GNSS'],['Battery life','Up to 16 hours in GPS mode'],['Navigation','Built-in navigation sensors'],['Planning','Garmin Explore compatibility']],features:['Multi-band technology for challenging locations','Sunlight-readable color display','Built-in navigation sensors','Plan and organize with the Garmin Explore app'],page:12,subcategories:['gps-survey-mapping-products','defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','defense','mining','surveying'],tags:['GPS/GNSS Devices','GPS','Handheld GPS'] },
+  { slug:'garmin-gpsmap-65s',name:'Handheld GPS (GPSMAP® 65s)',brand:'Garmin',category:'navigation',image:'gpsmap',gallery:['gpsmap'],label:'MULTI-BAND GPS',summary:'Find your way in challenging environments with multi-band positioning, expanded satellite support and a sunlight-readable color display.',specs:[['Display','2.6-inch color'],['Positioning','Multi-band GNSS'],['Battery life','Up to 16 hours in GPS mode'],['Navigation','Built-in navigation sensors (ABC)'],['Planning','Garmin Explore compatibility']],features:['Multi-band technology for challenging locations','Sunlight-readable color display','Built-in 3-axis compass & barometric altimeter','Plan and organize with the Garmin Explore app'],page:12,subcategories:['gps-mapping-distance-measurement','gps-survey-mapping-products','defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','geology','defense','mining','surveying'],tags:['Handheld GPS','GPS/GNSS Devices','GPS'] },
   { slug:'hikmicro-lynx-lh25',name:'LYNX LH25 2.0',brand:'HIKMICRO',category:'thermal',image:'lynx',gallery:['lynx','lynx-side'],label:'THERMAL MONOCULAR',summary:'A compact thermal monocular that reveals subtle heat signatures, with a sensitive detector and a detailed OLED view.',specs:[['Detector resolution','384 × 288'],['Lens','25 mm, F1.0'],['Thermal sensitivity','NETD <20 mK'],['Detection range','Up to 1,200 m'],['Weight','275 g'],['Battery life','Up to 6.5 hours']],features:['12 μm detector with high thermal sensitivity','1024 × 768 OLED display','Replaceable rechargeable Li-ion battery','Compact and ergonomic field design'],page:40,subcategories:['defense-thermal','defense-surveillance'],categoryIds:['thermal','defense'],tags:['Thermal Cameras','Thermal Monoculars'] },
   { slug:'browning-strike-force-pro-dcl',name:'Strike Force Pro DCL',brand:'Browning',category:'forestry',image:'browning',gallery:['browning'],label:'WILDLIFE TRAIL CAMERA',summary:'Dual camera lens technology captures the field by day and night, with a fast trigger for fleeting wildlife encounters.',specs:[['Image resolution','26 megapixels'],['Trigger speed','0.15 seconds'],['Flash range','Up to 130 ft'],['Viewing screen','1.5-inch color'],['Lens system','Dual camera lens technology']],features:['Separate lens technology optimized for day and night','Fast trigger for wildlife monitoring','On-camera color viewing screen','Long-range flash capability'],page:21,subcategories:['defense-surveillance'],categoryIds:['forestry','defense'],tags:['Camera Traps'] },
-  { slug:'brunton-geolite',name:'Geo Lite Transit',brand:'Brunton',category:'geology',image:'geolite-open',gallery:['geolite-open','geolite'],label:'GEOLOGICAL COMPASS',summary:'A baseplate compass with transit-style measurement, designed for bearings, strike and dip work in the field.',specs:[['Azimuth resolution','2°'],['Clinometer resolution','5°'],['Magnet','Brunton EverNorth'],['Measurement','Strike / dip / dip azimuth'],['Map tools','Protractor and magnifier']],features:['Transit-style direct-read azimuth system','Hinge clinometer for dip measurements','Bubble level for accurate strike measurement','Integrated protractor for plotting field data'],page:27,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Forestry Compasses','Geological Compasses / Pocket Transits'] },
+  { slug:'brunton-geolite',name:'Geo Lite Transit (F-5030)',brand:'Brunton',category:'geology',image:'geolite-open',gallery:['geolite-open','geolite'],label:'GEOLOGICAL TRANSIT COMPASS',summary:'A compact baseplate transit compass designed for strike, dip, and dip-azimuth measurement, featuring the Brunton EverNorth magnetic system.',specs:[['Model','F-5030'],['Azimuth resolution','2° graduations (±1° accuracy)'],['Clinometer accuracy','±2.5° (5° graduations)'],['Magnet','Brunton EverNorth'],['Declination adjustment','Tool-free ±180°'],['Housing','Glass-filled polyamide lid with acrylic baseplate']],features:['Transit-style direct-read azimuth system with sighting mirror','Hinge clinometer enables fast dip and dip-azimuth measurement','Bubble level for accurate horizontal strike determination','Integrated protractor and map magnifier for field plotting'],page:27,subcategories:['geological-compasses-clinometers','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Pocket Transits','Geological Compasses / Pocket Transits'] },
   { slug:'panasonic-toughbook',name:'TOUGHBOOK FZ-55',brand:'Panasonic Toughbook',category:'computing',image:'toughbook',gallery:['toughbook'],label:'RUGGED FIELD COMPUTING',summary:'A modular laptop platform for demanding mobile work. Ask our team to configure a TOUGHBOOK around your field applications.',specs:[['Product family','Panasonic TOUGHBOOK'],['Catalogue model','FZ-55'],['Form factor','Rugged laptop'],['Configuration','Confirmed with your quotation']],features:['Built for mobile field workflows','Flexible configuration options','Suitable for field data collection and review','Project-specific configuration support'],page:47,subcategories:['defense-rugged','defense-field-operations','mining-rugged'],categoryIds:['computing','defense','mining'],tags:['Rugged Tablets'] },
   { slug:'vortex-diamondback-hd',name:'Diamondback® HD',brand:'Vortex Optics',category:'optics',image:'diamondback',gallery:['diamondback','diamondback-side'],label:'HD BINOCULARS',summary:'Rugged observation optics with HD glass, protective lens coatings and a ready-to-deploy harness.',specs:[['Available configurations','8×42 / 10×50 / 10×42'],['Optical system','High definition'],['Lenses','Fully multi-coated'],['Protection','ArmorTek® coating'],['Carry system','GlassPak harness included']],features:['Phase correction for enhanced resolution','Rubber armor for a non-slip grip','Scratch-resistant exterior lens coating','Shock-resistant construction'],page:4,subcategories:['defense-optics'],categoryIds:['optics','defense'],tags:['Binoculars'] },
   { slug:'garmin-montana-700',name:'Montana® 700',brand:'Garmin',category:'navigation',image:'montana',gallery:['montana'],label:'TOUCHSCREEN GPS',summary:'Large-format navigation for journeys on foot or by vehicle, combining a 5-inch touchscreen with outdoor navigation sensors.',specs:[['Display','5-inch touchscreen'],['Positioning','Multiple GNSS networks'],['Battery life','18+ hours in GPS mode'],['Navigation sensors','Altimeter, barometer, compass'],['Mapping','Routable roads and trails']],features:['Large touchscreen for clear map viewing','Rugged construction for outdoor navigation','ABC sensors for awareness in the field','Mapping support for roads and trails'],page:15,subcategories:['defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','defense','mining'],tags:['GPS/GNSS Devices','GPS'] },
   { slug:'ralcam-h408b',name:'H408B Borescope',brand:'Ralcam',category:'inspection',image:'ralcam',gallery:['ralcam'],label:'ARTICULATING INSPECTION',summary:'Inspect confined spaces with an articulating camera and a dedicated display, built for automotive and machinery inspection.',specs:[['Display','4.3-inch'],['Camera resolution','1920 × 1080'],['Probe diameter','8.5 mm'],['Battery','Replaceable 2,600 mAh'],['Lighting','10 adjustable LEDs']],features:['Articulating lens for difficult viewing angles','Capture images and video','High-temperature protection','Dedicated screen for on-site inspections'],page:17,subcategories:['mining-inspection'],categoryIds:['inspection','mining'] },
-  { slug:'brutforce-field-radio',name:'Field Radio',brand:'Brutforce',category:'communication',image:'radio',gallery:['radio','radio-side'],label:'PORTABLE COMMUNICATION',summary:'Portable two-way communication to keep field teams in touch. Confirm the right radio configuration for your operating location with our team.',specs:[['Frequency range','446–446.2 MHz'],['Channels','16'],['Battery','2,600 mAh Li-ion'],['Charging port','Micro-USB'],['Operating temperature','−25°C to 55°C']],features:['16 channels for team coordination','Rechargeable Li-ion battery','Portable format for field carry','Simple controls and clear audio'],page:34,subcategories:['defense-communication','defense-field-operations'],categoryIds:['communication','defense'],tags:['Field Radios'] },
-  { slug:'brunton-compro-transit',name:'Survey Compass (ComPro Transit F-5008)',brand:'Brunton',category:'geology',image:'compro',gallery:['compro'],label:'COMPOSITE POCKET TRANSIT',summary:'Traditional transit measurement in a lightweight composite body, with sighting tools and a precision magnetic system.',specs:[['Model','F-5008'],['Body','Lightweight composite'],['Magnet','Precision NdFeB disc'],['Needle settling','Induction dampening'],['Measurements','Bearings and vertical angles']],features:['Lightweight composite lid and base','Mirror for sighting and angle measurement','Short and long sights','Magnet designed to resist demagnetization'],page:30,subcategories:['gps-survey-mapping-products','geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining','surveying'],tags:['Survey Compass','Forestry Compasses','Geological Compasses / Pocket Transits'] },
-  { slug:'brunton-f-5012-axis',name:'F-5012 Axis Compass',brand:'Brunton',category:'geology',image:'geolite',gallery:['geolite','geolite-open'],label:'AXIS BASE PLATE COMPASS',summary:'A baseplate compass for strike, dip and bearing work, with direct-read azimuth, clinometer and Brunton EverNorth magnetic system.',specs:[['Azimuth resolution','2°'],['Clinometer resolution','5°'],['Magnet','Brunton EverNorth'],['Body','Durable ABS'],['Sighting','Direct-read sighting system']],features:['Direct-read azimuth and bearing system','Hinge clinometer for strike and dip measurement','Bubble level for accurate horizontal alignment','Integrated map magnifier and protractor'],page:27,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Geological Compasses / Pocket Transits'] },
+  { slug:'brutforce-field-radio',name:'BFR-001 License-Free Walkie-Talkie',brand:'BRUTFORCE',category:'communication',image:'radio',gallery:['radio','radio-side'],label:'LICENSE-FREE FIELD RADIO',summary:'License-free two-way field radio operating on the 446 MHz band with 16 channels, up to 5 km line-of-sight range, and a long-life 2,600 mAh Li-ion battery.',specs:[['Model','BFR-001'],['Frequency range','446.00–446.02 MHz (License-free UHF)'],['Channels','16 pre-programmed channels with CTCSS/DCS'],['Operating range','Up to 5 km (line-of-sight depending on terrain)'],['Battery','2,600 mAh Li-ion rechargeable battery'],['Operating temperature','−25°C to +55°C'],['Compliance','WPC Approved (License-free in India)']],features:['16 pre-set channels with CTCSS/DCS sub-codes for private team coordination','Up to 5 km range depending on line-of-sight for field and mountain operations','WPC approved for license-free professional operation across India','Rugged compact housing with voice-operated VOX and emergency alert'],page:34,subcategories:['field-communication-expedition-support','defense-communication','defense-field-operations'],categoryIds:['communication','geology','defense'],tags:['Field Radios'] },
+  { slug:'brunton-compro-transit',name:'Survey Compass (ComPro Transit F-5008)',brand:'Brunton',category:'geology',image:'compro',gallery:['compro'],label:'COMPOSITE POCKET TRANSIT',summary:'Traditional transit measurement in a lightweight composite body, with sighting tools and a precision magnetic system.',specs:[['Model','F-5008'],['Body','Lightweight composite'],['Magnet','Precision NdFeB disc'],['Needle settling','Induction dampening'],['Measurements','Bearings and vertical angles']],features:['Lightweight composite lid and base','Mirror for sighting and angle measurement','Short and long sights','Magnet designed to resist demagnetization'],page:30,subcategories:['geological-compasses-clinometers','gps-survey-mapping-products','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining','surveying'],tags:['Pocket Transits','Survey Compass','Forestry Compasses','Geological Compasses / Pocket Transits'] },
+  { slug:'brunton-f-5012-axis',name:'F-5012 Axis Compass',brand:'Brunton',category:'geology',image:'geolite',gallery:['geolite','geolite-open'],label:'AXIS BASE PLATE COMPASS',summary:'A baseplate compass for strike, dip and bearing work, with direct-read azimuth, clinometer and Brunton EverNorth magnetic system.',specs:[['Azimuth resolution','2°'],['Clinometer resolution','5°'],['Magnet','Brunton EverNorth'],['Body','Durable ABS'],['Sighting','Direct-read sighting system']],features:['Direct-read azimuth and bearing system','Hinge clinometer for strike and dip measurement','Bubble level for accurate horizontal alignment','Integrated map magnifier and protractor'],page:27,subcategories:['geological-compasses-clinometers','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Pocket Transits','Geological Compasses / Pocket Transits'] },
   { slug:'minox-nvd-650',name:'NVD 650',brand:'MINOX',category:'thermal',image:'minox',gallery:['minox','minox-back'],label:'DIGITAL NIGHT VISION',summary:'A digital monocular with an IR emitter and recording capability for observation in low-light field conditions.',specs:[['Optical magnification','6×'],['Digital magnification','5×'],['IR wavelength','850 nm'],['IR range','Up to 350 m'],['Use','Day and night']],features:['Built-in IR emitter','Night recording functionality','Rail for additional IR illumination','Daytime use supported'],page:45,subcategories:['defense-night','defense-surveillance'],categoryIds:['thermal','defense'],tags:['Night Vision Devices'] },
   { slug:'suunto-mc2',name:'MC-2 Mirror Compass',brand:'Suunto',category:'navigation',image:'suunto',gallery:['suunto'],label:'PRECISION NAVIGATION',summary:'A sighting compass with a mirror, clinometer and adjustable declination correction for considered route finding.',specs:[['Needle','Jewel-bearing steel'],['Capsule','Liquid-filled'],['Declination','Adjustable correction'],['Measurement','Sighting and clinometer'],['Variant','Confirm hemisphere and scale']],features:['Sighting mirror and notch for bearings','Luminescent markings for low light','Baseplate with magnifying lens','Detachable snap-lock lanyard'],page:41,subcategories:['defense-navigation','defense-field-operations'],categoryIds:['navigation','defense'],tags:['Compasses','Forestry Compasses'] },
   { slug:'audiomoth',name:'AudioMoth',brand:'Open Acoustic Devices',category:'forestry',image:'audiomoth',gallery:['audiomoth','audiomoth-case'],label:'ACOUSTIC MONITORING',summary:'A compact full-spectrum acoustic logger for listening to the natural world, with an optional protective field case.',specs:[['Sample rate','Up to 384 kHz'],['Processor','EFM32 Gecko'],['Microphone','Analog MEMS'],['Protective option','IPX7 waterproof case']],features:['Full-spectrum acoustic logging','Compact field-deployment format','Protective case with compression O-ring','Case strap for straightforward installation'],page:44,tags:['Acoustic Monitoring Devices'] },
@@ -80,8 +80,8 @@ export const products: Product[] = [
     name: 'Wheeler Caliper',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'wheeler-caliper',
+    gallery: ['wheeler-caliper'],
     label: 'OPTICAL DENDROMETER',
     summary: 'Optical dendrometer instrument for measuring upper-stem tree diameters from the ground.',
     specs: [['Specifications', 'Available on request']],
@@ -112,8 +112,8 @@ export const products: Product[] = [
     name: 'Clinometer',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'clinometer',
+    gallery: ['clinometer'],
     label: 'SLOPE & HEIGHT SIGHTING',
     summary: 'Handheld instrument for measuring angles of slope, elevation, and tree heights.',
     specs: [['Specifications', 'Available on request']],
@@ -128,8 +128,8 @@ export const products: Product[] = [
     name: 'Hypsometer',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'hypsometer',
+    gallery: ['hypsometer'],
     label: 'FORESTRY HYPSOMETER',
     summary: 'Forestry instrument used for measuring tree heights and elevations.',
     specs: [['Specifications', 'Available on request']],
@@ -144,8 +144,8 @@ export const products: Product[] = [
     name: 'Relaskop',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'relaskop',
+    gallery: ['relaskop'],
     label: 'STAND CRUISE INSTRUMENT',
     summary: 'Optical instrument for forest inventory, basal area estimation, and tree measurement.',
     specs: [['Specifications', 'Available on request']],
@@ -160,8 +160,8 @@ export const products: Product[] = [
     name: 'Wedge Prism',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'wedge-prism',
+    gallery: ['wedge-prism'],
     label: 'VARIABLE RADIUS CRUISING',
     summary: 'Optical prism used for variable radius plot sampling and basal area estimation.',
     specs: [['Specifications', 'Available on request']],
@@ -176,8 +176,8 @@ export const products: Product[] = [
     name: 'Densiometer',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'densiometer',
+    gallery: ['densiometer'],
     label: 'CANOPY COVER ESTIMATION',
     summary: 'Field instrument for estimating forest canopy cover and overstory density.',
     specs: [['Specifications', 'Available on request']],
@@ -192,8 +192,8 @@ export const products: Product[] = [
     name: 'Bark Gauge',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'bark-gauge',
+    gallery: ['bark-gauge'],
     label: 'BARK THICKNESS GAUGE',
     summary: 'Specialized hand tool for measuring tree bark thickness in forestry studies.',
     specs: [['Specifications', 'Available on request']],
@@ -208,8 +208,8 @@ export const products: Product[] = [
     name: 'Increment Borer',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'increment-borer',
+    gallery: ['increment-borer'],
     label: 'TREE CORE SAMPLER',
     summary: 'Specialized forestry tool for extracting wood core samples to assess tree growth and age.',
     specs: [['Specifications', 'Available on request']],
@@ -224,8 +224,8 @@ export const products: Product[] = [
     name: 'Tally Counter',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'tally-counter',
+    gallery: ['tally-counter'],
     label: 'FIELD COUNTING TOOL',
     summary: 'Handheld counter for timber cruising, stem counting, and field inventory work.',
     specs: [['Specifications', 'Available on request']],
@@ -240,8 +240,8 @@ export const products: Product[] = [
     name: 'Logger’s Tape',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'loggers-tape',
+    gallery: ['loggers-tape'],
     label: 'TIMBER & LOG MEASURING',
     summary: 'Retractable measuring tape designed for log scaling and forestry field measurements.',
     specs: [['Specifications', 'Available on request']],
@@ -256,8 +256,8 @@ export const products: Product[] = [
     name: 'Measuring Tape',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'measuring-tape',
+    gallery: ['measuring-tape'],
     label: 'LONG REEL TAPE',
     summary: 'Field measuring tape for layout, plot establishment, and distance measurement.',
     specs: [['Specifications', 'Available on request']],
@@ -272,8 +272,8 @@ export const products: Product[] = [
     name: 'Laser Rangefinder',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'laser-rangefinder',
+    gallery: ['laser-rangefinder'],
     label: 'DISTANCE & HEIGHT MEASUREMENT',
     summary: 'Handheld rangefinder for measuring distances and heights in forestry and field surveying.',
     specs: [['Specifications', 'Available on request']],
@@ -834,7 +834,978 @@ export const products: Product[] = [
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
     tags: ['Forest Fire-Fighting Products', 'PPE']
+  },
+  // =========================================================================
+  // GEOLOGICAL PRODUCTS CATALOGUE
+  // =========================================================================
+
+  // --- 1. Geological Compasses & Clinometers ---
+  {
+    slug: 'brunton-f-5010',
+    name: 'Geo Pocket Transit (F-5010)',
+    brand: 'Brunton',
+    category: 'geology',
+    image: 'brunton-f-5010',
+    gallery: ['brunton-f-5010'],
+    label: 'GEOLOGICAL TRANSIT',
+    summary: 'A solid billet 6061-T6 aluminum pocket transit engineered for precision strike, dip and dip direction measurements in structural geology and mining.',
+    specs: [
+      ['Model', 'F-5010'],
+      ['Body material', 'Machined 6061-T6 hard-anodized aluminum'],
+      ['Azimuth accuracy', '±0.5° (1° graduations)'],
+      ['Internal clinometer', '±0.5° (1° graduations, 10-minute vernier)'],
+      ['Hinge clinometer', '±0.5° (2° graduations / 1° increments)'],
+      ['Magnet', 'NdFeB rare-earth on sapphire jewel bearing'],
+      ['Water resistance', 'Waterproof (O-ring sealed)']
+    ],
+    features: [
+      'Milled from solid billet 6061-T6 aluminum for rugged structural durability',
+      'Single NdFeB rare-earth magnet resists demagnetization and settles rapidly',
+      'Hinge clinometer enables simultaneous strike, dip and dip direction measurement',
+      'Precision-aligned sighting mirror and induction dampening for quick bearings'
+    ],
+    page: 27,
+    subcategories: ['geological-compasses-clinometers', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Pocket Transits', 'Geological Compasses / Pocket Transits']
+  },
+  {
+    slug: 'breithaupt-3031-gekom',
+    name: '3031 GEKOM N Pro Basic Stratum Compass',
+    brand: 'Breithaupt Kassel',
+    category: 'geology',
+    image: 'breithaupt-3031-gekom',
+    gallery: ['breithaupt-3031-gekom'],
+    label: 'STRATUM COMPASS',
+    summary: 'German-engineered stratum compass designed for structural geology, enabling single-operation dip angle and dip azimuth measurement via the Clar method.',
+    specs: [
+      ['Model', '3031 GEKOM N Pro'],
+      ['Measurement method', 'Prof. Dr. Clar two-circle stratum system'],
+      ['Azimuth circle', '60 mm diameter, 2° graduation (1° estimation)'],
+      ['Clinometer range', '±90° (1° graduation)'],
+      ['Dip circle', '270° reading visible from above'],
+      ['Declination adjustment', '±60°'],
+      ['Housing', 'Waterproof one-piece light metal alloy']
+    ],
+    features: [
+      'Single-operation measurement of dip azimuth and dip angle per Clar method',
+      'Vertical circle readable directly from above during planar contact',
+      'Automatic needle arrest when lid is closed to protect jewel bearing',
+      'Rugged non-magnetic light alloy body built for harsh field mapping'
+    ],
+    page: 28,
+    subcategories: ['geological-compasses-clinometers', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Stratum Compasses', 'Geological Compasses / Pocket Transits']
+  },
+  {
+    slug: 'breithaupt-3032-gebru',
+    name: '3032 GEBRU Universal Pocket Transit',
+    brand: 'Breithaupt Kassel',
+    category: 'geology',
+    image: 'breithaupt-3032-gebru',
+    gallery: ['breithaupt-3032-gebru'],
+    label: 'UNIVERSAL POCKET TRANSIT',
+    summary: 'Universal geological transit combining the Clar stratum method, Brunton sighting, and traditional strike and dip measurement in a single German-crafted instrument.',
+    specs: [
+      ['Model', '3032 GEBRU'],
+      ['Measurement modes', 'Clar stratum method, Brunton sighting, strike & dip'],
+      ['Horizontal circle', '360° (1° graduation)'],
+      ['Vertical circle', '270° (2° graduation)'],
+      ['Internal clinometer', '180° (1° graduation)'],
+      ['Declination adjustment', '±60°'],
+      ['Housing', 'Waterproof one-piece light metal housing (330 g)']
+    ],
+    features: [
+      'Hybrid measurement system supporting Clar, Brunton, and strike/dip workflows',
+      'Integrated diopter for simultaneous sighting and needle observation',
+      'Top-reading vertical circle and internal level-controlled clinometer',
+      'Tripod mount compatible for high-precision topographic station work'
+    ],
+    page: 28,
+    subcategories: ['geological-compasses-clinometers', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Pocket Transits', 'Stratum Compasses', 'Geological Compasses / Pocket Transits']
+  },
+  {
+    slug: 'brunton-omnislope',
+    name: 'OmniSlope Sighting Inclinometer',
+    brand: 'Brunton',
+    category: 'geology',
+    image: 'brunton-omnislope',
+    gallery: ['brunton-omnislope'],
+    label: 'SIGHTING INCLINOMETER',
+    summary: 'Precision sighting inclinometer offering 10x magnification, multiple slope scales, and a damped pendulum mechanism for geological dip, slope, and height determination.',
+    specs: [
+      ['Model', 'OmniSlope'],
+      ['Angular accuracy', '±0.5°'],
+      ['Optics', '10× magnification with focusing eyepiece'],
+      ['Measurement scales', '0–90° slope, 0–150% grade, 66-ft forestry chain'],
+      ['Pendulum mechanism', 'Precision damped 180° range pendulum'],
+      ['Housing', 'CNC-machined anodized aluminum with protective cover'],
+      ['Mounting', '1/4-20 tripod thread and Jacob\'s staff mount']
+    ],
+    features: [
+      'Direct-reading optical scale with adjustable focus for clear field sighting',
+      'Dual-purpose design functions as sighting unit or contact inclinometer',
+      'Precision damped pendulum delivers fast, stable angle measurements',
+      'Rugged anodized aluminum body with protective silicone boot'
+    ],
+    page: 28,
+    subcategories: ['geological-compasses-clinometers', 'forest-measurement-inventory', 'mining-survey'],
+    categoryIds: ['geology', 'forestry', 'mining'],
+    tags: ['Clinometers & Inclinometers', 'Clinometer']
+  },
+
+  // --- 2. Geological Hammers, Chisels & Rock Tools ---
+  {
+    slug: 'estwing-e3-22p',
+    name: 'E3-22P Rock Pick / Geological Hammer',
+    brand: 'Estwing',
+    category: 'geology',
+    image: 'estwing-e3-22p',
+    gallery: ['estwing-e3-22p'],
+    label: 'SOLID STEEL ROCK PICK',
+    summary: 'The world standard geological rock pick, forged in one piece from American tool steel with a pointed tip, square striking face, and vibration-reducing grip.',
+    specs: [
+      ['Model', 'E3-22P'],
+      ['Head weight', '22 oz (623 g)'],
+      ['Overall length', '13 inches (330 mm)'],
+      ['Construction', 'One-piece forged American tool steel'],
+      ['Head style', 'Pointed pick tip with smooth square face'],
+      ['Grip', 'Patented Blue Shock Reduction Grip® (vinyl/nylon)'],
+      ['Origin', 'Rockford, Illinois, USA']
+    ],
+    features: [
+      'Solid steel head-handle construction eliminates handle breakage',
+      'Pointed tip engineered for prying, chipping, and fossil/crystal extraction',
+      'Smooth square face for fracturing hard rock and dressing samples',
+      'Shock Reduction Grip® reduces impact vibration by up to 70%'
+    ],
+    page: 29,
+    subcategories: ['geological-hammers-chisels-rock-tools', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Pointed Rock Picks', 'Geological Hammers']
+  },
+  {
+    slug: 'estwing-e3-24blc',
+    name: 'E3-24BLC Rock Pick / Geological Hammer',
+    brand: 'Estwing',
+    category: 'geology',
+    image: 'estwing-e3-24blc',
+    gallery: ['estwing-e3-24blc'],
+    label: 'CHISEL EDGE ROCK PICK',
+    summary: 'Solid steel geological hammer with a wide chisel edge for splitting sedimentary rock, bedding planes, and dressing geological specimens.',
+    specs: [
+      ['Model', 'E3-24BLC'],
+      ['Head weight', '24 oz (680 g)'],
+      ['Overall length', '11 inches (279 mm)'],
+      ['Construction', 'One-piece forged American tool steel'],
+      ['Head style', 'Chisel edge with square striking face'],
+      ['Grip', 'Patented Blue Shock Reduction Grip® with end cap'],
+      ['Origin', 'Rockford, Illinois, USA']
+    ],
+    features: [
+      'Wide chisel blade optimized for cleaving stratified and sedimentary formations',
+      'Heavy 24 oz head delivers powerful striking and splitting force',
+      'Double-tempered solid American tool steel forged in one piece',
+      'Patented nylon end cap and molded Shock Reduction Grip®'
+    ],
+    page: 29,
+    subcategories: ['geological-hammers-chisels-rock-tools', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Chisel Edge Picks', 'Geological Hammers']
+  },
+  {
+    slug: 'estwing-rock-chisels',
+    name: 'Estwing Rock Chisels',
+    brand: 'Estwing',
+    category: 'geology',
+    image: 'estwing-rock-chisels',
+    gallery: ['estwing-rock-chisels'],
+    label: 'GEOLOGICAL ROCK CHISELS',
+    summary: 'Heavy-duty forged steel geological chisels designed for splitting rock strata, extraction, and trimming field specimens.',
+    specs: [
+      ['Product range', 'Estwing Geological Cold & Rock Chisels'],
+      ['Verified models', 'ERC-7C (7"), ERC-8C (8"), ERC-9C (9"), ERC-12C (12")'],
+      ['Material', 'Forged high-carbon alloy steel'],
+      ['Striking cap', 'Reinforced polymer cap with enlarged striking target'],
+      ['Grip', 'Shock Reduction vinyl cushion grip with hand protector'],
+      ['Origin', 'Made in USA']
+    ],
+    features: [
+      'High-carbon steel forged specifically for rock splitting and sample extraction',
+      'Available in multiple lengths and blade widths (7", 8", 9", and 12")',
+      'Heavy polymer striking cap protects hands and provides large strike area',
+      'Durable vinyl cushion grip absorbs shock during heavy hammer strikes'
+    ],
+    page: 29,
+    subcategories: ['geological-hammers-chisels-rock-tools', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Rock Chisels', 'Geological Hammers']
+  },
+
+  // --- 3. Hand Lenses & Magnification ---
+  {
+    slug: 'geological-hand-lens',
+    name: 'Geological Hand Lens',
+    brand: 'Northern Geological Supplies',
+    category: 'geology',
+    image: 'geological-hand-lens',
+    gallery: ['geological-hand-lens'],
+    label: 'FIELD MAGNIFIER LOUPE',
+    summary: 'Standard 10x 21mm geological hand lens with distortion-free optical glass and a durable folding metal casing for outcrop mineral examination.',
+    specs: [
+      ['Magnification', '10×'],
+      ['Lens diameter', '21 mm'],
+      ['Optical glass', 'Achromatic optical glass element'],
+      ['Casing', 'Chrome-plated brass swivel frame'],
+      ['Attachment', 'Lanyard loop integrated into casing'],
+      ['Application', 'Hand-specimen petrography and mineral grain inspection']
+    ],
+    features: [
+      '10x magnification standard for geological field examination',
+      '21 mm clear aperture provides wide field of view for grain identification',
+      'Swivel metal case protects lens elements from scratches in the field',
+      'Compact pocket format with lanyard hole for secure field carry'
+    ],
+    page: 30,
+    subcategories: ['hand-lenses-magnification', 'mining-inspection'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Field Loupes', 'Field Hand Lens / Loupe']
+  },
+  {
+    slug: 'geo-premier-triplet-hand-lens',
+    name: 'GEO Premier Triplet Hand Lens 10× 20.5mm',
+    brand: 'GEO Premier',
+    category: 'geology',
+    image: 'geo-premier-triplet-hand-lens',
+    gallery: ['geo-premier-triplet-hand-lens'],
+    label: 'TRIPLET GEOLOGICAL LOUPE',
+    summary: 'Professional 10x 20.5mm triplet hand lens featuring three bonded optical glass elements for edge-to-edge color correction and high-clarity petrographic analysis.',
+    specs: [
+      ['Magnification', '10×'],
+      ['Viewing aperture', '20.5 mm diameter'],
+      ['Lens construction', 'Achromatic & aplanatic triplet (3 bonded optical lenses)'],
+      ['Body style', 'Hexagonal metal casing with knurled textured grip'],
+      ['Color correction', 'Corrected for chromatic and spherical aberration'],
+      ['Inclusions', 'Protective leather pouch and lanyard attachment point']
+    ],
+    features: [
+      'Three bonded optical lenses eliminate distortion and color fringing',
+      'Hexagonal housing designed for firm grip in wet and muddy field conditions',
+      'Generous 20.5 mm aperture allows ample light entry for crystal analysis',
+      'Supplied with fitted genuine leather pouch for field protection'
+    ],
+    page: 30,
+    subcategories: ['hand-lenses-magnification', 'mining-inspection'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Triplet Hand Lenses', 'Field Hand Lens / Loupe']
+  },
+
+  // --- 4. GPS, Mapping & Distance Measurement ---
+  {
+    slug: 'garmin-etrex-se',
+    name: 'eTrex® SE Handheld GPS',
+    brand: 'Garmin',
+    category: 'navigation',
+    image: 'garmin-etrex-se',
+    gallery: ['garmin-etrex-se'],
+    label: 'MULTI-GNSS HANDHELD GPS',
+    summary: 'Easy-to-use handheld navigator with battery life up to 1,800 hours in expedition mode, high-contrast monochrome display, and multi-GNSS satellite support.',
+    specs: [
+      ['Display', '2.2-inch transflective monochrome (240 × 320 pixels)'],
+      ['Satellite systems', 'Multi-GNSS: GPS, GLONASS, Galileo, BeiDou, QZSS'],
+      ['Battery life', 'Up to 168 hours (Standard) / Up to 1,800 hours (Expedition mode)'],
+      ['Battery type', '2 AA batteries (field replaceable)'],
+      ['Interface', 'USB-C'],
+      ['Water rating', 'IPX7 (waterproof)'],
+      ['Connectivity', 'Bluetooth® wireless / Garmin Explore™ compatible']
+    ],
+    features: [
+      'Multi-GNSS tracking delivers dependable positioning in deep canyons and heavy cover',
+      'High-contrast 2.2" sunlight-readable display',
+      'Unmatched battery stamina: up to 75 days in expedition mode',
+      'Pair with the Garmin Explore app for route planning and active weather'
+    ],
+    page: 13,
+    subcategories: ['gps-mapping-distance-measurement', 'gps-survey-mapping-products', 'defense-navigation', 'mining-field-mapping', 'mining-mapping'],
+    categoryIds: ['navigation', 'geology', 'defense', 'mining'],
+    tags: ['Handheld GPS', 'GPS/GNSS Devices', 'GPS']
+  },
+  {
+    slug: 'garmin-gpsmap-65',
+    name: 'GPSMAP® 65 Handheld GPS',
+    brand: 'Garmin',
+    category: 'navigation',
+    image: 'garmin-gpsmap-65',
+    gallery: ['garmin-gpsmap-65'],
+    label: 'MULTI-BAND GNSS NAVIGATOR',
+    summary: 'Rugged button-operated handheld GPS with multi-band satellite technology and preloaded TopoActive maps for accurate field positioning.',
+    specs: [
+      ['Display', '2.6-inch sunlight-readable 65K color TFT (160 × 240 pixels)'],
+      ['Satellite positioning', 'Multi-band GNSS (GPS, GLONASS, Galileo, QZSS, IRNSS)'],
+      ['Preloaded maps', 'Routable TopoActive maps'],
+      ['Internal memory', '16 GB internal storage, microSD card expansion'],
+      ['Battery life', 'Up to 16 hours in GPS mode (2 AA batteries)'],
+      ['Water rating', 'IPX7']
+    ],
+    features: [
+      'Multi-band frequency support reduces multipath error in dense terrain',
+      'Preloaded routable TopoActive mapping for trails and terrain contours',
+      'Reliable button operation designed for wet, muddy, or gloved field hands',
+      'Expanded satellite reception across five global navigation constellations'
+    ],
+    page: 13,
+    subcategories: ['gps-mapping-distance-measurement', 'gps-survey-mapping-products', 'defense-navigation', 'mining-field-mapping', 'mining-mapping'],
+    categoryIds: ['navigation', 'geology', 'defense', 'mining'],
+    tags: ['Handheld GPS', 'GPS/GNSS Devices', 'GPS']
+  },
+  {
+    slug: 'leica-disto-laser-distance-meter',
+    name: 'Leica DISTO™ Laser Distance Meter',
+    brand: 'Leica Geosystems',
+    category: 'surveying',
+    image: 'leica-disto-laser-distance-meter',
+    gallery: ['leica-disto-laser-distance-meter'],
+    label: 'LASER DISTANCE METER',
+    summary: 'Precision handheld laser distance meters engineered by Leica Geosystems for geological section measuring, survey offsets, and quarry profiles.',
+    specs: [
+      ['Specifications', 'Available on request']
+    ],
+    features: [
+      'Millimeter-precision laser distance measurement for field surveys',
+      'Engineered for indoor, outdoor, and harsh geological environments',
+      'Bluetooth Smart integration for digital sketch and data logging apps',
+      'Model configurations and range options confirmed during quotation'
+    ],
+    page: 14,
+    subcategories: ['gps-mapping-distance-measurement', 'mining-survey', 'mining-distance'],
+    categoryIds: ['surveying', 'geology', 'mining'],
+    tags: ['Laser Distance Meters', 'Distance Measurement']
+  },
+
+  // --- 5. Field Notebooks, Pens & Measuring Tools ---
+  {
+    slug: 'chartwell-collimation-book-2426',
+    name: 'Chartwell Collimation Book – 2426',
+    brand: 'Chartwell',
+    category: 'geology',
+    image: 'chartwell-collimation-book-2426',
+    gallery: ['chartwell-collimation-book-2426'],
+    label: 'WATERPROOF SURVEY BOOK',
+    summary: 'The benchmark survey field notebook for recording leveling, collimation, and elevations, made with 50% rag wet-strength paper that remains legible when wet.',
+    specs: [
+      ['Model', '2426'],
+      ['Format', 'Collimation leveling layout (BS, IS, FS, HPC, RL, Distance)'],
+      ['Pages', '160 pages (80 leaves)'],
+      ['Dimensions', '192 × 120 mm (pocket size)'],
+      ['Paper quality', '50% cotton rag wet-strength waterproof paper'],
+      ['Binding', 'Casebound with rot-proof nylon thread and wipe-clean cover']
+    ],
+    features: [
+      'High cotton rag wet-strength paper retains strength and writeability in rain',
+      'Printed with permanent waterproof ink that will not smudge or fade',
+      'Casebound format folds completely flat for comfortable field recording',
+      'Rounded corners reduce pocket wear during long field days'
+    ],
+    page: 31,
+    subcategories: ['field-notebooks-pens-measuring-tools', 'mining-field-mapping'],
+    categoryIds: ['geology', 'surveying', 'mining'],
+    tags: ['Field Notebooks', 'Survey Books']
+  },
+  {
+    slug: 'edding-mapping-pen-01',
+    name: 'Edding Mapping Pen 0.1',
+    brand: 'Edding',
+    category: 'geology',
+    image: 'edding-mapping-pen-01',
+    gallery: ['edding-mapping-pen-01'],
+    label: 'FINE TECHNICAL MAPPING PEN',
+    summary: 'High-precision 0.1mm technical fineliner with waterproof, lightfast pigment ink, designed for fine geological drafting, contouring, and field notation.',
+    specs: [
+      ['Stroke width', '0.1 mm ultra-fine line'],
+      ['Tip design', 'Metal-framed synthetic nib for precision ruler work'],
+      ['Ink type', 'Water-based permanent pigment ink'],
+      ['Lightfastness', 'Highly lightfast, smudge-proof, and waterproof when dry']
+    ],
+    features: [
+      '0.1 mm line width ideal for dense geological maps and fine structural symbols',
+      'Metal-sheathed tip prevents nib damage against scales and protractors',
+      'Lightfast archival ink prevents fading in field notebooks and published maps',
+      'Smudge-resistant formulation performs on synthetic and wet-strength papers'
+    ],
+    page: 31,
+    subcategories: ['field-notebooks-pens-measuring-tools'],
+    categoryIds: ['geology'],
+    tags: ['Mapping Pens & Markers', 'Field Pens']
+  },
+  {
+    slug: 'edding-mapping-pen-03',
+    name: 'Edding Mapping Pen 0.3',
+    brand: 'Edding',
+    category: 'geology',
+    image: 'edding-mapping-pen-03',
+    gallery: ['edding-mapping-pen-03'],
+    label: 'TECHNICAL MAPPING PEN',
+    summary: 'Precision 0.3mm fineliner pen with waterproof archival pigment ink, engineered for geological boundary lines, structural symbols, and notebook entries.',
+    specs: [
+      ['Stroke width', '0.3 mm medium-fine line'],
+      ['Tip design', 'Metal-clad synthetic nib'],
+      ['Ink formulation', 'Archival waterproof and lightfast pigment ink'],
+      ['Application', 'Geological field mapping, lithology logs, and notes']
+    ],
+    features: [
+      '0.3 mm stroke delivers optimal balance of fine detail and clear visibility',
+      'Archival pigment ink will not bleed through wet-strength survey paper',
+      'Long metal collar facilitates accurate drawing alongside set-squares and rulers',
+      'Ventilated safety cap with pocket clip'
+    ],
+    page: 31,
+    subcategories: ['field-notebooks-pens-measuring-tools'],
+    categoryIds: ['geology'],
+    tags: ['Mapping Pens & Markers', 'Field Pens']
+  },
+  {
+    slug: 'edding-mapping-pen-05',
+    name: 'Edding Mapping Pen 0.5',
+    brand: 'Edding',
+    category: 'geology',
+    image: 'edding-mapping-pen-05',
+    gallery: ['edding-mapping-pen-05'],
+    label: 'GEOLOGICAL DRAFTING PEN',
+    summary: 'Durable 0.5mm technical pen with permanent waterproof pigment ink, ideal for major geological boundaries, outcrop legends, and core logging.',
+    specs: [
+      ['Stroke width', '0.5 mm line width'],
+      ['Tip design', 'Metal-supported robust synthetic nib'],
+      ['Ink type', 'Permanent, waterproof, and lightfast pigment ink'],
+      ['Application', 'Major contact lines, stratigraphic logs, and headings']
+    ],
+    features: [
+      '0.5 mm robust line width for high-clarity structural and stratigraphic drafting',
+      'Fade-resistant and smear-proof once dry on standard and synthetic papers',
+      'Durable metal-sheathed tip withstands pressure during rigorous field recording',
+      'Reliable constant ink flow without blotting'
+    ],
+    page: 31,
+    subcategories: ['field-notebooks-pens-measuring-tools'],
+    categoryIds: ['geology'],
+    tags: ['Mapping Pens & Markers', 'Field Pens']
+  },
+  {
+    slug: 'staedtler-pigment-liner-mapping-pen',
+    name: 'Staedtler Pigment Liner Mapping Pen',
+    brand: 'Staedtler',
+    category: 'geology',
+    image: 'staedtler-pigment-liner-mapping-pen',
+    gallery: ['staedtler-pigment-liner-mapping-pen'],
+    label: 'ARCHIVAL FIELD LINER',
+    summary: 'Indelible technical pigment liner pen engineered for geological documentation, conforming to ISO 14145-2 archival standards with 18-hour CAP OFF technology.',
+    specs: [
+      ['Ink standard', 'Indelible pigment ink (ISO 14145-2 certified)'],
+      ['Tip construction', 'Long metal tip for drafting rulers and templates'],
+      ['CAP OFF technology', 'Can be left uncapped for up to 18 hours without drying up'],
+      ['Lightfastness', 'Extreme lightfastness and waterproof on paper']
+    ],
+    features: [
+      'ISO 14145-2 certified archival indelible ink ensures permanent legal records',
+      'CAP OFF feature allows seamless operation during intermittent field observations',
+      'Erasable when used on drafting film; non-bleeding on wet-strength paper',
+      'Sturdy metal pocket clip and robust polypropylene barrel'
+    ],
+    page: 31,
+    subcategories: ['field-notebooks-pens-measuring-tools'],
+    categoryIds: ['geology'],
+    tags: ['Mapping Pens & Markers', 'Field Pens']
+  },
+  {
+    slug: 'china-graph-pencils',
+    name: 'China Graph Pencils',
+    brand: 'Northern Geological Supplies',
+    category: 'geology',
+    image: 'china-graph-pencils',
+    gallery: ['china-graph-pencils'],
+    label: 'ROCK & CORE MARKING PENCILS',
+    summary: 'Specialized wax-based chinagraph pencils designed to write cleanly on wet rock faces, drill core, polished minerals, glass, and metal without scratching.',
+    specs: [
+      ['Core composition', 'Heavy pigmented wax formulation'],
+      ['Applicable surfaces', 'Rough rock, drill cores, wet samples, glass, metal, plastic'],
+      ['Design', 'Peel-off paper wrapping with pull-string (no sharpener needed)'],
+      ['Moisture resistance', 'Fully waterproof and moisture resistant']
+    ],
+    features: [
+      'Writes effortlessly on damp, wet, or polished rock and core surfaces',
+      'Pull-string paper wrapping eliminates the need for knife or pencil sharpener in the field',
+      'Non-porous pigment stays legible in extreme weather and core-washing conditions',
+      'Wipes cleanly off non-porous surfaces when no longer needed'
+    ],
+    page: 32,
+    subcategories: ['field-notebooks-pens-measuring-tools', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Mapping Pens & Markers', 'Field Markers']
+  },
+  {
+    slug: 'geological-measuring-tape',
+    name: 'Geological Measuring Tape',
+    brand: 'AFFORDA',
+    category: 'geology',
+    image: 'geological-measuring-tape',
+    gallery: ['geological-measuring-tape'],
+    label: 'FIELD SURVEY TAPE',
+    summary: 'Heavy-duty open-frame fiberglass measuring tape designed for geological outcrop measurement, stratigraphic section logging, and field survey baselines.',
+    specs: [
+      ['Length options', '30 m / 50 m open-frame / 100 m configurations'],
+      ['Blade material', 'Heavy-duty non-conductive fiberglass with PVC coating'],
+      ['Frame style', 'Impact-resistant ABS open frame with ground spike'],
+      ['Graduations', 'Metric millimeter and centimeter markings on high-contrast background'],
+      ['Rewind system', 'High-speed geared 3:1 rewind crank']
+    ],
+    features: [
+      'Non-conductive, non-stretch fiberglass blade resists water, mud, and dirt',
+      'Open-frame design allows easy rinsing of sediment after muddy field use',
+      'High-speed rewind handle quickly reels in long baseline measurements',
+      'End hook and ground stake provide secure anchoring for solo field measuring'
+    ],
+    page: 32,
+    subcategories: ['field-notebooks-pens-measuring-tools', 'mining-survey', 'mining-distance'],
+    categoryIds: ['geology', 'surveying', 'mining'],
+    tags: ['Measuring Tapes', 'Field Measuring Rods']
+  },
+
+  // --- 6. Mineral Hardness & Property Testing ---
+  {
+    slug: 'acid-bottles',
+    name: 'Acid Bottles',
+    brand: 'Northern Geological Supplies',
+    category: 'geology',
+    image: 'acid-bottles',
+    gallery: ['acid-bottles'],
+    label: 'CARBONATE TEST DROPPER BOTTLE',
+    summary: 'Chemical-resistant polyethylene dropper bottles designed for safely storing and dispensing dilute hydrochloric acid (10% HCl) to test for carbonate effervescence.',
+    specs: [
+      ['Capacity options', '30 ml / 60 ml'],
+      ['Material', 'Acid-resistant polyethylene (LDPE/HDPE)'],
+      ['Dispensing mechanism', 'Precision micro-dropper spout with captive protective cap'],
+      ['Application', 'Effervescence testing for calcite, dolomite, and carbonate minerals']
+    ],
+    features: [
+      'Chemically inert polymer withstands corrosive dilute hydrochloric acid',
+      'Controlled drop-by-drop dispenser minimizes spillage and waste',
+      'Leak-proof screw cap prevents accidental discharge inside field rucksacks',
+      'Essential pocket tool for distinguishing limestone, marble, and dolostone'
+    ],
+    page: 33,
+    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Acid Testing', 'Property Testing']
+  },
+  {
+    slug: 'mohs-hardness-tile',
+    name: 'Mohs Hardness Tile',
+    brand: 'Northern Geological Supplies',
+    category: 'geology',
+    image: 'mohs-hardness-tile',
+    gallery: ['mohs-hardness-tile'],
+    label: 'MINERAL HARDNESS REFERENCE',
+    summary: 'Calibrated glass testing plate with a known Mohs hardness of 5.5, used by geologists to quickly differentiate softer minerals from quartz and harder silicates.',
+    specs: [
+      ['Hardness reference', 'Mohs 5.5 (calibrated float plate glass)'],
+      ['Dimensions', '75 × 25 mm (3 × 1 inches)'],
+      ['Edge finish', 'Polished beveled safety edges'],
+      ['Application', 'Standard comparative hardness test for unknown field specimens']
+    ],
+    features: [
+      'Calibrated Mohs 5.5 hardness index for accurate mineral identification',
+      'Scratch vs be scratched test instantly isolates quartz, feldspar, and calcite',
+      'Smooth ground edges ensure safe handling in field rucksacks and kits',
+      'Reusable testing surface suitable for field surveys and laboratory classes'
+    ],
+    page: 33,
+    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Mohs Hardness Testing', 'Property Testing']
+  },
+  {
+    slug: 'pendulum-pencil-magnet',
+    name: 'Pendulum Pencil Magnet',
+    brand: 'Northern Geological Supplies',
+    category: 'geology',
+    image: 'pendulum-pencil-magnet',
+    gallery: ['pendulum-pencil-magnet'],
+    label: 'PENDULUM MAGNETIC TESTER',
+    summary: 'Sensitive pendulum-style magnetic tester housed in a pen format, using a free-hanging magnet to detect weak magnetic fields in rocks and drill core.',
+    specs: [
+      ['Mechanism', 'Gimballed / suspended free-swinging pendulum magnet'],
+      ['Magnet type', 'Rare-earth neodymium element'],
+      ['Housing', 'Aluminum pen body with pocket clip and screw cap'],
+      ['Application', 'Detection of magnetite, ilmenite, and pyrrhotite in hand specimens']
+    ],
+    features: [
+      'Free-hanging magnetic pendulum detects subtle magnetic susceptibility',
+      'Identifies weakly magnetic minerals that stationary bar magnets miss',
+      'Pen format with shirt-pocket clip for effortless field access',
+      'Protective threaded cap shields internal pendulum mechanism during transit'
+    ],
+    page: 33,
+    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Magnetic Scribers', 'Property Testing']
+  },
+  {
+    slug: 'steel-point-scriber',
+    name: 'Steel Point Scriber',
+    brand: 'Northern Geological Supplies',
+    category: 'geology',
+    image: 'steel-point-scriber',
+    gallery: ['steel-point-scriber'],
+    label: 'HARDENED STEEL SCRIBER',
+    summary: 'Hardened tool steel scriber calibrated to approximately Mohs 5.5–6.0, used for scratch testing minerals and marking structural lines on field specimens.',
+    specs: [
+      ['Point material', 'Hardened and tempered carbon tool steel (~Mohs 5.5–6.0)'],
+      ['Handle', 'Knurled aluminum body for non-slip grip'],
+      ['Length', 'Approx. 140 mm'],
+      ['Application', 'Mohs scratch testing, outcrop sample scribing, and specimen labeling']
+    ],
+    features: [
+      'Calibrated hardened steel tip tests minerals against Mohs 5.5 threshold',
+      'Knurled grip ensures positive control when scribing hard rock specimens',
+      'Fine ground point allows precision scratching on millimeter-scale mineral grains',
+      'Durable all-metal build engineered for tough field conditions'
+    ],
+    page: 33,
+    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Mohs Hardness Testing', 'Property Testing']
+  },
+  {
+    slug: 'streak-plates-black',
+    name: 'Streak Plates – Black',
+    brand: 'Northern Geological Supplies',
+    category: 'geology',
+    image: 'streak-plates-black',
+    gallery: ['streak-plates-black'],
+    label: 'UNGLAZED BLACK PORCELAIN',
+    summary: 'Unglazed black porcelain streak tile with a hardness of approximately Mohs 6.5–7.0, essential for diagnostic powder testing of pale, white, and metallic minerals.',
+    specs: [
+      ['Material', 'Unglazed high-density black porcelain'],
+      ['Hardness', 'Approx. Mohs 6.5–7.0'],
+      ['Dimensions', '50 × 50 mm (2 × 2 inches)'],
+      ['Target minerals', 'Light-colored, white, and reflective minerals (fluorite, talc, gypsum)']
+    ],
+    features: [
+      'Matte black unglazed surface provides maximum contrast for pale powders',
+      'Mohs 6.5–7.0 hardness pulverizes all softer minerals to verify true streak',
+      'Double-sided testing surface extends usable life in the field',
+      'Easily cleaned with water and abrasive pad for repeated testing'
+    ],
+    page: 34,
+    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Streak Plates', 'Property Testing']
+  },
+  {
+    slug: 'streak-plates-white',
+    name: 'Streak Plates – White',
+    brand: 'Northern Geological Supplies',
+    category: 'geology',
+    image: 'streak-plates-white',
+    gallery: ['streak-plates-white'],
+    label: 'UNGLAZED WHITE PORCELAIN',
+    summary: 'Classic unglazed white porcelain streak tile (Mohs 6.5–7.0) used for revealing the diagnostic powder streak of dark, metallic, and ore minerals like hematite and pyrite.',
+    specs: [
+      ['Material', 'Unglazed high-density white porcelain'],
+      ['Hardness', 'Approx. Mohs 6.5–7.0'],
+      ['Dimensions', '50 × 50 mm (2 × 2 inches)'],
+      ['Target minerals', 'Dark and metallic minerals (hematite: reddish-brown; pyrite: greenish-black)']
+    ],
+    features: [
+      'Standard white unglazed porcelain reveals distinct diagnostic mineral streaks',
+      'Unmasks true mineral identity independent of surface weathering or tarnish',
+      'Dual testing faces for extended fieldwork sessions',
+      'Standard 50 × 50 mm format fits inside any field testing wallet or kit'
+    ],
+    page: 34,
+    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Streak Plates', 'Property Testing']
+  },
+  {
+    slug: 'swing-magnetic-pen',
+    name: 'Swing Magnetic Pen',
+    brand: 'Northern Geological Supplies',
+    category: 'geology',
+    image: 'swing-magnetic-pen',
+    gallery: ['swing-magnetic-pen'],
+    label: 'PIVOTING MAGNETIC PEN',
+    summary: 'Precision aluminum pen tool with an internal pivoting magnet that freely swings towards ferromagnetic minerals in hand specimens and core samples.',
+    specs: [
+      ['Design', 'Low-friction internal pivoting magnetic needle indicator'],
+      ['Material', 'Precision-turned aluminum with anodized finish'],
+      ['Indicator', 'High-sensitivity swing response to magnetic minerals'],
+      ['Form factor', 'Pen-style housing with pocket clip']
+    ],
+    features: [
+      'Pivoting swing indicator defects visibly toward minute ferromagnetic content',
+      'Distinguishes weakly magnetic minerals without sticking or specimen contamination',
+      'Pocket-clip design ensures immediate availability during logging and mapping',
+      'Machined aluminum housing protects pivot needle from field drops'
+    ],
+    page: 34,
+    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Magnetic Scribers', 'Property Testing']
+  },
+  {
+    slug: 'tungsten-carbide-scriber-with-magnet-black',
+    name: 'Tungsten Carbide Scriber with Magnet – Black',
+    brand: 'Faithfull',
+    category: 'geology',
+    image: 'tungsten-carbide-scriber-with-magnet-black',
+    gallery: ['tungsten-carbide-scriber-with-magnet-black'],
+    label: 'TUNGSTEN SCRIBER & MAGNET',
+    summary: 'Dual-ended field testing instrument featuring an ultra-hard tungsten carbide scriber tip (Mohs 8.5–9.0) on one end and a permanent neodymium magnet on the other.',
+    specs: [
+      ['Scriber point', 'Ultra-hard tungsten carbide tip (~Mohs 8.5–9.0)'],
+      ['Opposite end', 'Permanent neodymium magnetic pickup and tester'],
+      ['Handle', 'Black anodized aluminum with non-slip knurled grip'],
+      ['Clip', 'Steel pocket clip for secure shirt/vest carry']
+    ],
+    features: [
+      'Tungsten carbide tip scratches through glass, quartz, and hardened steel',
+      'Integrated tail magnet tests for magnetic attraction in a single hand motion',
+      'Heavy knurled black handle delivers firm grip even in wet field conditions',
+      'Combines two essential geological property tests in one rugged tool'
+    ],
+    page: 34,
+    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Magnetic Scribers', 'Mohs Hardness Testing', 'Property Testing']
+  },
+
+  // --- 7. Geological Sieves & Sample Analysis ---
+  {
+    slug: '100mm-glenammer-sieves',
+    name: '100mm Glenammer Sieves',
+    brand: 'Glenammer Engineering',
+    category: 'geology',
+    image: '100mm-glenammer-sieves',
+    gallery: ['100mm-glenammer-sieves'],
+    label: 'ANALYTICAL TEST SIEVE',
+    summary: 'Compact 100mm (4-inch) precision stainless steel test sieves manufactured in the UK to ISO 3310-1 standards for fine particle and sediment sorting.',
+    specs: [
+      ['Diameter', '100 mm (approx. 4 inches)'],
+      ['Body material', 'Stainless steel (non-magnetic)'],
+      ['Mesh type', 'Stainless steel woven wire mesh'],
+      ['Standards compliance', 'ISO 3310-1 / BS 410 / ASTM E11'],
+      ['Aperture availability', 'Full range from 20 microns to multiple millimeters']
+    ],
+    features: [
+      'Fully stainless steel non-magnetic body and woven wire mesh',
+      'Laser-etched serial numbers and aperture specifications for traceability',
+      'Precision seamless frame design eliminates cross-sample entrapment',
+      'Compact 100mm diameter ideal for portable field testing and small lab batches'
+    ],
+    page: 35,
+    subcategories: ['geological-sieves-sample-analysis'],
+    categoryIds: ['geology'],
+    tags: ['Analytical Test Sieves', 'Geological Sieves']
+  },
+  {
+    slug: '150mm-glenammer-sieves',
+    name: '150mm Glenammer Sieves',
+    brand: 'Glenammer Engineering',
+    category: 'geology',
+    image: '150mm-glenammer-sieves',
+    gallery: ['150mm-glenammer-sieves'],
+    label: 'ANALYTICAL TEST SIEVE',
+    summary: 'Medium-format 150mm (6-inch) stainless steel analytical sieves built to ISO 3310 standards for sedimentary analysis, aggregate sizing, and lab classification.',
+    specs: [
+      ['Diameter', '150 mm (approx. 6 inches)'],
+      ['Body material', 'Stainless steel (non-magnetic)'],
+      ['Mesh type', 'Stainless steel woven wire mesh'],
+      ['Standards compliance', 'ISO 3310-1 / BS 410 / ASTM E11'],
+      ['Aperture availability', 'Full range from micron to millimeter sizes']
+    ],
+    features: [
+      'Precision manufactured by Glenammer Engineering in the United Kingdom',
+      'Smooth transitions between body and mesh prevent particle accumulation',
+      'Conforms to British and international testing standards',
+      '150mm diameter provides intermediate sample volume capacity'
+    ],
+    page: 35,
+    subcategories: ['geological-sieves-sample-analysis'],
+    categoryIds: ['geology'],
+    tags: ['Analytical Test Sieves', 'Geological Sieves']
+  },
+  {
+    slug: '200mm-glenammer-sieves',
+    name: '200mm Glenammer Sieves',
+    brand: 'Glenammer Engineering',
+    category: 'geology',
+    image: '200mm-glenammer-sieves',
+    gallery: ['200mm-glenammer-sieves'],
+    label: 'STANDARD TEST SIEVE',
+    summary: 'Industry-standard 200mm full-height stainless steel test sieves (50mm depth) built for geological and geotechnical particle size distribution analysis.',
+    specs: [
+      ['Diameter', '200 mm (7.9 inches)'],
+      ['Depth', '50 mm (full height)'],
+      ['Body material', 'Stainless steel (non-magnetic)'],
+      ['Mesh type', 'Precision stainless steel woven wire mesh'],
+      ['Standards compliance', 'ISO 3310-1 / BS 410 / ASTM E11'],
+      ['Aperture range', 'Available from 20 microns up to coarse millimeter grades']
+    ],
+    features: [
+      'Standard 200mm format compatible with all standard laboratory sieve shakers',
+      'Non-magnetic stainless steel prevents interference with magnetic minerals',
+      'Full 50mm depth accommodates substantial geological sample volumes',
+      'Laser-etched identification and individual calibration certification options'
+    ],
+    page: 35,
+    subcategories: ['geological-sieves-sample-analysis'],
+    categoryIds: ['geology'],
+    tags: ['Analytical Test Sieves', 'Geological Sieves']
+  },
+  {
+    slug: '200mm-half-height-glenammer-sieves',
+    name: '200mm Half Height Glenammer Sieves',
+    brand: 'Glenammer Engineering',
+    category: 'geology',
+    image: '200mm-half-height-glenammer-sieves',
+    gallery: ['200mm-half-height-glenammer-sieves'],
+    label: 'HALF HEIGHT TEST SIEVE',
+    summary: 'Space-saving 200mm diameter half-height sieves (25mm depth) that allow double the number of sieves to be stacked in a single shaker run.',
+    specs: [
+      ['Diameter', '200 mm (7.9 inches)'],
+      ['Depth', '25 mm (half height)'],
+      ['Body material', 'Stainless steel (non-magnetic)'],
+      ['Mesh type', 'Precision woven wire mesh'],
+      ['Standards compliance', 'ISO 3310-1 / BS 410 / ASTM E11']
+    ],
+    features: [
+      'Half-height 25mm depth doubles stack capacity on standard shaker columns',
+      'Ideal for comprehensive multi-fraction granulometric grain size analysis',
+      'Fully sealed stainless steel construction prevents specimen loss',
+      'Interlocks securely with full-height 200mm lids and receiving pans'
+    ],
+    page: 35,
+    subcategories: ['geological-sieves-sample-analysis'],
+    categoryIds: ['geology'],
+    tags: ['Half Height Sieves', 'Geological Sieves']
+  },
+  {
+    slug: '300mm-glenammer-sieves',
+    name: '300mm Glenammer Sieves',
+    brand: 'Glenammer Engineering',
+    category: 'geology',
+    image: '300mm-glenammer-sieves',
+    gallery: ['300mm-glenammer-sieves'],
+    label: 'LARGE FORMAT SIEVE',
+    summary: 'Large 300mm diameter full-height stainless steel analytical sieves (75mm depth) designed for large volume sediment, soil, and crushed rock analysis.',
+    specs: [
+      ['Diameter', '300 mm (approx. 12 inches)'],
+      ['Depth', '75 mm (full height)'],
+      ['Body material', 'Stainless steel (non-magnetic)'],
+      ['Mesh type', 'Heavy-duty woven wire mesh'],
+      ['Standards compliance', 'ISO 3310-1 / BS 410 / ASTM E11']
+    ],
+    features: [
+      'Large 300mm surface area processes high-mass geological and gravel samples',
+      'Heavy-duty stainless steel frame handles abrasive aggregate agitation',
+      'Individually laser-engraved with certified aperture details',
+      'Designed for both automated mechanical shaker and manual sieving'
+    ],
+    page: 36,
+    subcategories: ['geological-sieves-sample-analysis'],
+    categoryIds: ['geology'],
+    tags: ['Analytical Test Sieves', 'Geological Sieves']
+  },
+  {
+    slug: '300mm-half-height-glenammer-sieves',
+    name: '300mm Half Height Glenammer Sieves',
+    brand: 'Glenammer Engineering',
+    category: 'geology',
+    image: '300mm-half-height-glenammer-sieves',
+    gallery: ['300mm-half-height-glenammer-sieves'],
+    label: 'LARGE HALF HEIGHT SIEVE',
+    summary: 'Shallow 300mm diameter half-height sieves (40mm depth) providing a wide sorting area with reduced stack height for large geological laboratories.',
+    specs: [
+      ['Diameter', '300 mm (approx. 12 inches)'],
+      ['Depth', '40 mm (half height)'],
+      ['Body material', 'Stainless steel (non-magnetic)'],
+      ['Mesh type', 'Heavy-duty woven wire mesh'],
+      ['Standards compliance', 'ISO 3310-1 / BS 410 / ASTM E11']
+    ],
+    features: [
+      'Wide 300mm diameter provides rapid separation without excessive vertical stack height',
+      'Precision non-magnetic stainless steel resists corrosion from wet sample washing',
+      'Seamless body contour ensures fast, complete specimen recovery',
+      'Conforms to international particle sizing specifications'
+    ],
+    page: 36,
+    subcategories: ['geological-sieves-sample-analysis'],
+    categoryIds: ['geology'],
+    tags: ['Half Height Sieves', 'Geological Sieves']
+  },
+  {
+    slug: 'geo-sieves',
+    name: 'Geo-Sieves Stackable Field Set',
+    brand: 'Northern Geological Supplies',
+    category: 'geology',
+    image: 'geo-sieves',
+    gallery: ['geo-sieves'],
+    label: 'STACKABLE FIELD SIEVE SET',
+    summary: 'A complete 6-sieve portable field set made in Britain with durable molded polymer trays, high-quality nylon mesh, lid, and collecting base pan.',
+    specs: [
+      ['Set configuration', '6 nested sieves with matching lid and receiver base pan'],
+      ['Mesh apertures included', '2.0 mm, 1.0 mm, 0.5 mm, 0.25 mm, 0.125 mm, 0.063 mm'],
+      ['Mesh material', 'High-quality durable nylon mesh'],
+      ['Tray material', 'Impact-resistant black molded polymer'],
+      ['Weight', '3.2 kg (complete set)'],
+      ['Origin', 'Made in Great Britain']
+    ],
+    features: [
+      'Complete 6-tier nested sieve stack with six Wentworth grain-size intervals',
+      'Lightweight molded polymer construction ideal for field expeditions and students',
+      'Includes tight-fitting lid and collection pan for zero-loss sample shaking',
+      'Nylon mesh resists moisture and cleans easily in running stream water'
+    ],
+    page: 36,
+    subcategories: ['geological-sieves-sample-analysis'],
+    categoryIds: ['geology'],
+    tags: ['Field Sieve Sets', 'Geological Sieves']
+  },
+
+  // --- 8. Field Communication & Expedition Support ---
+  {
+    slug: 'lifestraw-go-series',
+    name: 'LifeStraw Go Series Water Filter Bottle',
+    brand: 'LifeStraw',
+    category: 'geology',
+    image: 'lifestraw-go-series',
+    gallery: ['lifestraw-go-series'],
+    label: 'EXPEDITION SUPPORT / HYDRATION',
+    summary: 'Advanced two-stage water filtration bottle for remote expeditions, removing bacteria, parasites, and microplastics while reducing chlorine and improving taste.',
+    specs: [
+      ['Filtration technology', '2-stage membrane microfilter + activated carbon filter'],
+      ['Pore size', '0.2 microns'],
+      ['Filtration performance', 'Removes 99.999999% bacteria (E. coli), 99.999% parasites, 99.999% microplastics'],
+      ['Filter lifespan', 'Microfilter: up to 4,000 L (1,000 gal) / Carbon: up to 100 L (26 gal)'],
+      ['Capacity options', '650 ml (22 fl oz) / 1 L options'],
+      ['Material', 'BPA-free 50% post-consumer recycled plastic / stainless steel options'],
+      ['Testing standards', 'Meets US EPA & NSF P231 drinking water standards']
+    ],
+    features: [
+      'Two-stage filtration protects against bacteria, parasites, microplastics, and silt',
+      'Activated carbon capsule reduces chlorine, odors, and organic chemicals',
+      'Essential hydration and personal safety equipment for remote field camps',
+      'Durable BPA-free bottle with leak-proof carry cap and carabiner loop'
+    ],
+    page: 37,
+    subcategories: ['field-communication-expedition-support'],
+    categoryIds: ['geology'],
+    tags: ['Hydration & Water Filtration', 'Expedition Support']
   }
+
 ];
 
 export const brandDescriptions: Record<string,string> = {
@@ -851,6 +1822,17 @@ export const brandDescriptions: Record<string,string> = {
   'Suunto':'Dependable sighting compasses and navigation tools for the field.',
   'MINOX':'Digital night vision for observation beyond daylight.',
   'Open Acoustic Devices':'Compact acoustic loggers for ecological research and wildlife monitoring.',
+  'Breithaupt Kassel':'Precision German stratum compasses, geological pocket transits, and surveying instruments crafted since 1762.',
+  'Estwing':'The standard in solid steel geological hammers, rock picks, and chisels forged in the USA since 1923.',
+  'Leica Geosystems':'Industry benchmark precision measuring solutions, total stations, and laser distance meters.',
+  'Glenammer Engineering':'High-precision analytical test sieves manufactured in the United Kingdom to ISO and ASTM international standards.',
+  'GEO Premier':'Professional optical triplet hand lenses and geological inspection loupes.',
+  'Northern Geological Supplies':'Comprehensive geological, mining, exploration tools, and sample testing supplies.',
+  'Chartwell':'Specialized waterproof survey books and collimation notebooks built for harsh outdoor environments.',
+  'Edding':'Precision German fine technical drafting and mapping markers engineered for archival permanence.',
+  'Staedtler':'Renowned drafting, mapping, and indelible pigment liner pens designed for professional accuracy.',
+  'Faithfull':'Dependable precision scribers, marking instruments, and trades tools for demanding field use.',
+  'LifeStraw':'Advanced membrane microfiltration systems providing safe drinking water in remote field and expedition environments.',
 };
 
 export const finderOptions: Record<string, Record<string, string[]>> = {
@@ -862,7 +1844,16 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
     'Night observation': ['hikmicro-lynx-lh25', 'minox-nvd-650'],
   },
   'Surveying & Mapping': { 'Navigation':['garmin-gpsmap-65s','garmin-montana-700'], 'DGPS positioning':['rtk-dgps','professional-gnss-receiver'], 'Field computing':['panasonic-toughbook','electronic-data-collector'] },
-  'Geology & Research': { 'Compass & transit measurement':['brunton-geolite','brunton-compro-transit','brunton-f-5012-axis'], 'Navigation & positioning':['suunto-mc2','garmin-gpsmap-65s'] },
+  'Geology & Research': {
+    'Compass & transit measurement': ['brunton-f-5010', 'brunton-geolite', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'brunton-omnislope'],
+    'Rock sampling & hammers': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-rock-chisels'],
+    'Magnification & loupes': ['geo-premier-triplet-hand-lens', 'geological-hand-lens'],
+    'Mapping & GNSS': ['garmin-etrex-se', 'garmin-gpsmap-65', 'garmin-gpsmap-65s'],
+    'Field notebooks & measuring': ['chartwell-collimation-book-2426', 'edding-mapping-pen-01', 'geological-measuring-tape'],
+    'Mineral property testing': ['tungsten-carbide-scriber-with-magnet-black', 'mohs-hardness-tile', 'streak-plates-white', 'acid-bottles'],
+    'Sample sieving & analysis': ['200mm-glenammer-sieves', 'geo-sieves'],
+    'Expedition communication & hydration': ['brutforce-field-radio', 'lifestraw-go-series'],
+  },
   'Industrial Inspection': { 'Confined-space inspection':['ralcam-h408b'], 'Thermal observation':['hikmicro-e20-plus','hikmicro-lynx-lh25'], 'Field computing':['panasonic-toughbook'] },
   'Field Operations': { 'Team communication':['brutforce-field-radio'], 'Navigation':['garmin-gpsmap-65s','suunto-mc2'], 'Night observation':['hikmicro-lynx-lh25','minox-nvd-650'] },
   'Defense & Paramilitary': {
@@ -875,12 +1866,12 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
     'Surveillance / Monitoring':['browning-strike-force-pro-dcl','hikmicro-lynx-lh25','minox-nvd-650'],
   },
   'Mining & Geology': {
-    'Geological Survey':['brunton-geolite','brunton-compro-transit','brunton-f-5012-axis'],
-    'Mapping / GNSS':['garmin-gpsmap-65s','garmin-montana-700'],
-    'Compasses / Pocket Transits':['brunton-geolite','brunton-compro-transit','brunton-f-5012-axis'],
-    'Distance Measurement':['garmin-gpsmap-65s','garmin-montana-700'],
-    'Rugged Computing':['panasonic-toughbook'],
-    'Field Inspection':['ralcam-h408b'],
+    'Geological Survey': ['brunton-f-5010', 'brunton-geolite', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'brunton-omnislope'],
+    'Mapping / GNSS': ['garmin-gpsmap-65s', 'garmin-gpsmap-65', 'garmin-etrex-se', 'garmin-montana-700'],
+    'Compasses / Pocket Transits': ['brunton-f-5010', 'brunton-geolite', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru'],
+    'Distance Measurement': ['leica-disto-laser-distance-meter', 'garmin-gpsmap-65s', 'garmin-montana-700'],
+    'Rugged Computing': ['panasonic-toughbook'],
+    'Field Inspection': ['geo-premier-triplet-hand-lens', 'ralcam-h408b'],
   },
 };
 
