@@ -6,9 +6,6 @@ import { products, type Product } from '@/lib/catalogue';
 import { geologyTagsBySubcategory, type GeologySubcategory } from '@/lib/geology-categories';
 
 function ProductLink({ product }: { product: Product }) {
-  const spec1 = product.specs[0]?.[1];
-  const spec2 = product.specs[1]?.[1];
-
   return (
     <a className="product-panel" href={`/products/${product.slug}`}>
       <div className="product-visual">
@@ -28,12 +25,10 @@ function ProductLink({ product }: { product: Product }) {
       <div className="product-caption">
         <span>{product.brand}</span>
         <h3>{product.name}</h3>
-        {spec1 && (
-          <p>
-            {spec1}
-            {spec2 && <span> / {spec2}</span>}
-          </p>
-        )}
+        <p>
+          {product.specs[0]?.[1]}
+          {product.specs[1]?.[1] && <span> / {product.specs[1][1]}</span>}
+        </p>
       </div>
     </a>
   );
@@ -71,13 +66,8 @@ export default function SubcategoryClient({ subcategory }: { subcategory: Geolog
       <section className="section-padding" style={{ paddingTop: '4rem', paddingBottom: '2rem' }}>
         <div className="section-heading" style={{ marginBottom: '2rem' }}>
           <div>
-            <span className="eyebrow"><span className="yellow-rule"/> {subcategory.code || 'GEOLOGY'}</span>
+            <span className="eyebrow"><span className="yellow-rule"/> {subcategory.name.toUpperCase()}</span>
             <h1 style={{ fontSize: 'var(--text-6xl)', fontWeight: 600, letterSpacing: '-0.02em', lineHeight: 1, textTransform: 'uppercase', marginBottom: '1rem' }}>{subcategory.name}</h1>
-            {subcategory.description && (
-              <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: '800px', lineHeight: 1.5 }}>
-                {subcategory.description}
-              </p>
-            )}
           </div>
         </div>
 
@@ -87,20 +77,17 @@ export default function SubcategoryClient({ subcategory }: { subcategory: Geolog
                 onClick={() => setActiveTag(null)}
                 className={`button ${activeTag === null ? 'button-yellow' : 'button-outline'}`}
              >
-                All Products ({products.filter(p => p.subcategories?.includes(subcategory.id)).length})
+                All Products
              </button>
-             {tags.map(tag => {
-               const count = products.filter(p => p.subcategories?.includes(subcategory.id) && p.tags?.includes(tag)).length;
-               return (
-                 <button
-                    key={tag}
-                    onClick={() => setActiveTag(tag)}
-                    className={`button ${activeTag === tag ? 'button-yellow' : 'button-outline'}`}
-                 >
-                    {tag} {count > 0 ? `(${count})` : ''}
-                 </button>
-               );
-             })}
+             {tags.map(tag => (
+               <button
+                  key={tag}
+                  onClick={() => setActiveTag(tag)}
+                  className={`button ${activeTag === tag ? 'button-yellow' : 'button-outline'}`}
+               >
+                  {tag}
+               </button>
+             ))}
           </div>
         )}
 

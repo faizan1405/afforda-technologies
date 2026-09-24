@@ -12,6 +12,7 @@ import { categories, products, finderOptions, findEquipment, type Product } from
 
 const icons = [Trees, Mountain, Satellite, Compass, ScanLine, Focus, Crosshair, Laptop, Radio, Crosshair, Mountain];
 const featuredSlugs = new Set([
+  'geomate-gnss-receiver',
   'vortex-viper-hd', 'garmin-gpsmap-65s', 'hikmicro-lynx-lh25',
   'browning-strike-force-pro-dcl', 'brunton-geolite', 'panasonic-toughbook',
   'ralcam-h408b', 'brutforce-field-radio', 'minox-nvd-650',

@@ -35,7 +35,25 @@ export const forestSubcategories: ForestSubcategory[] = [
 ];
 
 export const forestTagsBySubcategory: Record<string, string[]> = {
-  'forest-measurement-inventory': [],
-  'gps-survey-mapping-products': [],
-  'forest-fire-fighting-products': [],
+  'forest-measurement-inventory': [
+    'Forestry Measuring Tapes',
+    'Tree Calipers',
+    'Clinometers & Hypsometers',
+    'Laser Rangefinders',
+    'Increment Borers',
+    'Densiometers & Canopy',
+  ],
+  'gps-survey-mapping-products': [
+    'GNSS / RTK Receivers',
+    'Handheld GPS',
+    'GNSS Controllers',
+    'Total Stations & Optical',
+    'Survey Accessories',
+  ],
+  'forest-fire-fighting-products': [
+    'Fire Pumps & Backpack Pumps',
+    'Pulaski Axes & Fire Hand Tools',
+    'Drip Torches & Ignition',
+    'Fire Weather & Safety',
+  ],
 };

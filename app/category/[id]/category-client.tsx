@@ -45,8 +45,17 @@ interface CategoryClientProps {
 export default function CategoryClient({ category }: CategoryClientProps) {
   const [quote, setQuote] = useState(false);
   const [quoteEquipment, setQuoteEquipment] = useState('');
+  const [activeTag, setActiveTag] = useState<string | null>(null);
 
   const categoryProducts = products.filter(p => productBelongsToCategory(p, category.id));
+
+  // Extract tags for filtering (excluding generic category names)
+  const availableTags = Array.from(new Set(categoryProducts.flatMap(p => p.tags || [])))
+    .filter(tag => tag !== category.name && tag !== 'GPS, Survey & Mapping Products');
+
+  const displayedProducts = activeTag
+    ? categoryProducts.filter(p => p.tags?.includes(activeTag))
+    : categoryProducts;
 
   function openQuote(equipment = '') {
     setQuoteEquipment(equipment || category.name);
@@ -242,9 +251,34 @@ export default function CategoryClient({ category }: CategoryClientProps) {
           </div>
         </div>
 
-        {categoryProducts.length > 0 ? (
+        {availableTags.length > 1 && (
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '2.5rem' }}>
+            <button
+              onClick={() => setActiveTag(null)}
+              className={`button ${activeTag === null ? 'button-yellow' : 'button-outline'}`}
+              style={{ minHeight: '40px', padding: '8px 16px', fontSize: '13px' }}
+            >
+              All {category.name} ({categoryProducts.length})
+            </button>
+            {availableTags.map(tag => {
+              const count = categoryProducts.filter(p => p.tags?.includes(tag)).length;
+              return (
+                <button
+                  key={tag}
+                  onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+                  className={`button ${activeTag === tag ? 'button-yellow' : 'button-outline'}`}
+                  style={{ minHeight: '40px', padding: '8px 16px', fontSize: '13px' }}
+                >
+                  {tag} ({count})
+                </button>
+              );
+            })}
+          </div>
+        )}
+
+        {displayedProducts.length > 0 ? (
           <div className="catalogue-grid">
-            {categoryProducts.map(p => (
+            {displayedProducts.map(p => (
               <ProductLink key={p.slug} product={p} />
             ))}
           </div>

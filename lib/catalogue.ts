@@ -5,6 +5,20 @@ export type Product = {
   subcategories?: string[];
   categoryIds?: string[];
   tags?: string[];
+  systemComponents?: {
+    slug: string;
+    role: string;
+    name: string;
+    summary: string;
+    image: string;
+  }[];
+  customWhatsAppMessage?: string;
+  packageNotice?: {
+    text: string;
+    packageSlug: string;
+    packageTitle: string;
+  };
+  datasheetUrl?: string;
 };
 
 export const categories = [
@@ -24,17 +38,17 @@ export const categories = [
 export const products: Product[] = [
   // --- Existing Field Technology Products (Preserved & Cleaned of Legacy Subcategories) ---
   { slug:'vortex-viper-hd',name:'Viper® HD',brand:'Vortex Optics',category:'optics',image:'viper',gallery:['viper','viper-front'],label:'HD BINOCULARS',summary:'An HD optical system, rugged rubber armor and a comfortable field harness. A clear view of the details that matter.',specs:[['Available configurations','8×42 / 10×50 / 12×50'],['Optical system','High definition'],['Lens coating','XR™ fully multi-coated'],['Protection','ArmorTek®'],['Carry system','GlassPak harness included']],features:['HD glass for resolution and color fidelity','Phase-corrected roof prisms for contrast','Rubber armor for a secure grip','GlassPak chest harness for comfortable field carry'],page:5,subcategories:['defense-optics'],categoryIds:['optics','defense'],tags:['Binoculars'] },
-  { slug:'garmin-gpsmap-65s',name:'Handheld GPS (GPSMAP® 65s)',brand:'Garmin',category:'navigation',image:'gpsmap',gallery:['gpsmap'],label:'MULTI-BAND GPS',summary:'Find your way in challenging environments with multi-band positioning, expanded satellite support and a sunlight-readable color display.',specs:[['Display','2.6-inch color'],['Positioning','Multi-band GNSS'],['Battery life','Up to 16 hours in GPS mode'],['Navigation','Built-in navigation sensors (ABC)'],['Planning','Garmin Explore compatibility']],features:['Multi-band technology for challenging locations','Sunlight-readable color display','Built-in 3-axis compass & barometric altimeter','Plan and organize with the Garmin Explore app'],page:12,subcategories:['gps-mapping-distance-measurement','gps-survey-mapping-products','defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','geology','defense','mining','surveying'],tags:['Handheld GPS','GPS/GNSS Devices','GPS'] },
+  { slug:'garmin-gpsmap-65s',name:'Handheld GPS (GPSMAP® 65s)',brand:'Garmin',category:'navigation',image:'gpsmap',gallery:['gpsmap'],label:'MULTI-BAND GPS',summary:'Find your way in challenging environments with multi-band positioning, expanded satellite support and a sunlight-readable color display.',specs:[['Display','2.6-inch color'],['Positioning','Multi-band GNSS'],['Battery life','Up to 16 hours in GPS mode'],['Navigation','Built-in navigation sensors (ABC)'],['Planning','Garmin Explore compatibility']],features:['Multi-band technology for challenging locations','Sunlight-readable color display','Built-in 3-axis compass & barometric altimeter','Plan and organize with the Garmin Explore app'],page:12,subcategories:['geological-field-mapping','gps-survey-mapping-products','defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','geology','defense','mining','surveying'],tags:['Handheld GPS','GPS/GNSS Devices','GPS','GPS / GNSS Receivers'] },
   { slug:'hikmicro-lynx-lh25',name:'LYNX LH25 2.0',brand:'HIKMICRO',category:'thermal',image:'lynx',gallery:['lynx','lynx-side'],label:'THERMAL MONOCULAR',summary:'A compact thermal monocular that reveals subtle heat signatures, with a sensitive detector and a detailed OLED view.',specs:[['Detector resolution','384 × 288'],['Lens','25 mm, F1.0'],['Thermal sensitivity','NETD <20 mK'],['Detection range','Up to 1,200 m'],['Weight','275 g'],['Battery life','Up to 6.5 hours']],features:['12 μm detector with high thermal sensitivity','1024 × 768 OLED display','Replaceable rechargeable Li-ion battery','Compact and ergonomic field design'],page:40,subcategories:['defense-thermal','defense-surveillance'],categoryIds:['thermal','defense'],tags:['Thermal Cameras','Thermal Monoculars'] },
   { slug:'browning-strike-force-pro-dcl',name:'Strike Force Pro DCL',brand:'Browning',category:'forestry',image:'browning',gallery:['browning'],label:'WILDLIFE TRAIL CAMERA',summary:'Dual camera lens technology captures the field by day and night, with a fast trigger for fleeting wildlife encounters.',specs:[['Image resolution','26 megapixels'],['Trigger speed','0.15 seconds'],['Flash range','Up to 130 ft'],['Viewing screen','1.5-inch color'],['Lens system','Dual camera lens technology']],features:['Separate lens technology optimized for day and night','Fast trigger for wildlife monitoring','On-camera color viewing screen','Long-range flash capability'],page:21,subcategories:['defense-surveillance'],categoryIds:['forestry','defense'],tags:['Camera Traps'] },
-  { slug:'brunton-geolite',name:'Geo Lite Transit (F-5030)',brand:'Brunton',category:'geology',image:'geolite-open',gallery:['geolite-open','geolite'],label:'GEOLOGICAL TRANSIT COMPASS',summary:'A compact baseplate transit compass designed for strike, dip, and dip-azimuth measurement, featuring the Brunton EverNorth magnetic system.',specs:[['Model','F-5030'],['Azimuth resolution','2° graduations (±1° accuracy)'],['Clinometer accuracy','±2.5° (5° graduations)'],['Magnet','Brunton EverNorth'],['Declination adjustment','Tool-free ±180°'],['Housing','Glass-filled polyamide lid with acrylic baseplate']],features:['Transit-style direct-read azimuth system with sighting mirror','Hinge clinometer enables fast dip and dip-azimuth measurement','Bubble level for accurate horizontal strike determination','Integrated protractor and map magnifier for field plotting'],page:27,subcategories:['geological-compasses-clinometers','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Pocket Transits','Geological Compasses / Pocket Transits'] },
+  { slug:'brunton-geolite',name:'Geo Lite™ Transit F-5030',brand:'Brunton',category:'geology',image:'geolite-open',gallery:['geolite-open','geolite'],label:'GEOLOGICAL TRANSIT COMPASS',summary:'Compact aluminum geological transit combining direct-read azimuth measurement with a hinge clinometer for strike and dip field readings.',specs:[['Model','Geo Lite™ Transit F-5030'],['Body Construction','Compact aluminum body (approx. 30% smaller than full-size transit)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° azimuth scale)'],['Vertical Angle','±1° with 1° graduations (±90° range)'],['Declination Adjustment','Tool-free magnetic declination adjustment ±180°'],['Needle Dampening','Induction damped needle on sapphire jewel suspension'],['Leveling Vials','Dual bubble vials (circular and tubular)'],['Sighting System','Precision mirror with sighting hole and sighting line'],['Protection','Silicone protective cover included'],['Mounting','Tripod mountable with 1/4-20 threading']],features:['Compact lightweight aluminum body roughly 30% smaller than traditional pocket transits','High-precision azimuth accuracy of ±0.5° with 1° graduations on a 0–360° scale','Integrated vertical clinometer reads slope and dip to ±1° across ±90° range','User-friendly tool-free magnetic declination adjustment with ±180° range','Induction damped needle stabilizes quickly for fast and repeatable field readings','Dual bubble vials (tubular and circular) ensure perfect level alignment','Reflective sighting mirror with center sighting hole for accurate bearing acquisition','Supplied with custom silicone protective cover for field impact resistance'],page:27,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Geological Compasses / Pocket Transits','Field Compasses / Baseplate Compasses'] },
   { slug:'panasonic-toughbook',name:'TOUGHBOOK FZ-55',brand:'Panasonic Toughbook',category:'computing',image:'toughbook',gallery:['toughbook'],label:'RUGGED FIELD COMPUTING',summary:'A modular laptop platform for demanding mobile work. Ask our team to configure a TOUGHBOOK around your field applications.',specs:[['Product family','Panasonic TOUGHBOOK'],['Catalogue model','FZ-55'],['Form factor','Rugged laptop'],['Configuration','Confirmed with your quotation']],features:['Built for mobile field workflows','Flexible configuration options','Suitable for field data collection and review','Project-specific configuration support'],page:47,subcategories:['defense-rugged','defense-field-operations','mining-rugged'],categoryIds:['computing','defense','mining'],tags:['Rugged Tablets'] },
   { slug:'vortex-diamondback-hd',name:'Diamondback® HD',brand:'Vortex Optics',category:'optics',image:'diamondback',gallery:['diamondback','diamondback-side'],label:'HD BINOCULARS',summary:'Rugged observation optics with HD glass, protective lens coatings and a ready-to-deploy harness.',specs:[['Available configurations','8×42 / 10×50 / 10×42'],['Optical system','High definition'],['Lenses','Fully multi-coated'],['Protection','ArmorTek® coating'],['Carry system','GlassPak harness included']],features:['Phase correction for enhanced resolution','Rubber armor for a non-slip grip','Scratch-resistant exterior lens coating','Shock-resistant construction'],page:4,subcategories:['defense-optics'],categoryIds:['optics','defense'],tags:['Binoculars'] },
   { slug:'garmin-montana-700',name:'Montana® 700',brand:'Garmin',category:'navigation',image:'montana',gallery:['montana'],label:'TOUCHSCREEN GPS',summary:'Large-format navigation for journeys on foot or by vehicle, combining a 5-inch touchscreen with outdoor navigation sensors.',specs:[['Display','5-inch touchscreen'],['Positioning','Multiple GNSS networks'],['Battery life','18+ hours in GPS mode'],['Navigation sensors','Altimeter, barometer, compass'],['Mapping','Routable roads and trails']],features:['Large touchscreen for clear map viewing','Rugged construction for outdoor navigation','ABC sensors for awareness in the field','Mapping support for roads and trails'],page:15,subcategories:['defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','defense','mining'],tags:['GPS/GNSS Devices','GPS'] },
   { slug:'ralcam-h408b',name:'H408B Borescope',brand:'Ralcam',category:'inspection',image:'ralcam',gallery:['ralcam'],label:'ARTICULATING INSPECTION',summary:'Inspect confined spaces with an articulating camera and a dedicated display, built for automotive and machinery inspection.',specs:[['Display','4.3-inch'],['Camera resolution','1920 × 1080'],['Probe diameter','8.5 mm'],['Battery','Replaceable 2,600 mAh'],['Lighting','10 adjustable LEDs']],features:['Articulating lens for difficult viewing angles','Capture images and video','High-temperature protection','Dedicated screen for on-site inspections'],page:17,subcategories:['mining-inspection'],categoryIds:['inspection','mining'] },
   { slug:'brutforce-field-radio',name:'BFR-001 License-Free Walkie-Talkie',brand:'BRUTFORCE',category:'communication',image:'radio',gallery:['radio','radio-side'],label:'LICENSE-FREE FIELD RADIO',summary:'License-free two-way field radio operating on the 446 MHz band with 16 channels, up to 5 km line-of-sight range, and a long-life 2,600 mAh Li-ion battery.',specs:[['Model','BFR-001'],['Frequency range','446.00–446.02 MHz (License-free UHF)'],['Channels','16 pre-programmed channels with CTCSS/DCS'],['Operating range','Up to 5 km (line-of-sight depending on terrain)'],['Battery','2,600 mAh Li-ion rechargeable battery'],['Operating temperature','−25°C to +55°C'],['Compliance','WPC Approved (License-free in India)']],features:['16 pre-set channels with CTCSS/DCS sub-codes for private team coordination','Up to 5 km range depending on line-of-sight for field and mountain operations','WPC approved for license-free professional operation across India','Rugged compact housing with voice-operated VOX and emergency alert'],page:34,subcategories:['field-communication-expedition-support','defense-communication','defense-field-operations'],categoryIds:['communication','geology','defense'],tags:['Field Radios'] },
-  { slug:'brunton-compro-transit',name:'Survey Compass (ComPro Transit F-5008)',brand:'Brunton',category:'geology',image:'compro',gallery:['compro'],label:'COMPOSITE POCKET TRANSIT',summary:'Traditional transit measurement in a lightweight composite body, with sighting tools and a precision magnetic system.',specs:[['Model','F-5008'],['Body','Lightweight composite'],['Magnet','Precision NdFeB disc'],['Needle settling','Induction dampening'],['Measurements','Bearings and vertical angles']],features:['Lightweight composite lid and base','Mirror for sighting and angle measurement','Short and long sights','Magnet designed to resist demagnetization'],page:30,subcategories:['geological-compasses-clinometers','gps-survey-mapping-products','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining','surveying'],tags:['Pocket Transits','Survey Compass','Forestry Compasses','Geological Compasses / Pocket Transits'] },
-  { slug:'brunton-f-5012-axis',name:'F-5012 Axis Compass',brand:'Brunton',category:'geology',image:'geolite',gallery:['geolite','geolite-open'],label:'AXIS BASE PLATE COMPASS',summary:'A baseplate compass for strike, dip and bearing work, with direct-read azimuth, clinometer and Brunton EverNorth magnetic system.',specs:[['Azimuth resolution','2°'],['Clinometer resolution','5°'],['Magnet','Brunton EverNorth'],['Body','Durable ABS'],['Sighting','Direct-read sighting system']],features:['Direct-read azimuth and bearing system','Hinge clinometer for strike and dip measurement','Bubble level for accurate horizontal alignment','Integrated map magnifier and protractor'],page:27,subcategories:['geological-compasses-clinometers','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Pocket Transits','Geological Compasses / Pocket Transits'] },
+  { slug:'brunton-compro-transit',name:'ComPro™ Composite Transit F-5008',brand:'Brunton',category:'geology',image:'compro',gallery:['compro'],label:'COMPOSITE POCKET TRANSIT',summary:'Ultralight composite transit housing professional transit internals with induction dampening, precision NdFeB cast magnet, and dual sighting tools.',specs:[['Model','ComPro™ Composite Transit F-5008'],['Body Material','Composite body material (reduces weight & protects against magnetic interference)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° or quad options)'],['Clinometer Accuracy','±0.5° with 1° graduations (90° range or 100% grade scale)'],['Declination Adjustment','Tool-free magnetic declination adjustment (±180°)'],['Magnetic System','NdFeB rare-earth cast magnet needle on sapphire jewel bearing'],['Dampening','Induction dampening for rapid needle settling'],['Sighting System','Precision sighting mirror with sighting hole and sighting line'],['Environmental','Waterproof sealed housing'],['Mounting','Tripod mountable with standard ball-and-socket tripod mount']],features:['Composite body reduces overall carry weight and eliminates local magnetic interference','Precision compass azimuth accuracy of ±0.5° with 1° graduations','Vertical clinometer provides ±0.5° accuracy with 1° graduations and 10-minute vernier reading','Cast NdFeB rare-earth disc magnet on sapphire jewel bearing delivers rapid, reliable settling','Tool-free magnetic declination adjustment allows swift true north calibration in the field','Waterproof sealed body designed to withstand harsh outdoor geological and mine environments','Precision sighting mirror with see-through window and front/rear sighting guides','Ball and socket tripod mount compatibility for stabilized station mapping'],page:30,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining','surveying'],tags:['Geological Compasses / Pocket Transits'] },
+  { slug:'brunton-f-5012-axis',name:'Axis™ Pocket Transit F-5012',brand:'Brunton',category:'geology',image:'placeholder',gallery:['placeholder'],label:'AXIS POCKET TRANSIT',summary:'Patented dual-axis pocket transit enabling simultaneous measurement of strike and dip, trend and plunge, dip and dip direction, and bearings on a single setup.',specs:[['Model','Axis™ Pocket Transit F-5012'],['Hinge Design','Dual-axis hollow hinge allows measurement of strike & dip simultaneously'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° or 0–90° quad)'],['Clinometer Accuracy','±0.5° with 1° graduations'],['Declination Adjustment','Tool-free adjustable magnetic declination ±180°'],['Bearing / Dampening','Sapphire jewel bearing with induction damping'],['Level Vials','Internal tubular and circular level vials'],['Water Resistance','IPX7 / waterproof and submersible to 3 m for 30 min'],['Body Construction','CNC-machined hard-anodized aluminum body'],['Mounting','Tripod mountable with standard ball-and-socket mount']],features:['Dual-axis hollow hinge allows simultaneous measurement of strike and dip on any bedding surface (contact, foliation, or lineation)','High-precision compass azimuth accuracy of ±0.5° with 1° graduations','Vertical clinometer accuracy of ±0.5° with 1° graduations for dip and vertical angles','NdFeB cast rare-earth magnet mounted on sapphire jewel bearing with induction damping','Tool-free magnetic declination adjustment adjustable to ±180°','IPX7 waterproof construction submersible to 3 meters for 30 minutes','CNC-machined hard-anodized aluminum body designed for rugged field longevity','Internal circular and tubular level vials for stabilized direct-contact and sighting operations'],page:31,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Geological Compasses / Pocket Transits'] },
   { slug:'minox-nvd-650',name:'NVD 650',brand:'MINOX',category:'thermal',image:'minox',gallery:['minox','minox-back'],label:'DIGITAL NIGHT VISION',summary:'A digital monocular with an IR emitter and recording capability for observation in low-light field conditions.',specs:[['Optical magnification','6×'],['Digital magnification','5×'],['IR wavelength','850 nm'],['IR range','Up to 350 m'],['Use','Day and night']],features:['Built-in IR emitter','Night recording functionality','Rail for additional IR illumination','Daytime use supported'],page:45,subcategories:['defense-night','defense-surveillance'],categoryIds:['thermal','defense'],tags:['Night Vision Devices'] },
   { slug:'suunto-mc2',name:'MC-2 Mirror Compass',brand:'Suunto',category:'navigation',image:'suunto',gallery:['suunto'],label:'PRECISION NAVIGATION',summary:'A sighting compass with a mirror, clinometer and adjustable declination correction for considered route finding.',specs:[['Needle','Jewel-bearing steel'],['Capsule','Liquid-filled'],['Declination','Adjustable correction'],['Measurement','Sighting and clinometer'],['Variant','Confirm hemisphere and scale']],features:['Sighting mirror and notch for bearings','Luminescent markings for low light','Baseplate with magnifying lens','Detachable snap-lock lanyard'],page:41,subcategories:['defense-navigation','defense-field-operations'],categoryIds:['navigation','defense'],tags:['Compasses','Forestry Compasses'] },
   { slug:'audiomoth',name:'AudioMoth',brand:'Open Acoustic Devices',category:'forestry',image:'audiomoth',gallery:['audiomoth','audiomoth-case'],label:'ACOUSTIC MONITORING',summary:'A compact full-spectrum acoustic logger for listening to the natural world, with an optional protective field case.',specs:[['Sample rate','Up to 384 kHz'],['Processor','EFM32 Gecko'],['Microphone','Analog MEMS'],['Protective option','IPX7 waterproof case']],features:['Full-spectrum acoustic logging','Compact field-deployment format','Protective case with compression O-ring','Case strap for straightforward installation'],page:44,tags:['Acoustic Monitoring Devices'] },
@@ -467,14 +481,216 @@ export const products: Product[] = [
   // 2. GPS, SURVEY & MAPPING PRODUCTS (Subcategory ID: gps-survey-mapping-products)
   // =========================================================================
   {
+    slug: 'geomate-gnss-receiver',
+    name: 'GeoMate Complete GNSS RTK System',
+    brand: 'GeoMate',
+    category: 'surveying',
+    image: 'geomate-gnss-receiver',
+    gallery: ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'geomate-fc2-controller'],
+    label: 'TURNKEY GNSS RTK SYSTEM',
+    summary: 'Turnkey surveying and DGPS positioning system combining the GeoMate GBASE high-power UHF base station, the GeoMate SG6L visual-assist laser rover, and the GeoMate FC2 rugged field controller with MateSurvey software for centimetre-grade accuracy across surveying, forestry, mining, and geodetic applications.',
+    customWhatsAppMessage: 'Hello AFFORDA Technologies, I would like a quote and availability for the GeoMate Complete GNSS RTK System (GBASE Base + SG6L Rover + FC2 Controller).',
+    specs: [
+      ['System Type', 'Complete GNSS RTK Base + Rover + Field Controller Solution'],
+      ['Base Station', 'GeoMate GBASE (1608 Channels, Internal 5W UHF, LongRun up to 30 km)'],
+      ['Rover Receiver', 'GeoMate SG6L (1892 Channels, 50 m Green Laser, Dual AR Cameras, 60° IMU)'],
+      ['Field Controller', 'GeoMate FC2 (5.5" HD+ Touchscreen, Android 10, MateSurvey Pre-installed)'],
+      ['RTK Accuracy', 'Horizontal: 8 mm + 1 ppm RMS / Vertical: 15 mm + 1 ppm RMS'],
+      ['Constellation Support', 'GPS, GLONASS, Galileo, BeiDou, QZSS, NavIC, SBAS'],
+      ['UHF Radio Range', 'Up to 15 km standard (up to 30 km in LongRun™ mode)'],
+      ['Tilt Compensation', 'Calibration-free 60° IMU tilt measurement on rover'],
+      ['Environmental Protection', 'IP67 (Base) / IP68 (Rover & Controller), 2 m drop resistant'],
+      ['Field Workflow', 'Complete field-to-office survey, stakeout, boundary & cadastral workflow']
+    ],
+    features: [
+      'Complete turnkey survey kit: GBASE base station + SG6L rover + FC2 field controller + MateSurvey software',
+      'Multi-constellation tracking across 1608/1892 channels for ultra-fast RTK fix in challenging canopy or urban canyons',
+      'High-power 5W internal UHF transceiver on GBASE operating up to 15 km (30 km in LongRun mode) without external radio hassles',
+      'SG6L rover equipped with 50 m green millimetre laser and dual AR cameras for stakeout, inaccessible points, and photogrammetry',
+      'Calibration-free 60° IMU tilt compensation immune to magnetic interference for rapid, accurate pole-tilt survey',
+      'FC2 Android controller with sunlight-readable 5.5" display, physical alphanumeric keypad, and 8,000 mAh battery for 14+ hours continuous operation',
+      'Pre-installed MateSurvey software supporting standard CAD/GIS formats, stakeout modes, road design, and geodetic coordinate systems',
+      'Supplied with carbon-fibre rover pole, heavy-duty base tripod with tribrach and adapter, dual-bay chargers, and rugged transport cases'
+    ],
+    systemComponents: [
+      {
+        slug: 'geomate-gbase-gnss',
+        role: 'BASE STATION',
+        name: 'GeoMate GBASE GNSS',
+        summary: '1608-channel geodetic base receiver with internal 5W UHF radio (up to 30 km LongRun range), dual hot-swappable batteries, and IP67 rugged enclosure.',
+        image: 'geomate-gbase-gnss'
+      },
+      {
+        slug: 'geomate-sg6l-gnss',
+        role: 'ROVER RECEIVER',
+        name: 'GeoMate SG6L GNSS',
+        summary: '1892-channel lightweight visual rover featuring a 50 m green laser, dual AR cameras for stakeout and 3D modeling, and 60° calibration-free IMU tilt compensation.',
+        image: 'geomate-sg6l-gnss'
+      },
+      {
+        slug: 'geomate-fc2-controller',
+        role: 'FIELD CONTROLLER',
+        name: 'GeoMate FC2 Controller',
+        summary: 'Rugged Android 10 handheld controller featuring a 5.5" sunlight-readable HD+ display, alphanumeric keypad, 8000 mAh battery, and MateSurvey software.',
+        image: 'geomate-fc2-controller'
+      }
+    ],
+    page: 1,
+    subcategories: ['gps-survey-mapping-products', 'geological-field-mapping', 'mining-mapping'],
+    categoryIds: ['surveying', 'forestry', 'geology', 'mining'],
+    tags: ['GNSS / RTK Receivers', 'RTK / DGPS', 'GPS / GNSS Receivers', 'GPS, Survey & Mapping Products']
+  },
+  {
+    slug: 'geomate-gbase-gnss',
+    name: 'GeoMate GBASE GNSS Base Station',
+    brand: 'GeoMate',
+    category: 'surveying',
+    image: 'geomate-gbase-gnss',
+    gallery: ['geomate-gbase-gnss', 'geomate-gbase-gnss-2'],
+    label: 'BASE STATION GNSS RECEIVER',
+    summary: 'Dedicated geodetic GNSS base station engineered with 1608 channels, an integrated high-power 5W UHF transceiver with LongRun range up to 30 km, dual hot-swappable batteries for uninterrupted operation, and an OLED status screen.',
+    customWhatsAppMessage: 'Hello AFFORDA Technologies, I would like a quote and specifications for the GeoMate GBASE GNSS Base Station.',
+    packageNotice: {
+      text: 'Part of the turnkey GeoMate surveying package with SG6L Rover & FC2 Controller.',
+      packageSlug: 'geomate-gnss-receiver',
+      packageTitle: 'View Complete RTK System'
+    },
+    datasheetUrl: '/datasheets/GBase_DS_EN.pdf',
+    specs: [
+      ['Channels', '1608 channels multi-constellation GNSS'],
+      ['Constellations Tracked', 'GPS (L1 C/A, L2C, L2P, L5), GLONASS (L1, L2), BeiDou (B1I, B2I, B3I, B1C, B2a, B2b), Galileo (E1, E5a, E5b, E6), QZSS (L1, L2, L5), SBAS (L1)'],
+      ['Internal UHF Radio', 'Integrated 5W UHF transceiver (410–470 MHz), GeoMate / TrimTalk / SATEL compatible'],
+      ['Radio Range', 'Up to 15 km standard UHF; up to 30 km in LongRun™ mode'],
+      ['RTK Positioning Accuracy', 'Horizontal: 8 mm + 1 ppm RMS / Vertical: 15 mm + 1 ppm RMS'],
+      ['Post-Processed Static', 'Horizontal: 2.5 mm + 0.5 ppm RMS / Vertical: 5 mm + 0.5 ppm RMS'],
+      ['Power System', 'Dual hot-swappable 7.2V / 6800 mAh Li-ion batteries (up to 12 hours Base transmit at 5W)'],
+      ['External Power Input', '9–28 V DC with overvoltage and reverse-polarity protection'],
+      ['Display & Controls', '0.96-inch OLED screen with multi-function keys & LED indicators'],
+      ['Communications', 'Bluetooth 5.0, Wi-Fi 802.11 b/g/n, 4G LTE modem (NTRIP Caster & Client), USB Type-C, RS232'],
+      ['Internal Storage', '32 GB internal memory supporting raw RINEX / observation logging up to 20 Hz'],
+      ['Environmental Protection', 'IP67 dust & waterproof, withstands 2 m pole drop onto concrete'],
+      ['Dimensions & Weight', '160 mm × 160 mm × 103 mm | 1.65 kg (with dual batteries)'],
+      ['Operating Temperature', '-40°C to +75°C']
+    ],
+    features: [
+      '1608-channel tracking engine captures all active GNSS constellations and frequencies for unmatched satellite availability',
+      'Internal 5W UHF radio covers up to 15 km standard and up to 30 km in LongRun mode without external amplifier boxes',
+      'Dual hot-swappable batteries allow continuous static or RTK base broadcast without powering down',
+      'Integrated 4G cellular modem provides standalone NTRIP Caster / Server functionality directly from the base station',
+      'High-contrast 0.96-inch OLED display enables quick configuration of radio frequency, transmit power, and station coordinates in the field',
+      'Built-in web user interface accessible via Wi-Fi for comprehensive station setup, firmware updates, and remote RINEX downloads',
+      'IP67 ruggedized magnesium-alloy chassis built to survive extreme weather, dust storms, and harsh jobsite handling'
+    ],
+    page: 1,
+    subcategories: ['gps-survey-mapping-products', 'mining-mapping'],
+    categoryIds: ['surveying', 'forestry', 'mining'],
+    tags: ['GNSS / RTK Receivers', 'RTK / DGPS', 'GPS, Survey & Mapping Products']
+  },
+  {
+    slug: 'geomate-sg6l-gnss',
+    name: 'GeoMate SG6L GNSS Visual Laser Rover',
+    brand: 'GeoMate',
+    category: 'surveying',
+    image: 'geomate-sg6l-gnss',
+    gallery: ['geomate-sg6l-gnss', 'geomate-sg6l-gnss-2'],
+    label: 'VISUAL LASER GNSS ROVER',
+    summary: 'Ultra-compact 800 g visual RTK rover with 1892 channels, integrated 50 m green millimetre laser for non-contact measurement, dual augmented reality cameras for immersive stakeout, and 60° calibration-free IMU tilt compensation.',
+    customWhatsAppMessage: 'Hello AFFORDA Technologies, I would like a quote and specifications for the GeoMate SG6L GNSS Visual Laser Rover.',
+    packageNotice: {
+      text: 'Available individually or as part of the turnkey GeoMate Complete RTK System.',
+      packageSlug: 'geomate-gnss-receiver',
+      packageTitle: 'View Complete RTK System'
+    },
+    datasheetUrl: '/datasheets/SG6L_Geomate_DS_EN.pdf',
+    specs: [
+      ['Channels', '1892 channels multi-constellation GNSS'],
+      ['Constellations Tracked', 'GPS (L1 C/A, L1C, L2C, L2P, L5), GLONASS (L1, L2, L3), BeiDou (B1I, B2I, B3I, B1C, B2a, B2b), Galileo (E1, E5a, E5b, E6), QZSS (L1, L2, L5), NavIC (L5), SBAS'],
+      ['Visual Measurement / Laser', 'Integrated green laser pointer & distance meter (range up to 50 m, accuracy ±(2 mm + 0.1 mm/m))'],
+      ['Dual AR Cameras', '2 MP front camera for AR stakeout + 5 MP bottom camera for image measurement / 3D photogrammetry'],
+      ['IMU Tilt Compensation', 'Calibration-free 60° IMU tilt sensor immune to magnetic interference (tilt accuracy < 2 cm at 30°)'],
+      ['RTK Positioning Accuracy', 'Horizontal: 8 mm + 1 ppm RMS / Vertical: 15 mm + 1 ppm RMS'],
+      ['Laser Surveying Accuracy', 'Centimetre-level coordinate measurement at distances up to 50 m without pole placement'],
+      ['Internal UHF Radio', 'Built-in receiving / transmitting UHF radio (410–470 MHz)'],
+      ['Cellular & Wireless', 'Bluetooth 5.3, Wi-Fi 802.11 b/g/n, NFC one-tap pairing, 4G LTE network RTK'],
+      ['Battery & Autonomy', 'Integrated 9600 mAh Li-ion battery supporting up to 18 hours continuous rover operation'],
+      ['Fast Charging', 'USB Type-C PD 15W fast charge (fully recharged in ~3.5 hours)'],
+      ['Environmental Protection', 'IP68 certified waterproof & dustproof, 2 m drop onto concrete'],
+      ['Weight & Dimensions', '800 g | 133 mm diameter × 87 mm height'],
+      ['Operating Temperature', '-40°C to +75°C']
+    ],
+    features: [
+      '1892-channel tracking engine with full constellation support ensures rapid RTK fix in under 5 seconds even under dense tree cover or urban canyons',
+      'Integrated 50 m green millimetre laser measures inaccessible or hazardous points (cliffs, ravines, transformer yards, highway medians) with point-and-click ease',
+      'Dual augmented reality (AR) cameras project intuitive 3D field arrows on live screen for effortless stakeout and photogrammetric 3D point cloud generation',
+      'Third-generation calibration-free 60° IMU tilt sensor eliminates pole leveling, boosting daily survey productivity by over 30%',
+      'Featherweight 800 g magnesium-aluminum alloy body reduces operator fatigue during long days in the field',
+      '9,600 mAh high-capacity internal battery provides 18 hours of continuous operation on a single charge with Type-C power bank charging',
+      'IP68 environmental rating ensures complete submersion protection and total resistance to fine dust, sand, and heavy downpours'
+    ],
+    page: 1,
+    subcategories: ['gps-survey-mapping-products', 'geological-field-mapping', 'mining-mapping'],
+    categoryIds: ['surveying', 'forestry', 'geology', 'mining'],
+    tags: ['GNSS / RTK Receivers', 'RTK / DGPS', 'GPS / GNSS Receivers', 'GPS, Survey & Mapping Products']
+  },
+  {
+    slug: 'geomate-fc2-controller',
+    name: 'GeoMate FC2 Field Controller',
+    brand: 'GeoMate',
+    category: 'surveying',
+    image: 'geomate-fc2-controller',
+    gallery: ['geomate-fc2-controller', 'geomate-fc2-controller-2', 'geomate-fc2-controller-3'],
+    label: 'RUGGED FIELD DATA CONTROLLER',
+    summary: 'Professional handheld field controller powered by Android 10, featuring a 5.5-inch sunlight-readable HD+ multi-touch display, full physical alphanumeric keypad, 8000 mAh all-day battery, and pre-installed MateSurvey software.',
+    customWhatsAppMessage: 'Hello AFFORDA Technologies, I would like a quote and specifications for the GeoMate FC2 Field Controller with MateSurvey.',
+    packageNotice: {
+      text: 'Supplied standard with the turnkey GeoMate Complete RTK System.',
+      packageSlug: 'geomate-gnss-receiver',
+      packageTitle: 'View Complete RTK System'
+    },
+    specs: [
+      ['Operating System', 'Android 10.0 with Google Mobile Services (GMS)'],
+      ['Processor', 'Helio Octa-core 2.0 GHz high-performance processor'],
+      ['Memory & Storage', '4 GB RAM + 64 GB ROM (expandable up to 128 GB via microSD)'],
+      ['Display', '5.5-inch IPS HD+ (1440 × 720) sunlight-readable capacitive touch screen (supports wet hand / glove mode)'],
+      ['Keypad', 'Full physical alphanumeric keypad with customizable shortcut keys and dedicated survey buttons'],
+      ['Battery & Runtime', '8000 mAh rechargeable Li-ion battery providing up to 14+ hours continuous surveying'],
+      ['Charging', 'USB Type-C with PE+ 2.0 fast charging (≤ 4 hours full charge)'],
+      ['Wireless Connectivity', '4G LTE dual-SIM dual-standby, Wi-Fi 802.11 a/b/g/n/ac (2.4/5 GHz), Bluetooth 5.0, NFC'],
+      ['GNSS Chipset', 'Internal GPS, GLONASS, BeiDou, Galileo receiver for autonomous GIS positioning'],
+      ['Integrated Camera', '13 MP rear camera with autofocus and flash + 5 MP front camera'],
+      ['Field Software', 'GeoMate MateSurvey professional field software pre-installed (CAD, stakeout, COGO, roading)'],
+      ['Durability Rating', 'IP68 waterproof and dustproof, MIL-STD-810H compliant, 1.5 m drop onto concrete'],
+      ['Weight & Dimensions', '225 mm × 80 mm × 23 mm | 460 g (with battery)'],
+      ['Operating Temperature', '-30°C to +60°C']
+    ],
+    features: [
+      '5.5-inch sunlight-readable HD+ multi-touch screen operable in torrential rain, bright direct sunlight, and with heavy survey gloves',
+      'Full alphanumeric physical keypad provides tactile, positive feedback for high-speed coordinate entry and field coding without mis-touches',
+      '8,000 mAh high-capacity battery delivers over 14 hours of continuous RTK network surveying and screen-on time',
+      'Pre-installed MateSurvey software offers comprehensive field surveying modules: topographic survey, CAD stakeout, road design, curve calculation, and GIS attribute collection',
+      'Seamless compatibility with GeoMate GBASE, SG6L, and other NMEA-compatible GNSS and total station instruments via Bluetooth and Wi-Fi',
+      'IP68 and MIL-STD-810H military-grade rugged enclosure resists water submersion, heavy dust ingress, and accidental drops on rocky terrain',
+      'Dual 4G Nano-SIM slots provide rock-solid internet connection for CORS / NTRIP networks and instant cloud project sync'
+    ],
+    page: 1,
+    subcategories: ['gps-survey-mapping-products', 'mining-rugged', 'defense-rugged'],
+    categoryIds: ['surveying', 'forestry', 'computing', 'mining'],
+    tags: ['GNSS Controllers', 'GPS, Survey & Mapping Products']
+  },
+  {
     slug: 'professional-gnss-receiver',
     name: 'Professional GNSS Receiver',
     brand: 'AFFORDA',
-    category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    category: 'surveying',
+    image: 'professional-gnss-receiver',
+    gallery: ['professional-gnss-receiver'],
     label: 'GNSS SURVEY RECEIVER',
-    summary: 'High-precision multi-constellation GNSS receiver designed for geodetic surveying, topographic mapping, and reliable precision field positioning operations.',
+    summary: 'High-precision multi-constellation GNSS receiver designed for geodetic surveying, topographic mapping, and precision field positioning. For complete turnkey base-and-rover RTK setups, see our GeoMate Complete GNSS RTK System.',
+    packageNotice: {
+      text: 'Looking for a complete RTK setup? Check out the GeoMate Complete GNSS RTK System.',
+      packageSlug: 'geomate-gnss-receiver',
+      packageTitle: 'GeoMate Turnkey RTK'
+    },
     specs: [
       ['Product Type', 'Survey GNSS Receiver'],
       ['Primary Use', 'Geodetic Surveying & Precision Mapping'],
@@ -492,17 +708,22 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'GNSS']
+    tags: ['GNSS / RTK Receivers', 'GPS, Survey & Mapping Products']
   },
   {
     slug: 'rtk-dgps',
     name: 'RTK / DGPS',
     brand: 'AFFORDA',
-    category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    category: 'surveying',
+    image: 'rtk-dgps',
+    gallery: ['rtk-dgps'],
     label: 'RTK POSITIONING SYSTEM',
-    summary: 'High-accuracy satellite positioning system used for professional surveying, boundary mapping, and precise field data collection.',
+    summary: 'High-accuracy satellite positioning system used for professional surveying, boundary mapping, and precise field data collection. For ready-to-deploy base and rover hardware, explore the GeoMate Complete GNSS RTK System.',
+    packageNotice: {
+      text: 'Looking for a turnkey Base + Rover RTK kit? Explore GeoMate GNSS solutions.',
+      packageSlug: 'geomate-gnss-receiver',
+      packageTitle: 'GeoMate Turnkey RTK'
+    },
     specs: [
       ['System Type', 'GNSS RTK / DGPS'],
       ['Primary Use', 'Precision Positioning'],
@@ -519,15 +740,15 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'RTK / DGPS']
+    tags: ['GNSS / RTK Receivers', 'RTK / DGPS', 'GPS, Survey & Mapping Products']
   },
   {
     slug: 'sub-meter-gps',
     name: 'Sub-meter GPS',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'sub-meter-gps',
+    gallery: ['sub-meter-gps'],
     label: 'SUB-METER MAPPING GPS',
     summary: 'Field-ready handheld GNSS mapping receiver designed for GIS data collection, asset management, and environmental resource surveys requiring sub-meter precision.',
     specs: [
@@ -1426,33 +1647,140 @@ export const products: Product[] = [
 
   // --- 1. Geological Compasses & Clinometers ---
   {
-    slug: 'brunton-f-5010',
-    name: 'Geo Pocket Transit (F-5010)',
+    slug: 'brunton-geo-pocket-transit-f-5010',
+    name: 'Geo Pocket Transit F-5010',
     brand: 'Brunton',
     category: 'geology',
-    image: 'brunton-f-5010',
-    gallery: ['brunton-f-5010'],
-    label: 'GEOLOGICAL TRANSIT',
-    summary: 'A solid billet 6061-T6 aluminum pocket transit engineered for precision strike, dip and dip direction measurements in structural geology and mining.',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'GEOLOGICAL POCKET TRANSIT',
+    summary: 'Milled aluminum geological pocket transit engineered with a fast NdFeB rare-earth needle, hinge clinometer, and flat bottom for low-angle strike and dip measurements.',
     specs: [
-      ['Model', 'F-5010'],
-      ['Body material', 'Machined 6061-T6 hard-anodized aluminum'],
-      ['Azimuth accuracy', '±0.5° (1° graduations)'],
-      ['Internal clinometer', '±0.5° (1° graduations, 10-minute vernier)'],
-      ['Hinge clinometer', '±0.5° (2° graduations / 1° increments)'],
-      ['Magnet', 'NdFeB rare-earth on sapphire jewel bearing'],
-      ['Water resistance', 'Waterproof (O-ring sealed)']
+      ['Model', 'Geo Pocket Transit F-5010 (0–360° Azimuth)'],
+      ['Body Construction', 'CNC-machined aluminum body'],
+      ['Hinge Inclinometer', 'Hinge inclinometer allowing simultaneous dip & strike measurement'],
+      ['Azimuth Accuracy', '±0.5° with 1° graduations (0–360° azimuth scale)'],
+      ['Vertical Accuracy', '±0.5° with 1° graduations'],
+      ['Declination Adjustment', 'Tool-free magnetic declination adjustable ±180°'],
+      ['Magnetic System', 'Rare-earth NdFeB cast magnet on sapphire jewel bearing'],
+      ['Needle Dampening', 'Induction damped needle for rapid settling'],
+      ['Environmental', 'Waterproof sealed construction'],
+      ['Mounting', 'Tripod mountable with standard ball-and-socket mount']
     ],
     features: [
-      'Milled from solid billet 6061-T6 aluminum for rugged structural durability',
-      'Single NdFeB rare-earth magnet resists demagnetization and settles rapidly',
-      'Hinge clinometer enables simultaneous strike, dip and dip direction measurement',
-      'Precision-aligned sighting mirror and induction dampening for quick bearings'
+      'Solid CNC-machined billet aluminum body for maximum field durability',
+      'Hinge inclinometer allows simultaneous trend and plunge or dip and strike measurement',
+      'Precision NdFeB rare-earth magnetic needle on sapphire jewel suspension',
+      'Induction dampening for rapid needle settling in demanding conditions',
+      'Tool-free declination adjustment with full ±180° range',
+      'Waterproof sealed construction protects optics and movement from moisture',
+      'Flat bottom with non-slip silicone foot facilitates low-angle strike and dip readings',
+      'Standard tripod mount threading compatible with transit ball-and-socket mounts'
     ],
-    page: 27,
-    subcategories: ['geological-compasses-clinometers', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
+    page: 31,
+    subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Pocket Transits', 'Geological Compasses / Pocket Transits']
+    tags: ['Geological Compasses / Pocket Transits']
+  },
+  {
+    slug: 'brunton-truarc-15',
+    name: 'TruArc™ 15 Compass',
+    brand: 'Brunton',
+    category: 'geology',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'MIRRORED BASEPLATE COMPASS',
+    summary: 'Professional mirrored baseplate compass featuring TruArc™ Global Needle, dual clinometers for slope and height estimation, and tool-free declination adjustment.',
+    specs: [
+      ['Model', 'TruArc™ 15 (F-TRUARC15)'],
+      ['Sighting System', 'Precision sighting mirror with sighting notch'],
+      ['Needle System', 'TruArc™ Global Needle (works worldwide without rebalancing)'],
+      ['Declination Adjustment', 'Tool-less declination adjustment (±180°)'],
+      ['Clinometer', 'Integrated clinometer for dip and slope measurement'],
+      ['Resolution', '1° azimuth resolution with magnified readout'],
+      ['Baseplate Scales', 'Baseplate with imperial and metric scales'],
+      ['Low-Light Readout', 'Luminous markings on dial and needle']
+    ],
+    features: [
+      'TruArc™ Global Needle operates accurately across northern and southern hemispheres',
+      'Integrated sighting mirror and notch for precise bearing acquisition',
+      'Tool-less magnetic declination adjustment allows fast true north alignment',
+      'Dual clinometer system for geological dip angles and slope height measurement',
+      'Magnified readout on 1° resolution azimuth dial for clear field sightings',
+      'Transparent baseplate marked with imperial and metric map scales',
+      'Luminous markings for low-light observation and nighttime navigation'
+    ],
+    page: 31,
+    subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-compasses'],
+    categoryIds: ['geology', 'navigation', 'mining'],
+    tags: ['Geological Compasses / Pocket Transits', 'Field Compasses / Baseplate Compasses']
+  },
+  {
+    slug: 'brunton-truarc-20',
+    name: 'TruArc™ 20 Compass',
+    brand: 'Brunton',
+    category: 'geology',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'ADVANCED SIGHTING COMPASS',
+    summary: 'Advanced mirrored sighting compass featuring TruArc™ Global Needle, dual-angle clinometer, sighting mirror, and protective rubber foot storing interchangeable reference cards.',
+    specs: [
+      ['Model', 'TruArc™ 20 (F-TRUARC20)'],
+      ['Compass Type', 'Full-featured professional baseplate compass'],
+      ['Sighting System', 'Sighting mirror with sighting line and notch'],
+      ['Needle System', 'TruArc™ Global Needle system (balanced for worldwide use)'],
+      ['Declination Adjustment', 'Tool-less declination adjustment'],
+      ['Clinometer', 'Clinometer for dip and slope measurement'],
+      ['Leveling', 'Integrated bubble level for precise planar orientation'],
+      ['Readout & Optics', 'Map magnifier and 1° azimuth resolution'],
+      ['Low-Light Navigation', 'Luminous dial and bearing markings']
+    ],
+    features: [
+      'Full-featured professional baseplate compass with global needle system',
+      'Sighting mirror with V-notch for taking accurate field bearings',
+      'Tool-less declination adjustment ensures rapid synchronization with true north',
+      'Integrated clinometer allows fast measurement of rock dip and terrain slopes',
+      'Built-in bubble level guarantees horizontal alignment during readings',
+      'Map magnifier and 1° resolution dial for fine topographic cartography',
+      'Protective cover and rubber foot with storage for field reference cards and UTM romer scales',
+      'High-contrast luminous markings for reliable reading in low-light conditions'
+    ],
+    page: 31,
+    subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-compasses'],
+    categoryIds: ['geology', 'navigation', 'mining'],
+    tags: ['Geological Compasses / Pocket Transits', 'Field Compasses / Baseplate Compasses']
+  },
+  {
+    slug: 'brunton-truarc-5',
+    name: 'TruArc™ 5 Compass',
+    brand: 'Brunton',
+    category: 'geology',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'BASEPLATE MAPPING COMPASS',
+    summary: 'Oversized baseplate mapping compass with global needle balance, tool-free declination adjustment, and an integrated map magnifier for detailed cartographic navigation.',
+    specs: [
+      ['Model', 'TruArc™ 5 (F-TRUARC5)'],
+      ['Compass Type', 'Baseplate mapping compass'],
+      ['Needle System', 'TruArc™ Global Needle system (tilts up to 20° for worldwide balance)'],
+      ['Declination Adjustment', 'Tool-less declination adjustment'],
+      ['Resolution', '2° azimuth resolution'],
+      ['Map Scales', 'Metric and imperial map scales with inch/mm rules'],
+      ['Included Accessories', 'Lanyard included with quick-release clip']
+    ],
+    features: [
+      'Baseplate mapping compass engineered for rapid orienteering and field geology',
+      'TruArc™ Global Needle system operates worldwide without needle drag or rebalancing',
+      'Tool-less declination adjustment allows fast switching between magnetic and true north',
+      '2° resolution dial with high-contrast markings for straightforward bearing transfer',
+      'Metric and imperial map scales with inch/mm rulers for precise map navigation',
+      'Transparent oversized baseplate with built-in map magnifier for contour reading',
+      'Durable lanyard included for secure neck or wrist carry during traversing'
+    ],
+    page: 31,
+    subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-compasses'],
+    categoryIds: ['geology', 'navigation', 'mining'],
+    tags: ['Geological Compasses / Pocket Transits', 'Field Compasses / Baseplate Compasses']
   },
   {
     slug: 'breithaupt-3031-gekom',
@@ -1479,9 +1807,9 @@ export const products: Product[] = [
       'Rugged non-magnetic light alloy body built for harsh field mapping'
     ],
     page: 28,
-    subcategories: ['geological-compasses-clinometers', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Stratum Compasses', 'Geological Compasses / Pocket Transits']
+    tags: ['Geological Compasses / Pocket Transits']
   },
   {
     slug: 'breithaupt-3032-gebru',
@@ -1508,9 +1836,9 @@ export const products: Product[] = [
       'Tripod mount compatible for high-precision topographic station work'
     ],
     page: 28,
-    subcategories: ['geological-compasses-clinometers', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Pocket Transits', 'Stratum Compasses', 'Geological Compasses / Pocket Transits']
+    tags: ['Geological Compasses / Pocket Transits']
   },
   {
     slug: 'brunton-omnislope',
@@ -1537,69 +1865,223 @@ export const products: Product[] = [
       'Rugged anodized aluminum body with protective silicone boot'
     ],
     page: 28,
-    subcategories: ['geological-compasses-clinometers', 'forest-measurement-inventory', 'mining-survey'],
+    subcategories: ['geological-field-mapping', 'forest-measurement-inventory', 'mining-survey'],
     categoryIds: ['geology', 'forestry', 'mining'],
-    tags: ['Clinometers & Inclinometers', 'Clinometer']
+    tags: ['Geological Compasses / Pocket Transits']
   },
 
-  // --- 2. Geological Hammers, Chisels & Rock Tools ---
+  // --- 2. Geological Hammers & Rock Tools ---
   {
     slug: 'estwing-e3-22p',
-    name: 'E3-22P Rock Pick / Geological Hammer',
+    name: 'Rock Pick Pointed Tip',
     brand: 'Estwing',
     category: 'geology',
-    image: 'estwing-e3-22p',
-    gallery: ['estwing-e3-22p'],
-    label: 'SOLID STEEL ROCK PICK',
-    summary: 'The world standard geological rock pick, forged in one piece from American tool steel with a pointed tip, square striking face, and vibration-reducing grip.',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'POINTED TIP ROCK PICK',
+    summary: 'The industry-standard geological rock pick forged from solid American steel with a pointed tip, smooth striking face, and bonded Shock Reduction Grip®.',
     specs: [
       ['Model', 'E3-22P'],
-      ['Head weight', '22 oz (623 g)'],
-      ['Overall length', '13 inches (330 mm)'],
-      ['Construction', 'One-piece forged American tool steel'],
-      ['Head style', 'Pointed pick tip with smooth square face'],
-      ['Grip', 'Patented Blue Shock Reduction Grip® (vinyl/nylon)'],
-      ['Origin', 'Rockford, Illinois, USA']
+      ['Head Weight', '22 oz / 616 g'],
+      ['Overall Length', '13 in / 330 mm'],
+      ['Construction', 'Single-piece forged solid American steel'],
+      ['Grip Type', 'Molded Shock Reduction Grip® (reduces impact vibration up to 70%)'],
+      ['Head Design', 'Pointed tip with smooth flat striking face']
     ],
     features: [
-      'Solid steel head-handle construction eliminates handle breakage',
-      'Pointed tip engineered for prying, chipping, and fossil/crystal extraction',
-      'Smooth square face for fracturing hard rock and dressing samples',
-      'Shock Reduction Grip® reduces impact vibration by up to 70%'
+      'Solid one-piece forged steel construction eliminates joint failure',
+      'Pointed tip engineered for prying, breaking, and sampling rock formations',
+      'Smooth striking face for driving geological chisels and splitting specimens',
+      'Patented Shock Reduction Grip® absorbs impact shock and protects hands',
+      'The benchmark geological hammer trusted by field geologists worldwide',
+      'Manufactured in Rockford, Illinois, USA'
     ],
-    page: 29,
-    subcategories: ['geological-hammers-chisels-rock-tools', 'mining-field-mapping'],
+    page: 46,
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Pointed Rock Picks', 'Geological Hammers']
+    tags: ['Geological Hammers', 'Rock Hammers', 'Rock Picks']
   },
   {
     slug: 'estwing-e3-24blc',
-    name: 'E3-24BLC Rock Pick / Geological Hammer',
+    name: 'Bricklayer / Mason’s Hammer E3-24BLC',
     brand: 'Estwing',
     category: 'geology',
-    image: 'estwing-e3-24blc',
-    gallery: ['estwing-e3-24blc'],
-    label: 'CHISEL EDGE ROCK PICK',
-    summary: 'Solid steel geological hammer with a wide chisel edge for splitting sedimentary rock, bedding planes, and dressing geological specimens.',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'MASON & FIELD HAMMER',
+    summary: 'Solid steel mason’s hammer featuring a wide chisel edge and smooth striking face, widely utilized in geological field operations for splitting stratified rock.',
     specs: [
       ['Model', 'E3-24BLC'],
-      ['Head weight', '24 oz (680 g)'],
-      ['Overall length', '11 inches (279 mm)'],
-      ['Construction', 'One-piece forged American tool steel'],
-      ['Head style', 'Chisel edge with square striking face'],
-      ['Grip', 'Patented Blue Shock Reduction Grip® with end cap'],
-      ['Origin', 'Rockford, Illinois, USA']
+      ['Head Weight', '24 oz / 672 g'],
+      ['Overall Length', '11.25 in / 286 mm'],
+      ['Construction', 'Single-piece forged solid American steel'],
+      ['Grip Type', 'Bonded Shock Reduction Grip® with nylon end cap'],
+      ['Head Design', 'Chisel cutting edge with smooth flat striking face']
     ],
     features: [
-      'Wide chisel blade optimized for cleaving stratified and sedimentary formations',
-      'Heavy 24 oz head delivers powerful striking and splitting force',
-      'Double-tempered solid American tool steel forged in one piece',
-      'Patented nylon end cap and molded Shock Reduction Grip®'
+      'Forged in one piece from high-grade solid American steel',
+      'Wide chisel edge suitable for splitting layered rock, trimming, and sampling',
+      'Smooth striking face for high-force strikes on rock and masonry',
+      'Bonded Shock Reduction Grip® reduces vibrations caused by impact',
+      'Durable nylon end cap for setting and tapping specimens',
+      'Made in the USA'
     ],
-    page: 29,
-    subcategories: ['geological-hammers-chisels-rock-tools', 'mining-field-mapping'],
+    page: 46,
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Chisel Edge Picks', 'Geological Hammers']
+    tags: ['Geological Hammers', 'Field Hammers']
+  },
+  {
+    slug: 'estwing-e3-23lp',
+    name: 'Rock Pick Pointed Tip (Long Handle)',
+    brand: 'Estwing',
+    category: 'geology',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'LONG-HANDLE ROCK PICK',
+    summary: 'Extended 16-inch handle geological rock pick forged from solid steel, providing extra leverage, striking force, and prying reach for demanding rock outcrop work.',
+    specs: [
+      ['Model', 'E3-23LP'],
+      ['Head Weight', '22 oz / 616 g'],
+      ['Overall Length', '16 in / 406 mm'],
+      ['Construction', 'Single-piece forged solid American steel'],
+      ['Grip Type', 'Molded Shock Reduction Grip®'],
+      ['Head Design', 'Pointed tip with smooth flat striking face']
+    ],
+    features: [
+      'Extended 16-inch handle provides increased leverage and striking velocity',
+      'Solid one-piece forged American steel construction ensures unmatched strength',
+      'Pointed tip for precise fracture propagation and mineral extraction',
+      'Smooth striking face for delivering solid impacts to outcrops and chisels',
+      'Shock Reduction Grip® cushions hands from repetitive impact shock',
+      'Made in the USA'
+    ],
+    page: 46,
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Geological Hammers', 'Rock Hammers', 'Rock Picks']
+  },
+  {
+    slug: 'estwing-engineers-hammer-e6-48e',
+    name: 'Engineer’s Hammer E6-48E',
+    brand: 'Estwing',
+    category: 'geology',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'HEAVY ENGINEER’S HAMMER',
+    summary: 'Heavyweight 48 oz solid steel engineer’s hammer designed for heavy geological fieldwork, demolition, striking star drills, and fracturing dense rock boulders.',
+    specs: [
+      ['Model', 'E6-48E'],
+      ['Head Weight', '48 oz / 1344 g (3 lb head)'],
+      ['Overall Length', '14.75 in / 375 mm'],
+      ['Construction', 'Single-piece forged solid American steel'],
+      ['Grip Type', 'Bonded Shock Reduction Grip® with blue UV coating'],
+      ['Head Design', 'Dual crowned bevel striking faces']
+    ],
+    features: [
+      'Heavy 48 oz head delivers maximum force for breaking hard rocks and driving chisels',
+      'Forged in one piece from high-carbon solid American steel',
+      'Dual machined striking faces with beveled edges to prevent chipping',
+      'Bonded Shock Reduction Grip® significantly reduces impact vibration',
+      'Well-balanced weight distribution for controlled powerful strikes',
+      'Made in Rockford, Illinois, USA'
+    ],
+    page: 46,
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Geological Hammers', 'Engineer’s Hammers', 'Field Hammers']
+  },
+  {
+    slug: 'estwing-rock-pick-square-head-e6-24pc',
+    name: 'Rock Pick (Square Head) E6-24PC',
+    brand: 'Estwing',
+    category: 'geology',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'SQUARE HEAD ROCK PICK',
+    summary: 'Heavy-duty rock pick featuring a larger square striking face for improved target contact and power when splitting dense minerals or driving chisels.',
+    specs: [
+      ['Model', 'E6-24PC ("Big Blue")'],
+      ['Head Weight', '24 oz / 680 g'],
+      ['Overall Length', '13.5 in / 343 mm'],
+      ['Construction', 'Single-piece forged solid American steel'],
+      ['Grip Type', 'Shock Reduction Grip® with nylon end cap'],
+      ['Head Design', 'Large square striking face with pointed pick tip']
+    ],
+    features: [
+      'Larger square striking face increases contact area and strike accuracy',
+      'Pointed tip engineered for prying, breaking, and extracting rock specimens',
+      'Solid American steel forged in one continuous piece for ultimate durability',
+      'Shock Reduction Grip® dampens impact vibration for all-day field comfort',
+      'High-visibility blue finish with durable nylon end cap',
+      'Made in the USA'
+    ],
+    page: 46,
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Geological Hammers', 'Rock Hammers', 'Rock Picks']
+  },
+
+  // --- 3. Geological Prospecting & Gold Pans ---
+  {
+    slug: 'estwing-plastic-gold-pan',
+    name: 'Plastic Gold Pan',
+    brand: 'Estwing',
+    category: 'geology',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'MINERAL PROSPECTING PAN',
+    summary: 'High-impact plastic gold pan featuring dual riffles and a textured drop-center design to rapidly separate and trap fine gold and heavy minerals.',
+    specs: [
+      ['Model Family', 'BP10, BP12, BP14, BP16'],
+      ['Available Sizes', '10 in (254 mm) / 12 in (305 mm) / 14 in (356 mm) / 16 in (406 mm)'],
+      ['Material', 'Heavy-duty rust-proof and chemical-resistant plastic'],
+      ['Riffle Design', 'Dual fine and coarse riffles with drop-center trap'],
+      ['Color', 'High-contrast dark finish for gold visibility'],
+      ['Portability', 'Built-in lanyard attachment hole']
+    ],
+    features: [
+      'Dual fine and coarse riffles catch both coarse flakes and fine placer gold',
+      'Drop-center design traps heavy minerals efficiently during swirling',
+      'Lightweight chemical-resistant and rust-proof plastic construction',
+      'Dark high-contrast color makes gold flakes easily visible against black sands',
+      'Lanyard hole molded into rim for easy field transport and drying',
+      'Available in four field-tested diameters: 10", 12", 14", and 16"'
+    ],
+    page: 46,
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Gold Pans', 'Prospecting Tools']
+  },
+  {
+    slug: 'estwing-steel-gold-pan',
+    name: 'Steel Gold Pan',
+    brand: 'Estwing',
+    category: 'geology',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'SOLID STEEL PROSPECTING PAN',
+    summary: 'Classic solid American steel gold pan built for heavy-duty geological prospecting with precision-creased riffles to retain heavy minerals and placer gold.',
+    specs: [
+      ['Model Family', '#10-10, #12-12, #14-14, #16-16'],
+      ['Available Sizes', '10 in (254 mm) / 12 in (305 mm) / 14 in (356 mm) / 16 in (406 mm)'],
+      ['Material', 'Solid American steel'],
+      ['Design', 'Precision-engineered creases for mineral retention'],
+      ['Origin', 'Made in the USA'],
+      ['Carry Feature', 'Pre-punched rim hole for lanyard or carabiner hanging']
+    ],
+    features: [
+      'Forged from solid American steel for extreme durability and long field life',
+      'Precision creases along the interior wall effectively trap heavy black sands and gold',
+      'Can be heat-treated and blued in the field for seasoned separation performance',
+      'Pre-punched rim hole for convenient tethering and backpack carry',
+      'Traditional choice of field geologists and professional placer prospectors',
+      'Available in four standard sizes: 10", 12", 14", and 16"'
+    ],
+    page: 46,
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
+    categoryIds: ['geology', 'mining'],
+    tags: ['Gold Pans', 'Prospecting Tools']
   },
   {
     slug: 'estwing-rock-chisels',
@@ -2401,6 +2883,7 @@ export const products: Product[] = [
 
 export const brandDescriptions: Record<string,string> = {
   'AFFORDA':'Specialized supplier of professional field, forestry, surveying, and wildfire management equipment.',
+  'GeoMate':'Professional GNSS positioning, RTK surveying, visual laser rovers, and rugged field data-collection systems.',
   'Vortex Optics':'A closer connection to the world beyond. Discover HD binoculars and precision observation optics.',
   'Garmin':'Find your position and your next destination with purpose-built handheld navigation.',
   'Brunton':'Tools for reading the earth. Explore geological transits and precision field compasses.',
@@ -2429,17 +2912,21 @@ export const brandDescriptions: Record<string,string> = {
 export const finderOptions: Record<string, Record<string, string[]>> = {
   'Forestry & Wildlife': {
     'Forest Measurement': ['diameter-tape-dbh-tape', 'digital-tree-caliper', 'clinometer', 'hypsometer', 'laser-rangefinder'],
-    'Mapping & Navigation': ['garmin-gpsmap-65s', 'professional-gnss-receiver', 'rtk-dgps', 'laser-rangefinder'],
+    'Mapping & Navigation': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'garmin-gpsmap-65s', 'professional-gnss-receiver', 'rtk-dgps', 'laser-rangefinder'],
     'Fire Suppression': ['backpack-fire-pump', 'portable-fire-pump', 'pulaski-forestry-axe', 'drip-torch', 'fire-weather-meter'],
     'Wildlife monitoring': ['browning-strike-force-pro-dcl', 'audiomoth'],
     'Night observation': ['hikmicro-lynx-lh25', 'minox-nvd-650'],
   },
-  'Surveying & Mapping': { 'Navigation':['garmin-gpsmap-65s','garmin-montana-700'], 'DGPS positioning':['rtk-dgps','professional-gnss-receiver'], 'Field computing':['panasonic-toughbook','electronic-data-collector'] },
+  'Surveying & Mapping': {
+    'Navigation': ['garmin-gpsmap-65s', 'garmin-montana-700'],
+    'DGPS positioning': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'rtk-dgps', 'professional-gnss-receiver'],
+    'Field computing': ['geomate-fc2-controller', 'panasonic-toughbook', 'electronic-data-collector'],
+  },
   'Geology & Research': {
     'Compass & transit measurement': ['brunton-f-5010', 'brunton-geolite', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'brunton-omnislope'],
     'Rock sampling & hammers': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-rock-chisels'],
     'Magnification & loupes': ['geo-premier-triplet-hand-lens', 'geological-hand-lens'],
-    'Mapping & GNSS': ['garmin-etrex-se', 'garmin-gpsmap-65', 'garmin-gpsmap-65s'],
+    'Mapping & GNSS': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'garmin-etrex-se', 'garmin-gpsmap-65', 'garmin-gpsmap-65s'],
     'Field notebooks & measuring': ['chartwell-collimation-book-2426', 'edding-mapping-pen-01', 'geological-measuring-tape'],
     'Mineral property testing': ['tungsten-carbide-scriber-with-magnet-black', 'mohs-hardness-tile', 'streak-plates-white', 'acid-bottles'],
     'Sample sieving & analysis': ['200mm-glenammer-sieves', 'geo-sieves'],
@@ -2458,10 +2945,10 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
   },
   'Mining & Geology': {
     'Geological Survey': ['brunton-f-5010', 'brunton-geolite', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'brunton-omnislope'],
-    'Mapping / GNSS': ['garmin-gpsmap-65s', 'garmin-gpsmap-65', 'garmin-etrex-se', 'garmin-montana-700'],
+    'Mapping / GNSS': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'garmin-gpsmap-65s', 'garmin-gpsmap-65', 'garmin-etrex-se', 'garmin-montana-700'],
     'Compasses / Pocket Transits': ['brunton-f-5010', 'brunton-geolite', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru'],
     'Distance Measurement': ['leica-disto-laser-distance-meter', 'garmin-gpsmap-65s', 'garmin-montana-700'],
-    'Rugged Computing': ['panasonic-toughbook'],
+    'Rugged Computing': ['geomate-fc2-controller', 'panasonic-toughbook'],
     'Field Inspection': ['geo-premier-triplet-hand-lens', 'ralcam-h408b'],
   },
 };
