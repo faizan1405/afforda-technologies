@@ -1055,8 +1055,8 @@ export const products: Product[] = [
     name: 'Flagging Tape',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'flagging-tape',
+    gallery: ['flagging-tape'],
     label: 'HIGH-VISIBILITY MARKING',
     summary: 'High-visibility non-adhesive marking tape designed for flagging timber boundaries, sample trees, trail layouts, and survey lines in outdoor environments.',
     specs: [
@@ -1083,8 +1083,8 @@ export const products: Product[] = [
     name: 'Field Data Recorder',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'field-data-recorder',
+    gallery: ['field-data-recorder'],
     label: 'ELECTRONIC FIELD RECORDER',
     summary: 'Rugged mobile data collection unit engineered for capturing forestry measurements, ecological observations, and geographic records under outdoor field conditions.',
     specs: [

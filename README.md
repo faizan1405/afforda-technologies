@@ -42,8 +42,8 @@ If using Hostinger's Node.js Application manager in hPanel:
 - `/`: Home page with hero, interactive category slider, mission grid, and equipment finder.
 - `/products`: Full equipment selection with category and type filters.
 - `/products/[slug]`: Dynamic product detail pages with specifications and WhatsApp inquiry.
-- `/categories/forest-wildlife`: Specialized Forest & Wildlife category page with 3 focused subcategories.
-- `/categories/forest-wildlife/[subcategory]`: 3 pre-rendered subcategory pages (Forest Measurement & Inventory; GPS, Survey & Mapping Products; Forest Fire-Fighting Products).
+- `/categories/forest-wildlife`: Specialized Forest & Wildlife category page with 4 focused subcategories.
+- `/categories/forest-wildlife/[subcategory]`: 4 pre-rendered subcategory pages (Forest Measurement & Inventory; GPS, Survey & Mapping Products; Forest Fire-Fighting Products; Wildlife Monitoring & Surveillance).
 - `/category/[id]`: 9 pre-rendered primary category pages (Forestry, Geology, Surveying, Navigation, Thermal, Optics, Inspection, Computing, Communication).
 - `/about`: Company overview and mission.
 - `/careers`: Career inquiries and WhatsApp link.
