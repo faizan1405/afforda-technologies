@@ -775,8 +775,8 @@ export const products: Product[] = [
     name: 'Centimeter / mm-accuracy GNSS',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'centimeter-mm-accuracy-gnss',
+    gallery: ['centimeter-mm-accuracy-gnss'],
     label: 'HIGH-PRECISION GNSS',
     summary: 'Geodetic-grade satellite positioning system designed for boundary surveying, geodetic control networks, and engineering applications demanding centimeter-to-millimeter precision.',
     specs: [
@@ -803,8 +803,8 @@ export const products: Product[] = [
     name: 'Electronic Data Collector',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'electronic-data-collector',
+    gallery: ['electronic-data-collector'],
     label: 'SURVEY FIELD CONTROLLER',
     summary: 'Rugged handheld field controller designed for logging survey observations, managing coordinate databases, and operating GNSS and total station instruments.',
     specs: [
@@ -831,8 +831,8 @@ export const products: Product[] = [
     name: 'Digital Compass',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'digital-compass',
+    gallery: ['digital-compass'],
     label: 'ELECTRONIC BEARING COMPASS',
     summary: 'Electronic sighting compass designed for orientation, bearing measurement, and azimuth data capture during geological and topographic field surveys.',
     specs: [
@@ -859,8 +859,8 @@ export const products: Product[] = [
     name: 'Staff Compass',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'staff-compass',
+    gallery: ['staff-compass'],
     label: 'MOUNTABLE SURVEY COMPASS',
     summary: 'Mountable survey compass designed for attaching to a Jacob’s staff or tripod to shoot precise bearings in forestry and boundary surveys.',
     specs: [
@@ -887,8 +887,8 @@ export const products: Product[] = [
     name: 'Altimeter',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'altimeter',
+    gallery: ['altimeter'],
     label: 'BAROMETRIC ALTIMETER',
     summary: 'Barometric field instrument designed for determining elevations, altitude changes, and atmospheric pressure gradients during mountainous field surveying and ecological mapping.',
     specs: [
@@ -915,8 +915,8 @@ export const products: Product[] = [
     name: 'Total Station',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'total-station',
+    gallery: ['total-station'],
     label: 'OPTICAL SURVEY INSTRUMENT',
     summary: 'Electronic optical survey instrument combining an electronic theodolite and distance meter for measuring precise angles and slopes in construction and land surveying.',
     specs: [
@@ -943,8 +943,8 @@ export const products: Product[] = [
     name: 'Automatic Level',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'automatic-level',
+    gallery: ['automatic-level'],
     label: 'OPTICAL SURVEY LEVEL',
     summary: 'Optical surveying instrument featuring an internal self-leveling compensator for establishing accurate horizontal lines of sight and differential elevation leveling.',
     specs: [
@@ -971,8 +971,8 @@ export const products: Product[] = [
     name: 'Survey Tripod',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'survey-tripod',
+    gallery: ['survey-tripod'],
     label: 'INSTRUMENT FIELD TRIPOD',
     summary: 'Stable field tripod engineered to support total stations, GNSS base receivers, automatic levels, and survey targets across uneven terrain.',
     specs: [
@@ -2107,9 +2107,9 @@ export const products: Product[] = [
       'Durable vinyl cushion grip absorbs shock during heavy hammer strikes'
     ],
     page: 29,
-    subcategories: ['geological-hammers-chisels-rock-tools', 'mining-field-mapping'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Rock Chisels', 'Geological Hammers']
+    tags: ['Rock Chisels', 'Geological Hammers', 'Rock Hammers', 'Rock Picks']
   },
 
   // --- 3. Hand Lenses & Magnification ---
@@ -2137,9 +2137,9 @@ export const products: Product[] = [
       'Compact pocket format with lanyard hole for secure field carry'
     ],
     page: 30,
-    subcategories: ['hand-lenses-magnification', 'mining-inspection'],
+    subcategories: ['geological-field-mapping', 'mining-inspection'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Field Loupes', 'Field Hand Lens / Loupe']
+    tags: ['Field Loupes', 'Field Hand Lens / Loupe', 'Pocket Magnifiers']
   },
   {
     slug: 'geo-premier-triplet-hand-lens',
@@ -2165,9 +2165,9 @@ export const products: Product[] = [
       'Supplied with fitted genuine leather pouch for field protection'
     ],
     page: 30,
-    subcategories: ['hand-lenses-magnification', 'mining-inspection'],
+    subcategories: ['geological-field-mapping', 'mining-inspection'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Triplet Hand Lenses', 'Field Hand Lens / Loupe']
+    tags: ['Triplet Hand Lenses', 'Field Hand Lens / Loupe', 'Pocket Magnifiers']
   },
 
   // --- 4. GPS, Mapping & Distance Measurement ---
@@ -2196,9 +2196,9 @@ export const products: Product[] = [
       'Pair with the Garmin Explore app for route planning and active weather'
     ],
     page: 13,
-    subcategories: ['gps-mapping-distance-measurement', 'gps-survey-mapping-products', 'defense-navigation', 'mining-field-mapping', 'mining-mapping'],
+    subcategories: ['geological-field-mapping', 'gps-survey-mapping-products', 'defense-navigation', 'mining-field-mapping', 'mining-mapping'],
     categoryIds: ['navigation', 'geology', 'defense', 'mining'],
-    tags: ['Handheld GPS', 'GPS/GNSS Devices', 'GPS']
+    tags: ['Handheld GPS', 'GPS/GNSS Devices', 'GPS', 'GPS / GNSS Receivers']
   },
   {
     slug: 'garmin-gpsmap-65',
@@ -2224,9 +2224,9 @@ export const products: Product[] = [
       'Expanded satellite reception across five global navigation constellations'
     ],
     page: 13,
-    subcategories: ['gps-mapping-distance-measurement', 'gps-survey-mapping-products', 'defense-navigation', 'mining-field-mapping', 'mining-mapping'],
+    subcategories: ['geological-field-mapping', 'gps-survey-mapping-products', 'defense-navigation', 'mining-field-mapping', 'mining-mapping'],
     categoryIds: ['navigation', 'geology', 'defense', 'mining'],
-    tags: ['Handheld GPS', 'GPS/GNSS Devices', 'GPS']
+    tags: ['Handheld GPS', 'GPS/GNSS Devices', 'GPS', 'GPS / GNSS Receivers']
   },
   {
     slug: 'leica-disto-laser-distance-meter',
@@ -2253,7 +2253,7 @@ export const products: Product[] = [
       'Rugged drop-tested housing with dust and water spray protection'
     ],
     page: 14,
-    subcategories: ['gps-mapping-distance-measurement', 'mining-survey', 'mining-distance'],
+    subcategories: ['geological-field-mapping', 'mining-survey', 'mining-distance'],
     categoryIds: ['surveying', 'geology', 'mining'],
     tags: ['Laser Distance Meters', 'Distance Measurement']
   },
@@ -2283,9 +2283,9 @@ export const products: Product[] = [
       'Rounded corners reduce pocket wear during long field days'
     ],
     page: 31,
-    subcategories: ['field-notebooks-pens-measuring-tools', 'mining-field-mapping'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'surveying', 'mining'],
-    tags: ['Field Notebooks', 'Survey Books']
+    tags: ['Field Notebooks', 'Survey Books', 'Geological Scales']
   },
   {
     slug: 'edding-mapping-pen-01',
@@ -2309,9 +2309,9 @@ export const products: Product[] = [
       'Smudge-resistant formulation performs on synthetic and wet-strength papers'
     ],
     page: 31,
-    subcategories: ['field-notebooks-pens-measuring-tools'],
+    subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Mapping Pens & Markers', 'Field Pens']
+    tags: ['Mapping Pens & Markers', 'Field Pens', 'Geological Scales']
   },
   {
     slug: 'edding-mapping-pen-03',
@@ -2335,9 +2335,9 @@ export const products: Product[] = [
       'Ventilated safety cap with pocket clip'
     ],
     page: 31,
-    subcategories: ['field-notebooks-pens-measuring-tools'],
+    subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Mapping Pens & Markers', 'Field Pens']
+    tags: ['Mapping Pens & Markers', 'Field Pens', 'Geological Scales']
   },
   {
     slug: 'edding-mapping-pen-05',
@@ -2361,9 +2361,9 @@ export const products: Product[] = [
       'Reliable constant ink flow without blotting'
     ],
     page: 31,
-    subcategories: ['field-notebooks-pens-measuring-tools'],
+    subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Mapping Pens & Markers', 'Field Pens']
+    tags: ['Mapping Pens & Markers', 'Field Pens', 'Geological Scales']
   },
   {
     slug: 'staedtler-pigment-liner-mapping-pen',
@@ -2387,9 +2387,9 @@ export const products: Product[] = [
       'Sturdy metal pocket clip and robust polypropylene barrel'
     ],
     page: 31,
-    subcategories: ['field-notebooks-pens-measuring-tools'],
+    subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Mapping Pens & Markers', 'Field Pens']
+    tags: ['Mapping Pens & Markers', 'Field Pens', 'Geological Scales']
   },
   {
     slug: 'china-graph-pencils',
@@ -2413,9 +2413,9 @@ export const products: Product[] = [
       'Wipes cleanly off non-porous surfaces when no longer needed'
     ],
     page: 32,
-    subcategories: ['field-notebooks-pens-measuring-tools', 'mining-field-mapping'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Mapping Pens & Markers', 'Field Markers']
+    tags: ['Mapping Pens & Markers', 'Field Markers', 'Geological Scales']
   },
   {
     slug: 'geological-measuring-tape',
@@ -2440,9 +2440,9 @@ export const products: Product[] = [
       'End hook and ground stake provide secure anchoring for solo field measuring'
     ],
     page: 32,
-    subcategories: ['field-notebooks-pens-measuring-tools', 'mining-survey', 'mining-distance'],
+    subcategories: ['geological-field-mapping', 'mining-survey', 'mining-distance'],
     categoryIds: ['geology', 'surveying', 'mining'],
-    tags: ['Measuring Tapes', 'Field Measuring Rods']
+    tags: ['Measuring Tapes', 'Field Measuring Rods', 'Geological Scales']
   },
 
   // --- 6. Mineral Hardness & Property Testing ---
@@ -2468,9 +2468,9 @@ export const products: Product[] = [
       'Essential pocket tool for distinguishing limestone, marble, and dolostone'
     ],
     page: 33,
-    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Acid Testing', 'Property Testing']
+    tags: ['Acid Testing', 'Property Testing', 'Prospecting Tools']
   },
   {
     slug: 'mohs-hardness-tile',
@@ -2494,9 +2494,9 @@ export const products: Product[] = [
       'Reusable testing surface suitable for field surveys and laboratory classes'
     ],
     page: 33,
-    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Mohs Hardness Testing', 'Property Testing']
+    tags: ['Mohs Hardness Testing', 'Property Testing', 'Prospecting Tools']
   },
   {
     slug: 'pendulum-pencil-magnet',
@@ -2520,9 +2520,9 @@ export const products: Product[] = [
       'Protective threaded cap shields internal pendulum mechanism during transit'
     ],
     page: 33,
-    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Magnetic Scribers', 'Property Testing']
+    tags: ['Magnetic Scribers', 'Property Testing', 'Prospecting Tools']
   },
   {
     slug: 'steel-point-scriber',
@@ -2546,9 +2546,9 @@ export const products: Product[] = [
       'Durable all-metal build engineered for tough field conditions'
     ],
     page: 33,
-    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Mohs Hardness Testing', 'Property Testing']
+    tags: ['Mohs Hardness Testing', 'Property Testing', 'Prospecting Tools']
   },
   {
     slug: 'streak-plates-black',
@@ -2572,9 +2572,9 @@ export const products: Product[] = [
       'Easily cleaned with water and abrasive pad for repeated testing'
     ],
     page: 34,
-    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Streak Plates', 'Property Testing']
+    tags: ['Streak Plates', 'Property Testing', 'Prospecting Tools']
   },
   {
     slug: 'streak-plates-white',
@@ -2598,9 +2598,9 @@ export const products: Product[] = [
       'Standard 50 × 50 mm format fits inside any field testing wallet or kit'
     ],
     page: 34,
-    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Streak Plates', 'Property Testing']
+    tags: ['Streak Plates', 'Property Testing', 'Prospecting Tools']
   },
   {
     slug: 'swing-magnetic-pen',
@@ -2624,9 +2624,9 @@ export const products: Product[] = [
       'Machined aluminum housing protects pivot needle from field drops'
     ],
     page: 34,
-    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Magnetic Scribers', 'Property Testing']
+    tags: ['Magnetic Scribers', 'Property Testing', 'Prospecting Tools']
   },
   {
     slug: 'tungsten-carbide-scriber-with-magnet-black',
@@ -2650,9 +2650,9 @@ export const products: Product[] = [
       'Combines two essential geological property tests in one rugged tool'
     ],
     page: 34,
-    subcategories: ['mineral-hardness-property-testing', 'mining-field-mapping'],
+    subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Magnetic Scribers', 'Mohs Hardness Testing', 'Property Testing']
+    tags: ['Magnetic Scribers', 'Mohs Hardness Testing', 'Property Testing', 'Prospecting Tools']
   },
 
   // --- 7. Geological Sieves & Sample Analysis ---
@@ -2679,9 +2679,9 @@ export const products: Product[] = [
       'Compact 100mm diameter ideal for portable field testing and small lab batches'
     ],
     page: 35,
-    subcategories: ['geological-sieves-sample-analysis'],
+    subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Analytical Test Sieves', 'Geological Sieves']
+    tags: ['Analytical Test Sieves', 'Geological Sieves', 'Prospecting Tools']
   },
   {
     slug: '150mm-glenammer-sieves',
@@ -2706,9 +2706,9 @@ export const products: Product[] = [
       '150mm diameter provides intermediate sample volume capacity'
     ],
     page: 35,
-    subcategories: ['geological-sieves-sample-analysis'],
+    subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Analytical Test Sieves', 'Geological Sieves']
+    tags: ['Analytical Test Sieves', 'Geological Sieves', 'Prospecting Tools']
   },
   {
     slug: '200mm-glenammer-sieves',
@@ -2734,9 +2734,9 @@ export const products: Product[] = [
       'Laser-etched identification and individual calibration certification options'
     ],
     page: 35,
-    subcategories: ['geological-sieves-sample-analysis'],
+    subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Analytical Test Sieves', 'Geological Sieves']
+    tags: ['Analytical Test Sieves', 'Geological Sieves', 'Prospecting Tools']
   },
   {
     slug: '200mm-half-height-glenammer-sieves',
@@ -2761,9 +2761,9 @@ export const products: Product[] = [
       'Interlocks securely with full-height 200mm lids and receiving pans'
     ],
     page: 35,
-    subcategories: ['geological-sieves-sample-analysis'],
+    subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Half Height Sieves', 'Geological Sieves']
+    tags: ['Half Height Sieves', 'Geological Sieves', 'Prospecting Tools']
   },
   {
     slug: '300mm-glenammer-sieves',
@@ -2788,9 +2788,9 @@ export const products: Product[] = [
       'Designed for both automated mechanical shaker and manual sieving'
     ],
     page: 36,
-    subcategories: ['geological-sieves-sample-analysis'],
+    subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Analytical Test Sieves', 'Geological Sieves']
+    tags: ['Analytical Test Sieves', 'Geological Sieves', 'Prospecting Tools']
   },
   {
     slug: '300mm-half-height-glenammer-sieves',
@@ -2815,9 +2815,9 @@ export const products: Product[] = [
       'Conforms to international particle sizing specifications'
     ],
     page: 36,
-    subcategories: ['geological-sieves-sample-analysis'],
+    subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Half Height Sieves', 'Geological Sieves']
+    tags: ['Half Height Sieves', 'Geological Sieves', 'Prospecting Tools']
   },
   {
     slug: 'geo-sieves',
@@ -2843,9 +2843,9 @@ export const products: Product[] = [
       'Nylon mesh resists moisture and cleans easily in running stream water'
     ],
     page: 36,
-    subcategories: ['geological-sieves-sample-analysis'],
+    subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Field Sieve Sets', 'Geological Sieves']
+    tags: ['Field Sieve Sets', 'Geological Sieves', 'Prospecting Tools']
   },
 
   // --- 8. Field Communication & Expedition Support ---
@@ -2874,7 +2874,7 @@ export const products: Product[] = [
       'Durable BPA-free bottle with leak-proof carry cap and carabiner loop'
     ],
     page: 37,
-    subcategories: ['field-communication-expedition-support'],
+    subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
     tags: ['Hydration & Water Filtration', 'Expedition Support']
   }
@@ -2923,8 +2923,8 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
     'Field computing': ['geomate-fc2-controller', 'panasonic-toughbook', 'electronic-data-collector'],
   },
   'Geology & Research': {
-    'Compass & transit measurement': ['brunton-f-5010', 'brunton-geolite', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'brunton-omnislope'],
-    'Rock sampling & hammers': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-rock-chisels'],
+    'Compass & transit measurement': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'brunton-omnislope'],
+    'Rock sampling & hammers': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-rock-chisels', 'estwing-plastic-gold-pan', 'estwing-steel-gold-pan'],
     'Magnification & loupes': ['geo-premier-triplet-hand-lens', 'geological-hand-lens'],
     'Mapping & GNSS': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'garmin-etrex-se', 'garmin-gpsmap-65', 'garmin-gpsmap-65s'],
     'Field notebooks & measuring': ['chartwell-collimation-book-2426', 'edding-mapping-pen-01', 'geological-measuring-tape'],
@@ -2944,9 +2944,10 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
     'Surveillance / Monitoring':['browning-strike-force-pro-dcl','hikmicro-lynx-lh25','minox-nvd-650'],
   },
   'Mining & Geology': {
-    'Geological Survey': ['brunton-f-5010', 'brunton-geolite', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'brunton-omnislope'],
+    'Geological Survey': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'brunton-omnislope', 'estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-plastic-gold-pan', 'estwing-steel-gold-pan'],
     'Mapping / GNSS': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'garmin-gpsmap-65s', 'garmin-gpsmap-65', 'garmin-etrex-se', 'garmin-montana-700'],
-    'Compasses / Pocket Transits': ['brunton-f-5010', 'brunton-geolite', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru'],
+    'Compasses / Pocket Transits': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru'],
+    'Geological Hammers / Rock Picks': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-rock-chisels'],
     'Distance Measurement': ['leica-disto-laser-distance-meter', 'garmin-gpsmap-65s', 'garmin-montana-700'],
     'Rugged Computing': ['geomate-fc2-controller', 'panasonic-toughbook'],
     'Field Inspection': ['geo-premier-triplet-hand-lens', 'ralcam-h408b'],
