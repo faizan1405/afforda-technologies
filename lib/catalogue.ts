@@ -1107,6 +1107,117 @@ export const products: Product[] = [
     tags: ['GPS, Survey & Mapping Products', 'Field Data Recorder']
   },
 
+  // --- Remote Sensing & Drones ---
+  {
+    slug: 'uav-drone',
+    name: 'UAV / Drone',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'drone',
+    gallery: ['drone'],
+    label: 'AERIAL SURVEY UAV',
+    summary: 'Professional unmanned aerial vehicle system designed for aerial forest surveys, canopy inspection, topographic mapping, and conservation surveillance.',
+    specs: [
+      ['Product Type', 'UAV / Drone'],
+      ['Primary Use', 'Aerial Survey & Mapping'],
+      ['Application', 'Forest Canopy Inspection & Terrain Mapping'],
+      ['Survey Role', 'Remote Sensing & Aerial Data Collection'],
+      ['Field Category', 'Forestry Survey & Conservation']
+    ],
+    features: [
+      'Enables rapid aerial coverage of vast and inaccessible forest tracts',
+      'Supports interchangeable payloads including RGB, multispectral, and LiDAR sensors',
+      'Autonomous waypoint navigation and automated flight planning for grid surveys',
+      'Provides high-resolution aerial imagery for canopy height and forest health analysis'
+    ],
+    page: 1,
+    subcategories: ['gps-survey-mapping-products'],
+    categoryIds: ['forestry', 'surveying', 'navigation'],
+    tags: ['GPS, Survey & Mapping Products', 'Remote Sensing & Drones', 'UAV / Drone', 'Aerial Survey']
+  },
+  {
+    slug: 'multispectral-camera',
+    name: 'Multispectral Camera',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'MULTISPECTRAL SENSOR',
+    summary: 'Specialized aerial multispectral imaging sensor designed for capturing discrete spectral bands to assess vegetation vigor, canopy health, and forest stress indices.',
+    specs: [
+      ['Product Type', 'Multispectral Imaging Camera'],
+      ['Primary Use', 'Vegetation Index & Canopy Health Mapping'],
+      ['Spectral Bands', 'Multispectral (Narrowband Spectral Bands)'],
+      ['Application', 'NDVI Analysis, Forest Health & Agricultural Monitoring'],
+      ['Mounting Format', 'UAV / Aerial Drone Integration']
+    ],
+    features: [
+      'Captures synchronized spectral bands for vegetation index calculations (e.g., NDVI, NDRE)',
+      'Calibrated radiometric sensing for repeatable temporal vegetation health monitoring',
+      'Compact form factor engineered for seamless integration with mapping UAVs',
+      'Enables early detection of pest infestation, drought stress, and canopy disease'
+    ],
+    page: 1,
+    subcategories: ['gps-survey-mapping-products'],
+    categoryIds: ['forestry', 'surveying'],
+    tags: ['GPS, Survey & Mapping Products', 'Remote Sensing & Drones', 'Multispectral Camera', 'Aerial Survey']
+  },
+  {
+    slug: 'lidar-system',
+    name: 'LiDAR System',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'AERIAL & TERRESTRIAL LIDAR',
+    summary: 'Active laser scanning LiDAR system engineered to penetrate dense forest canopies for high-precision digital elevation models, tree height profiles, and 3D forest structure.',
+    specs: [
+      ['Product Type', 'LiDAR Scanning System'],
+      ['Primary Use', '3D Forest Structure & Terrain Mapping'],
+      ['Technology', 'Pulsed Laser Light Detection & Ranging'],
+      ['Application', 'Canopy Penetration, DTM Generation & Biomass Estimation'],
+      ['Platform Compatibility', 'UAV, Aerial & Mobile Survey Platforms']
+    ],
+    features: [
+      'Multiple return capability penetrates dense vegetation canopy to capture ground topography',
+      'Generates dense 3D point clouds for structural forestry analysis and canopy profiling',
+      'Produces accurate Digital Terrain Models (DTM) beneath complex forest cover',
+      'Facilitates above-ground biomass estimation and individual tree segmentation'
+    ],
+    page: 1,
+    subcategories: ['gps-survey-mapping-products'],
+    categoryIds: ['forestry', 'surveying'],
+    tags: ['GPS, Survey & Mapping Products', 'Remote Sensing & Drones', 'LiDAR System', 'Aerial Survey']
+  },
+  {
+    slug: 'forestry-boundary-mapping-services',
+    name: 'Forestry Boundary Mapping Services',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'FORESTRY SURVEY SERVICE',
+    summary: 'Professional end-to-end boundary demarcation and spatial survey service for forest land, conservation reserves, working timberlands, and estate perimeters.',
+    specs: [
+      ['Service Type', 'Boundary Mapping & Land Demarcation'],
+      ['Use Case', 'Forest Land Demarcation & Cadastral Verification'],
+      ['Survey Methods', 'DGPS / RTK Survey, Drone Mapping & Boundary Verification'],
+      ['Outputs', 'Georeferenced Maps, Boundary Coordinates & Survey Reports'],
+      ['Application', 'Forestry Planning, Land Demarcation & Legal Compliance']
+    ],
+    features: [
+      'High-accuracy ground and aerial boundary surveying for forest compartments and reserves',
+      'Accurate demarcation of forest encroachment, buffer zones, and legal perimeters',
+      'Generation of GIS-compatible cadastral maps, shapefiles, and geo-referenced datasets',
+      'Comprehensive survey support, ground-truthing, and permanent pillar coordinate recording'
+    ],
+    customWhatsAppMessage: 'Hello AFFORDA Technologies, I would like to inquire about Forestry Boundary Mapping Services. Please share service scope and quotation details.',
+    page: 1,
+    subcategories: ['gps-survey-mapping-products'],
+    categoryIds: ['forestry', 'surveying'],
+    tags: ['GPS, Survey & Mapping Products', 'Remote Sensing & Drones', 'Service / Mapping', 'Forestry Boundary Mapping']
+  },
+
   // =========================================================================
   // 3. FOREST FIRE-FIGHTING PRODUCTS (Subcategory ID: forest-fire-fighting-products)
   // =========================================================================
@@ -1115,8 +1226,8 @@ export const products: Product[] = [
     name: 'Backpack Fire Pump',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'backpack-fire-pump',
+    gallery: ['backpack-fire-pump'],
     label: 'PORTABLE WATER APPARATUS',
     summary: 'Collapsible or rigid backpack reservoir with hand-operated slide trombone pump, designed for mop-up and initial attack on wildland spot fires.',
     specs: [
@@ -1143,8 +1254,8 @@ export const products: Product[] = [
     name: 'Portable Fire Pump',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'portable-fire-pump',
+    gallery: ['portable-fire-pump'],
     label: 'FORESTRY FIRE PUMP',
     summary: 'Engine-driven portable water pump designed for wildland firefighting crews to draft water from natural sources and supply pressurized attack lines.',
     specs: [
@@ -1171,8 +1282,8 @@ export const products: Product[] = [
     name: 'Fire Rake',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'fire-rake',
+    gallery: ['fire-rake'],
     label: 'FIRELINE HAND TOOL',
     summary: 'Wildland firefighting hand tool used for clearing vegetation, loose debris and combustible material while preparing fire lines.',
     specs: [
@@ -1198,8 +1309,8 @@ export const products: Product[] = [
     name: 'Fire Swatter',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'fire-swatter',
+    gallery: ['fire-swatter'],
     label: 'FLAME SMOTHERING TOOL',
     summary: 'Manual firefighting tool equipped with a flexible reinforced rubber flap, designed for smothering grass fires, ground embers, and low-intensity brush blazes.',
     specs: [
@@ -1226,8 +1337,8 @@ export const products: Product[] = [
     name: 'Pulaski Forestry Axe',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'pulaski-forestry-axe',
+    gallery: ['pulaski-forestry-axe'],
     label: 'DUAL-PURPOSE FIRE AXE',
     summary: 'Dual-purpose wildland firefighting hand tool combining a sharp cutting axe blade with a narrow grubbing mattock for digging and chopping.',
     specs: [
@@ -1254,8 +1365,8 @@ export const products: Product[] = [
     name: 'Forestry Axe',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'forestry-axe',
+    gallery: ['forestry-axe'],
     label: 'TIMBER & CLEARING AXE',
     summary: 'Specialized cutting axe designed for limbing, felling small timber, and clearing brush while establishing wildfire containment lines and access trails.',
     specs: [
@@ -1282,8 +1393,8 @@ export const products: Product[] = [
     name: 'McLeod Tool',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'mcleod-tool',
+    gallery: ['mcleod-tool'],
     label: 'RAKE & HOE COMBINATION',
     summary: 'Two-in-one wildland firefighting tool featuring a wide scraping hoe blade on one side and heavy rake tines on the other for fire-line clearing.',
     specs: [
@@ -1310,8 +1421,8 @@ export const products: Product[] = [
     name: 'Fire Beater',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'fire-beater',
+    gallery: ['fire-beater'],
     label: 'FIRE SUPPRESSION BEATER',
     summary: 'Handheld fire suppression tool with flexible metal or mesh tines designed for beating out grass fires and suppressing surface flames on wildland lines.',
     specs: [
@@ -1338,8 +1449,8 @@ export const products: Product[] = [
     name: 'Drip Torch',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'drip-torch',
+    gallery: ['drip-torch'],
     label: 'PRESCRIBED BURNING TORCH',
     summary: 'Liquid-fuel backfiring and burnout canister designed for igniting controlled prescribed burns and burning out fuel ahead of advancing wildfires.',
     specs: [
@@ -1366,8 +1477,8 @@ export const products: Product[] = [
     name: 'Fire Shelter',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'fire-shelter',
+    gallery: ['fire-shelter'],
     label: 'EMERGENCY SAFETY SHELTER',
     summary: 'Emergency deployable personal survival shelter engineered to reflect radiant heat and trap breathable air during catastrophic wildfire entrapment situations.',
     specs: [
@@ -1394,8 +1505,8 @@ export const products: Product[] = [
     name: 'Fire Weather Meter',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'fire-weather-meter',
+    gallery: ['fire-weather-meter'],
     label: 'HANDHELD WEATHER METER',
     summary: 'Handheld environmental weather meter designed for monitoring relative humidity, wind speed, air temperature, and fuel moisture conditions on wildfire incidents.',
     specs: [
@@ -1422,8 +1533,8 @@ export const products: Product[] = [
     name: 'Weather Monitoring Kit',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'weather-monitoring-kit',
+    gallery: ['weather-monitoring-kit'],
     label: 'FIELD WEATHER KIT',
     summary: 'Comprehensive field weather kit equipped with psychrometer, wind gauge, and tables for evaluating localized microclimates and wildfire fire danger indices.',
     specs: [
@@ -1441,17 +1552,17 @@ export const products: Product[] = [
       'Essential gear for fire behavior analysts and division supervisors'
     ],
     page: 1,
-    subcategories: ['forest-fire-fighting-products'],
+    subcategories: ['forest-fire-fighting-products', 'forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Weather Kit']
+    tags: ['Forest Fire-Fighting Products', 'Weather Kit', 'Fire Weather & Safety', 'Weather Monitoring']
   },
   {
     slug: 'water-tank',
     name: 'Water Tank',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'water-tank',
+    gallery: ['water-tank'],
     label: 'MOBILE WATER STORAGE',
     summary: 'Portable self-supporting or rigid water storage tank designed for relay pumping, helicopter bucket dipping, and staging water reserves at wildland firelines.',
     specs: [
@@ -1478,8 +1589,8 @@ export const products: Product[] = [
     name: 'Fire Hose',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'fire-hose',
+    gallery: ['fire-hose'],
     label: 'WILDLAND FIRE HOSE',
     summary: 'Lightweight single-jacket synthetic fire hose engineered for high-pressure water delivery across steep, rocky, and rough wildland firefighting terrain.',
     specs: [
@@ -1506,8 +1617,8 @@ export const products: Product[] = [
     name: 'Hose Reel',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'hose-reel',
+    gallery: ['hose-reel'],
     label: 'FIELD HOSE REEL',
     summary: 'Heavy-duty field hose reel designed for rapid deployment, storage, and retrieval of wildland booster and delivery hose lines on fire attack vehicles.',
     specs: [
@@ -1534,8 +1645,8 @@ export const products: Product[] = [
     name: 'Portable Water Pump',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'portable-water-pump',
+    gallery: ['portable-water-pump'],
     label: 'PORTABLE WATER PUMP',
     summary: 'Compact lightweight water pump designed for wildland crews to draft water from streams, ponds, or shallow springs to supply fireline sprinkler setups.',
     specs: [
@@ -1562,8 +1673,8 @@ export const products: Product[] = [
     name: 'Fire Extinguisher',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'fire-extinguisher',
+    gallery: ['fire-extinguisher'],
     label: 'EQUIPMENT EXTINGUISHER',
     summary: 'Rugged multi-purpose fire extinguisher designed for immediate first-response fire suppression on forestry machinery, harvesting equipment, and field base camps.',
     specs: [
@@ -1590,8 +1701,8 @@ export const products: Product[] = [
     name: 'Firefighting Backpack',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'firefighting-backpack',
+    gallery: ['firefighting-backpack'],
     label: 'WILDLAND PACK',
     summary: 'Ergonomic load-bearing field pack designed for wildland firefighters to carry fire shelters, hydration reservoirs, hand tools, and emergency line gear.',
     specs: [
@@ -1618,8 +1729,8 @@ export const products: Product[] = [
     name: 'Personal Protective Equipment',
     brand: 'AFFORDA',
     category: 'forestry',
-    image: 'placeholder',
-    gallery: ['placeholder'],
+    image: 'personal-protective-equipment',
+    gallery: ['personal-protective-equipment'],
     label: 'WILDLAND PPE',
     summary: 'Comprehensive wildland firefighting protective ensemble designed to protect crews from radiant heat, falling embers, sharp debris, and rugged terrain hazards.',
     specs: [
@@ -2282,6 +2393,533 @@ export const products: Product[] = [
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'navigation'],
     tags: ['Wildlife Tracking', 'GPS Wildlife Collars']
+  },
+
+  // --- Security & Surveillance (Generic Families) ---
+  {
+    slug: 'solar-cctv-camera',
+    name: 'Solar CCTV Camera',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'SOLAR SURVEILLANCE CAMERA',
+    summary: 'Continuous solar-assisted outdoor security camera engineered for perimeter protection, remote wildlife observation, and forest gate monitoring without grid power.',
+    specs: [
+      ['Product Type', 'Solar Surveillance Camera'],
+      ['Primary Use', 'Remote Monitoring & Perimeter Surveillance'],
+      ['Application', 'Forest Security & Wildlife Surveillance'],
+      ['Power Source', 'Solar-Assisted Power with Battery Buffer'],
+      ['Installation Context', 'Remote Outdoor Locations & Field Stations']
+    ],
+    features: [
+      'Solar-powered operation suitable for remote sites lacking grid infrastructure',
+      'Continuous video monitoring for perimeter protection and wildlife corridors',
+      'Weather-resistant outdoor enclosure built for forest and field deployment',
+      'Supports day and night observation for comprehensive site awareness'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'defense'],
+    tags: ['Security & Surveillance', 'Solar Surveillance', 'Wildlife Monitoring', 'Forest Security & Surveillance']
+  },
+  {
+    slug: 'cctv-surveillance-camera',
+    name: 'CCTV Surveillance Camera',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'SECURITY & SURVEILLANCE CAMERA',
+    summary: 'Ruggedized field CCTV camera engineered for fixed-station monitoring, wildlife outpost security, boundary check-posts, and continuous forest patrol supervision.',
+    specs: [
+      ['Product Type', 'CCTV Surveillance Camera'],
+      ['Primary Use', 'Continuous Site & Perimeter Monitoring'],
+      ['Application', 'Wildlife Habitat Observation & Station Security'],
+      ['Installation Context', 'Fixed Post, Boundary & Watchtower Mounting'],
+      ['Use Environment', 'Outdoor Forest & Field Station Deployments']
+    ],
+    features: [
+      'Engineered for 24/7 continuous video surveillance across field installations',
+      'Robust weather-resistant housing designed for harsh outdoor environmental conditions',
+      'Provides optical clarity for animal movement and intruder detection',
+      'Integrates with field recording units, control consoles, and patrol watchtowers'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'defense'],
+    tags: ['Security & Surveillance', 'Long-Range Cameras', 'Wildlife Monitoring', 'Forest Security & Surveillance']
+  },
+
+  // =========================================================================
+  // 5. FORESTRY CAMPING, SAFETY & CLIMATE PRODUCTS (Subcategory ID: forestry-camping-safety-climate-products)
+  // =========================================================================
+
+  // --- Camping & Expedition ---
+  {
+    slug: 'field-tent',
+    name: 'Field Tent',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'EXPEDITION FIELD TENT',
+    summary: 'Rugged weather-resistant field tent designed for multi-day forestry expeditions, research crews, and remote habitat survey camps.',
+    specs: [
+      ['Product Type', 'Field Expedition Tent'],
+      ['Primary Use', 'Field Shelter & Crew Accommodation'],
+      ['Field Category', 'Camping & Expedition'],
+      ['Application', 'Remote Forest Surveys & Extended Fieldwork'],
+      ['Use Environment', 'Harsh Outdoor & Remote Forest Terrain']
+    ],
+    features: [
+      'High-durability waterproof fly and tub floor for severe weather protection',
+      'Reinforced aluminum pole structure engineered for high wind stability',
+      'Breathable inner canopy with mesh ventilation to minimize condensation',
+      'Quick-pitch deployment system designed for rapid field assembly'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Camping & Expedition', 'Field Tent']
+  },
+  {
+    slug: 'sleeping-bag',
+    name: 'Sleeping Bag',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'EXPEDITION SLEEPING BAG',
+    summary: 'Thermal-insulated field sleeping bag engineered for forestry personnel and field researchers operating in cold and variable wilderness climates.',
+    specs: [
+      ['Product Type', 'Expedition Sleeping Bag'],
+      ['Primary Use', 'Thermal Protection & Overnight Rest'],
+      ['Field Category', 'Camping & Expedition'],
+      ['Application', 'Forestry Expeditions & High-Altitude Patrols'],
+      ['Use Environment', 'Cold & Variable Outdoor Climates']
+    ],
+    features: [
+      'Advanced synthetic thermal insulation retaining warmth even in damp field conditions',
+      'Ripstop water-repellent shell fabric resistant to abrasive outdoor ground contact',
+      'Contoured mummy hood and draft collar to prevent thermal loss during cold nights',
+      'Compact compression stuff sack for convenient transport in expedition packs'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Camping & Expedition', 'Sleeping Bag']
+  },
+  {
+    slug: 'backpack',
+    name: 'Backpack',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'FIELD EXPEDITION PACK',
+    summary: 'Heavy-duty ergonomic field backpack designed for forestry surveys, gear transport, and multi-day wilderness expeditions.',
+    specs: [
+      ['Product Type', 'Field Expedition Backpack'],
+      ['Primary Use', 'Field Equipment & Supply Transport'],
+      ['Field Category', 'Camping & Expedition'],
+      ['Application', 'Forest Inventory, Patrol & Wilderness Expeditions'],
+      ['Use Environment', 'Dense Forest & Rugged Off-Trail Navigation']
+    ],
+    features: [
+      'Ergonomic adjustable harness and padded hip belt for balanced load distribution',
+      'Reinforced abrasion-resistant fabric with weather-resistant water-shedding finish',
+      'Modular attachment points and exterior straps for survey tools, tripods, and gear',
+      'Integrated hydration bladder sleeve and quick-access exterior cargo pockets'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Camping & Expedition', 'Backpack']
+  },
+  {
+    slug: 'field-shelter',
+    name: 'Field Shelter',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'RAPID FIELD SHELTER',
+    summary: 'Portable rapid-deployment field tarp and canopy shelter providing immediate overhead weather protection for field work stations and equipment.',
+    specs: [
+      ['Product Type', 'Portable Field Shelter / Canopy'],
+      ['Primary Use', 'Temporary Overhead Protection & Staging Base'],
+      ['Field Category', 'Camping & Expedition'],
+      ['Application', 'Field Instrument Protection & Survey Staging'],
+      ['Use Environment', 'Remote Forestry Camps & Inclement Weather Sites']
+    ],
+    features: [
+      'Heavy-duty waterproof canopy fabric with UV-resistant protective coating',
+      'Multiple reinforced tie-out webbing loops for versatile field pitch configurations',
+      'Compact pack size for rapid deployment during unexpected rainfall or squalls',
+      'Creates covered space for data logging, instrument calibration, and crew respite'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Camping & Expedition', 'Field Shelter']
+  },
+
+  // --- Field Safety / PPE ---
+  {
+    slug: 'helmet',
+    name: 'Helmet',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'FORESTRY SAFETY HELMET',
+    summary: 'Impact-resistant protective helmet designed for forestry operators, timber fallers, and field researchers working under dense overhead tree canopies.',
+    specs: [
+      ['Product Type', 'Industrial Forestry Safety Helmet'],
+      ['Primary Use', 'Cranial Impact & Falling Branch Protection'],
+      ['Protection Category', 'Personal Protective Equipment (PPE)'],
+      ['Application', 'Timber Harvesting, Forest Clearing & Field Patrol'],
+      ['Use Environment', 'Dense Canopy & High-Risk Woodland Areas']
+    ],
+    features: [
+      'High-density impact-resistant shell engineered to deflect falling snags and debris',
+      'Adjustable suspension harness system with ratchet adjustment for secure fit',
+      'Compatible with clip-on forestry face mesh visors and acoustic ear muffs',
+      'Integrated ventilation slots for prolonged comfort during active field work'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Field Safety / PPE', 'Helmet']
+  },
+  {
+    slug: 'safety-glasses',
+    name: 'Safety Glasses',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'FORESTRY EYE PROTECTION',
+    summary: 'High-clarity impact-rated protective eyewear engineered to protect field personnel from flying brush, wood chips, dust, and UV radiation.',
+    specs: [
+      ['Product Type', 'Field Safety Glasses'],
+      ['Primary Use', 'Eye Protection against Flying Debris & Glare'],
+      ['Protection Category', 'Personal Protective Equipment (PPE)'],
+      ['Application', 'Chainsaw Work, Brush Clearing & Field Traversing'],
+      ['Use Environment', 'Forest Understory & Bright Outdoor Fieldwork']
+    ],
+    features: [
+      'High-impact polycarbonate optical lenses with scratch-resistant hard coating',
+      'Anti-fog coating ensures clear sightlines in humid forest and rain conditions',
+      'Wraparound lens design provides complete side and frontal hazard coverage',
+      'Provides 99.9% UVA/UVB ultraviolet radiation filtering during sunny field surveys'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Field Safety / PPE', 'Safety Glasses']
+  },
+  {
+    slug: 'gloves',
+    name: 'Gloves',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'FORESTRY FIELD GLOVES',
+    summary: 'Durable heavy-duty work gloves designed for handling rough timber, forestry tools, thorny undergrowth, and field survey equipment.',
+    specs: [
+      ['Product Type', 'Heavy-Duty Forestry Work Gloves'],
+      ['Primary Use', 'Hand Protection & Tool Grip Enhancement'],
+      ['Protection Category', 'Personal Protective Equipment (PPE)'],
+      ['Application', 'Timber Handling, Trail Clearing & Equipment Operation'],
+      ['Use Environment', 'Rugged Woodland & Thorny Bush Environments']
+    ],
+    features: [
+      'Reinforced leather palm and high-stress points for abrasion resistance',
+      'Ergonomic pre-curved finger construction for dexterity and reduced hand fatigue',
+      'Breathable stretch back-of-hand fabric for moisture control during manual labor',
+      'Elasticized snug-fitting cuff prevents entry of dirt, wood shavings, and insects'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Field Safety / PPE', 'Gloves']
+  },
+  {
+    slug: 'chainsaw-protection',
+    name: 'Chainsaw Protection',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'CHAINSAW SAFETY APPAREL',
+    summary: 'Specialized cut-retardant protective apparel and leg chaps designed to prevent severe lacerations during chainsaw felling and brush clearing operations.',
+    specs: [
+      ['Product Type', 'Chainsaw Protective Apparel / Chaps'],
+      ['Primary Use', 'Leg & Body Cut Protection during Chainsaw Use'],
+      ['Protection Category', 'Chainsaw Cut-Resistant PPE'],
+      ['Application', 'Timber Felling, Limbing, Bucking & Fireline Cutting'],
+      ['Use Environment', 'Active Forestry Logging & Wildfire Fuel Reduction']
+    ],
+    features: [
+      'Multi-layer cut-retardant protective fibers designed to clog chainsaw sprockets on contact',
+      'Durable water- and oil-resistant outer shell fabric for longevity in tough woods',
+      'Adjustable quick-release buckles for secure and customizable leg fit',
+      'Bright high-visibility color accents for visual safety during felling operations'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Field Safety / PPE', 'Chainsaw Protection']
+  },
+  {
+    slug: 'safety-shoes',
+    name: 'Safety Shoes',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'FORESTRY SAFETY BOOTS',
+    summary: 'Rugged all-terrain safety boots with reinforced toe caps, puncture-resistant midsoles, and aggressive traction soles for difficult forest slopes.',
+    specs: [
+      ['Product Type', 'Forestry All-Terrain Safety Boots'],
+      ['Primary Use', 'Foot Protection & Ankle Stabilization'],
+      ['Protection Category', 'Personal Protective Equipment (PPE)'],
+      ['Application', 'Steep Slope Traversing, Timber Cruising & Field Patrol'],
+      ['Use Environment', 'Muddy, Rocky & Uneven Forest Terrain']
+    ],
+    features: [
+      'Steel or composite protective safety toe cap shields against heavy falling objects',
+      'Puncture-resistant midsole plate prevents injury from sharp roots and stumps',
+      'Deep lug self-cleaning rubber outsole provides grip on wet logs and steep slopes',
+      'Waterproof breathable membrane lining keeps feet dry across saturated ground'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Field Safety / PPE', 'Safety Shoes']
+  },
+  {
+    slug: 'high-visibility-clothing',
+    name: 'High-Visibility Clothing',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'HIGH-VISIBILITY FIELD APPAREL',
+    summary: 'Fluorescent safety vests and apparel with retro-reflective tape ensuring maximum visual conspicuity for crews working in dense forests and near heavy machinery.',
+    specs: [
+      ['Product Type', 'High-Visibility Field Safety Apparel'],
+      ['Primary Use', 'Personnel Conspicuity & Visual Safety'],
+      ['Protection Category', 'Personal Protective Equipment (PPE)'],
+      ['Application', 'Forestry Crew Coordination & Heavy Machinery Operations'],
+      ['Use Environment', 'Dense Forest Canopies & Low-Light Conditions']
+    ],
+    features: [
+      'Fluorescent background material delivers enhanced visibility in shadowy timber',
+      'Wide retro-reflective bands provide 360-degree night and low-light conspicuity',
+      'Lightweight breathable mesh design prevents overheating during strenuous work',
+      'Multiple utility pockets for radio, notebook, compass, and field marking tools'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Field Safety / PPE', 'High-Visibility Clothing']
+  },
+
+  // --- Weather Monitoring ---
+  {
+    slug: 'climate-monitoring-equipment',
+    name: 'Climate Monitoring Equipment',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'FOREST CLIMATE MONITOR',
+    summary: 'Multi-parameter environmental monitoring instrumentation designed for long-term tracking of forest canopy microclimates, soil moisture, and atmospheric variables.',
+    specs: [
+      ['Product Type', 'Forest Climate Monitoring System'],
+      ['Primary Use', 'Microclimate & Environmental Research'],
+      ['Field Category', 'Weather & Climate Monitoring'],
+      ['Application', 'Forest Ecology Studies, Phenology & Canopy Dynamics'],
+      ['Use Environment', 'Continuous Outdoor Deployment in Remote Woodlands']
+    ],
+    features: [
+      'Records ambient temperature, relative humidity, atmospheric pressure, and solar radiation',
+      'Autonomous data-logging operation with low power consumption for continuous logging',
+      'Weatherproof housing designed for long-duration outdoor field campaigns',
+      'Supports research into microclimate gradients, forest regeneration, and climate impacts'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Weather Monitoring', 'Climate Monitoring Equipment']
+  },
+  {
+    slug: 'portable-weather-station',
+    name: 'Portable Weather Station',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'PORTABLE METEOROLOGICAL STATION',
+    summary: 'Compact tripod-mounted meteorological station for on-site measurement of wind speed, wind direction, rainfall, temperature, and relative humidity in field research.',
+    specs: [
+      ['Product Type', 'Portable Meteorological Weather Station'],
+      ['Primary Use', 'Localized On-Site Weather Data Collection'],
+      ['Field Category', 'Weather & Climate Monitoring'],
+      ['Application', 'Prescribed Burn Monitoring, Field Camp Weather & Research'],
+      ['Deployment Format', 'Quick-Deploy Tripod / Mast Mounted']
+    ],
+    features: [
+      'Integrated sensor suite for wind speed, direction, temperature, humidity, and precipitation',
+      'Rapid tripod deployment allows setup at temporary field stations and research sites',
+      'Internal data logging memory with digital download interface for data analysis',
+      'Solar-assist battery powering allows standalone operation throughout multi-week field campaigns'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Weather Monitoring', 'Portable Weather Station']
+  },
+
+  // --- Power & Field Electronics ---
+  {
+    slug: 'portable-power-station',
+    name: 'Portable Power Station',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'PORTABLE FIELD POWER',
+    summary: 'High-capacity portable energy storage system providing dependable AC and DC electricity for recharging survey instruments, laptops, drones, and radios in remote camps.',
+    specs: [
+      ['Product Type', 'Portable Field Power Station'],
+      ['Primary Use', 'Remote Equipment Power & Battery Recharging'],
+      ['Power Category', 'Portable Energy Storage'],
+      ['Application', 'Forestry Field Operations, Base Camps & Research Sites'],
+      ['Use Environment', 'Outdoor & Remote Field Use']
+    ],
+    features: [
+      'Multiple output ports including AC outlets, USB-A, USB-C PD, and 12V DC ports',
+      'Silent, emission-free power alternative to noisy gas generators in wildlife zones',
+      'Rechargeable via solar panels, vehicle 12V outlets, or base AC power',
+      'Ruggedized carry handle and reinforced casing designed for mobile field deployment'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Power & Field Electronics', 'Portable Power Station']
+  },
+  {
+    slug: 'solar-panel',
+    name: 'Solar Panel',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'PORTABLE FIELD SOLAR PANEL',
+    summary: 'Foldable weather-resistant photovoltaic solar panel engineered for recharging portable power stations and field electronics during remote off-grid operations.',
+    specs: [
+      ['Product Type', 'Portable Folding Solar Panel'],
+      ['Primary Use', 'Solar Energy Harvesting for Remote Camps'],
+      ['Power Type', 'Photovoltaic Solar Power'],
+      ['Application', 'Off-Grid Power Generation for Field Stations'],
+      ['Use Environment', 'Remote Field Camps & Outdoor Expeditions']
+    ],
+    features: [
+      'High-efficiency monocrystalline solar cells maximizing power yield even in cloudy weather',
+      'Foldable briefcase-style design with carrying handles for rapid pack and transit',
+      'Weather-resistant laminated fabric construction durable against dust and rain',
+      'Equipped with kickstands for optimal tilt-angle positioning toward sunlight'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Power & Field Electronics', 'Solar Panel']
+  },
+  {
+    slug: 'battery-pack',
+    name: 'Battery Pack',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'RUGGED FIELD BATTERY PACK',
+    summary: 'Shockproof and water-resistant auxiliary power bank designed to keep handheld GPS units, smartphones, headlamps, and thermal monoculars powered on the move.',
+    specs: [
+      ['Product Type', 'Rugged Mobile Battery Pack'],
+      ['Primary Use', 'Handheld Device Recharging on Foot Patrols'],
+      ['Power Category', 'Mobile Power Bank'],
+      ['Application', 'Patrol Recharging, Handheld GPS & Telemetry Backup'],
+      ['Use Environment', 'Harsh Outdoor Forest & Trail Environments']
+    ],
+    features: [
+      'Ruggedized rubberized drop-resistant casing with IP-rated dust and water resistance',
+      'High-speed fast charging USB-C Power Delivery (PD) and USB-A outputs',
+      'Integrated emergency LED flashlight with strobe mode for field signaling',
+      'Compact form factor easily stowed in vest pocket or field backpack'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Power & Field Electronics', 'Battery Pack']
+  },
+  {
+    slug: 'charger',
+    name: 'Charger',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'MULTI-CHANNEL FIELD CHARGER',
+    summary: 'Intelligent multi-bay battery charger engineered for replenishing camera trap batteries, two-way radio packs, and survey instrument cells in field bases.',
+    specs: [
+      ['Product Type', 'Multi-Bay Field Battery Charger'],
+      ['Primary Use', 'Intelligent Battery Replenishment & Conditioning'],
+      ['Power Input', '12V DC Vehicle Adapter & Universal AC Input'],
+      ['Application', 'Camera Trap Stations, Radios & Survey Instrumentation'],
+      ['Use Environment', 'Base Camp Power Staging & Field Vehicles']
+    ],
+    features: [
+      'Simultaneous independent charging channels with smart charging circuit protection',
+      'LCD status display showing charging progress, voltage levels, and battery health',
+      'Dual power input capability supports 12V vehicle cigarette lighter and standard AC mains',
+      'Comprehensive safety protections against overcharging, reverse polarity, and overheating'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Power & Field Electronics', 'Charger']
+  },
+  {
+    slug: 'waterproof-case',
+    name: 'Waterproof Case',
+    brand: 'AFFORDA',
+    category: 'forestry',
+    image: 'placeholder',
+    gallery: ['placeholder'],
+    label: 'PROTECTIVE FIELD EQUIPMENT CASE',
+    summary: 'Ultra-rugged watertight, crushproof, and dustproof hard equipment case with customizable foam insert for transporting sensitive optical, electronic, and survey instruments.',
+    specs: [
+      ['Product Type', 'Protective Hard Equipment Case'],
+      ['Primary Use', 'Impact, Moisture & Dust Protection for Sensitive Gear'],
+      ['Protection Rating', 'Watertight & Crushproof Sealed Case'],
+      ['Application', 'Drones, Laser Meters, Lenses, GPS & Precision Sensors'],
+      ['Use Environment', 'Off-Road Transit, River Crossings & Heavy Rain Conditions']
+    ],
+    features: [
+      'High-impact structural resin shell provides virtually indestructible crush protection',
+      'Continuous neoprene O-ring tongue-and-groove seal keeps interior completely watertight',
+      'Automatic pressure equalization valve balances interior air pressure while blocking water',
+      'Pick-and-pluck customizable foam interior cradles delicate scientific instruments'
+    ],
+    page: 1,
+    subcategories: ['forestry-camping-safety-climate-products'],
+    categoryIds: ['forestry'],
+    tags: ['Power & Field Electronics', 'Waterproof Case']
   },
 
   // =========================================================================
@@ -3557,10 +4195,12 @@ export const brandDescriptions: Record<string,string> = {
 export const finderOptions: Record<string, Record<string, string[]>> = {
   'Forestry & Wildlife': {
     'Forest Measurement': ['diameter-tape-dbh-tape', 'digital-tree-caliper', 'clinometer', 'hypsometer', 'laser-rangefinder'],
-    'Mapping & Navigation': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'garmin-gpsmap-65s', 'professional-gnss-receiver', 'rtk-dgps', 'laser-rangefinder'],
+    'Mapping & Navigation': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'garmin-gpsmap-65s', 'professional-gnss-receiver', 'rtk-dgps', 'laser-rangefinder', 'uav-drone'],
+    'Remote Sensing & Drones': ['uav-drone', 'multispectral-camera', 'lidar-system', 'forestry-boundary-mapping-services'],
     'Fire Suppression': ['backpack-fire-pump', 'portable-fire-pump', 'pulaski-forestry-axe', 'drip-torch', 'fire-weather-meter'],
-    'Wildlife monitoring': ['browning-strike-force-pro-dcl', 'audiomoth', 'song-meter-micro-2', 'vortex-triumph-hd-10x42', 'ir-camera-trap', 'gps-wildlife-tracking-collar'],
+    'Wildlife monitoring': ['browning-strike-force-pro-dcl', 'audiomoth', 'song-meter-micro-2', 'vortex-triumph-hd-10x42', 'ir-camera-trap', 'gps-wildlife-tracking-collar', 'solar-cctv-camera', 'cctv-surveillance-camera'],
     'Night observation': ['hikmicro-lynx-lh25', 'minox-nvd-650'],
+    'Camping, Safety & Power': ['field-tent', 'helmet', 'weather-monitoring-kit', 'portable-power-station'],
   },
   'Surveying & Mapping': {
     'Navigation': ['garmin-gpsmap-65s', 'garmin-montana-700'],

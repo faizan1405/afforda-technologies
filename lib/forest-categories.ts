@@ -40,6 +40,14 @@ export const forestSubcategories: ForestSubcategory[] = [
     description: 'Wildlife monitoring, observation, acoustic recording, thermal imaging, tracking and surveillance products for ecological research, forest patrol and field studies.',
     image: '/images/optics.webp',
   },
+  {
+    id: 'forestry-camping-safety-climate-products',
+    name: 'Forestry Camping, Safety & Climate Products',
+    slug: 'forestry-camping-safety-climate-products',
+    code: 'SUB / 05',
+    description: 'Field support products for forestry expeditions, safety, weather monitoring, and portable power in remote environments.',
+    image: '/images/personal-protective-equipment.webp',
+  },
 ];
 
 export const forestTagsBySubcategory: Record<string, string[]> = {
@@ -57,6 +65,7 @@ export const forestTagsBySubcategory: Record<string, string[]> = {
     'GNSS Controllers',
     'Total Stations & Optical',
     'Survey Accessories',
+    'Remote Sensing & Drones',
   ],
   'forest-fire-fighting-products': [
     'Fire Pumps & Backpack Pumps',
@@ -66,6 +75,9 @@ export const forestTagsBySubcategory: Record<string, string[]> = {
   ],
   'wildlife-monitoring-surveillance': [
     'Camera Traps',
+    'Security & Surveillance',
+    'Solar Surveillance',
+    'Long-Range Cameras',
     'Binoculars',
     'Spotting Scopes',
     'Monoculars',
@@ -74,5 +86,11 @@ export const forestTagsBySubcategory: Record<string, string[]> = {
     'Bioacoustics & Acoustic Monitoring',
     'Wildlife Tracking',
     'Infrared Observation',
+  ],
+  'forestry-camping-safety-climate-products': [
+    'Camping & Expedition',
+    'Field Safety / PPE',
+    'Weather Monitoring',
+    'Power & Field Electronics',
   ],
 };

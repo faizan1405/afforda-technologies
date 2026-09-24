@@ -102,7 +102,7 @@ export default function CategoryClient({ category }: CategoryClientProps) {
             </button>
             {category.id === 'forestry' && (
               <a className="button button-outline" href="/categories/forest-wildlife">
-                Explore 3 subcategories <ArrowUpRight size={18} />
+                Explore 5 subcategories <ArrowUpRight size={18} />
               </a>
             )}
           </div>

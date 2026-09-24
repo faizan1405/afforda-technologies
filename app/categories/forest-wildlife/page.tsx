@@ -1,10 +1,10 @@
 'use client';
 import { useState } from 'react';
-import { ArrowUpRight, Trees, Navigation, Flame, ArrowLeft, Binoculars } from 'lucide-react';
+import { ArrowUpRight, Trees, Navigation, Flame, ArrowLeft, Binoculars, Tent } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
 import { forestSubcategories } from '@/lib/forest-categories';
 
-const subcategoryIcons = [Trees, Navigation, Flame, Binoculars];
+const subcategoryIcons = [Trees, Navigation, Flame, Binoculars, Tent];
 
 export default function ForestWildlifeCategory() {
   const [quote, setQuote] = useState(false);
