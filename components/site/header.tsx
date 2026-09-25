@@ -153,10 +153,11 @@ export function Header({ onQuote, home = false }: HeaderProps) {
           }}
         >
           <img
-            src="/images/afforda-logo.jpeg"
+            src="/images/afforda-logo.png"
             alt="AFFORDA Technologies"
-            width={192}
-            height={72}
+            width={188}
+            height={68}
+            className="brand-logo-img"
           />
         </a>
 

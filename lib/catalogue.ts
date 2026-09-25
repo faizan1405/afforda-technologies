@@ -4247,4 +4247,77 @@ export function findEquipment(industry: string, requirement: string) {
 export function productBelongsToCategory(product: Product, categoryId: string) {
   return product.category === categoryId || product.categoryIds?.includes(categoryId) === true;
 }
-export const whatsAppUrl = (message: string) => `https://wa.me/919818320178?text=${encodeURIComponent(message)}`;
+export const COMPANY_PHONE_PRIMARY = '919818320178';
+export const COMPANY_PHONE_SECONDARY = '919555903186';
+
+export const whatsAppUrl = (message: string, phone: string = COMPANY_PHONE_PRIMARY) =>
+  `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+export function getRelatedProducts(product: Product, allProducts: Product[] = products, limit = 3): Product[] {
+  const result: Product[] = [];
+  const seen = new Set<string>([product.slug]);
+
+  const addProduct = (p: Product) => {
+    if (result.length < limit && !seen.has(p.slug)) {
+      seen.add(p.slug);
+      result.push(p);
+    }
+  };
+
+  const productSubs = new Set(product.subcategories || []);
+  const productTags = new Set(product.tags || []);
+  const productCategoryIds = new Set([product.category, ...(product.categoryIds || [])]);
+
+  // Priority 1: Same subcategory / matching tags
+  const p1Candidates = allProducts
+    .filter(p => !seen.has(p.slug))
+    .map(p => {
+      let score = 0;
+      if (p.subcategories) {
+        for (const sub of p.subcategories) {
+          if (productSubs.has(sub)) score += 2;
+        }
+      }
+      if (p.tags) {
+        for (const tag of p.tags) {
+          if (productTags.has(tag)) score += 1;
+        }
+      }
+      return { product: p, score };
+    })
+    .filter(item => item.score > 0)
+    .sort((a, b) => b.score - a.score);
+
+  for (const item of p1Candidates) {
+    addProduct(item.product);
+    if (result.length >= limit) return result;
+  }
+
+  // Priority 2: Same category
+  const p2Candidates = allProducts.filter(p => {
+    if (seen.has(p.slug)) return false;
+    return productCategoryIds.has(p.category) ||
+      (p.categoryIds && p.categoryIds.some(c => productCategoryIds.has(c)));
+  });
+
+  for (const p of p2Candidates) {
+    addProduct(p);
+    if (result.length >= limit) return result;
+  }
+
+  // Priority 3: Same brand
+  const p3Candidates = allProducts.filter(p => !seen.has(p.slug) && p.brand === product.brand);
+  for (const p of p3Candidates) {
+    addProduct(p);
+    if (result.length >= limit) return result;
+  }
+
+  // Priority 4: Fallback products
+  for (const p of allProducts) {
+    addProduct(p);
+    if (result.length >= limit) break;
+  }
+
+  return result;
+}
+

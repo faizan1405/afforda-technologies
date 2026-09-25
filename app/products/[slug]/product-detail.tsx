@@ -2,14 +2,14 @@
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Crosshair, MessageCircle, Plus, Minus, FileText } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
-import { brandDescriptions, categories, products, whatsAppUrl, type Product } from '@/lib/catalogue';
+import { AffordaWarranty } from '@/components/site/afforda-warranty';
+import { brandDescriptions, categories, products, whatsAppUrl, getRelatedProducts, type Product } from '@/lib/catalogue';
 
 export default function ProductDetail({ product }: { product: Product }) {
   const [quote, setQuote] = useState(false);
   const [active, setActive] = useState(0);
   const [zoom, setZoom] = useState(false);
-  const related = products.filter(p => p.slug !== product.slug && (p.category === product.category || p.brand === product.brand)).slice(0, 3);
-  const recommendations = related.length ? related : products.filter(p => p.slug !== product.slug).slice(0, 3);
+  const recommendations = getRelatedProducts(product, products, 3);
 
   const whatsappMessage = product.customWhatsAppMessage || `Hello AFFORDA Technologies, I’m interested in the ${product.brand} ${product.name}. Please share configuration and quotation details.`;
 
@@ -105,6 +105,8 @@ export default function ProductDetail({ product }: { product: Product }) {
           </div>
 
           <p className="detail-availability">Configuration, availability and delivery confirmed with your quotation.</p>
+
+          <AffordaWarranty brand={product.brand} />
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '12px' }}>
             {product.datasheetUrl && (

@@ -60,23 +60,28 @@
 .site-header .brand {
   display: flex !important;
   align-items: center !important;
-  width: 188px !important;
-  height: 68px !important;
-  overflow: hidden !important;
+  width: auto !important;
+  height: auto !important;
+  max-height: 52px !important;
+  overflow: visible !important;
   flex-shrink: 0 !important;
   position: relative !important;
-  transition: opacity 0.2s ease !important;
+  transition: opacity 0.2s ease, transform 0.2s ease !important;
 }
 .site-header .brand:hover {
-  opacity: 0.92 !important;
+  opacity: 0.9 !important;
+  transform: translateY(-1px) !important;
 }
-.site-header .brand img {
-  width: 188px !important;
-  max-width: none !important;
-  filter: invert(1) grayscale(1) brightness(6) !important;
-  mix-blend-mode: screen !important;
-  transform: translateY(-12px) !important;
-  clip-path: inset(8% 6% 15% 6%) !important;
+.site-header .brand img,
+.site-header .brand .brand-logo-img {
+  width: auto !important;
+  height: 48px !important;
+  max-width: 195px !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  transform: none !important;
+  clip-path: none !important;
+  object-fit: contain !important;
 }
 
 /* Desktop navigation */
@@ -679,11 +684,14 @@
   }
 
   .site-header .brand {
-    width: 168px !important;
+    width: auto !important;
+    height: auto !important;
   }
 
-  .site-header .brand img {
-    width: 172px !important;
+  .site-header .brand img,
+  .site-header .brand .brand-logo-img {
+    height: 42px !important;
+    width: auto !important;
   }
 
   .site-header .nav-quote {
