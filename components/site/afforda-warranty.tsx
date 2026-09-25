@@ -1,4 +1,3 @@
-import { Shield, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 interface AffordaWarrantyProps {
   brand?: string;
@@ -72,20 +71,8 @@ export function AffordaWarranty({ brand, className = '' }: AffordaWarrantyProps)
           </h3>
 
           <p className="warranty-description">
-            Every piece of equipment sold by AFFORDA Technologies includes our comprehensive seller lifetime service warranty. If your product is damaged, fails, or requires service during field operations, AFFORDA will repair or service it unconditionally at no charge.
+            Every product supplied by AFFORDA Technologies is covered under the AFFORDA VIP Warranty — our lifetime warranty commitment for products supplied through AFFORDA. For warranty support, eligibility, service process, and applicable terms, please contact our team.
           </p>
-
-          <div className="warranty-features-row">
-            <span className="warranty-feature-chip">
-              <CheckCircle2 size={12} className="feature-icon" /> 100% Fully Covered
-            </span>
-            <span className="warranty-feature-chip">
-              <CheckCircle2 size={12} className="feature-icon" /> Zero Service Fees
-            </span>
-            <span className="warranty-feature-chip">
-              <CheckCircle2 size={12} className="feature-icon" /> Direct Field Support
-            </span>
-          </div>
 
           {isVortex && (
             <p className="vortex-note">
