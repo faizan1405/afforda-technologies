@@ -23,14 +23,54 @@ export const defenseCategory: SpecializedCategory = {
   image: 'thermal',
   mission: 'Explore existing imaging, navigation, optics, communication and computing equipment for demanding field operations.',
   subcategories: [
-    { id: 'defense-thermal', name: 'Thermal Imaging & Detection', slug: 'thermal-imaging-detection', tags: ['Thermal Monoculars'] },
-    { id: 'defense-night', name: 'Night Vision Systems', slug: 'night-vision-systems' },
-    { id: 'defense-surveillance', name: 'Surveillance & Monitoring', slug: 'surveillance-monitoring' },
-    { id: 'defense-navigation', name: 'Navigation & GPS', slug: 'navigation-gps' },
-    { id: 'defense-optics', name: 'Optics & Observation', slug: 'optics-observation' },
-    { id: 'defense-communication', name: 'Communication Systems', slug: 'communication-systems' },
-    { id: 'defense-rugged', name: 'Rugged Computing', slug: 'rugged-computing' },
-    { id: 'defense-field-operations', name: 'Field Operations Products', slug: 'field-operations-products' },
+    {
+      id: 'defense-thermal',
+      name: 'Thermal Imaging & Detection',
+      slug: 'thermal-imaging-detection',
+      tags: ['Thermal Monoculars', 'Thermal Cameras', 'Mobile Thermal Imaging'],
+    },
+    {
+      id: 'defense-night',
+      name: 'Night Vision Systems',
+      slug: 'night-vision-systems',
+      tags: ['Night Vision Binoculars', 'Night Vision Monoculars', 'IR Illumination'],
+    },
+    {
+      id: 'defense-surveillance',
+      name: 'Surveillance & Monitoring',
+      slug: 'surveillance-monitoring',
+      tags: ['Cellular Trail Cameras', 'Wi-Fi Trail Cameras', 'Wildlife Cameras', 'Body-Worn Cameras', 'Observation Optics'],
+    },
+    {
+      id: 'defense-navigation',
+      name: 'Navigation & GPS',
+      slug: 'navigation-gps',
+      tags: ['Handheld GPS', 'GPS/GNSS Devices', 'Compasses'],
+    },
+    {
+      id: 'defense-optics',
+      name: 'Optics & Observation',
+      slug: 'optics-observation',
+      tags: ['Binoculars', 'Spotting Scopes', 'Laser Rangefinders', 'Rifle Scopes', 'Tripods & Supports'],
+    },
+    {
+      id: 'defense-communication',
+      name: 'Communication Systems',
+      slug: 'communication-systems',
+      tags: ['Two-Way Radios', 'P25 / Multi-Protocol Radios', 'Field Communications'],
+    },
+    {
+      id: 'defense-rugged',
+      name: 'Rugged Computing',
+      slug: 'rugged-computing',
+      tags: ['Rugged Tablets', 'Rugged Laptops'],
+    },
+    {
+      id: 'defense-field-operations',
+      name: 'Field Operations Products',
+      slug: 'field-operations-products',
+      tags: ['Torches', 'Headlamps', 'Helmet-Mounted Lights', 'Infrared Search Lights'],
+    },
   ],
 };
 

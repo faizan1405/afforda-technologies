@@ -5,6 +5,7 @@ export type Product = {
   subcategories?: string[];
   categoryIds?: string[];
   tags?: string[];
+  aliases?: string[];
   systemComponents?: {
     slug: string;
     role: string;
@@ -37,13 +38,85 @@ export const categories = [
 
 export const products: Product[] = [
   // --- Existing Field Technology Products (Preserved & Cleaned of Legacy Subcategories) ---
-  { slug:'vortex-viper-hd',name:'Viper® HD',brand:'Vortex Optics',category:'optics',image:'viper',gallery:['viper','viper-front'],label:'HD BINOCULARS',summary:'An HD optical system, rugged rubber armor and a comfortable field harness. A clear view of the details that matter.',specs:[['Available configurations','8×42 / 10×50 / 12×50'],['Optical system','High definition'],['Lens coating','XR™ fully multi-coated'],['Protection','ArmorTek®'],['Carry system','GlassPak harness included']],features:['HD glass for resolution and color fidelity','Phase-corrected roof prisms for contrast','Rubber armor for a secure grip','GlassPak chest harness for comfortable field carry'],page:5,subcategories:['defense-optics'],categoryIds:['optics','defense'],tags:['Binoculars'] },
+  {
+    slug: 'vortex-viper-hd',
+    aliases: ['vortex-viper-hd-10x50'],
+    name: 'Viper® HD 10x50',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-viper-hd-10x50',
+    gallery: ['vortex-viper-hd-10x50'],
+    label: 'PREMIUM HD ROOF PRISM BINOCULARS',
+    summary: 'Full-size 10x50 high-definition binocular engineered with an HD optical system, XR fully multi-coated lenses, dielectric prism coatings, and rugged rubber armor for low-light observation and long-range scouting.',
+    specs: [
+      ['Magnification', '10x'],
+      ['Objective Lens Diameter', '50 mm'],
+      ['Linear Field of View', '346 ft / 1000 yds (6.6°)'],
+      ['Eye Relief', '16.0 mm'],
+      ['Exit Pupil', '5.0 mm'],
+      ['Close Focus', '8.0 ft (2.4 m)'],
+      ['Interpupillary Distance', '56 mm – 75 mm'],
+      ['Dimensions (H x W)', '6.5 x 5.3 in (165 x 135 mm)'],
+      ['Weight', '28.4 oz (805 g)'],
+      ['Optical Coatings', 'XR™ Fully Multi-Coated, Dielectric Prism Coatings, Phase Correction'],
+      ['Exterior Protection', 'ArmorTek® ultra-hard scratch-resistant coating, Rubber Armor'],
+      ['Environmental Sealing', 'Waterproof & Fogproof (Argon gas purged, O-ring sealed)']
+    ],
+    features: [
+      'HD optical system with select glass elements delivers outstanding resolution, edge sharpness, and chromatic aberration reduction',
+      'Dielectric prism coatings provide bright, clear, color-accurate viewing across twilight conditions',
+      'XR™ fully multi-coated lenses maximize light transmission with anti-reflective coatings on all air-to-glass surfaces',
+      'Rugged rubber armor exterior provides a non-slip grip and durable external impact protection',
+      'Argon gas purging and O-ring seals ensure complete waterproof and fogproof performance in extreme weather',
+      'Includes GlassPak™ chest harness and case for hands-free field carry and immediate deployment'
+    ],
+    page: 5,
+    subcategories: ['defense-optics', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Binoculars', 'Observation Optics']
+  },
   { slug:'garmin-gpsmap-65s',name:'Handheld GPS (GPSMAP® 65s)',brand:'Garmin',category:'navigation',image:'gpsmap',gallery:['gpsmap'],label:'MULTI-BAND GPS',summary:'Find your way in challenging environments with multi-band positioning, expanded satellite support and a sunlight-readable color display.',specs:[['Display','2.6-inch color'],['Positioning','Multi-band GNSS'],['Battery life','Up to 16 hours in GPS mode'],['Navigation','Built-in navigation sensors (ABC)'],['Planning','Garmin Explore compatibility']],features:['Multi-band technology for challenging locations','Sunlight-readable color display','Built-in 3-axis compass & barometric altimeter','Plan and organize with the Garmin Explore app'],page:12,subcategories:['geological-field-mapping','gps-survey-mapping-products','defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','geology','defense','mining','surveying'],tags:['Handheld GPS','GPS/GNSS Devices','GPS','GPS / GNSS Receivers'] },
   { slug:'hikmicro-lynx-lh25',name:'LYNX LH25 2.0',brand:'HIKMICRO',category:'thermal',image:'lynx',gallery:['lynx','lynx-side'],label:'THERMAL MONOCULAR',summary:'A compact thermal monocular that reveals subtle heat signatures, with a sensitive detector and a detailed OLED view.',specs:[['Detector resolution','384 × 288'],['Lens','25 mm, F1.0'],['Thermal sensitivity','NETD <20 mK'],['Detection range','Up to 1,200 m'],['Weight','275 g'],['Battery life','Up to 6.5 hours']],features:['12 μm detector with high thermal sensitivity','1024 × 768 OLED display','Replaceable rechargeable Li-ion battery','Compact and ergonomic field design'],page:40,subcategories:['defense-thermal','defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['thermal','defense','forestry'],tags:['Thermal & Night Observation','Thermal Cameras','Thermal Monoculars','Infrared Observation'] },
   { slug:'browning-strike-force-pro-dcl',name:'Strike Force Pro DCL',brand:'Browning',category:'forestry',image:'browning',gallery:['browning'],label:'WILDLIFE TRAIL CAMERA',summary:'Dual camera lens technology captures the field by day and night, with a fast trigger for fleeting wildlife encounters.',specs:[['Image resolution','26 megapixels'],['Trigger speed','0.15 seconds'],['Flash range','Up to 130 ft'],['Viewing screen','1.5-inch color'],['Lens system','Dual camera lens technology']],features:['Separate lens technology optimized for day and night','Fast trigger for wildlife monitoring','On-camera color viewing screen','Long-range flash capability'],page:21,subcategories:['defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['forestry','defense'],tags:['Camera Traps'] },
   { slug:'brunton-geolite',name:'Geo Lite™ Transit F-5030',brand:'Brunton',category:'geology',image:'geolite-open',gallery:['geolite-open','geolite'],label:'GEOLOGICAL TRANSIT COMPASS',summary:'Compact aluminum geological transit combining direct-read azimuth measurement with a hinge clinometer for strike and dip field readings.',specs:[['Model','Geo Lite™ Transit F-5030'],['Body Construction','Compact aluminum body (approx. 30% smaller than full-size transit)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° azimuth scale)'],['Vertical Angle','±1° with 1° graduations (±90° range)'],['Declination Adjustment','Tool-free magnetic declination adjustment ±180°'],['Needle Dampening','Induction damped needle on sapphire jewel suspension'],['Leveling Vials','Dual bubble vials (circular and tubular)'],['Sighting System','Precision mirror with sighting hole and sighting line'],['Protection','Silicone protective cover included'],['Mounting','Tripod mountable with 1/4-20 threading']],features:['Compact lightweight aluminum body roughly 30% smaller than traditional pocket transits','High-precision azimuth accuracy of ±0.5° with 1° graduations on a 0–360° scale','Integrated vertical clinometer reads slope and dip to ±1° across ±90° range','User-friendly tool-free magnetic declination adjustment with ±180° range','Induction damped needle stabilizes quickly for fast and repeatable field readings','Dual bubble vials (tubular and circular) ensure perfect level alignment','Reflective sighting mirror with center sighting hole for accurate bearing acquisition','Supplied with custom silicone protective cover for field impact resistance'],page:27,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Geological Compasses / Pocket Transits','Field Compasses / Baseplate Compasses'] },
   { slug:'panasonic-toughbook',name:'TOUGHBOOK FZ-55',brand:'Panasonic Toughbook',category:'computing',image:'toughbook',gallery:['toughbook'],label:'RUGGED FIELD COMPUTING',summary:'A modular laptop platform for demanding mobile work. Ask our team to configure a TOUGHBOOK around your field applications.',specs:[['Product family','Panasonic TOUGHBOOK'],['Catalogue model','FZ-55'],['Form factor','Rugged laptop'],['Configuration','Confirmed with your quotation']],features:['Built for mobile field workflows','Flexible configuration options','Suitable for field data collection and review','Project-specific configuration support'],page:47,subcategories:['defense-rugged','defense-field-operations','mining-rugged'],categoryIds:['computing','defense','mining'],tags:['Rugged Tablets'] },
-  { slug:'vortex-diamondback-hd',name:'Diamondback® HD',brand:'Vortex Optics',category:'optics',image:'diamondback',gallery:['diamondback','diamondback-side'],label:'HD BINOCULARS',summary:'Rugged observation optics with HD glass, protective lens coatings and a ready-to-deploy harness.',specs:[['Available configurations','8×42 / 10×50 / 10×42'],['Optical system','High definition'],['Lenses','Fully multi-coated'],['Protection','ArmorTek® coating'],['Carry system','GlassPak harness included']],features:['Phase correction for enhanced resolution','Rubber armor for a non-slip grip','Scratch-resistant exterior lens coating','Shock-resistant construction'],page:4,subcategories:['defense-optics'],categoryIds:['optics','defense'],tags:['Binoculars'] },
+  {
+    slug: 'vortex-diamondback-hd',
+    aliases: ['vortex-diamondback-hd-8x42'],
+    name: 'Diamondback® HD 8x42',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-diamondback-hd-8x42',
+    gallery: ['vortex-diamondback-hd-8x42'],
+    label: 'HD COMPACT OBSERVATION BINOCULARS',
+    summary: 'Workhorse 8x42 HD roof prism binocular optimized with select glass elements, fully multi-coated optics, and an ultra-wide field of view for rapid wildlife scanning and field reconnaissance.',
+    specs: [
+      ['Magnification', '8x'],
+      ['Objective Lens Diameter', '42 mm'],
+      ['Linear Field of View', '393 ft / 1000 yds (7.5°)'],
+      ['Eye Relief', '17.0 mm'],
+      ['Exit Pupil', '5.25 mm'],
+      ['Close Focus', '5.0 ft (1.5 m)'],
+      ['Interpupillary Distance', '55 mm – 73 mm'],
+      ['Dimensions (H x W)', '5.7 x 5.1 in (145 x 130 mm)'],
+      ['Weight', '21.8 oz (618 g)'],
+      ['Optical System', 'HD Optical System, Dielectric Prism Coatings, Phase Correction'],
+      ['Protective Coatings', 'ArmorTek® scratch-resistant coating, Rubber Armor'],
+      ['Weatherproofing', 'Argon gas purged, waterproof and fogproof O-ring sealed']
+    ],
+    features: [
+      'HD optical system optimized with select glass elements delivers exceptional resolution and edge-to-edge clarity',
+      'Ultra-wide 393 ft field of view enables rapid subject acquisition and scanning across broad landscapes',
+      'Fully multi-coated optics and dielectric coatings increase light transmission for crisp twilight observation',
+      'ArmorTek® ultra-hard coating protects exterior lenses from scratches, oil, and field debris',
+      'Argon purged and O-ring sealed for dependable waterproof and fogproof protection in harsh environments',
+      'Supplied with GlassPak™ chest harness case and tethered lens covers for all-day field mobility'
+    ],
+    page: 4,
+    subcategories: ['defense-optics', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Binoculars', 'Observation Optics']
+  },
   { slug:'garmin-montana-700',name:'Montana® 700',brand:'Garmin',category:'navigation',image:'montana',gallery:['montana'],label:'TOUCHSCREEN GPS',summary:'Large-format navigation for journeys on foot or by vehicle, combining a 5-inch touchscreen with outdoor navigation sensors.',specs:[['Display','5-inch touchscreen'],['Positioning','Multiple GNSS networks'],['Battery life','18+ hours in GPS mode'],['Navigation sensors','Altimeter, barometer, compass'],['Mapping','Routable roads and trails']],features:['Large touchscreen for clear map viewing','Rugged construction for outdoor navigation','ABC sensors for awareness in the field','Mapping support for roads and trails'],page:15,subcategories:['defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','defense','mining'],tags:['GPS/GNSS Devices','GPS'] },
   { slug:'ralcam-h408b',name:'H408B Borescope',brand:'Ralcam',category:'inspection',image:'ralcam',gallery:['ralcam'],label:'ARTICULATING INSPECTION',summary:'Inspect confined spaces with an articulating camera and a dedicated display, built for automotive and machinery inspection.',specs:[['Display','4.3-inch'],['Camera resolution','1920 × 1080'],['Probe diameter','8.5 mm'],['Battery','Replaceable 2,600 mAh'],['Lighting','10 adjustable LEDs']],features:['Articulating lens for difficult viewing angles','Capture images and video','High-temperature protection','Dedicated screen for on-site inspections'],page:17,subcategories:['mining-inspection'],categoryIds:['inspection','mining'] },
   { slug:'brutforce-field-radio',name:'BFR-001 License-Free Walkie-Talkie',brand:'BRUTFORCE',category:'communication',image:'radio',gallery:['radio','radio-side'],label:'LICENSE-FREE FIELD RADIO',summary:'License-free two-way field radio operating on the 446 MHz band with 16 channels, up to 5 km line-of-sight range, and a long-life 2,600 mAh Li-ion battery.',specs:[['Model','BFR-001'],['Frequency range','446.00–446.02 MHz (License-free UHF)'],['Channels','16 pre-programmed channels with CTCSS/DCS'],['Operating range','Up to 5 km (line-of-sight depending on terrain)'],['Battery','2,600 mAh Li-ion rechargeable battery'],['Operating temperature','−25°C to +55°C'],['Compliance','WPC Approved (License-free in India)']],features:['16 pre-set channels with CTCSS/DCS sub-codes for private team coordination','Up to 5 km range depending on line-of-sight for field and mountain operations','WPC approved for license-free professional operation across India','Rugged compact housing with voice-operated VOX and emergency alert'],page:34,subcategories:['field-communication-expedition-support','defense-communication','defense-field-operations'],categoryIds:['communication','geology','defense'],tags:['Field Radios'] },
@@ -52,7 +125,39 @@ export const products: Product[] = [
   { slug:'minox-nvd-650',name:'NVD 650',brand:'MINOX',category:'thermal',image:'minox',gallery:['minox','minox-back'],label:'DIGITAL NIGHT VISION',summary:'A digital monocular with an IR emitter and recording capability for observation in low-light field conditions.',specs:[['Optical magnification','6×'],['Digital magnification','5×'],['IR wavelength','850 nm'],['IR range','Up to 350 m'],['Use','Day and night']],features:['Built-in IR emitter','Night recording functionality','Rail for additional IR illumination','Daytime use supported'],page:45,subcategories:['defense-night','defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['thermal','defense','forestry'],tags:['Thermal & Night Observation','Night Vision Devices','Infrared Observation'] },
   { slug:'suunto-mc2',name:'MC-2 Mirror Compass',brand:'Suunto',category:'navigation',image:'suunto',gallery:['suunto'],label:'PRECISION NAVIGATION',summary:'A sighting compass with a mirror, clinometer and adjustable declination correction for considered route finding.',specs:[['Needle','Jewel-bearing steel'],['Capsule','Liquid-filled'],['Declination','Adjustable correction'],['Measurement','Sighting and clinometer'],['Variant','Confirm hemisphere and scale']],features:['Sighting mirror and notch for bearings','Luminescent markings for low light','Baseplate with magnifying lens','Detachable snap-lock lanyard'],page:41,subcategories:['defense-navigation','defense-field-operations'],categoryIds:['navigation','defense'],tags:['Compasses','Forestry Compasses'] },
   { slug:'audiomoth',name:'AudioMoth',brand:'Open Acoustic Devices',category:'forestry',image:'audiomoth',gallery:['audiomoth','audiomoth-case'],label:'ACOUSTIC MONITORING',summary:'A compact full-spectrum acoustic logger for listening to the natural world, with an optional protective field case.',specs:[['Sample rate','Up to 384 kHz'],['Processor','EFM32 Gecko'],['Microphone','Analog MEMS'],['Protective option','IPX7 waterproof case']],features:['Full-spectrum acoustic logging','Compact field-deployment format','Protective case with compression O-ring','Case strap for straightforward installation'],page:44,subcategories:['wildlife-monitoring-surveillance'],categoryIds:['forestry'],tags:['Bioacoustics & Acoustic Monitoring','Autonomous Recording Units','Acoustic Recorders'] },
-  { slug:'hikmicro-e20-plus',name:'E20 Plus',brand:'HIKMICRO',category:'thermal',image:'e20',gallery:['e20','e20-side'],label:'SMARTPHONE THERMAL CAMERA',summary:'A lightweight thermal accessory for compatible Android phones, with USB-C connection and HIKMICRO Sight app support.',specs:[['Connection','USB Type-C'],['Power consumption','360 mW'],['Weight','26 g'],['Operating temperature','−10°C to 50°C'],['Protection level','IP40']],features:['Compact thermal module for mobile observation','Powered through the connected device','HIKMICRO Sight app compatibility','Lightweight 26 g design'],page:39,tags:['Thermal Cameras'] },
+  {
+    slug: 'hikmicro-e20-plus',
+    name: 'E20 Plus',
+    brand: 'HIKMICRO',
+    category: 'thermal',
+    image: 'e20',
+    gallery: ['e20', 'e20-side'],
+    label: 'SMARTPHONE THERMAL CAMERA',
+    summary: 'A lightweight thermal accessory for compatible Android phones, with USB-C connection and HIKMICRO Sight app support.',
+    specs: [
+      ['Connection', 'USB Type-C (Android OS)'],
+      ['Detector Resolution', '256 × 192 (12 μm VOx)'],
+      ['Thermal Sensitivity', 'NETD < 50 mK (@25°C, F#=1.0)'],
+      ['Frame Rate', '50 Hz real-time thermal video'],
+      ['Focal Length', '9.7 mm (F1.0)'],
+      ['Field of View', '18.1° × 13.6°'],
+      ['Detection Range', 'Up to 970 m'],
+      ['Power Consumption', '360 mW (Direct host device power)'],
+      ['Weight', '26 g (0.92 oz)'],
+      ['Operating Temperature', '−10°C to 50°C'],
+      ['Protection Level', 'IP40']
+    ],
+    features: [
+      'Compact thermal module for mobile observation',
+      'Powered through the connected device with smooth 50 Hz frame rate',
+      'HIKMICRO Sight app compatibility for real-time radiometric temperature analysis',
+      'Ultralight 26 g pocket form factor for instant mobile reconnaissance'
+    ],
+    page: 39,
+    subcategories: ['defense-thermal', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['thermal', 'defense', 'forestry'],
+    tags: ['Thermal Cameras', 'Mobile Thermal Imaging']
+  },
 
   // =========================================================================
   // 1. FOREST MEASUREMENT & INVENTORY (Subcategory ID: forest-measurement-inventory)
@@ -1961,9 +2066,9 @@ export const products: Product[] = [
       'Includes GlassPak binocular chest harness for hands-free field carry'
     ],
     page: 1,
-    subcategories: ['wildlife-monitoring-surveillance'],
-    categoryIds: ['forestry', 'optics'],
-    tags: ['Binoculars', 'Optics & Observation']
+    subcategories: ['wildlife-monitoring-surveillance', 'defense-optics'],
+    categoryIds: ['forestry', 'optics', 'defense'],
+    tags: ['Binoculars', 'Optics & Observation', 'Observation Optics']
   },
 
   // --- Spotting Scopes (Official Vortex Optics) ---
@@ -2027,9 +2132,9 @@ export const products: Product[] = [
       'Magnesium alloy chassis with rugged protective rubber armor'
     ],
     page: 1,
-    subcategories: ['wildlife-monitoring-surveillance'],
-    categoryIds: ['forestry', 'optics'],
-    tags: ['Spotting Scopes', 'Optics & Observation']
+    subcategories: ['wildlife-monitoring-surveillance', 'defense-optics', 'defense-surveillance'],
+    categoryIds: ['forestry', 'optics', 'defense'],
+    tags: ['Spotting Scopes', 'Optics & Observation', 'Observation Optics']
   },
 
   // --- Monocular (Official Vortex Optics) ---
@@ -4159,10 +4264,1510 @@ export const products: Product[] = [
     categoryIds: ['geology'],
     tags: ['Hydration & Water Filtration', 'Expedition Support']
   }
+,
 
+  // =========================================================================
+  // PHASE 2 EXPANSION PRODUCTS
+  // =========================================================================
+  {
+    slug: 'vortex-triumph-hd-12x50',
+    name: 'Triumph® HD 12x50',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-triumph-hd-12x50',
+    gallery: ['vortex-triumph-hd-12x50'],
+    label: 'HD LONG-RANGE OBSERVATION BINOCULARS',
+    summary: 'Full-sized 12x50 observation binocular combining powerful magnification with an HD optical system, fully multi-coated lenses, and rugged roof prisms for long-distance glassing.',
+    specs: [
+      ['Magnification', '12x'],
+      ['Objective Lens Diameter', '50 mm'],
+      ['Linear Field of View', '273 ft / 1000 yds (5.2°)'],
+      ['Eye Relief', '17.0 mm'],
+      ['Exit Pupil', '4.2 mm'],
+      ['Close Focus', '19.7 ft (6.0 m)'],
+      ['Interpupillary Distance', '60 mm – 75 mm'],
+      ['Dimensions (H x W)', '6.7 x 5.4 in (170 x 137 mm)'],
+      ['Weight', '27.4 oz (777 g)'],
+      ['Optical System', 'HD Optical System with Fully Multi-Coated Lenses'],
+      ['Sealing & Armor', 'Nitrogen gas purged waterproof, fogproof, shockproof rubber armor']
+    ],
+    features: [
+      'HD optical system delivers optimized resolution, edge sharpness, and minimal chromatic aberration',
+      'High 12x magnification allows distant subject identification across open fields, ridges, and valleys',
+      'Fully multi-coated lenses maximize light transmission with anti-reflective coatings on all glass surfaces',
+      'Nitrogen gas purged and O-ring sealed for dependable fogproof and waterproof performance in all weather',
+      'Supplied complete with neck strap, adjustable harness case, and protective lens covers'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Binoculars', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-crossfire-hd-8x42',
+    name: 'Crossfire® HD 8x42',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-crossfire-hd-8x42',
+    gallery: ['vortex-crossfire-hd-8x42'],
+    label: 'HD FIELD OBSERVATION BINOCULARS',
+    summary: 'Essential 8x42 observation binocular featuring HD optical glass, fully multi-coated lenses, a generous 393 ft field of view, and a GlassPak chest harness for all-day field comfort.',
+    specs: [
+      ['Magnification', '8x'],
+      ['Objective Lens Diameter', '42 mm'],
+      ['Linear Field of View', '393 ft / 1000 yds (7.5°)'],
+      ['Eye Relief', '17.0 mm'],
+      ['Exit Pupil', '5.25 mm'],
+      ['Close Focus', '6.0 ft (1.8 m)'],
+      ['Interpupillary Distance', '58 mm – 75 mm'],
+      ['Dimensions (H x W)', '6.2 x 5.1 in (157 x 130 mm)'],
+      ['Weight', '23.8 oz (675 g)'],
+      ['Optical Coatings', 'Fully Multi-Coated anti-reflective lens coatings'],
+      ['Chassis Construction', 'Nitrogen gas purged waterproof, fogproof, and non-slip rubber armored']
+    ],
+    features: [
+      'HD optical system delivers crisp resolution and faithful color fidelity across the entire viewing arena',
+      'Generous 393 ft wide field of view allows swift subject acquisition in dense brush or open expanses',
+      'Generous 17mm eye relief and twist-up eyecups accommodate eyeglass wearers without vignetting',
+      'Nitrogen-purged housing provides absolute waterproof and fogproof protection against sudden rain or mist',
+      'Includes GlassPak chest harness system for secure and fatigue-free tactical and field carrying'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Binoculars', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-diamondback-hd-12x50',
+    name: 'Diamondback® HD 12x50',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-diamondback-hd-12x50',
+    gallery: ['vortex-diamondback-hd-12x50'],
+    label: 'HIGH-POWER HD FIELD BINOCULARS',
+    summary: 'High-magnification 12x50 roof prism binocular built with select HD glass, dielectric prism coatings, ArmorTek protection, and an argon-purged chassis for long-range observation.',
+    specs: [
+      ['Magnification', '12x'],
+      ['Objective Lens Diameter', '50 mm'],
+      ['Linear Field of View', '271 ft / 1000 yds (5.2°)'],
+      ['Eye Relief', '14.0 mm'],
+      ['Exit Pupil', '4.2 mm'],
+      ['Close Focus', '6.0 ft (1.8 m)'],
+      ['Interpupillary Distance', '60 mm – 75 mm'],
+      ['Dimensions (H x W)', '6.4 x 5.5 in (163 x 140 mm)'],
+      ['Weight', '28.9 oz (819 g)'],
+      ['Optical System', 'HD Optical System, Dielectric Coatings, Phase Correction'],
+      ['Lens Protection', 'ArmorTek® scratch-resistant ultra-hard coating, Rubber Armor'],
+      ['Environmental', 'Argon gas purged waterproof, fogproof, shockproof construction']
+    ],
+    features: [
+      'High 12x magnification combined with 50mm objectives resolves fine structural detail across long distances',
+      'Dielectric multi-layer prism coatings provide clear, bright, color-accurate viewing even in low twilight',
+      'ArmorTek exterior coating shields external lenses against scratches, oil, moisture, and abrasive grit',
+      'Argon gas purged and O-ring sealed for dependable fog-free and waterproof operation in heavy downpours',
+      'Supplied with GlassPak™ chest harness and tethered lens caps for fast hands-free field deployment'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Binoculars', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-viper-hd-12x50',
+    name: 'Viper® HD 12x50',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-viper-hd-12x50',
+    gallery: ['vortex-viper-hd-12x50'],
+    label: 'PREMIUM HIGH-POWER HD BINOCULARS',
+    summary: 'Premium high-power 12x50 roof prism binocular featuring XR fully multi-coated optics, high-density glass, phase correction, and dielectric coatings for distant recon and observation.',
+    specs: [
+      ['Magnification', '12x'],
+      ['Objective Lens Diameter', '50 mm'],
+      ['Linear Field of View', '288 ft / 1000 yds (5.5°)'],
+      ['Eye Relief', '16.0 mm'],
+      ['Exit Pupil', '4.2 mm'],
+      ['Close Focus', '8.0 ft (2.4 m)'],
+      ['Interpupillary Distance', '56 mm – 75 mm'],
+      ['Dimensions (H x W)', '6.5 x 5.3 in (165 x 135 mm)'],
+      ['Weight', '28.8 oz (816 g)'],
+      ['Optical System', 'HD Optical Glass with XR™ Fully Multi-Coated Lenses'],
+      ['Prism Type', 'Roof Prism with Dielectric Multi-Layer Coatings & Phase Correction'],
+      ['Environmental Sealing', 'Argon gas purged waterproof, fogproof, ArmorTek coated']
+    ],
+    features: [
+      'High-density (HD) extra-low dispersion glass delivers supreme edge-to-edge optical clarity and resolution',
+      'XR™ anti-reflective coatings on all air-to-glass surfaces maximize light transmission for dusk and dawn viewing',
+      'Dielectric prism coatings reflect true colors and sharp contrast across long-range surveillance zones',
+      'Ultra-hard ArmorTek coating protects exterior lenses from scratches, salt spray, and abrasive dirt',
+      'Supplied with custom GlassPak™ chest harness for silent, low-profile tactical and field transport'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Binoculars', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-razor-hd-8x42',
+    name: 'Razor® HD 8x42',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-razor-hd-8x42',
+    gallery: ['vortex-razor-hd-8x42'],
+    label: 'FLAGSHIP HD OBSERVATION BINOCULARS',
+    summary: 'Flagship 8x42 roof prism binocular engineered with high-density optical glass, plasma-tech XR Plus coatings, dielectric prisms, and a lightweight magnesium chassis.',
+    specs: [
+      ['Magnification', '8x'],
+      ['Objective Lens Diameter', '42 mm'],
+      ['Linear Field of View', '388 ft / 1000 yds (7.4°)'],
+      ['Eye Relief', '17.5 mm'],
+      ['Exit Pupil', '5.25 mm'],
+      ['Close Focus', '6.0 ft (1.8 m)'],
+      ['Interpupillary Distance', '55 mm – 75 mm'],
+      ['Dimensions (H x W)', '5.9 x 5.1 in (150 x 130 mm)'],
+      ['Weight', '24.2 oz (686 g)'],
+      ['Chassis Material', 'True Magnesium Alloy chassis with ergonomic rubber armor'],
+      ['Lens Coatings', 'XR™ Plus Fully Multi-Coated, Plasma Tech, Dielectric Coatings, ArmorTek®'],
+      ['Sealing', 'Argon gas purged, waterproof, fogproof, shockproof']
+    ],
+    features: [
+      'APO optical system with select HD glass virtually eliminates chromatic aberration for pristine color rendition',
+      'Plasma Tech application process ensures unparalleled coating durability and peak light throughput',
+      'Lightweight magnesium chassis provides maximum structural strength with minimal field pack weight',
+      'Wide 388 ft field of view combined with 17.5mm eye relief provides fatigue-free situational awareness',
+      'Argon purged and ArmorTek shielded for dependable performance in demanding arctic, tropical, or desert environments'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Binoculars', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-razor-hd-10x50',
+    name: 'Razor® HD 10x50',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-razor-hd-10x50',
+    gallery: ['vortex-razor-hd-10x50'],
+    label: 'FLAGSHIP LOW-LIGHT HD BINOCULARS',
+    summary: 'Flagship 10x50 observation binocular combining large 50 mm objective lenses, premium HD optical glass, XR Plus coatings, and a lightweight magnesium chassis for extreme low-light performance.',
+    specs: [
+      ['Magnification', '10x'],
+      ['Objective Lens Diameter', '50 mm'],
+      ['Linear Field of View', '315 ft / 1000 yds (6.0°)'],
+      ['Eye Relief', '16.5 mm'],
+      ['Exit Pupil', '5.0 mm'],
+      ['Close Focus', '10.0 ft (3.0 m)'],
+      ['Interpupillary Distance', '57 mm – 74 mm'],
+      ['Dimensions (H x W)', '6.8 x 5.1 in (173 x 130 mm)'],
+      ['Weight', '28.1 oz (797 g)'],
+      ['Chassis', 'Magnesium Alloy with textured protective rubber armor'],
+      ['Optical System', 'HD Optical System, XR™ Plus Fully Multi-Coated, Dielectric Prism Coatings'],
+      ['Weatherproofing', 'Argon gas purged, waterproof, fogproof, ArmorTek coated']
+    ],
+    features: [
+      'Large 50mm objective lenses collect abundant light for critical dawn, dusk, and shadowed canopy observation',
+      'XR Plus fully multi-coated lenses offer maximum light transmission with proprietary anti-reflective coatings',
+      'Precision magnesium chassis cuts carry weight while delivering rugged shockproof durability',
+      'Dielectric prism coatings provide crisp image resolution, rich contrast, and color-faithful views',
+      'Includes GlassPak chest harness and rainguard ocular covers for secure, weather-protected field transit'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Binoculars', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-razor-hd-12x50',
+    name: 'Razor® HD 12x50',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-razor-hd-12x50',
+    gallery: ['vortex-razor-hd-12x50'],
+    label: 'FLAGSHIP EXTREME LONG-RANGE HD BINOCULARS',
+    summary: 'Flagship 12x50 roof prism binocular built for long-distance surveillance and glassing, featuring premium HD glass, XR Plus coatings, magnesium construction, and ArmorTek lens shielding.',
+    specs: [
+      ['Magnification', '12x'],
+      ['Objective Lens Diameter', '50 mm'],
+      ['Linear Field of View', '285 ft / 1000 yds (5.4°)'],
+      ['Eye Relief', '15.5 mm'],
+      ['Exit Pupil', '4.2 mm'],
+      ['Close Focus', '10.0 ft (3.0 m)'],
+      ['Interpupillary Distance', '57 mm – 74 mm'],
+      ['Dimensions (H x W)', '6.8 x 5.1 in (173 x 130 mm)'],
+      ['Weight', '28.7 oz (814 g)'],
+      ['Chassis Material', 'Ultra-durable Magnesium Alloy with non-slip rubber armor'],
+      ['Optical Tech', 'HD Optical System, APO lens elements, XR™ Plus coatings, Plasma Tech'],
+      ['Environmental', 'Waterproof, fogproof (Argon purged), ArmorTek scratch protection']
+    ],
+    features: [
+      '12x magnification allows fine target identification and reconnaissance across vast open areas',
+      'APO optical elements deliver edge-to-edge sharpness with zero chromatic aberration',
+      'Plasma Tech application ensures molecular coating durability across severe operational environments',
+      'Magnesium alloy body engineered for high-impact durability without weighing down the field pack',
+      'Argon gas purged and O-ring sealed for absolute fog-free clarity in driving rain and temperature swings'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Binoculars', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-viper-hd-20-60x85',
+    name: 'Viper® HD 20-60x85 Spotting Scope',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-viper-hd-20-60x85',
+    gallery: ['vortex-viper-hd-20-60x85'],
+    label: 'HD LONG-RANGE SPOTTING SCOPE',
+    summary: 'High-definition 20-60x85 spotting scope system available in straight and angled body configurations, engineered with an HD optical system, XR coatings, helical focus, and integrated Arca-Swiss mounting.',
+    specs: [
+      ['Available Configurations', 'Straight / Angled'],
+      ['Magnification', '20-60x'],
+      ['Objective Lens Diameter', '85 mm'],
+      ['Linear Field of View', '101 ft – 50 ft / 1000 yds (1.9° – 1.0°)'],
+      ['Eye Relief', '17.8 mm – 19.6 mm'],
+      ['Close Focus', '36.0 ft (11.0 m)'],
+      ['Length', '17.5 in (445 mm)'],
+      ['Weight', '76.6 oz (2,171 g)'],
+      ['Optical System', 'HD Optical Glass with XR™ Fully Multi-Coated Lenses & Dielectric Prisms'],
+      ['Focus Mechanism', 'Smooth Helical Focus Ring with Coarse and Fine adjustment feel'],
+      ['Mounting Interface', 'Integrated Arca-Swiss compatible tripod foot with 1/4-20 & 3/8-16 threading'],
+      ['Environmental Sealing', 'Argon gas purged waterproof, fogproof, ArmorTek lens protection']
+    ],
+    features: [
+      'Available in Straight and Angled configurations to match diverse vehicle, hide, and standing tripod positions',
+      'Massive 85mm objective lens captures tremendous light for exceptional resolution at maximum 60x zoom',
+      'Smooth helical focus ring enables rapid acquisition and precise micro-focusing without scope shake',
+      'Direct Arca-Swiss foot drops straight onto compatible tripod heads without requiring adapter plates',
+      'Built-in extendable sunshade reduces glint, stray light glare, and shields the front objective from rain'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Spotting Scopes', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-viper-hd-3000',
+    name: 'Viper® HD 3000',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-viper-hd-3000',
+    gallery: ['vortex-viper-hd-3000'],
+    label: 'HD LASER RANGEFINDER',
+    summary: 'Advanced 3,000-yard laser rangefinder featuring an HD optical system, red OLED display, 7x magnification, and 4 targeting modes for extreme-distance accuracy.',
+    specs: [
+      ['Max Range (Reflective)', '3,000 yds (2,743 m)'],
+      ['Range (Tree)', '2,300 yds (2,103 m)'],
+      ['Range (Deer)', '2,000 yds (1,829 m)'],
+      ['Magnification', '7x'],
+      ['Objective Lens Diameter', '25 mm'],
+      ['Accuracy', '±1 yd @ ≤1,000 yds, ±2 yds @ 1,000–2,000 yds, ±3 yds @ >2,000 yds'],
+      ['Ranging Modes', 'HCD (Horizontal Component Distance), LOS (Line of Sight), Scan'],
+      ['Target Modes', 'Normal, First, Last, ELR (Extended Laser Range)'],
+      ['Display', 'High-contrast Red OLED with 5 brightness settings'],
+      ['Dimensions (L x W x H)', '4.2 x 1.7 x 3.1 in (107 x 43 x 79 mm)'],
+      ['Weight', '9.1 oz (258 g)'],
+      ['Battery Type', 'CR123 battery (up to 4,000+ continuous range cycles)']
+    ],
+    features: [
+      'HD optical system delivers crystal-clear viewing with high contrast and edge-to-edge optical clarity',
+      'Red OLED display with 5 manual brightness levels ensures crisp target readings against any background',
+      'ELR (Extended Laser Range) mode targets distant non-reflective targets out to extreme distances',
+      'HCD angle-compensated ranging provides true horizontal shooting distance across steep terrain',
+      'ArmorTek coating and rubber armor housing resist impact, abrasions, and extreme weather'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'forest-measurement-inventory', 'wildlife-monitoring-surveillance', 'mining-survey'],
+    categoryIds: ['optics', 'defense', 'forestry', 'mining', 'surveying'],
+    tags: ['Laser Rangefinders', 'Rangefinders', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-razor-hd-4000',
+    name: 'Razor® HD 4000',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-razor-hd-4000',
+    gallery: ['vortex-razor-hd-4000'],
+    label: 'FLAGSHIP EXTREME LONG-RANGE LASER RANGEFINDER',
+    summary: 'Flagship 4,000-yard laser rangefinder with an HD optical system, 7x magnification, ELR mode, magnesium chassis, and clear red OLED display for demanding long-range targeting.',
+    specs: [
+      ['Max Range (Reflective)', '4,000 yds (3,658 m)'],
+      ['Range (Tree)', '2,500 yds (2,286 m)'],
+      ['Range (Deer)', '2,200 yds (2,012 m)'],
+      ['Magnification', '7x'],
+      ['Objective Lens Diameter', '25 mm'],
+      ['Accuracy', '±0.5 yd @ ≤199.9 yds, ±1 yd @ 200–1,000 yds, ±2 yds @ >1,000 yds'],
+      ['Ranging Modes', 'HCD, LOS, Scan'],
+      ['Targeting Modes', 'Normal, First, Last, Extended Laser Range (ELR)'],
+      ['Display', 'Bright Red Clear OLED with auto and manual brightness'],
+      ['Chassis', 'Rugged Magnesium Alloy chassis with textured rubber armor'],
+      ['Dimensions (L x W x H)', '4.49 x 1.7 x 3.1 in (114 x 43 x 79 mm)'],
+      ['Weight', '9.9 oz (281 g)']
+    ],
+    features: [
+      'Ultra-long 4,000-yard reflective ranging capability for mission-critical reconnaissance and observation',
+      'ELR mode targets distant, low-reflectivity subjects by gathering multiple laser pulses for precise lock-on',
+      'All-magnesium chassis delivers structural rigidity and extreme shock resistance at under 10 oz',
+      'Integrated tripod mount allows rock-solid bench or tripod mounting for high-precision long-range readings',
+      'O-ring sealed and nitrogen gas purged for 100% waterproof and fogproof reliability'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'forest-measurement-inventory', 'wildlife-monitoring-surveillance', 'mining-survey'],
+    categoryIds: ['optics', 'defense', 'forestry', 'mining', 'surveying'],
+    tags: ['Laser Rangefinders', 'Rangefinders', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-ranger-hd-3000-10x42',
+    name: 'Ranger® HD 3000 10x42 Rangefinding Binocular',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-ranger-hd-3000-10x42',
+    gallery: ['vortex-ranger-hd-3000-10x42'],
+    label: 'LASER RANGEFINDING BINOCULARS',
+    summary: 'Dual-function 10x42 binocular with integrated 3,000-yard laser rangefinder, HD optical glass, red OLED in-view display, and HCD angle compensation.',
+    specs: [
+      ['Magnification', '10x'],
+      ['Objective Lens Diameter', '42 mm'],
+      ['Max Range (Reflective)', '3,000 yds (2,743 m)'],
+      ['Range (Tree)', '2,300 yds (2,103 m)'],
+      ['Range (Deer)', '2,000 yds (1,829 m)'],
+      ['Linear Field of View', '341 ft / 1000 yds (6.5°)'],
+      ['Eye Relief', '18.0 mm'],
+      ['Close Focus', '16.4 ft (5.0 m)'],
+      ['Ranging Modes', 'HCD, LOS, Scan'],
+      ['Target Modes', 'Normal, First, Last, ELR'],
+      ['Display', 'Red OLED display with customizable reticle and brightness'],
+      ['Weight', '31.0 oz (879 g)']
+    ],
+    features: [
+      'Merges premium 10x42 HD observation glass and 3,000-yard laser ranging into a single compact unit',
+      'High-speed laser processor returns rapid distance readouts in less than 0.25 seconds',
+      'Red illuminated OLED in-view display provides crisp data readouts without obstructing the visual field',
+      'HCD angle-compensated mode automatically calculates line-of-sight and true horizontal distances',
+      'Supplied with custom GlassPak chest harness, CR2 battery, and tethered objective covers'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'wildlife-monitoring-surveillance', 'forest-measurement-inventory'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Laser Rangefinders', 'Binoculars', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-impact-4000',
+    name: 'Impact® 4000 Ballistic Rail-Mounted Laser Rangefinder',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-impact-4000',
+    gallery: ['vortex-impact-4000'],
+    label: 'RAIL-MOUNTED BALLISTIC LASER RANGEFINDER',
+    summary: 'Picatinny rail-mounted weapon laser rangefinder with onboard GeoBallistics solver, environmental sensors, wireless remote, and extreme 4,000-yard ranging capability.',
+    specs: [
+      ['Max Range (Reflective)', '4,000 yds (3,658 m)'],
+      ['Range (Tree)', '2,500 yds (2,286 m)'],
+      ['Range (Deer)', '1,500 yds (1,372 m)'],
+      ['Mounting Interface', 'Direct Picatinny rail mount (MIL-STD-1913)'],
+      ['Ballistic Solver', 'GeoBallistics® engine with full onboard atmospheric sensors'],
+      ['Sensors', 'Temperature, pressure, humidity, compass heading, and cant'],
+      ['Wireless Connectivity', 'Bluetooth pairing to GeoBallistics App and included wireless remote switch'],
+      ['Display', 'All-weather reflective monochrome display visible in bright sunlight'],
+      ['Dimensions (L x W x H)', '4.6 x 3.2 x 2.5 in (117 x 81 x 64 mm)'],
+      ['Weight', '16.0 oz (454 g)'],
+      ['Battery', 'CR123A battery (up to 4,000 ranges)'],
+      ['Environmental Sealing', 'Waterproof, fogproof, shockproof recoil rated for severe calibers']
+    ],
+    features: [
+      'Mounts directly to rifle Picatinny rail, allowing target ranging without leaving the cheek weld',
+      'Integrated GeoBallistics engine computes drop and wind holdovers in real time using onboard atmospheric sensors',
+      'Wireless remote switch mounts anywhere on the rifle chassis for instant finger-actuated ranging',
+      'Pairs seamlessly with the GeoBallistics mobile app to build and sync customized ballistic rifle profiles',
+      'Heavy-duty recoil-proof aluminum body designed to withstand severe magnum calibers and harsh field terrain'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'defense-tactical'],
+    categoryIds: ['optics', 'defense'],
+    tags: ['Laser Rangefinders', 'Rifle Scopes', 'Tactical Optics', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-talon-hd-10k-10x42',
+    name: 'Talon® HD 10K 10x42 Ballistic Laser Rangefinding Binocular',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-talon-hd-10k-10x42',
+    gallery: ['vortex-talon-hd-10k-10x42'],
+    label: '10,000-YARD BALLISTIC RANGEFINDING BINOCULARS',
+    summary: 'Ultra-long-range 10,000-yard laser rangefinding binocular with an HD optical system, onboard GeoBallistics solver, environmental sensors, and heads-up OLED display.',
+    specs: [
+      ['Max Range (Reflective)', '10,000 yds (9,144 m)'],
+      ['Range (Tree)', '4,000 yds (3,658 m)'],
+      ['Range (Deer)', '3,000 yds (2,743 m)'],
+      ['Magnification', '10x'],
+      ['Objective Lens Diameter', '42 mm'],
+      ['Linear Field of View', '341 ft / 1000 yds (6.5°)'],
+      ['Ballistics Solver', 'Integrated GeoBallistics® engine with onboard atmospheric sensors'],
+      ['Display', 'Full-color active OLED display with dynamic wind and elevation solutions'],
+      ['Connectivity', 'Bluetooth LE integration with GeoBallistics app and external weather meters'],
+      ['Dimensions (L x W)', '6.8 x 5.2 in (173 x 132 mm)'],
+      ['Weight', '35.0 oz (992 g)'],
+      ['Chassis & Sealing', 'Magnesium chassis, ArmorTek coated, waterproof and fogproof']
+    ],
+    features: [
+      'Industry-leading 10,000-yard reflective ranging engine for strategic observation and long-distance targeting',
+      'Onboard GeoBallistics solver instantly outputs complete firing solutions in the optic viewfinder',
+      'Built-in barometer, thermometer, compass, and inclinometer capture real-time atmospheric data',
+      'Bluetooth connectivity syncs ballistic profiles, customized reticles, and target waypoints to mobile GIS maps',
+      'Magnesium alloy chassis with ArmorTek lens shielding designed for rigorous field and tactical deployment'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Laser Rangefinders', 'Binoculars', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-summit-carbon-ii',
+    name: 'Summit® Carbon II Tripod Kit',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-summit-carbon-ii',
+    gallery: ['vortex-summit-carbon-ii'],
+    label: 'COMPACT CARBON FIBER FIELD TRIPOD',
+    summary: 'Ultralight carbon fiber field tripod kit featuring 4-section carbon legs, a 2-way pan head with Arca-Swiss quick-release, and a 22 lb payload capacity for mobile glassing.',
+    specs: [
+      ['Max Load', '22 lbs (10.0 kg)'],
+      ['Max Height', '53.3 in (135.4 cm)'],
+      ['Min Height', '6.3 in (16.0 cm)'],
+      ['Folded Length', '18.1 in (46.0 cm)'],
+      ['Weight', '2.5 lbs (1.1 kg)'],
+      ['Leg Material', 'High-strength 4-section carbon fiber'],
+      ['Head Type', '2-Way Pan Head with smooth pan and tilt dampening'],
+      ['Quick Release', 'Arca-Swiss compatible quick-release plate with safety stop'],
+      ['Leg Angle Locks', '3-position pivot locks for prone, seated, and uneven terrain setup'],
+      ['Ballast Hook', 'Detachable counterweight hook on center column']
+    ],
+    features: [
+      'Ultralight 2.5 lb carbon fiber build packs down to 18.1 inches for effortless backpack carry',
+      'Sturdy 22 lb max load rating provides rock-steady stabilization for spotting scopes and heavy binoculars',
+      'Smooth 2-way pan head delivers fluid horizontal panning and vertical tilting with positive locking',
+      '3-angle leg stops enable rapid low-profile ground deployment down to 6.3 inches for prone observation',
+      'Quarter-turn twist leg locks allow swift, silent, one-handed height adjustments in the field'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance', 'mining-survey'],
+    categoryIds: ['optics', 'defense', 'forestry', 'surveying'],
+    tags: ['Tripods & Supports', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-ridgeview-carbon',
+    name: 'Ridgeview™ Carbon Tripod Kit',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-ridgeview-carbon',
+    gallery: ['vortex-ridgeview-carbon'],
+    label: 'FULL-STANDING CARBON FIBER TRIPOD',
+    summary: 'Full-standing height carbon fiber tripod kit with 3-section carbon legs, 2-way fluid pan head, Arca-Swiss compatibility, and reaching up to 73.8 inches for comfortable standing observation.',
+    specs: [
+      ['Max Load', '22 lbs (10.0 kg)'],
+      ['Max Height', '73.8 in (187.5 cm)'],
+      ['Min Height', '8.3 in (21.1 cm)'],
+      ['Folded Length', '29.0 in (73.7 cm)'],
+      ['Weight', '3.0 lbs (1.4 kg)'],
+      ['Leg Material', 'Carbon Fiber (3-section legs)'],
+      ['Head Type', '2-Way Pan Head with fluid movement'],
+      ['Mounting Plate', 'Arca-Swiss compatible quick-release plate'],
+      ['Leg Angles', '3 independent leg angle adjustment positions'],
+      ['Feet', 'Rubber feet with threaded compatibility for field spikes']
+    ],
+    features: [
+      'Full 73.8-inch maximum height allows tall observers to glass comfortably while standing without hunching',
+      'Rigid carbon fiber leg construction suppresses vibration and wind buffeting for crisp high-power observation',
+      '2-way pan head features fluid pan and tilt movements with independent locking controls',
+      'Arca-Swiss quick-release plate mounts directly to spotting scopes, binoculars, and tactical optics',
+      'Integrated ballast hook on the center column allows hanging pack weight for maximum stability in high winds'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance', 'mining-survey'],
+    categoryIds: ['optics', 'defense', 'forestry', 'surveying'],
+    tags: ['Tripods & Supports', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-radian-carbon',
+    name: 'Radian™ Carbon Tripod Kit (Ball Head)',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-radian-carbon',
+    gallery: ['vortex-radian-carbon'],
+    label: 'HEAVY-DUTY CARBON FIBER TRIPOD',
+    summary: 'Heavy-duty precision carbon fiber tripod kit with precision ball head, 55 lb payload capacity, independent pan lock, and integrated leveling bowl for heavy tactical glassing and spotting.',
+    specs: [
+      ['Max Load', '55 lbs (24.9 kg)'],
+      ['Max Height', '67.3 in (170.9 cm)'],
+      ['Min Height', '7.8 in (19.8 cm)'],
+      ['Folded Length', '28.0 in (71.1 cm)'],
+      ['Weight', '7.3 lbs (3.3 kg)'],
+      ['Leg Construction', 'Heavy-gauge multi-layer carbon fiber (3-section)'],
+      ['Head Interface', 'Precision Ball Head with independent friction control and 360° pan'],
+      ['Leveling System', 'Integrated 75 mm leveling bowl with bubble level'],
+      ['Quick Release', 'Arca-Swiss compatible quick-release clamp'],
+      ['Feet Included', 'Interchangeable rubber feet and stainless steel ground spikes']
+    ],
+    features: [
+      'Massive 55 lb load capacity securely supports heavy large-objective spotting scopes, cameras, and tactical setups',
+      'Integrated 75mm leveling bowl provides quick horizon leveling without adjusting individual tripod legs',
+      'Precision ball head features independent tension control and 45-degree angle detent adjustments',
+      'Multi-layer high-density carbon fiber legs dampen vibration and resist thermal expansion in extreme cold/heat',
+      'Supplied with interchangeable rubber ground pads and aggressive stainless steel spikes for mud and ice'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance', 'mining-survey'],
+    categoryIds: ['optics', 'defense', 'forestry', 'surveying'],
+    tags: ['Tripods & Supports', 'Observation Optics']
+  },
+
+  {
+    slug: 'hikmicro-condor-lrf-2-0',
+    name: 'Condor LRF 2.0 (CQ35L 2.0)',
+    brand: 'HIKMICRO',
+    category: 'thermal',
+    image: 'hikmicro-condor-lrf-2-0',
+    gallery: ['hikmicro-condor-lrf-2-0'],
+    label: 'ULTRA-SENSITIVE THERMAL LRF MONOCULAR',
+    summary: 'Next-generation thermal observation monocular featuring a 640x512 VOx sensor with sub-15 mK NETD thermal sensitivity, integrated 1,000 m laser rangefinder, and 1,800 m detection range.',
+    specs: [
+      ['Thermal Sensor Resolution', '640 × 512 uncooled VOx focal plane array'],
+      ['Pixel Pitch', '12 μm'],
+      ['Thermal Sensitivity (NETD)', '< 15 mK (@25°C, F#=1.0)'],
+      ['Frame Rate', '50 Hz'],
+      ['Objective Lens', '35 mm, F1.0'],
+      ['Detection Range', 'Up to 1,800 m'],
+      ['Integrated Laser Rangefinder', 'Max 1,000 m measuring distance (±1 m accuracy)'],
+      ['Display', '1024 × 768 OLED 0.39-inch high-contrast display'],
+      ['Image Algorithms', 'Image Pro 2.0 & Zoom Pro self-developed algorithms'],
+      ['Battery System', 'Replaceable rechargeable 18650 Li-ion battery (up to 4.5 hours continuous)'],
+      ['Ingress Protection', 'IP67 waterproof and submersible'],
+      ['Weight', '460 g (without battery)']
+    ],
+    features: [
+      'Sub-15mK extreme thermal sensitivity reveals fine heat gradients and environmental textures in fog, rain, and dense foliage',
+      'Integrated 1,000m laser rangefinder accurately measures target distance with instant heads-up display feedback',
+      'Image Pro 2.0 and Zoom Pro processing algorithms optimize image clarity and retain sharpness through digital zoom',
+      'Ergonomic cylindrical magnesium alloy chassis with soft-touch rubber controls designed for one-handed operation',
+      'Replaceable 18650 rechargeable battery system ensures continuous mission capability in remote field sectors'
+    ],
+    page: 1,
+    subcategories: ['defense-thermal', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['thermal', 'defense', 'forestry'],
+    tags: ['Thermal Monoculars', 'Thermal Cameras', 'Laser Rangefinders', 'Infrared Observation']
+  },
+
+  {
+    slug: 'hikmicro-b20s',
+    name: 'B20S Handheld Thermal Camera',
+    brand: 'HIKMICRO',
+    category: 'thermal',
+    image: 'hikmicro-b20s',
+    gallery: ['hikmicro-b20s'],
+    label: 'PROFESSIONAL HANDHELD THERMAL CAMERA',
+    summary: 'Industrial and field thermal imaging camera with 256x192 IR resolution, 2 MP optical camera, SuperIR enhancement, Wi-Fi connectivity, and wide -20°C to 550°C temperature measurement range.',
+    specs: [
+      ['Thermal Resolution', '256 × 192 (49,152 pixels)'],
+      ['SuperIR Enhancement', 'Up to 320 × 240 enhanced thermal image resolution'],
+      ['Pixel Pitch', '12 μm'],
+      ['Thermal Sensitivity (NETD)', '< 40 mK (@25°C, F#=1.0)'],
+      ['Visual Camera', '2 MP digital visible light camera'],
+      ['Image Modes', 'Thermal, Visual, Fusion (Bi-Spectrum Blending), Picture-in-Picture'],
+      ['Temperature Range', '-20°C to 550°C (-4°F to 1022°F)'],
+      ['Measurement Accuracy', 'Max (±2°C / 3.6°F, ±2%)'],
+      ['Display', '3.2-inch color LCD display (240 × 320)'],
+      ['Battery Runtime', 'Up to 6 hours continuous operation'],
+      ['Enclosure Protection', 'IP54 rated with 2-meter (6.6 ft) drop test certification']
+    ],
+    features: [
+      'Bi-spectrum image fusion overlays optical edge details onto thermal imagery for instant diagnostic clarity',
+      'Wide temperature measurement range from -20°C to 550°C suitable for electrical, mechanical, and perimeter inspections',
+      'Full-screen high/low temperature auto-tracking and audible/visual alarms alert users to thermal anomalies',
+      'Built-in Wi-Fi connectivity allows real-time streaming and image transfer to mobile devices via HIKMICRO Viewer app',
+      'Ruggedized IP54 industrial housing withstands harsh outdoor work sites and 2-meter drops onto concrete'
+    ],
+    page: 1,
+    subcategories: ['defense-thermal', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['thermal', 'defense', 'forestry', 'inspection'],
+    tags: ['Thermal Cameras', 'Infrared Observation']
+  },
+
+  {
+    slug: 'hikmicro-pocket-series',
+    name: 'Pocket Series Thermal Camera',
+    brand: 'HIKMICRO',
+    category: 'thermal',
+    image: 'hikmicro-pocket-series',
+    gallery: ['hikmicro-pocket-series'],
+    label: 'TOUCHSCREEN POCKET THERMAL CAMERA',
+    summary: 'Ultra-compact pocket-sized thermal camera featuring a 3.5-inch responsive LCD touchscreen, high-sensitivity VOx detector, bi-spectrum image fusion, and onboard Wi-Fi reporting.',
+    specs: [
+      ['Thermal Sensor Resolution', 'High-resolution uncooled VOx infrared detector (12 μm pitch)'],
+      ['Thermal Sensitivity (NETD)', '< 40 mK'],
+      ['Frame Rate', '25 Hz smooth real-time video'],
+      ['Visual Camera', '8 MP high-resolution digital visual camera'],
+      ['Display', '3.5-inch LCD touchscreen display (640 × 480 resolution)'],
+      ['Image Display Modes', 'Thermal, Fusion, Picture-in-Picture, Visual'],
+      ['Temperature Measurement Range', '-20°C to 400°C (-4°F to 752°F)'],
+      ['Storage', 'Internal 16 GB eMMC flash storage (stores up to 60,000 images)'],
+      ['Connectivity', 'Wi-Fi 802.11 b/g/n, Bluetooth, USB Type-C'],
+      ['Battery Runtime', 'Up to 4 hours continuous use on rechargeable Li-ion'],
+      ['Form Factor & Protection', 'Ultra-slim pocket design, IP54 rated, 2-meter drop tested']
+    ],
+    features: [
+      'Pocket-sized slim form factor slips easily into a uniform pocket or field vest for immediate deployment',
+      'Large 3.5-inch capacitive touchscreen with 1-to-4x continuous digital zoom enables intuitive on-device analysis',
+      '8MP visible camera paired with bi-spectrum fusion provides crystal-clear context for thermal anomalies',
+      'Onboard voice annotations, text notes, and QR code scan tagging streamline inspection documentation',
+      'Direct Wi-Fi connection syncs radiometric images and inspection reports instantly to mobile devices and cloud'
+    ],
+    page: 1,
+    subcategories: ['defense-thermal', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['thermal', 'defense', 'forestry', 'inspection'],
+    tags: ['Thermal Cameras', 'Mobile Thermal Imaging', 'Infrared Observation']
+  },
+
+  {
+    slug: 'vortex-veil-400',
+    name: 'Veil™ 400 Thermal Monocular',
+    brand: 'Vortex Optics',
+    category: 'thermal',
+    image: 'vortex-veil-400',
+    gallery: ['vortex-veil-400'],
+    label: 'TACTICAL THERMAL MONOCULAR',
+    summary: 'Rugged handheld thermal monocular with 400x300 VOx sensor, sub-30 mK thermal sensitivity, multiple color palettes, onboard recording, and extended battery life for tactical detection and night scouting.',
+    specs: [
+      ['Thermal Sensor Resolution', '400 × 300 VOx uncooled microbolometer'],
+      ['Pixel Pitch', '12 μm'],
+      ['Thermal Sensitivity (NETD)', '< 30 mK'],
+      ['Frame Rate', '50 Hz refresh rate'],
+      ['Objective Lens', '35 mm focal length'],
+      ['Detection Range', 'Up to 1,800 yds (1,646 m)'],
+      ['Display', '1024 × 768 color OLED display'],
+      ['Color Palettes', 'White Hot, Black Hot, Red Hot, Ironbow, Rainbow'],
+      ['Digital Zoom', '1x, 2x, 4x digital magnification'],
+      ['Storage & Connectivity', 'Internal recording memory with Wi-Fi streaming and app support'],
+      ['Battery Type', 'Internal rechargeable Li-ion battery pack (up to 7.5 hours continuous)'],
+      ['Environmental Protection', 'IP67 waterproof, fogproof, shockproof tactical enclosure']
+    ],
+    features: [
+      'Sensitive 400x300 12µm thermal core spots concealed heat signatures through smoke, fog, and camouflage',
+      'Smooth 50Hz frame rate guarantees fluid, stutter-free tracking of moving wildlife and tactical subjects',
+      '5 dedicated thermal color palettes provide optimized target discrimination across shifting thermal backgrounds',
+      'Built-in video and photo recording with Wi-Fi connectivity to stream thermal feeds to remote team tablets',
+      'Ruggedized IP67 all-weather chassis withstands rain, grit, and harsh shock in demanding operations'
+    ],
+    page: 1,
+    subcategories: ['defense-thermal', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['thermal', 'defense', 'forestry'],
+    tags: ['Thermal Monoculars', 'Thermal Cameras', 'Infrared Observation']
+  },
+
+  {
+    slug: 'wildlife-acoustics-song-meter-sm5',
+    name: 'Song Meter SM5 Acoustic Recorder',
+    brand: 'Wildlife Acoustics',
+    category: 'forestry',
+    image: 'wildlife-acoustics-song-meter-sm5',
+    gallery: ['wildlife-acoustics-song-meter-sm5'],
+    label: 'NEXT-GENERATION AUDIBLE ACOUSTIC RECORDER',
+    summary: 'Advanced dual-channel autonomous acoustic recorder featuring ultra-low-noise built-in microphones, dual SD card slots, smartphone BLE configuration, and extended battery life for ecological monitoring.',
+    specs: [
+      ['Recording Bandwidth', '20 Hz to 48 kHz (Audible spectrum for birds, amphibians, and mammals)'],
+      ['Microphones', 'Two integrated low-noise weatherproof acoustic microphones'],
+      ['Sample Rates', 'Up to 96 kHz per channel (16-bit PCM uncompressed .wav)'],
+      ['Storage Interface', 'Dual SDXC card slots (Supports up to 2 TB total capacity)'],
+      ['Power Supply', '4 × D-size alkaline or rechargeable NiMH batteries, or external 12V DC input'],
+      ['Deployment Battery Life', 'Up to 500+ hours of continuous acoustic recording'],
+      ['Configuration & Control', 'Wireless Bluetooth Low Energy (BLE) via iOS and Android Configurator App'],
+      ['Time & Location Sync', 'Internal GPS receiver automatically sets location coordinates and clock time'],
+      ['Enclosure', 'High-impact polycarbonate weatherproof housing with padlockable latch'],
+      ['Weight & Dimensions', '1.18 kg (2.6 lbs) without batteries; 21.8 × 18.8 × 7.6 cm']
+    ],
+    features: [
+      'Dual integrated low-noise microphones deliver superior signal-to-noise ratio for detecting distant vocalizations',
+      'Onboard GPS receiver synchronizes accurate clock time and geotags recordings for precise survey documentation',
+      'Bluetooth Low Energy configuration via mobile app enables quick schedule setup and status verification in the field',
+      'Flexible scheduling engine supports complex duty cycles, sunrise/sunset offsets, and continuous monitoring',
+      'Padlockable weatherproof housing engineered to endure severe tropical downpours and sub-zero field environments'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry'],
+    tags: ['Bioacoustics & Acoustic Monitoring', 'Autonomous Recording Units', 'Acoustic Recorders']
+  },
+
+  {
+    slug: 'wildlife-acoustics-song-meter-mini-bat-2-aa',
+    name: 'Song Meter Mini Bat 2 (AA) Ultrasonic-Acoustic Recorder',
+    brand: 'Wildlife Acoustics',
+    category: 'forestry',
+    image: 'wildlife-acoustics-song-meter-mini-bat-2-aa',
+    gallery: ['wildlife-acoustics-song-meter-mini-bat-2-aa'],
+    label: 'COMPACT ULTRASONIC & ACOUSTIC RECORDER',
+    summary: 'Compact, lightweight ultrasonic bat recorder with optional secondary acoustic microphone, BLE smartphone control, and powered by 4 or 8 AA batteries for extended bat activity surveys.',
+    specs: [
+      ['Recording Type', 'Ultrasonic bat echolocation with optional second acoustic microphone for birds/frogs'],
+      ['Ultrasonic Sample Rates', '192 kHz, 256 kHz, 384 kHz, and 500 kHz (Captures frequencies up to 250 kHz)'],
+      ['Microphone', 'Integrated low-noise omnidirectional ultrasonic microphone'],
+      ['Battery Runtime', 'Up to 50 ten-hour nights on 8 × AA alkaline batteries'],
+      ['Storage', 'Single SDHC/SDXC card slot (up to 1 TB capacity)'],
+      ['Wireless Connectivity', 'Bluetooth Low Energy (BLE) control via Song Meter Configurator app'],
+      ['Time Synchronization', 'Smartphone app automatically syncs date, time, and GPS coordinates'],
+      ['Environmental Protection', 'IP67 weatherproof sealed enclosure for harsh field conditions'],
+      ['Dimensions & Weight', '12.0 × 14.2 × 4.0 cm; 290 g (0.64 lbs) without batteries']
+    ],
+    features: [
+      'Purpose-built ultrasonic microphone accurately records high-frequency bat echolocations up to 250 kHz',
+      'Dual-purpose recording capability: supports adding an optional second microphone for audible wildlife monitoring',
+      'Bluetooth Low Energy mobile configurator app enables schedule programming and live status checks without opening the case',
+      'Runs on 4 or 8 standard AA batteries for up to 500 hours (50 ten-hour nights) of autonomous field deployment',
+      'Compact IP67 weatherproof housing is easily concealed in foliage to prevent equipment tampering'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry'],
+    tags: ['Bioacoustics & Acoustic Monitoring', 'Autonomous Recording Units', 'Acoustic Recorders', 'Ultrasonic Bat Recorders']
+  },
+
+  {
+    slug: 'wildlife-acoustics-kaleidoscope-pro',
+    name: 'Kaleidoscope Pro Wildlife Sound Analysis Software',
+    brand: 'Wildlife Acoustics',
+    category: 'forestry',
+    image: 'wildlife-acoustics-kaleidoscope-pro',
+    gallery: ['wildlife-acoustics-kaleidoscope-pro'],
+    label: 'WILDLIFE SOUND ANALYSIS SOFTWARE',
+    summary: 'Professional bioacoustic analysis and automated species identification software suite for Windows, macOS, and Linux, enabling batch processing, cluster analysis, and bat classification.',
+    specs: [
+      ['Software Classification', 'Bioacoustic Sound Analysis & Automated Species Classification Suite'],
+      ['Supported Operating Systems', 'Windows 10/11 (64-bit), macOS 11+ (Intel & Apple Silicon), Linux (Ubuntu 64-bit)'],
+      ['Audio File Formats', 'WAV, WAC, and Zero-Crossing (ZC) files from any acoustic or ultrasonic recorder'],
+      ['Automated Bat Classifiers', 'Validated regional species classifiers for North America, Europe, Neotropics, and South Africa'],
+      ['Acoustic Cluster Analysis', 'Unsupervised machine-learning clustering for birds, amphibians, marine life, and insects'],
+      ['Acoustic Indices & SPL', 'Calculates NDSI, BIO, ACI, and sound pressure level (SPL) noise measurements'],
+      ['Batch Processing Speed', 'Processes terabytes of bioacoustic field recordings in a fraction of real time'],
+      ['Data Export Capabilities', 'Tabular CSV results, species presence reports, GPS track logs, and GIS-ready shapefiles']
+    ],
+    features: [
+      'Automated bat species classification engine provides statistical confidence levels for identified calls',
+      'Unsupervised acoustic cluster analysis sorts millions of bird, frog, and mammal sounds into distinct vocal groups',
+      'High-speed batch file conversion converts, renames, and splits large audio datasets automatically',
+      'Calculates sound pressure levels (SPL) and ecological acoustic diversity indices (ACI, NDSI, ADI)',
+      'Seamlessly exports classified species metadata, time stamps, and GPS coordinates to GIS mapping software'
+    ],
+    page: 1,
+    subcategories: ['wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry'],
+    tags: ['Bioacoustics & Acoustic Monitoring', 'Acoustic Analysis Software', 'Field Software']
+  },
+
+  {
+    slug: 'vortex-amg-1-10x24-ffp',
+    name: 'AMG® 1-10x24 FFP Riflescope',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-amg-1-10x24-ffp',
+    gallery: ['vortex-amg-1-10x24-ffp'],
+    label: 'PREMIUM FIRST FOCAL PLANE TACTICAL SCOPE',
+    summary: 'Elite 1-10x24 first focal plane tactical riflescope engineered with ultra-high definition glass, daylight-bright illuminated reticle, and 34 mm maintube for CQB to mid-range defense engagement.',
+    specs: [
+      ['Magnification', '1-10x'],
+      ['Objective Lens Diameter', '24 mm'],
+      ['Tube Size', '34 mm single-piece aircraft-grade aluminum'],
+      ['Reticle Focal Plane', 'First Focal Plane (FFP) glass-etched illuminated reticle'],
+      ['Eye Relief', '3.6 in (91.4 mm)'],
+      ['Field of View', '116.0 – 11.7 ft / 100 yds'],
+      ['Turret Style', 'Capped low-profile tactical turrets (0.1 MRAD or 1/4 MOA graduation)'],
+      ['Max Elevation / Windage Adjustment', '120 MOA total travel'],
+      ['Length', '10.1 in (257 mm)'],
+      ['Weight', '21.5 oz (609 g)'],
+      ['Environmental Sealing', 'Argon gas purged waterproof, fogproof, and severe shockproof recoil rated']
+    ],
+    features: [
+      'True 1x magnification with daylight-bright illuminated center dot functions as a red dot for rapid close-quarters targets',
+      '10x high magnification on First Focal Plane ensures reticle subtensions remain true across all magnification levels',
+      'Rugged 34mm maintube machined from solid aircraft-grade aluminum billet provides massive elevation travel',
+      'XR Plus fully multi-coated optics and premium glass deliver edge-to-edge optical resolution and light throughput',
+      'Argon purged and O-ring sealed for dependable waterproof, fogproof, and recoil-proof tactical performance'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'defense-tactical'],
+    categoryIds: ['optics', 'defense'],
+    tags: ['Rifle Scopes', 'Tactical Optics', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-razor-hd-gen-iii-6-36x56-ffp',
+    name: 'Razor® HD Gen III 6-36x56 FFP Riflescope',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-razor-hd-gen-iii-6-36x56-ffp',
+    gallery: ['vortex-razor-hd-gen-iii-6-36x56-ffp'],
+    label: 'EXTREME LONG-RANGE PRECISION TACTICAL SCOPE',
+    summary: 'Flagship 6-36x56 first focal plane precision riflescope featuring an HD optical system, 34 mm tube, L-Tec+ Zero Stop system, and EBR-7D illuminated reticle for extreme long-range tactical engagements.',
+    specs: [
+      ['Magnification', '6-36x'],
+      ['Objective Lens Diameter', '56 mm'],
+      ['Tube Size', '34 mm single-piece aircraft-grade aluminum'],
+      ['Reticle Plane', 'First Focal Plane (FFP) Glass-Etched EBR-7D Illuminated Reticle'],
+      ['Eye Relief', '3.5 in (88.9 mm)'],
+      ['Field of View', '21.3 – 3.5 ft / 100 yds (4.07° – 0.67°)'],
+      ['Turret Style', 'Exposed locking elevation and windage turrets with micro-adjust zero'],
+      ['Zero Stop System', 'Patented L-Tec+™ Zero Stop mechanism'],
+      ['Adjustment Graduation', '0.1 MRAD or 1/4 MOA'],
+      ['Max Elevation Travel', '121 MOA / 36.1 MRAD'],
+      ['Parallax Setting', '10 yds to infinity'],
+      ['Length & Weight', '15.3 in (389 mm); 45.1 oz (1,279 g)'],
+      ['Environmental Sealing', 'Argon gas purged, waterproof, fogproof, ArmorTek coated']
+    ],
+    features: [
+      'Flagship optical system with index-matched lenses provides exceptional resolution, contrast, and color fidelity',
+      'First Focal Plane EBR-7D glass-etched reticle provides precise ranging, holdover, and windage corrections at any power',
+      'Patented L-Tec+ Zero Stop system allows effortless zeroing and reliable return to zero under stressful field conditions',
+      'Massive 56mm objective lens with 34mm maintube provides immense light gathering and 36 MRAD elevation travel',
+      'Side parallax focus dial adjusts smoothly from 10 yards out to infinity for tack-sharp parallax removal'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'defense-tactical'],
+    categoryIds: ['optics', 'defense'],
+    tags: ['Rifle Scopes', 'Tactical Optics', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-triumph-hd-3-9x40',
+    name: 'Triumph® HD 3-9x40 Riflescope',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-triumph-hd-3-9x40',
+    gallery: ['vortex-triumph-hd-3-9x40'],
+    label: 'VERSATILE HD HUNTING & FIELD RIFLESCOPE',
+    summary: 'Reliable 3-9x40 field riflescope built with an HD optical system, 1-inch aircraft aluminum tube, fully multi-coated lenses, and capped finger-adjustable reset turrets.',
+    specs: [
+      ['Magnification', '3-9x'],
+      ['Objective Lens Diameter', '40 mm'],
+      ['Tube Diameter', '1-inch (25.4 mm) single-piece aircraft aluminum'],
+      ['Reticle', 'Dead-Hold® BDC Reticle (MOA, Second Focal Plane)'],
+      ['Eye Relief', '3.8 in (96.5 mm)'],
+      ['Field of View', '34.1 – 12.6 ft / 100 yds'],
+      ['Turret Style', 'Capped finger-adjustable reset turrets (1/4 MOA graduation)'],
+      ['Max Elevation / Windage Adjustment', '60 MOA total travel'],
+      ['Parallax Setting', 'Fixed at 100 yds'],
+      ['Length', '12.0 in (305 mm)'],
+      ['Weight', '14.8 oz (420 g)'],
+      ['Environmental Sealing', 'Nitrogen gas purged waterproof, fogproof, and shockproof']
+    ],
+    features: [
+      'HD optical system delivers bright, clear viewing and reliable target discrimination across all zoom ranges',
+      'Dead-Hold BDC reticle design eliminates guesswork on holdover and windage corrections at varied distances',
+      'Capped reset turrets allow finger-adjustable re-indexing to zero after initial sighting in',
+      'Rugged 1-inch single-piece aircraft aluminum tube provides strength and resistance against recoil impact',
+      'Nitrogen gas purged and O-ring sealed for dependable fog-free and waterproof performance in rainy field conditions'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'defense-tactical'],
+    categoryIds: ['optics', 'defense'],
+    tags: ['Rifle Scopes', 'Tactical Optics', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-crossfire-ii-3-12x56-ao-hog-hunter',
+    name: 'Crossfire® II 3-12x56 AO Hog Hunter Riflescope',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-crossfire-ii-3-12x56-ao-hog-hunter',
+    gallery: ['vortex-crossfire-ii-3-12x56-ao-hog-hunter'],
+    label: 'LOW-LIGHT SPECIALIZED 56MM RIFLESCOPE',
+    summary: 'Specialized low-light riflescope with massive 56 mm objective lens, 30 mm tube, adjustable objective (AO) parallax focus, and illuminated V-Brite MOA reticle for dusk, dawn, and night hunting.',
+    specs: [
+      ['Magnification', '3-12x'],
+      ['Objective Lens Diameter', '56 mm (Oversized for maximum low-light gathering)'],
+      ['Tube Size', '30 mm single-piece aircraft-grade aluminum tube'],
+      ['Reticle', 'V-Brite® Illuminated Reticle (MOA, Second Focal Plane)'],
+      ['Eye Relief', '3.5 in (88.9 mm)'],
+      ['Field of View', '36.7 – 9.2 ft / 100 yds'],
+      ['Adjustable Objective (AO)', 'Parallax adjustable from 10 yds to infinity'],
+      ['Turret Style', 'Capped reset turrets with 1/4 MOA click values (60 MOA total travel)'],
+      ['Length', '14.3 in (363 mm)'],
+      ['Weight', '21.1 oz (598 g)'],
+      ['Environmental Sealing', 'Nitrogen purged waterproof, fogproof, and shockproof']
+    ],
+    features: [
+      'Enormous 56mm objective lens draws maximum available ambient light during critical twilight hours',
+      'V-Brite illuminated battery-powered center dot provides precise crosshair placement against dark targets',
+      'Adjustable Objective (AO) ring allows fine parallax tuning down to 10 yards for maximum image sharpness',
+      '30mm aircraft-grade aluminum maintube delivers superior structural rigidity and increased elevation travel',
+      'Nitrogen-purged and O-ring sealed to prevent internal fogging in cold, humid, or rainy environments'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'defense-tactical'],
+    categoryIds: ['optics', 'defense'],
+    tags: ['Rifle Scopes', 'Tactical Optics', 'Observation Optics']
+  },
+
+  {
+    slug: 'vortex-diamondback-tactical-4-16x44-ffp',
+    name: 'Diamondback® Tactical 4-16x44 FFP Riflescope',
+    brand: 'Vortex Optics',
+    category: 'optics',
+    image: 'vortex-diamondback-tactical-4-16x44-ffp',
+    gallery: ['vortex-diamondback-tactical-4-16x44-ffp'],
+    label: 'TACTICAL FIRST FOCAL PLANE PRECISION SCOPE',
+    summary: 'Precision tactical riflescope featuring a First Focal Plane EBR-2C glass-etched reticle, exposed tactical elevation and windage turrets, 30 mm tube, and side parallax adjustment.',
+    specs: [
+      ['Magnification', '4-16x'],
+      ['Objective Lens Diameter', '44 mm'],
+      ['Tube Size', '30 mm single-piece aircraft aluminum'],
+      ['Reticle Plane', 'First Focal Plane (FFP) Glass-Etched EBR-2C Reticle (MRAD or MOA)'],
+      ['Eye Relief', '3.8 in (96.5 mm)'],
+      ['Field of View', '26.9 – 6.7 ft / 100 yds'],
+      ['Turret Style', 'Tall exposed tactical turrets with tactile click graduations (85 MOA travel)'],
+      ['Parallax Adjustment', 'Side focus dial from 20 yds to infinity'],
+      ['Length', '14.0 in (356 mm)'],
+      ['Weight', '23.1 oz (655 g)'],
+      ['Environmental Sealing', 'Nitrogen gas purged, waterproof, fogproof, shockproof']
+    ],
+    features: [
+      'First Focal Plane reticle scales proportionally with magnification so holdovers and ranging remain exact at any power',
+      'Exposed tactical turrets provide crisp, audible, tactile adjustments for rapid elevation dialing in the field',
+      'EBR-2C glass-etched reticle includes detailed sub-tensions for windage and elevation holdover calculations',
+      'Side focus parallax adjustment dial provides rapid target focus and parallax elimination from 20 yards to infinity',
+      'Precision-glide erector system ensures smooth and repeatable magnification transitions in demanding weather'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'defense-tactical'],
+    categoryIds: ['optics', 'defense'],
+    tags: ['Rifle Scopes', 'Tactical Optics', 'Observation Optics']
+  },
+
+  {
+    slug: 'nightfox-vulpes',
+    name: 'Vulpes Night Vision Binocular & Laser Rangefinder',
+    brand: 'Nightfox',
+    category: 'thermal',
+    image: 'nightfox-vulpes',
+    gallery: ['nightfox-vulpes'],
+    label: 'DIGITAL NIGHT VISION & LASER RANGEFINDER',
+    summary: 'Digital night vision binocular featuring an integrated laser rangefinder, dual 850nm/940nm infrared LEDs, Full HD video recording, and up to 200 m viewing range in complete darkness.',
+    specs: [
+      ['Optical Magnification', '6x optical magnification'],
+      ['Digital Zoom', '3x digital zoom (up to 18x total magnification)'],
+      ['Integrated Laser Rangefinder', 'Built-in LRF measuring distances up to 200 m in darkness'],
+      ['Infrared Illumination', 'Dual 850 nm (long distance) and 940 nm (completely covert covert-black) IR LEDs'],
+      ['Viewing Range', 'Up to 200 m (656 ft) in 0 lux pitch darkness'],
+      ['Video Recording Resolution', 'Full HD 1080p video recording with audio onto microSD'],
+      ['Display', 'Internal widescreen display with soft rubber viewing hood'],
+      ['Power Supply', 'Rechargeable 18650 Li-ion battery via USB Type-C'],
+      ['Operating Time', 'Up to 5 hours continuous use with infrared active'],
+      ['Housing & Mount', 'Rubber armored field chassis with 1/4-20 tripod mounting thread']
+    ],
+    features: [
+      'Integrated laser rangefinder displays target distance directly on the night vision screen in real time',
+      'Dual infrared system allows switching between powerful 850nm beam and invisible 940nm covert LED',
+      'Full HD 1080p video recording captures nocturnal scouting footage and mission observation directly to memory card',
+      'Comfortable binocular form factor with cushioned ocular hood prevents light leakage onto the observer face',
+      'Rechargeable via modern USB Type-C port from standard tactical power banks for extended field missions'
+    ],
+    page: 1,
+    subcategories: ['defense-night', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['thermal', 'defense', 'forestry'],
+    tags: ['Night Vision Binoculars', 'Laser Rangefinders', 'Night Vision Devices', 'Infrared Observation']
+  },
+
+  {
+    slug: 'nightfox-whisker',
+    name: 'Whisker Night Vision Binoculars',
+    brand: 'Nightfox',
+    category: 'thermal',
+    image: 'nightfox-whisker',
+    gallery: ['nightfox-whisker'],
+    label: 'HEAD-MOUNTABLE DIGITAL NIGHT VISION',
+    summary: 'Hands-free head-mountable digital night vision goggles featuring 1x native magnification for walking, 850nm infrared emitter, HD video recording, and wide widescreen display.',
+    specs: [
+      ['Optical Magnification', '1x (True 1:1 scale for natural depth perception while walking)'],
+      ['Digital Zoom', '3x digital magnification'],
+      ['Infrared LED', 'Powerful 850 nm infrared diode with 7 brightness levels'],
+      ['Night Vision Range', 'Up to 150 m (492 ft) in total darkness'],
+      ['Display', 'Wide internal panoramic view screen'],
+      ['Video Recording', 'HD video recording to microSD memory card'],
+      ['Mounting System', 'Includes adjustable head strap harness; compatible with helmet brackets'],
+      ['Battery', 'Integrated 3,200 mAh USB rechargeable lithium battery (up to 4.5 hours runtime)'],
+      ['Weight', 'Lightweight compact profile under 380 g for minimal neck strain']
+    ],
+    features: [
+      'Native 1x magnification enables natural spatial orientation, hands-free walking, and navigation in total pitch darkness',
+      'Included head harness provides hands-free tactical scouting and nocturnal property monitoring',
+      '7 adjustable levels of 850nm infrared illumination allow tuning brightness to prevent target wash-out',
+      'Onboard digital video recording documents nighttime patrols and perimeter intrusions onto microSD',
+      'Built-in 3200mAh USB-C rechargeable battery eliminates the need to carry disposable field batteries'
+    ],
+    page: 1,
+    subcategories: ['defense-night', 'defense-tactical', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['thermal', 'defense', 'forestry'],
+    tags: ['Night Vision Binoculars', 'Night Vision Devices', 'Infrared Observation']
+  },
+
+  {
+    slug: 'nightfox-nova',
+    name: 'Nova Night Vision Binoculars',
+    brand: 'Nightfox',
+    category: 'thermal',
+    image: 'nightfox-nova',
+    gallery: ['nightfox-nova'],
+    label: 'TACTICAL HELMET-COMPATIBLE NIGHT VISION GOGGLES',
+    summary: 'Compact tactical digital night vision goggles featuring 1x magnification, dual ocular widescreen display, 940nm covert and 850nm high-power switchable IR, and helmet dovetail mount compatibility.',
+    specs: [
+      ['Magnification', '1x native optical (with 3x digital zoom)'],
+      ['Infrared Illumination', 'Dual switchable wavelengths: 940 nm covert / 850 nm long-range'],
+      ['Detection Range', 'Up to 150 m in zero-lux pitch darkness'],
+      ['Display', 'Dual ocular widescreen digital display with eye-relief rubber cups'],
+      ['Mounting Interface', 'Standard GoPro/Wilcox compatible helmet dovetail bracket and head mount included'],
+      ['Recording Quality', 'Full HD 1080p video recording at 30 fps onto TF card'],
+      ['Power Source', 'Internal 3,200 mAh USB-C rechargeable battery (up to 9 hours runtime)'],
+      ['Housing & Sealing', 'Impact-resistant reinforced tactical polymer, weather resistant'],
+      ['Weight', '375 g lightweight tactical build']
+    ],
+    features: [
+      'True 1:1 optical scale allows operator movement, driving, and tactical CQB navigation without distorted depth perception',
+      'Switchable 940nm covert infrared beam emits zero red glow, preventing position compromise during stealth surveillance',
+      'Directly interfaces with standard tactical helmet mounts via included dovetail rail attachment bracket',
+      'Dual-ocular viewfinder with soft rubber eyecups provides immersive observation while preventing facial light spillage',
+      'Long-life 3,200 mAh internal rechargeable battery delivers up to 9 hours of continuous night vision capability'
+    ],
+    page: 1,
+    subcategories: ['defense-night', 'defense-tactical', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['thermal', 'defense', 'forestry'],
+    tags: ['Night Vision Binoculars', 'Night Vision Devices', 'Infrared Observation']
+  },
+
+  {
+    slug: 'gardepro-x50s-cellular',
+    name: 'GardePro X50S Cellular Trail Camera',
+    brand: 'GardePro',
+    category: 'forestry',
+    image: 'gardepro-x50s-cellular',
+    gallery: ['gardepro-x50s-cellular'],
+    label: '4G CELLULAR REMOTE SURVEILLANCE TRAIL CAMERA',
+    summary: 'High-speed 4G LTE cellular trail camera with 48 MP photo capture, 1080p HD video with sound, 0.1-second trigger speed, 940nm invisible night flash, and real-time smartphone app transmission.',
+    specs: [
+      ['Cellular Connectivity', '4G LTE multi-carrier auto-connect cellular module with mobile app transmission'],
+      ['Photo Resolution', '48 MP high-definition still imagery'],
+      ['Video Resolution', '1080p Full HD with sound recording'],
+      ['Trigger Speed', '0.1-second lightning-fast motion trigger with 0.5s recovery time'],
+      ['Detection Range', 'Up to 80 ft (24 m) motion detection with 120° wide-angle PIR'],
+      ['Night Vision Flash', '940 nm No-Glow invisible black infrared LEDs (up to 75 ft range)'],
+      ['Screen', '2.4-inch color TFT LCD setup and preview display'],
+      ['Power Options', '8 × AA batteries or external 12V DC solar/battery pack input'],
+      ['Storage', 'Supports up to 256 GB standard SD/SDHC memory card'],
+      ['Environmental Sealing', 'IP66 waterproof and dustproof heavy-duty camo housing']
+    ],
+    features: [
+      '4G LTE cellular connectivity instantly transmits captured photos and video clips directly to your smartphone app',
+      'Ultra-fast 0.1-second trigger speed guarantees capturing fast-moving wildlife and perimeter intruders without blur',
+      '940nm invisible black infrared flash provides covert nighttime photography with zero visible glow',
+      'High-resolution 48MP image sensor provides exceptional optical zoom clarity for license plate and facial review',
+      'IP66 waterproof ruggedized casing withstands torrential rain, snow, and extreme tropical humidity'
+    ],
+    page: 1,
+    subcategories: ['defense-surveillance', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'defense'],
+    tags: ['Cellular Trail Cameras', 'Camera Traps', 'Wildlife Cameras']
+  },
+
+  {
+    slug: 'gardepro-a80-wifi',
+    name: 'GardePro A80 Wi-Fi Trail Camera',
+    brand: 'GardePro',
+    category: 'forestry',
+    image: 'gardepro-a80-wifi',
+    gallery: ['gardepro-a80-wifi'],
+    label: 'HIGH-SPEED WI-FI & BLUETOOTH TRAIL CAMERA',
+    summary: 'Wireless trail camera featuring built-in Wi-Fi and Bluetooth connectivity for wireless smartphone media download, 48 MP photos, 1296p HD video, 0.1s trigger, and 850nm low-glow night vision.',
+    specs: [
+      ['Wireless Connectivity', 'Built-in Wi-Fi & Bluetooth Low Energy (BLE) with GardePro mobile app control'],
+      ['Still Image Resolution', '48 MP ultra-clear still photos'],
+      ['Video Quality', '1296p H.264 HD video recording with high-fidelity audio'],
+      ['Trigger Speed', '0.1-second motion trigger speed with rapid 0.5s reset'],
+      ['Motion Sensor Range', 'Up to 75 ft (23 m) PIR detection angle'],
+      ['Night Flash', '36 pcs 850 nm low-glow infrared flash array with adaptive smart IR'],
+      ['Display', '2.4-inch color LCD display for instant camera setup and image review'],
+      ['Power Supply', '8 × AA alkaline/lithium batteries or 12V 1A external DC input'],
+      ['Memory Support', 'Supports up to 256 GB SD card (Class 10 or higher)'],
+      ['Weatherproof Rating', 'IP66 waterproof certified field construction']
+    ],
+    features: [
+      'Direct Wi-Fi and Bluetooth connection lets operators preview and download footage to a phone without dismounting the camera',
+      '0.1-second lightning trigger captures sudden motion at the boundary of the sensor detection zone',
+      '1296p HD video recording with sensitive audio capture provides rich ecological and surveillance intelligence',
+      'Smart infrared night vision automatically adjusts flash intensity to prevent subject over-exposure at close ranges',
+      'IP66 waterproof housing with sealed silicone gasket protects internal electronics through monsoon rain'
+    ],
+    page: 1,
+    subcategories: ['defense-surveillance', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'defense'],
+    tags: ['Wi-Fi Trail Cameras', 'Camera Traps', 'Wildlife Cameras']
+  },
+
+  {
+    slug: 'keepguard-kg895-4g-cellular',
+    name: 'KEEPGUARD KG895 4G Cellular Hunting & Surveillance Camera',
+    brand: 'KeepGuard',
+    category: 'forestry',
+    image: 'keepguard-kg895-4g-cellular',
+    gallery: ['keepguard-kg895-4g-cellular'],
+    label: 'COVERT 4G CELLULAR SURVEILLANCE CAMERA',
+    summary: 'Ruggedized 4G cellular trail camera engineered for remote perimeter surveillance and anti-poaching, featuring 30 MP resolution, 1080p video, 0.25s trigger, and invisible 940nm No-Glow flash.',
+    specs: [
+      ['Network Transmission', '4G LTE cellular data module with cloud server and mobile app transmission'],
+      ['Photo Resolution', '30 MP high-resolution image sensor'],
+      ['Video Resolution', '1080p Full HD video recording with clear sound'],
+      ['Trigger Speed', '0.25-second ultra-responsive motion trigger time'],
+      ['Detection Range', 'Up to 25 m (82 ft) motion detection distance'],
+      ['Infrared Night Flash', '48 pcs 940 nm No-Glow invisible black infrared LEDs (up to 25 m range)'],
+      ['Display', '2.4-inch high-definition color LCD screen'],
+      ['Power Configuration', '8 × AA batteries or 12V external power supply'],
+      ['Operating Temperature', '-20°C to +60°C (-4°F to 140°F)'],
+      ['Weatherproofing', 'IP67 fully waterproof, dustproof, and corrosion resistant']
+    ],
+    features: [
+      'Real-time 4G cloud transmission delivers instantaneous alert photos directly to monitoring workstations and mobile phones',
+      'Completely covert 940nm No-Glow infrared LEDs illuminate nighttime scenes without alerting trespassers or spooking animals',
+      'Fast 0.25-second trigger speed ensures targets centered in frame even during rapid passage across the field of view',
+      'IP67 fully waterproof sealed construction designed to endure submersion, high humidity, and driving rains',
+      'Programmable duty scheduling and time-lapse modes support continuous environmental and construction site monitoring'
+    ],
+    page: 1,
+    subcategories: ['defense-surveillance', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['forestry', 'defense'],
+    tags: ['Cellular Trail Cameras', 'Camera Traps', 'Wildlife Cameras']
+  },
+
+  {
+    slug: 'swarovski-optik-binoculars',
+    name: 'SWAROVSKI OPTIK Binoculars',
+    brand: 'Swarovski Optik',
+    category: 'optics',
+    image: 'swarovski-optik-binoculars',
+    gallery: ['swarovski-optik-binoculars'],
+    label: 'PREMIUM EUROPEAN OBSERVATION BINOCULARS',
+    summary: 'World-class Austrian observation binoculars engineered with field-flattener SWAROVISION technology, proprietary SWAROTOP lens coatings, and ergonomic magnesium chassis for unparalleled optical fidelity.',
+    specs: [
+      ['Product Family', 'Premium European Field & Tactical Observation Binoculars'],
+      ['Available Magnifications', '8x / 10x / 12x / 15x configurations'],
+      ['Objective Diameters', '32 mm / 42 mm / 52 mm options'],
+      ['Optical System', 'SWAROVISION Field Flattener Lenses with HD Fluoride glass'],
+      ['Coating Technology', 'SWAROBRIGHT, SWAROTOP, SWARODUR, and SWAROCLEAN coatings'],
+      ['Prism System', 'Phase-corrected roof prism system with high light transmission (up to 92%)'],
+      ['Chassis Construction', 'Precision lightweight magnesium housing with ergonomic contoured rubber armor'],
+      ['Weather Sealing', 'Nitrogen purged, waterproof up to 4 m (13 ft) water depth, fogproof'],
+      ['Application', 'Long-range surveillance, border monitoring, VIP observation, and elite field research']
+    ],
+    features: [
+      'SWAROVISION field flattener lenses provide virtually distortion-free images right up to the outermost edge of view',
+      'Fluoride-containing HD glass delivers exceptional color fidelity and resolves microscopic detail at extreme ranges',
+      'Ergonomically shaped body with contoured palm wraps allows relaxed observation during prolonged monitoring shifts',
+      'Proprietary SWAROCLEAN coating sheds water droplets, dust, and fingerprint smudges from exterior lenses',
+      'Engineered and manufactured in Austria to the most stringent military and observation optical tolerances'
+    ],
+    page: 1,
+    subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
+    categoryIds: ['optics', 'defense', 'forestry'],
+    tags: ['Binoculars', 'Observation Optics']
+  },
+
+  {
+    slug: 'motorola-mototrbo-r2',
+    name: 'MOTOTRBO™ R2 Portable Two-Way Radio',
+    brand: 'Motorola Solutions',
+    category: 'communication',
+    image: 'motorola-mototrbo-r2',
+    gallery: ['motorola-mototrbo-r2'],
+    label: 'NEXT-GEN PROFESSIONAL FIELD TWO-WAY RADIO',
+    summary: 'Next-generation DMR digital portable radio delivering clear SINC+ noise cancellation, superior battery runtime, 64-channel capacity, and IP55 ruggedness for demanding team operations.',
+    specs: [
+      ['Frequency Bands', 'VHF (136–174 MHz) or UHF (400–480 MHz)'],
+      ['Channel Capacity', '64 pre-programmable channels'],
+      ['RF Power Output', 'VHF: 5 W / 1 W; UHF: 4 W / 1 W'],
+      ['Audio Quality', 'SINC+ background noise suppression with up to 101 phons audio output'],
+      ['Operating Modes', 'DMR Digital Tier II and Analog Conventional'],
+      ['Battery Runtime', 'Up to 26.5 hours on slim Li-ion battery (5/5/90 duty cycle)'],
+      ['Ingress Protection', 'IP55 dust and water jet resistant'],
+      ['Military Durability', 'MIL-STD-810 C/D/E/F/G/H shock, vibration, and temperature certified'],
+      ['Dimensions & Weight', '125 × 55 × 37 mm; 286 g with standard battery'],
+      ['Security Features', 'Basic digital privacy, emergency alert button, Lone Worker safety']
+    ],
+    features: [
+      'Advanced SINC+ noise suppression filters out background machinery, wind, and vehicular noise for crystal-clear audio',
+      'Extended battery longevity delivers up to 26.5 hours of continuous operation across extended shifts',
+      'Slim, lightweight curved chassis is easily operated while wearing heavy work or tactical gloves',
+      'Dual digital and analog operation allows seamless phased migration from legacy radio fleets to modern DMR',
+      'Built to MIL-STD-810 military specifications to survive drops, vibration, salt fog, and driving dust'
+    ],
+    page: 1,
+    subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
+    categoryIds: ['communication', 'defense'],
+    tags: ['Two-Way Radios', 'Field Communications', 'Tactical Communications']
+  },
+
+  {
+    slug: 'cp-plus-cp-ebc-1073-k',
+    name: 'CP PLUS CP-EBC-1073-K 2K Body Worn Camera',
+    brand: 'CP PLUS',
+    category: 'defense',
+    image: 'cp-plus-cp-ebc-1073-k',
+    gallery: ['cp-plus-cp-ebc-1073-k'],
+    label: '2K LIVE-STREAMING BODY WORN CAMERA',
+    summary: 'Live-streaming tactical body worn camera with 2K Quad HD recording, 4G LTE and Wi-Fi streaming, built-in GPS positioning, 140° wide-angle lens, and infrared night recording for field security.',
+    specs: [
+      ['Video Recording Resolution', '2K (2560 × 1440) Quad HD, 1080p, 720p @ 30 fps'],
+      ['Sensor & Lens Angle', 'High-sensitivity CMOS sensor with 140° ultra-wide field of view'],
+      ['Wireless Connectivity', 'Built-in 4G LTE cellular module, Wi-Fi 802.11 b/g/n, and Bluetooth'],
+      ['Positioning & Tracking', 'Integrated high-precision GPS/BDS satellite location tracking'],
+      ['Night Vision', 'High-power infrared LEDs with automatic IR cut filter (up to 10 m face recognition in 0 lux)'],
+      ['Display', '2.0-inch color TFT LCD high-resolution screen with protective cover'],
+      ['Storage', 'Internal secure 64 GB / 128 GB tamper-proof encrypted memory'],
+      ['Battery Runtime', 'Up to 10 hours continuous 1080p recording on replaceable 3,200 mAh Li-ion battery'],
+      ['Ingress Protection & Drop Rating', 'IP68 fully waterproof and dustproof, 2-meter drop resistant'],
+      ['Live Streaming Protocols', 'RTSP / RTMP / ONVIF streaming to central command control rooms']
+    ],
+    features: [
+      'Real-time 4G/Wi-Fi live video streaming links field operators directly to headquarters command and control',
+      'Integrated GPS logs geographic coordinates, velocity, and time stamps onto all recorded evidence video',
+      'Automatic night vision illumination enables clear facial identification up to 10 meters in total darkness',
+      'One-touch instant SOS emergency button triggers immediate live video feed and GPS alert to central dispatch',
+      'IP68 waterproof rating and military-grade drop resistance survive rigorous tactical interventions and rainstorms'
+    ],
+    page: 1,
+    subcategories: ['defense-surveillance', 'defense-communication', 'defense-field-operations'],
+    categoryIds: ['defense', 'communication'],
+    tags: ['Body-Worn Cameras', 'Field Communications', 'Tactical & Personal Gear']
+  },
+
+  {
+    slug: 'kenwood-nx-5200-vhf',
+    name: 'NEXEDGE® NX-5200 VHF Multi-Protocol Digital Transceiver',
+    brand: 'Kenwood',
+    category: 'communication',
+    image: 'kenwood-nx-5200-vhf',
+    gallery: ['kenwood-nx-5200-vhf'],
+    label: 'VHF P25 & NXDN MULTI-PROTOCOL FIELD RADIO',
+    summary: 'Mission-critical VHF portable radio operating across NXDN, P25 (Phase 1 & 2), and FM analog protocols, featuring active noise reduction, GPS, full keypad, and IP67/68 immersion protection.',
+    specs: [
+      ['Frequency Band', 'VHF (136–174 MHz)'],
+      ['Operating Protocols', 'Multi-protocol: NXDN, P25 (Phase 1 & Phase 2), and FM Analog'],
+      ['RF Output Power', '6 W (High) / 1 W (Low)'],
+      ['Channel Capacity', 'Up to 4,000 channels with 512 channels per zone'],
+      ['Audio Technology', 'Dual-mic Active Noise Reduction (ANR) with built-in 32-bit DSP'],
+      ['Display & Controls', '1.74-inch 256-color transflective TFT color display with full DTMF keypad'],
+      ['Positioning', 'Built-in GPS receiver and antenna for location reporting'],
+      ['Encryption Options', 'Supports DES (56-bit) and hardware AES (256-bit) encryption modules'],
+      ['Bluetooth', 'Built-in Bluetooth 4.0 for hands-free audio and serial data'],
+      ['Environmental Sealing', 'IP67 / IP68 submersible (2 meters for 2 hours) and MIL-STD-810 C/D/E/F/G']
+    ],
+    features: [
+      'Multi-digital protocol architecture allows simultaneous mixed-mode operation between P25, NXDN, and FM analog',
+      'Active Noise Reduction (ANR) utilizes dual microphones and DSP to eliminate engine roar and howling wind',
+      'High-visibility 1.74-inch transflective color screen remains crystal clear even under direct harsh sunlight',
+      'Built-in GPS receiver transmits operator coordinates to command mapping consoles during tactical maneuvers',
+      'IP67/68 immersion sealing and MIL-STD-810 certification guarantee survival through severe mud, sand, and water'
+    ],
+    page: 1,
+    subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
+    categoryIds: ['communication', 'defense'],
+    tags: ['P25 / Multi-Protocol Radios', 'Two-Way Radios', 'Field Communications', 'Tactical Communications']
+  },
+
+  {
+    slug: 'kenwood-nx-5300-uhf',
+    name: 'NEXEDGE® NX-5300 UHF Multi-Protocol Digital Transceiver',
+    brand: 'Kenwood',
+    category: 'communication',
+    image: 'kenwood-nx-5300-uhf',
+    gallery: ['kenwood-nx-5300-uhf'],
+    label: 'UHF P25 & NXDN MULTI-PROTOCOL FIELD RADIO',
+    summary: 'Mission-critical UHF portable radio with multi-protocol P25 and NXDN digital operation, full encryption, 5 W RF output, transflective color display, and IP67/68 submersible construction.',
+    specs: [
+      ['Frequency Band', 'UHF (450–520 MHz / 380–470 MHz)'],
+      ['Digital Protocols', 'NXDN Type-C/Gen2, P25 Phase 1/2 Trunking, and Analog FM'],
+      ['RF Output Power', '5 W (High) / 1 W (Low)'],
+      ['Channel Capacity', 'Up to 4,000 channels / 512 channels per zone'],
+      ['Voice Processing', 'Active Noise Reduction (ANR) with advanced dual-microphone DSP filtering'],
+      ['Security & Encryption', 'Hardware-based AES 256-bit & DES encryption capabilities'],
+      ['Screen & Keypad', 'Transflective color TFT display with 4-way D-pad and numeric keypad'],
+      ['GPS / Bluetooth', 'Integrated GPS receiver and Bluetooth 4.0 Class 2 interface'],
+      ['Durability Standards', 'MIL-STD-810 C/D/E/F/G and IP67/IP68 immersion certification (2 m, 2 hr)'],
+      ['Safety Features', 'Man Down sensor, Emergency Alert, Lone Worker monitoring']
+    ],
+    features: [
+      'Multi-protocol support provides seamless interoperability across P25 and NXDN public safety radio networks',
+      'Robust 5W UHF RF transmitter penetrates reinforced concrete structures, urban canyons, and dense forest canopies',
+      'Hardware AES-256 encryption protects tactical mission transmissions against eavesdropping and signal interception',
+      'Integrated Man-Down motion sensor and lone worker algorithms trigger automated emergency SOS if an operator falls',
+      'IP67/IP68 submersible casing ensures complete reliability in monsoon floods, swamp terrain, and sandstorms'
+    ],
+    page: 1,
+    subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
+    categoryIds: ['communication', 'defense'],
+    tags: ['P25 / Multi-Protocol Radios', 'Two-Way Radios', 'Field Communications', 'Tactical Communications']
+  },
+
+  {
+    slug: 'portable-field-torches',
+    name: 'Portable Field Torches',
+    brand: 'AFFORDA',
+    category: 'defense',
+    image: 'portable-field-torches',
+    gallery: ['portable-field-torches'],
+    label: 'TACTICAL FIELD FLASHLIGHT SYSTEM',
+    summary: 'Heavy-duty handheld tactical flashlight system built with aero-grade aluminum alloy, tactical tail switch, dual fuel configuration, and weather-sealed housing for perimeter security and field searches.',
+    specs: [
+      ['Product Type', 'Heavy-Duty Tactical Handheld Flashlight System'],
+      ['Application', 'Tactical Patrol, Perimeter Search & Rescue, Field Security'],
+      ['Mounting / Carry Type', 'Ergonomic hand-grip with tactical tail switch, lanyard hole, and pocket clip'],
+      ['Body Construction', 'Aero-grade aluminum alloy with Type III hard-anodized abrasion-resistant finish'],
+      ['Field Use', 'All-weather tactical operations, border observation, and perimeter sweeps'],
+      ['Power Configuration', 'High-capacity rechargeable Li-ion battery system with USB-C direct port'],
+      ['Switch Interface', 'Tactical tail switch for momentary activation and secondary mode selector'],
+      ['Optical System', 'Toughened ultra-clear glass lens with anti-reflective coating and deep metal reflector'],
+      ['Environmental Protection', 'Weather-sealed impact-resistant construction for field operations']
+    ],
+    features: [
+      'Machined from aero-grade aluminum with hard-anodized finish to resist impact, drops, and abrasive grit',
+      'Dual-switch tactical tail interface provides instant one-touch momentary on and rapid strobe selection',
+      'Precision deep metal reflector projects a concentrated long-distance spotlight beam for perimeter sweeps',
+      'Direct USB-C recharging interface allows rapid field battery replenishment from vehicles or portable power banks',
+      'Sealed O-ring construction provides all-weather water resistance against heavy rainfall and dust storms'
+    ],
+    page: 1,
+    subcategories: ['defense-field-operations', 'defense-tactical', 'forestry-camping-safety-climate'],
+    categoryIds: ['defense', 'forestry'],
+    tags: ['Torches', 'Field Lighting', 'Tactical & Personal Gear']
+  },
+
+  {
+    slug: 'field-headlamps',
+    name: 'Field Headlamps',
+    brand: 'AFFORDA',
+    category: 'defense',
+    image: 'field-headlamps',
+    gallery: ['field-headlamps'],
+    label: 'MULTI-BEAM HANDS-FREE FIELD HEADLAMP',
+    summary: 'Multi-output hands-free field headlamp featuring dual spotlight and wide flood beams, auxiliary night-vision red LED, sweat-wicking silicone headband, and rechargeable battery pack.',
+    specs: [
+      ['Product Type', 'Multi-Output Hands-Free Tactical Headlamp System'],
+      ['Application', 'Night navigation, tactical hands-free maintenance, and covert field maneuvers'],
+      ['Mounting / Carry Type', 'Heavy-duty adjustable sweat-wicking elastic headband with silicone grip'],
+      ['Beam Modes', 'Dual-beam white flood/spotlight with auxiliary night-vision red LED output'],
+      ['Field Use', 'Hands-free tactical patrol, mountain treks, field repairs, and night bivouac'],
+      ['Power Configuration', 'Dual-fuel design compatible with rechargeable Li-ion pack or standard AAA backup'],
+      ['Tilt Mechanism', 'Multi-angle 60° ratcheted tilt bracket for precise directional beam alignment'],
+      ['Control Interface', 'Dual electronic push-button switches with gloved-hand tactile detents'],
+      ['Environmental Protection', 'Heavy-duty water-resistant and impact-absorbing composite housing']
+    ],
+    features: [
+      'Hands-free dual-beam illumination combines focused long-throw spotlight with smooth close-range floodlight',
+      'Integrated auxiliary red LED preserves operator night vision and prevents position compromise during map reading',
+      '60-degree ratcheted tilt mechanism allows precise beam placement on maps, instruments, or ground footing',
+      'Dual-fuel power architecture accepts either high-capacity rechargeable battery pack or off-the-shelf AAAs',
+      'Sweat-wicking elastic headband with silicone inner grips stays firmly anchored on helmets or bare heads'
+    ],
+    page: 1,
+    subcategories: ['defense-field-operations', 'defense-tactical', 'forestry-camping-safety-climate'],
+    categoryIds: ['defense', 'forestry'],
+    tags: ['Headlamps', 'Field Lighting', 'Tactical & Personal Gear']
+  },
+
+  {
+    slug: 'helmet-mounted-lights',
+    name: 'Helmet-Mounted Lights',
+    brand: 'AFFORDA',
+    category: 'defense',
+    image: 'helmet-mounted-lights',
+    gallery: ['helmet-mounted-lights'],
+    label: 'MODULAR HELMET TACTICAL ILLUMINATION SYSTEM',
+    summary: 'Low-profile modular helmet illumination system designed for direct mounting to ARC, M-LOK, and Picatinny helmet rails, featuring multi-spectrum white, red, and IR beacon illumination.',
+    specs: [
+      ['Product Type', 'Modular Tactical Helmet Illumination System'],
+      ['Application', 'Tactical entry, helmet-mounted CQB illumination, and covert night operations'],
+      ['Mounting Interface', 'Direct ARC rail, M-LOK, and Picatinny modular helmet rail brackets'],
+      ['Illumination Channels', 'Selectable white light, low-signature red/green LED, and IR beacon channel'],
+      ['Body Construction', 'Impact-resistant reinforced polymer housing with low-profile snag-free geometry'],
+      ['Control Interface', 'Tactile gloved-hand rotary switch with positive detents for rapid mode selection'],
+      ['Flex Arm / Articulation', 'Rotating multi-directional arm for precise task illumination'],
+      ['Power Configuration', 'Single CR123A lithium or AA battery with tool-free battery compartment cap'],
+      ['Environmental Protection', 'Weatherproof sealed construction for tropical rain and sandstorms']
+    ],
+    features: [
+      'Low-profile snag-free contour attaches directly to tactical helmet accessory rails without loose wires',
+      'Multi-spectrum light output includes white task light, covert red navigational LED, and infrared IFF beacon',
+      'Flexible directional arm enables immediate spotlight aiming onto maps, field gear, or weapon breeches',
+      'Rotary master switch features positive tactile detents designed for swift manipulation with heavy gloves',
+      'High-impact reinforced polymer chassis survives extreme environmental exposure and tactical bumps'
+    ],
+    page: 1,
+    subcategories: ['defense-field-operations', 'defense-tactical'],
+    categoryIds: ['defense'],
+    tags: ['Helmet-Mounted Lights', 'Field Lighting', 'Tactical & Personal Gear']
+  },
+
+  {
+    slug: 'infrared-search-lights',
+    name: 'Infrared Search Lights',
+    brand: 'AFFORDA',
+    category: 'defense',
+    image: 'infrared-search-lights',
+    gallery: ['infrared-search-lights'],
+    label: 'HIGH-INTENSITY INFRARED PERIMETER SEARCHLIGHT',
+    summary: 'Heavy-duty tactical infrared searchlight and floodlight system engineered with high-power 850nm and 940nm IR emitters, cast aluminum heat sink, tripod interface, and vehicle DC power compatibility.',
+    specs: [
+      ['Product Type', 'High-Intensity Infrared Tactical Search & Floodlight'],
+      ['Application', 'Perimeter night surveillance, covert observation with night vision devices, and perimeter defense'],
+      ['Mounting / Deploy Type', 'Handheld carry handle, tripod mount socket, and perimeter bracket interface'],
+      ['Wavelength Output', 'Covert high-power 850 nm / 940 nm infrared illumination arrays'],
+      ['Optical Delivery', 'Precision deep parabolic reflector for ultra-long distance covert night vision beam throw'],
+      ['Thermal Management', 'Cast aluminum heat-sink housing with active convection cooling fins'],
+      ['Power Source', 'High-discharge internal rechargeable battery pack with external 12V/24V DC vehicle supply input'],
+      ['Operation Controls', 'Multi-stage output switch with remote pressure switch socket'],
+      ['Environmental Protection', 'Weatherproof sealed industrial casing resistant to extreme desert heat and moisture']
+    ],
+    features: [
+      'Powerful covert infrared array illuminates distant sectors invisibly to the naked eye for night vision cameras',
+      'Deep polished parabolic reflector focuses an intense long-range IR beam across perimeter borders and fencelines',
+      'Dual mounting provisions support hand carry, standard 1/4-20 observation tripods, or vehicle roof fixtures',
+      'Massive die-cast aluminum heat-sink body dissipates thermal load for hours of uninterrupted illumination',
+      'Operates via high-capacity internal rechargeable batteries or continuous external 12V/24V vehicle power'
+    ],
+    page: 1,
+    subcategories: ['defense-field-operations', 'defense-surveillance', 'defense-night'],
+    categoryIds: ['defense', 'thermal'],
+    tags: ['Infrared Search Lights', 'Field Lighting', 'Infrared Observation', 'Thermal & Night Observation']
+  }
 ];
 
 export const brandDescriptions: Record<string,string> = {
+  'Swarovski Optik':'Austrian manufacturer of world-class premium precision long-range spotting scopes and high-performance observation optics.',
+  'Motorola Solutions':'Global leader in mission-critical wireless communications, rugged tactical two-way radios, and secure digital defense networks.',
+  'Kenwood':'Leading developer of mission-critical multi-protocol VHF and UHF digital transceivers, tactical two-way radios, and professional communications.',
+  'GardePro':'Developer of advanced ultra-clear trail cameras, dual-camera surveillance systems, and high-speed motion-activated scouting cameras.',
+  'KeepGuard':'Specialized manufacturer of ultra-rugged wildlife trail cameras, covert scouting sensors, and remote monitoring camera traps.',
+  'Nightfox':'Pioneering developer of accessible handheld, hands-free, and helmet-mounted digital night vision goggles and infrared observation devices.',
+  'CP PLUS':'Premier provider of advanced electronic surveillance, security cameras, and live-streaming high-definition body-worn cameras.',
   'AFFORDA':'Specialized supplier of professional field, forestry, surveying, and wildfire management equipment.',
   'GeoMate':'Professional GNSS positioning, RTK surveying, visual laser rovers, and rugged field data-collection systems.',
   'Vortex Optics':'A closer connection to the world beyond. Discover HD binoculars and precision observation optics.',
