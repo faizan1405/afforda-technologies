@@ -218,4 +218,4 @@ All 18 images are saved as clean, optimized 1000x1000 WebP assets in `public/ima
 ## 12. Git & Branch Status
 - **Branch:** `phase4-agent-c-camping`
 - **Main Branch Untouched:** Confirmed `main` has NOT been pushed or modified.
-- **Commit SHA:** `375d4310d54020a53163158c8ecb7ec82939634e` (short: `375d431`)
+- **Commit SHA:** `785ea843bb45214aac4509d9b15481808ed41355` (short: `785ea84`)
