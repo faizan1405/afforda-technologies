@@ -2,6 +2,7 @@ export interface GeologySubcategory {
   id: string;
   name: string;
   slug: string;
+  image?: string;
 }
 
 export const geologySubcategories: GeologySubcategory[] = [
@@ -9,6 +10,7 @@ export const geologySubcategories: GeologySubcategory[] = [
     id: 'geological-field-mapping',
     name: 'Geological Field & Mapping Products',
     slug: 'geological-field-mapping-equipment',
+    image: '/images/estwing-e3-22p.webp',
   },
 ];
 

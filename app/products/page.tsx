@@ -5,6 +5,7 @@ import { ArrowUpRight, Filter, X } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
 import { categories, products, productBelongsToCategory } from '@/lib/catalogue';
 import { navigationBrands, matchProductBrand } from '@/lib/navigation-data';
+import { getBrandInfo } from '@/lib/brand-info';
 
 export default function ProductsPage() {
   const [quote, setQuote] = useState(false);
@@ -65,6 +66,11 @@ export default function ProductsPage() {
     });
     return Array.from(brandSet).sort();
   }, []);
+
+  const activeBrandInfo = useMemo(
+    () => (activeBrand !== 'all' ? getBrandInfo(activeBrand) : undefined),
+    [activeBrand]
+  );
 
   const handleBrandChange = (brand: string) => {
     setActiveBrand(brand);
@@ -222,6 +228,55 @@ export default function ProductsPage() {
               <span style={{ color: '#88947d', marginLeft: 'auto' }}>
                 Showing {filteredProducts.length} product{filteredProducts.length === 1 ? '' : 's'}
               </span>
+            </div>
+          )}
+
+          {activeBrand !== 'all' && activeBrandInfo && (
+            <div className="brand-intro-card">
+              <div className="brand-intro-header">
+                <div>
+                  <div className="brand-intro-kicker">
+                    <span
+                      style={{
+                        display: 'inline-block',
+                        width: '6px',
+                        height: '6px',
+                        borderRadius: '50%',
+                        background: 'var(--yellow)',
+                      }}
+                    />
+                    BRAND PROFILE
+                  </div>
+                  <h2 className="brand-intro-title">{activeBrandInfo.name}</h2>
+                </div>
+                {activeBrandInfo.specialty && (
+                  <span className="brand-specialty-badge">
+                    {activeBrandInfo.specialty}
+                  </span>
+                )}
+              </div>
+              <p className="brand-intro-description">
+                {activeBrandInfo.shortDescription}
+              </p>
+              <div className="brand-intro-footer">
+                {activeBrandInfo.website && (
+                  <a
+                    href={activeBrandInfo.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="brand-website-link"
+                  >
+                    Visit {activeBrandInfo.name} Official Website <ArrowUpRight size={15} />
+                  </a>
+                )}
+                <button
+                  type="button"
+                  onClick={() => setQuote(true)}
+                  className="brand-inquiry-link"
+                >
+                  Request quote for {activeBrandInfo.name} equipment <ArrowUpRight size={14} />
+                </button>
+              </div>
             </div>
           )}
 

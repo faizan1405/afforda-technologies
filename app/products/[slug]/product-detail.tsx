@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Crosshair, MessageCircle, Plus, Minus, FileText } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
-import { AffordaWarranty } from '@/components/site/afforda-warranty';
+import { VortexVipWarranty } from '@/components/site/vortex-vip-warranty';
 import { brandDescriptions, categories, products, whatsAppUrl, getRelatedProducts, type Product } from '@/lib/catalogue';
 
 export default function ProductDetail({ product }: { product: Product }) {
@@ -106,7 +106,7 @@ export default function ProductDetail({ product }: { product: Product }) {
 
           <p className="detail-availability">Configuration, availability and delivery confirmed with your quotation.</p>
 
-          <AffordaWarranty brand={product.brand} />
+          {product.brand === 'Vortex Optics' && <VortexVipWarranty />}
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '12px' }}>
             {product.datasheetUrl && (

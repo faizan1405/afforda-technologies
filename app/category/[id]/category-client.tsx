@@ -42,6 +42,16 @@ interface CategoryClientProps {
   category: Category;
 }
 
+const CANONICAL_SURVEYING_TAGS = [
+  'GNSS / RTK Receivers',
+  'Handheld GPS',
+  'Data Collectors & Controllers',
+  'Total Stations & Levels',
+  'Compasses & Field Measurement',
+  'Survey Accessories',
+  'Remote Sensing & Drones',
+];
+
 export default function CategoryClient({ category }: CategoryClientProps) {
   const [quote, setQuote] = useState(false);
   const [quoteEquipment, setQuoteEquipment] = useState('');
@@ -49,9 +59,11 @@ export default function CategoryClient({ category }: CategoryClientProps) {
 
   const categoryProducts = products.filter(p => productBelongsToCategory(p, category.id));
 
-  // Extract tags for filtering (excluding generic category names)
-  const availableTags = Array.from(new Set(categoryProducts.flatMap(p => p.tags || [])))
-    .filter(tag => tag !== category.name && tag !== 'GPS, Survey & Mapping Products');
+  // Extract tags for filtering (canonical taxonomy for surveying, deduplicated tags for others)
+  const availableTags = category.id === 'surveying'
+    ? CANONICAL_SURVEYING_TAGS.filter(tag => categoryProducts.some(p => p.tags?.includes(tag)))
+    : Array.from(new Set(categoryProducts.flatMap(p => p.tags || [])))
+        .filter(tag => tag !== category.name && tag !== 'GPS, Survey & Mapping Products');
 
   const displayedProducts = activeTag
     ? categoryProducts.filter(p => p.tags?.includes(activeTag))
@@ -102,7 +114,7 @@ export default function CategoryClient({ category }: CategoryClientProps) {
             </button>
             {category.id === 'forestry' && (
               <a className="button button-outline" href="/categories/forest-wildlife">
-                Explore 5 subcategories <ArrowUpRight size={18} />
+                Explore 6 subcategories <ArrowUpRight size={18} />
               </a>
             )}
           </div>

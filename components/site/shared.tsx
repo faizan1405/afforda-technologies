@@ -1,8 +1,8 @@
 'use client';
 import { useState, type FormEvent } from 'react';
-import { ArrowUpRight, ArrowRight } from 'lucide-react';
+import { ArrowUpRight, ArrowRight, Mail } from 'lucide-react';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-import { whatsAppUrl, COMPANY_PHONE_PRIMARY, COMPANY_PHONE_SECONDARY } from '@/lib/catalogue';
+import { whatsAppUrl, COMPANY_PHONE_PRIMARY, COMPANY_PHONE_SECONDARY, COMPANY_EMAIL } from '@/lib/catalogue';
 
 export { Header } from './header';
 
@@ -86,7 +86,7 @@ export function QuoteDialog({ open, onOpenChange, equipment = '' }: { open: bool
           </form>
         )}
 
-        {/* Replaced Visible Phone Number with Two WhatsApp Icon Action Buttons */}
+        {/* Replaced Visible Phone Number with Two WhatsApp Icon Action Buttons & Direct Email */}
         <div className="dialog-whatsapp-section">
           <span className="dialog-whatsapp-label">Direct WhatsApp Inquiries:</span>
           <div className="dialog-whatsapp-buttons">
@@ -113,6 +113,19 @@ export function QuoteDialog({ open, onOpenChange, equipment = '' }: { open: bool
               <ArrowUpRight size={14} />
             </a>
           </div>
+        </div>
+
+        <div className="dialog-email-section">
+          <span className="dialog-whatsapp-label">Direct Email Inquiries:</span>
+          <a
+            className="dialog-email-btn"
+            href={`mailto:${COMPANY_EMAIL}`}
+            aria-label={`Email AFFORDA Technologies at ${COMPANY_EMAIL}`}
+          >
+            <Mail size={16} />
+            <span>{COMPANY_EMAIL}</span>
+            <ArrowUpRight size={14} />
+          </a>
         </div>
       </DialogContent>
     </Dialog>
@@ -150,7 +163,7 @@ export function Footer({ onQuote }: { onQuote: () => void }) {
             Request a quote <ArrowUpRight size={20} />
           </button>
           
-          {/* Replaced Visible Phone Text with Two WhatsApp Icon Action Buttons */}
+          {/* Replaced Visible Phone Text with Two WhatsApp Icon Action Buttons & Direct Email */}
           <div className="footer-whatsapp-group">
             <span className="footer-whatsapp-eyebrow">DIRECT WHATSAPP FIELD SUPPORT</span>
             <div className="footer-whatsapp-buttons">
@@ -174,6 +187,19 @@ export function Footer({ onQuote }: { onQuote: () => void }) {
               >
                 <WhatsAppIcon size={20} />
                 <span>Field Solutions &amp; Support</span>
+                <ArrowUpRight size={16} />
+              </a>
+            </div>
+
+            <div className="footer-email-section">
+              <span className="footer-whatsapp-eyebrow">DIRECT EMAIL INQUIRIES</span>
+              <a
+                className="footer-email-btn"
+                href={`mailto:${COMPANY_EMAIL}`}
+                aria-label={`Email AFFORDA Technologies at ${COMPANY_EMAIL}`}
+              >
+                <Mail size={18} />
+                <span>{COMPANY_EMAIL}</span>
                 <ArrowUpRight size={16} />
               </a>
             </div>

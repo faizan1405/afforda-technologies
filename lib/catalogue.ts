@@ -120,7 +120,7 @@ export const products: Product[] = [
   { slug:'garmin-montana-700',name:'Montana® 700',brand:'Garmin',category:'navigation',image:'montana',gallery:['montana'],label:'TOUCHSCREEN GPS',summary:'Large-format navigation for journeys on foot or by vehicle, combining a 5-inch touchscreen with outdoor navigation sensors.',specs:[['Display','5-inch touchscreen'],['Positioning','Multiple GNSS networks'],['Battery life','18+ hours in GPS mode'],['Navigation sensors','Altimeter, barometer, compass'],['Mapping','Routable roads and trails']],features:['Large touchscreen for clear map viewing','Rugged construction for outdoor navigation','ABC sensors for awareness in the field','Mapping support for roads and trails'],page:15,subcategories:['defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','defense','mining'],tags:['GPS/GNSS Devices','GPS'] },
   { slug:'ralcam-h408b',name:'H408B Borescope',brand:'Ralcam',category:'inspection',image:'ralcam',gallery:['ralcam'],label:'ARTICULATING INSPECTION',summary:'Inspect confined spaces with an articulating camera and a dedicated display, built for automotive and machinery inspection.',specs:[['Display','4.3-inch'],['Camera resolution','1920 × 1080'],['Probe diameter','8.5 mm'],['Battery','Replaceable 2,600 mAh'],['Lighting','10 adjustable LEDs']],features:['Articulating lens for difficult viewing angles','Capture images and video','High-temperature protection','Dedicated screen for on-site inspections'],page:17,subcategories:['mining-inspection'],categoryIds:['inspection','mining'] },
   { slug:'brutforce-field-radio',name:'BFR-001 License-Free Walkie-Talkie',brand:'BRUTFORCE',category:'communication',image:'radio',gallery:['radio','radio-side'],label:'LICENSE-FREE FIELD RADIO',summary:'License-free two-way field radio operating on the 446 MHz band with 16 channels, up to 5 km line-of-sight range, and a long-life 2,600 mAh Li-ion battery.',specs:[['Model','BFR-001'],['Frequency range','446.00–446.02 MHz (License-free UHF)'],['Channels','16 pre-programmed channels with CTCSS/DCS'],['Operating range','Up to 5 km (line-of-sight depending on terrain)'],['Battery','2,600 mAh Li-ion rechargeable battery'],['Operating temperature','−25°C to +55°C'],['Compliance','WPC Approved (License-free in India)']],features:['16 pre-set channels with CTCSS/DCS sub-codes for private team coordination','Up to 5 km range depending on line-of-sight for field and mountain operations','WPC approved for license-free professional operation across India','Rugged compact housing with voice-operated VOX and emergency alert'],page:34,subcategories:['field-communication-expedition-support','defense-communication','defense-field-operations'],categoryIds:['communication','geology','defense'],tags:['Field Radios'] },
-  { slug:'brunton-compro-transit',name:'ComPro™ Composite Transit F-5008',brand:'Brunton',category:'geology',image:'compro',gallery:['compro'],label:'COMPOSITE POCKET TRANSIT',summary:'Ultralight composite transit housing professional transit internals with induction dampening, precision NdFeB cast magnet, and dual sighting tools.',specs:[['Model','ComPro™ Composite Transit F-5008'],['Body Material','Composite body material (reduces weight & protects against magnetic interference)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° or quad options)'],['Clinometer Accuracy','±0.5° with 1° graduations (90° range or 100% grade scale)'],['Declination Adjustment','Tool-free magnetic declination adjustment (±180°)'],['Magnetic System','NdFeB rare-earth cast magnet needle on sapphire jewel bearing'],['Dampening','Induction dampening for rapid needle settling'],['Sighting System','Precision sighting mirror with sighting hole and sighting line'],['Environmental','Waterproof sealed housing'],['Mounting','Tripod mountable with standard ball-and-socket tripod mount']],features:['Composite body reduces overall carry weight and eliminates local magnetic interference','Precision compass azimuth accuracy of ±0.5° with 1° graduations','Vertical clinometer provides ±0.5° accuracy with 1° graduations and 10-minute vernier reading','Cast NdFeB rare-earth disc magnet on sapphire jewel bearing delivers rapid, reliable settling','Tool-free magnetic declination adjustment allows swift true north calibration in the field','Waterproof sealed body designed to withstand harsh outdoor geological and mine environments','Precision sighting mirror with see-through window and front/rear sighting guides','Ball and socket tripod mount compatibility for stabilized station mapping'],page:30,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining','surveying'],tags:['Geological Compasses / Pocket Transits'] },
+  { slug:'brunton-compro-transit',name:'ComPro™ Composite Transit F-5008',brand:'Brunton',category:'geology',image:'compro',gallery:['compro'],label:'COMPOSITE POCKET TRANSIT',summary:'Ultralight composite transit housing professional transit internals with induction dampening, precision NdFeB cast magnet, and dual sighting tools.',specs:[['Model','ComPro™ Composite Transit F-5008'],['Body Material','Composite body material (reduces weight & protects against magnetic interference)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° or quad options)'],['Clinometer Accuracy','±0.5° with 1° graduations (90° range or 100% grade scale)'],['Declination Adjustment','Tool-free magnetic declination adjustment (±180°)'],['Magnetic System','NdFeB rare-earth cast magnet needle on sapphire jewel bearing'],['Dampening','Induction dampening for rapid needle settling'],['Sighting System','Precision sighting mirror with sighting hole and sighting line'],['Environmental','Waterproof sealed housing'],['Mounting','Tripod mountable with standard ball-and-socket tripod mount']],features:['Composite body reduces overall carry weight and eliminates local magnetic interference','Precision compass azimuth accuracy of ±0.5° with 1° graduations','Vertical clinometer provides ±0.5° accuracy with 1° graduations and 10-minute vernier reading','Cast NdFeB rare-earth disc magnet on sapphire jewel bearing delivers rapid, reliable settling','Tool-free magnetic declination adjustment allows swift true north calibration in the field','Waterproof sealed body designed to withstand harsh outdoor geological and mine environments','Precision sighting mirror with see-through window and front/rear sighting guides','Ball and socket tripod mount compatibility for stabilized station mapping'],page:30,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining','surveying'],tags:['Compasses & Field Measurement', 'Geological Compasses / Pocket Transits'] },
   { slug:'brunton-f-5012-axis',name:'Axis™ Pocket Transit F-5012',brand:'Brunton',category:'geology',image:'brunton-f-5012-axis',gallery:['brunton-f-5012-axis'],label:'AXIS POCKET TRANSIT',summary:'Patented dual-axis pocket transit enabling simultaneous measurement of strike and dip, trend and plunge, dip and dip direction, and bearings on a single setup.',specs:[['Model','Axis™ Pocket Transit F-5012'],['Hinge Design','Dual-axis hollow hinge allows measurement of strike & dip simultaneously'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° or 0–90° quad)'],['Clinometer Accuracy','±0.5° with 1° graduations'],['Declination Adjustment','Tool-free adjustable magnetic declination ±180°'],['Bearing / Dampening','Sapphire jewel bearing with induction damping'],['Level Vials','Internal tubular and circular level vials'],['Water Resistance','IPX7 / waterproof and submersible to 3 m for 30 min'],['Body Construction','CNC-machined hard-anodized aluminum body'],['Mounting','Tripod mountable with standard ball-and-socket mount']],features:['Dual-axis hollow hinge allows simultaneous measurement of strike and dip on any bedding surface (contact, foliation, or lineation)','High-precision compass azimuth accuracy of ±0.5° with 1° graduations','Vertical clinometer accuracy of ±0.5° with 1° graduations for dip and vertical angles','NdFeB cast rare-earth magnet mounted on sapphire jewel bearing with induction damping','Tool-free magnetic declination adjustment adjustable to ±180°','IPX7 waterproof construction submersible to 3 meters for 30 minutes','CNC-machined hard-anodized aluminum body designed for rugged field longevity','Internal circular and tubular level vials for stabilized direct-contact and sighting operations'],page:31,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Geological Compasses / Pocket Transits'] },
   { slug:'minox-nvd-650',name:'NVD 650',brand:'MINOX',category:'thermal',image:'minox',gallery:['minox','minox-back'],label:'DIGITAL NIGHT VISION',summary:'A digital monocular with an IR emitter and recording capability for observation in low-light field conditions.',specs:[['Optical magnification','6×'],['Digital magnification','5×'],['IR wavelength','850 nm'],['IR range','Up to 350 m'],['Use','Day and night']],features:['Built-in IR emitter','Night recording functionality','Rail for additional IR illumination','Daytime use supported'],page:45,subcategories:['defense-night','defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['thermal','defense','forestry'],tags:['Thermal & Night Observation','Night Vision Devices','Infrared Observation'] },
   { slug:'suunto-mc2',name:'MC-2 Mirror Compass',brand:'Suunto',category:'navigation',image:'suunto',gallery:['suunto'],label:'PRECISION NAVIGATION',summary:'A sighting compass with a mirror, clinometer and adjustable declination correction for considered route finding.',specs:[['Needle','Jewel-bearing steel'],['Capsule','Liquid-filled'],['Declination','Adjustable correction'],['Measurement','Sighting and clinometer'],['Variant','Confirm hemisphere and scale']],features:['Sighting mirror and notch for bearings','Luminescent markings for low light','Baseplate with magnifying lens','Detachable snap-lock lanyard'],page:41,subcategories:['defense-navigation','defense-field-operations'],categoryIds:['navigation','defense'],tags:['Compasses','Forestry Compasses'] },
@@ -579,7 +579,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory', 'gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['Forest Measurement & Inventory', 'Laser Rangefinder']
+    tags: ['Compasses & Field Measurement', 'Laser Rangefinder', 'Forest Measurement & Inventory']
   },
 
   // =========================================================================
@@ -643,7 +643,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products', 'geological-field-mapping', 'mining-mapping'],
     categoryIds: ['surveying', 'forestry', 'geology', 'mining'],
-    tags: ['GNSS / RTK Receivers', 'RTK / DGPS', 'GPS / GNSS Receivers', 'GPS, Survey & Mapping Products']
+    tags: ['GNSS / RTK Receivers']
   },
   {
     slug: 'geomate-gbase-gnss',
@@ -689,7 +689,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products', 'mining-mapping'],
     categoryIds: ['surveying', 'forestry', 'mining'],
-    tags: ['GNSS / RTK Receivers', 'RTK / DGPS', 'GPS, Survey & Mapping Products']
+    tags: ['GNSS / RTK Receivers']
   },
   {
     slug: 'geomate-sg6l-gnss',
@@ -735,7 +735,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products', 'geological-field-mapping', 'mining-mapping'],
     categoryIds: ['surveying', 'forestry', 'geology', 'mining'],
-    tags: ['GNSS / RTK Receivers', 'RTK / DGPS', 'GPS / GNSS Receivers', 'GPS, Survey & Mapping Products']
+    tags: ['GNSS / RTK Receivers']
   },
   {
     slug: 'geomate-fc2-controller',
@@ -780,7 +780,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products', 'mining-rugged', 'defense-rugged'],
     categoryIds: ['surveying', 'forestry', 'computing', 'mining'],
-    tags: ['GNSS Controllers', 'GPS, Survey & Mapping Products']
+    tags: ['Data Collectors & Controllers']
   },
   {
     slug: 'professional-gnss-receiver',
@@ -813,7 +813,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GNSS / RTK Receivers', 'GPS, Survey & Mapping Products']
+    tags: ['GNSS / RTK Receivers']
   },
   {
     slug: 'rtk-dgps',
@@ -845,7 +845,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GNSS / RTK Receivers', 'RTK / DGPS', 'GPS, Survey & Mapping Products']
+    tags: ['GNSS / RTK Receivers']
   },
   {
     slug: 'sub-meter-gps',
@@ -873,7 +873,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Sub-meter GPS']
+    tags: ['GNSS / RTK Receivers']
   },
   {
     slug: 'centimeter-mm-accuracy-gnss',
@@ -901,7 +901,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Precision GNSS']
+    tags: ['GNSS / RTK Receivers']
   },
   {
     slug: 'electronic-data-collector',
@@ -929,7 +929,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Data Collector']
+    tags: ['Data Collectors & Controllers']
   },
   {
     slug: 'digital-compass',
@@ -957,7 +957,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Digital Compass']
+    tags: ['Compasses & Field Measurement']
   },
   {
     slug: 'staff-compass',
@@ -985,7 +985,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Staff Compass']
+    tags: ['Compasses & Field Measurement']
   },
   {
     slug: 'altimeter',
@@ -1013,7 +1013,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Altimeter']
+    tags: ['Compasses & Field Measurement']
   },
   {
     slug: 'total-station',
@@ -1041,7 +1041,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Total Station']
+    tags: ['Total Stations & Levels']
   },
   {
     slug: 'automatic-level',
@@ -1069,7 +1069,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Automatic Level']
+    tags: ['Total Stations & Levels']
   },
   {
     slug: 'survey-tripod',
@@ -1097,7 +1097,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Survey Tripod']
+    tags: ['Survey Accessories']
   },
   {
     slug: 'measuring-rod',
@@ -1125,7 +1125,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Measuring Rod']
+    tags: ['Survey Accessories']
   },
   {
     slug: 'plot-markers',
@@ -1153,7 +1153,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Plot Markers']
+    tags: ['Survey Accessories']
   },
   {
     slug: 'flagging-tape',
@@ -1181,7 +1181,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Flagging Tape']
+    tags: ['Survey Accessories']
   },
   {
     slug: 'field-data-recorder',
@@ -1209,7 +1209,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Field Data Recorder']
+    tags: ['Data Collectors & Controllers']
   },
 
   // --- Remote Sensing & Drones ---
@@ -1238,7 +1238,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying', 'navigation'],
-    tags: ['GPS, Survey & Mapping Products', 'Remote Sensing & Drones', 'UAV / Drone', 'Aerial Survey']
+    tags: ['Remote Sensing & Drones']
   },
   {
     slug: 'multispectral-camera',
@@ -1265,7 +1265,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Remote Sensing & Drones', 'Multispectral Camera', 'Aerial Survey']
+    tags: ['Remote Sensing & Drones']
   },
   {
     slug: 'lidar-system',
@@ -1292,7 +1292,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Remote Sensing & Drones', 'LiDAR System', 'Aerial Survey']
+    tags: ['Remote Sensing & Drones']
   },
   {
     slug: 'forestry-boundary-mapping-services',
@@ -1320,7 +1320,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GPS, Survey & Mapping Products', 'Remote Sensing & Drones', 'Service / Mapping', 'Forestry Boundary Mapping']
+    tags: ['Remote Sensing & Drones']
   },
 
   // =========================================================================
@@ -2586,7 +2586,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping & Expedition', 'Field Tent']
+    tags: ['Camping & Expedition', 'Camping Tents', 'Field Tent']
   },
   {
     slug: 'sleeping-bag',
@@ -2613,7 +2613,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping & Expedition', 'Sleeping Bag']
+    tags: ['Camping & Expedition', 'Sleeping Bags & Bedding', 'Sleeping Bag']
   },
   {
     slug: 'backpack',
@@ -2640,7 +2640,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping & Expedition', 'Backpack']
+    tags: ['Camping & Expedition', 'Backpacks & Field Carry', 'Backpack']
   },
   {
     slug: 'field-shelter',
@@ -2667,7 +2667,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping & Expedition', 'Field Shelter']
+    tags: ['Camping & Expedition', 'Shelters & Canopies', 'Field Shelter']
   },
 
   // --- Field Safety / PPE ---
@@ -3641,7 +3641,7 @@ export const products: Product[] = [
     page: 14,
     subcategories: ['geological-field-mapping', 'mining-survey', 'mining-distance'],
     categoryIds: ['surveying', 'geology', 'mining'],
-    tags: ['Laser Distance Meters', 'Distance Measurement']
+    tags: ['Compasses & Field Measurement', 'Laser Distance Meters', 'Distance Measurement']
   },
 
   // --- 5. Field Notebooks, Pens & Measuring Tools ---
@@ -3671,7 +3671,7 @@ export const products: Product[] = [
     page: 31,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'surveying', 'mining'],
-    tags: ['Field Notebooks', 'Survey Books', 'Geological Scales']
+    tags: ['Survey Accessories', 'Field Notebooks', 'Survey Books', 'Geological Scales']
   },
   {
     slug: 'edding-mapping-pen-01',
@@ -3828,7 +3828,7 @@ export const products: Product[] = [
     page: 32,
     subcategories: ['geological-field-mapping', 'mining-survey', 'mining-distance'],
     categoryIds: ['geology', 'surveying', 'mining'],
-    tags: ['Measuring Tapes', 'Field Measuring Rods', 'Geological Scales']
+    tags: ['Survey Accessories', 'Measuring Tapes', 'Field Measuring Rods', 'Geological Scales']
   },
 
   // --- 6. Mineral Hardness & Property Testing ---
@@ -4588,7 +4588,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'forest-measurement-inventory', 'wildlife-monitoring-surveillance', 'mining-survey'],
     categoryIds: ['optics', 'defense', 'forestry', 'mining', 'surveying'],
-    tags: ['Laser Rangefinders', 'Rangefinders', 'Observation Optics']
+    tags: ['Compasses & Field Measurement', 'Laser Rangefinders', 'Rangefinders', 'Observation Optics']
   },
 
   {
@@ -4624,7 +4624,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'forest-measurement-inventory', 'wildlife-monitoring-surveillance', 'mining-survey'],
     categoryIds: ['optics', 'defense', 'forestry', 'mining', 'surveying'],
-    tags: ['Laser Rangefinders', 'Rangefinders', 'Observation Optics']
+    tags: ['Compasses & Field Measurement', 'Laser Rangefinders', 'Rangefinders', 'Observation Optics']
   },
 
   {
@@ -4766,7 +4766,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance', 'mining-survey'],
     categoryIds: ['optics', 'defense', 'forestry', 'surveying'],
-    tags: ['Tripods & Supports', 'Observation Optics']
+    tags: ['Survey Accessories', 'Tripods & Supports', 'Observation Optics']
   },
 
   {
@@ -4800,7 +4800,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance', 'mining-survey'],
     categoryIds: ['optics', 'defense', 'forestry', 'surveying'],
-    tags: ['Tripods & Supports', 'Observation Optics']
+    tags: ['Survey Accessories', 'Tripods & Supports', 'Observation Optics']
   },
 
   {
@@ -4834,7 +4834,7 @@ export const products: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance', 'mining-survey'],
     categoryIds: ['optics', 'defense', 'forestry', 'surveying'],
-    tags: ['Tripods & Supports', 'Observation Optics']
+    tags: ['Survey Accessories', 'Tripods & Supports', 'Observation Optics']
   },
 
   {
@@ -5833,6 +5833,7 @@ export function productBelongsToCategory(product: Product, categoryId: string) {
 }
 export const COMPANY_PHONE_PRIMARY = '919818320178';
 export const COMPANY_PHONE_SECONDARY = '919555903186';
+export const COMPANY_EMAIL = 'affordaindia@gmail.com';
 
 export const whatsAppUrl = (message: string, phone: string = COMPANY_PHONE_PRIMARY) =>
   `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
