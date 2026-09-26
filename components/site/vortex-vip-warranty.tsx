@@ -1,16 +1,14 @@
+import { ExternalLink } from 'lucide-react';
 
-interface AffordaWarrantyProps {
-  brand?: string;
+interface VortexVipWarrantyProps {
   className?: string;
 }
 
-export function AffordaWarranty({ brand, className = '' }: AffordaWarrantyProps) {
-  const isVortex = brand?.toLowerCase().includes('vortex');
-
+export function VortexVipWarranty({ className = '' }: VortexVipWarrantyProps) {
   return (
     <aside
-      className={`afforda-warranty-card ${className}`}
-      aria-label="AFFORDA VIP Lifetime Warranty"
+      className={`vortex-warranty-card ${className}`}
+      aria-label="Vortex VIP Lifetime Warranty"
     >
       <div className="warranty-inner">
         {/* Shield Badge Visual */}
@@ -61,9 +59,9 @@ export function AffordaWarranty({ brand, className = '' }: AffordaWarrantyProps)
           <div className="warranty-header-row">
             <span className="warranty-kicker">
               <span className="warranty-status-dot" />
-              AFFORDA VIP WARRANTY
+              VORTEX VIP® WARRANTY
             </span>
-            <span className="warranty-coverage-tag">SELLER LIFETIME COMMITMENT</span>
+            <span className="warranty-coverage-tag">MANUFACTURER LIFETIME WARRANTY</span>
           </div>
 
           <h3 className="warranty-headline">
@@ -71,14 +69,18 @@ export function AffordaWarranty({ brand, className = '' }: AffordaWarrantyProps)
           </h3>
 
           <p className="warranty-description">
-            Every product supplied by AFFORDA Technologies is covered under the AFFORDA VIP Warranty — our lifetime warranty commitment for products supplied through AFFORDA. For warranty support, eligibility, service process, and applicable terms, please contact our team.
+            Coverage is provided by Vortex Optics and is subject to Vortex&apos;s official warranty terms and regional eligibility.
           </p>
 
-          {isVortex && (
-            <p className="vortex-note">
-              * Official Vortex Optics products also carry the manufacturer’s VIP Lifetime Warranty.
-            </p>
-          )}
+          <a
+            className="warranty-terms-link"
+            href="https://vortexoptics.com/vip-warranty"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>View official warranty terms</span>
+            <ExternalLink size={14} />
+          </a>
         </div>
       </div>
     </aside>

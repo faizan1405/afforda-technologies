@@ -165,6 +165,27 @@ export const navigationBrands: BrandNavItem[] = [
     specialty: 'Precision Geological Transits & Levels',
     code: 'DEU',
     href: '/products?brand=Breithaupt+Kassel'
+  },
+  {
+    name: 'Husqvarna',
+    queryParam: 'Husqvarna',
+    specialty: 'Chainsaws & Forestry Power Equipment',
+    code: 'SWE',
+    href: '/products?brand=Husqvarna'
+  },
+  {
+    name: 'Coleman',
+    queryParam: 'Coleman',
+    specialty: 'Expedition Camping & Field Tents',
+    code: 'USA',
+    href: '/products?brand=Coleman'
+  },
+  {
+    name: 'Firefly Fire Pumps',
+    queryParam: 'Firefly Fire Pumps',
+    specialty: 'Portable Wildfire Suppression Pumps',
+    code: 'PMP',
+    href: '/products?brand=Firefly+Fire+Pumps'
   }
 ];
 
@@ -192,6 +213,18 @@ export function matchProductBrand(product: Product, brandFilter: string): boolea
   }
   if (filter.includes('northern')) {
     return pb.includes('northern');
+  }
+  if (filter.includes('husqvarna')) {
+    return pb.includes('husqvarna') || slug.includes('husqvarna') || name.includes('husqvarna');
+  }
+  if (filter.includes('coleman')) {
+    return pb.includes('coleman') || slug.includes('coleman') || name.includes('coleman');
+  }
+  if (filter.includes('firefly')) {
+    return pb.includes('firefly') || slug.includes('firefly') || name.includes('firefly');
+  }
+  if (filter.includes('browning')) {
+    return pb.includes('browning') || slug.includes('browning') || name.includes('browning');
   }
   return pb === filter || pb.includes(filter);
 }

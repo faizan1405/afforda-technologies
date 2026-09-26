@@ -3,6 +3,7 @@ export type SpecializedSubcategory = {
   name: string;
   slug: string;
   tags?: string[];
+  image?: string;
 };
 
 export type SpecializedCategory = {
@@ -27,48 +28,56 @@ export const defenseCategory: SpecializedCategory = {
       id: 'defense-thermal',
       name: 'Thermal Imaging & Detection',
       slug: 'thermal-imaging-detection',
+      image: '/images/thermal.webp',
       tags: ['Thermal Monoculars', 'Thermal Cameras', 'Mobile Thermal Imaging'],
     },
     {
       id: 'defense-night',
       name: 'Night Vision Systems',
       slug: 'night-vision-systems',
+      image: '/images/nightfox-vulpes.webp',
       tags: ['Night Vision Binoculars', 'Night Vision Monoculars', 'IR Illumination'],
     },
     {
       id: 'defense-surveillance',
       name: 'Surveillance & Monitoring',
       slug: 'surveillance-monitoring',
+      image: '/images/cctv-surveillance-camera.webp',
       tags: ['Cellular Trail Cameras', 'Wi-Fi Trail Cameras', 'Wildlife Cameras', 'Body-Worn Cameras', 'Observation Optics'],
     },
     {
       id: 'defense-navigation',
       name: 'Navigation & GPS',
       slug: 'navigation-gps',
+      image: '/images/garmin-gpsmap-65.webp',
       tags: ['Handheld GPS', 'GPS/GNSS Devices', 'Compasses'],
     },
     {
       id: 'defense-optics',
       name: 'Optics & Observation',
       slug: 'optics-observation',
+      image: '/images/swarovski-optik-binoculars.webp',
       tags: ['Binoculars', 'Spotting Scopes', 'Laser Rangefinders', 'Rifle Scopes', 'Tripods & Supports'],
     },
     {
       id: 'defense-communication',
       name: 'Communication Systems',
       slug: 'communication-systems',
+      image: '/images/motorola-mototrbo-r2.webp',
       tags: ['Two-Way Radios', 'P25 / Multi-Protocol Radios', 'Field Communications'],
     },
     {
       id: 'defense-rugged',
       name: 'Rugged Computing',
       slug: 'rugged-computing',
+      image: '/images/toughbook.webp',
       tags: ['Rugged Tablets', 'Rugged Laptops'],
     },
     {
       id: 'defense-field-operations',
       name: 'Field Operations Products',
       slug: 'field-operations-products',
+      image: '/images/field-headlamps.webp',
       tags: ['Torches', 'Headlamps', 'Helmet-Mounted Lights', 'Infrared Search Lights'],
     },
   ],
@@ -82,12 +91,12 @@ export const miningCategory: SpecializedCategory = {
   image: 'geology',
   mission: 'Explore existing geological instruments, mapping equipment, inspection tools and rugged computing for field work.',
   subcategories: [
-    { id: 'mining-field-mapping', name: 'Geological Field & Mapping Products', slug: 'geological-field-mapping-products' },
-    { id: 'mining-survey', name: 'Geological Survey & Measurement', slug: 'geological-survey-measurement' },
-    { id: 'mining-mapping', name: 'Mapping / GNSS', slug: 'mapping-gnss' },
-    { id: 'mining-compasses', name: 'Geological Compasses & Pocket Transits', slug: 'geological-compasses-pocket-transits' },
-    { id: 'mining-inspection', name: 'Field Inspection', slug: 'field-inspection' },
-    { id: 'mining-rugged', name: 'Rugged Computing', slug: 'rugged-computing' },
-    { id: 'mining-distance', name: 'Distance Measurement', slug: 'distance-measurement' },
+    { id: 'mining-field-mapping', name: 'Geological Field & Mapping Products', slug: 'geological-field-mapping-products', image: '/images/estwing-rock-pick-square-head-e6-24pc.webp' },
+    { id: 'mining-survey', name: 'Geological Survey & Measurement', slug: 'geological-survey-measurement', image: '/images/brunton-geo-pocket-transit-f-5010.webp' },
+    { id: 'mining-mapping', name: 'Mapping / GNSS', slug: 'mapping-gnss', image: '/images/geomate-gnss-receiver.webp' },
+    { id: 'mining-compasses', name: 'Geological Compasses & Pocket Transits', slug: 'geological-compasses-pocket-transits', image: '/images/brunton-f-5012-axis.webp' },
+    { id: 'mining-inspection', name: 'Field Inspection', slug: 'field-inspection', image: '/images/geo-premier-triplet-hand-lens.webp' },
+    { id: 'mining-rugged', name: 'Rugged Computing', slug: 'rugged-computing', image: '/images/toughbook.webp' },
+    { id: 'mining-distance', name: 'Distance Measurement', slug: 'distance-measurement', image: '/images/leica-disto-laser-distance-meter.webp' },
   ],
 };
