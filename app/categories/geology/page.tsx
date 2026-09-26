@@ -42,7 +42,7 @@ export default function GeologyCategory() {
         <div className="mission-grid">
           {geologySubcategories.map((sub, index) => (
             <a key={sub.id} href={`/categories/geology/${sub.slug}`} className="mission mission-geology reveal is-visible">
-               <img src="/images/geology.webp" alt={sub.name} loading="lazy" width={700} height={850}/>
+               <img src={sub.image || '/images/geology.webp'} alt={sub.name} loading="lazy" width={700} height={850}/>
                <div className="mission-overlay"/>
                <div className="mission-top"><span>SUB / {(index+1).toString().padStart(2, '0')}</span><Mountain size={21}/></div>
                <div className="mission-content">
