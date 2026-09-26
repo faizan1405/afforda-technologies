@@ -30,7 +30,7 @@ export const forestSubcategories: ForestSubcategory[] = [
     slug: 'forest-fire-fighting-products',
     code: 'SUB / 03',
     description: 'Wildfire suppression pumps, Pulaski axes, McLeod tools, drip torches, fire shelters and weather kits.',
-    image: '/images/portable-fire-pump.webp',
+    image: '/images/firefly-black-hawk-bh1-4h.webp',
   },
   {
     id: 'wildlife-monitoring-surveillance',
@@ -38,7 +38,7 @@ export const forestSubcategories: ForestSubcategory[] = [
     slug: 'wildlife-monitoring-surveillance',
     code: 'SUB / 04',
     description: 'Wildlife monitoring, observation, acoustic recording, thermal imaging, tracking and surveillance products for ecological research, forest patrol and field studies.',
-    image: '/images/gardepro-x50s-cellular.webp',
+    image: '/images/browning-strike-force-fhdr40.webp',
   },
   {
     id: 'forestry-camping-safety-climate-products',
@@ -46,7 +46,7 @@ export const forestSubcategories: ForestSubcategory[] = [
     slug: 'forestry-camping-safety-climate-products',
     code: 'SUB / 05',
     description: 'Field support products for forestry expeditions, safety, weather monitoring, and portable power in remote environments.',
-    image: '/images/field-tent.webp',
+    image: '/images/coleman-weathermaster-10-person-tent.webp',
   },
   {
     id: 'forestry-tools-cutting-equipment',
@@ -54,7 +54,7 @@ export const forestSubcategories: ForestSubcategory[] = [
     slug: 'forestry-tools-cutting-equipment',
     code: 'SUB / 06',
     description: 'Chainsaws, forestry cutting tools and field-maintenance equipment for felling, limbing, pruning and professional forest operations.',
-    image: '/images/chainsaw-protection.webp',
+    image: '/images/husqvarna-550-xp-mark-ii.webp',
   },
 ];
 

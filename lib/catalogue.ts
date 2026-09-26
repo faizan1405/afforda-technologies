@@ -22,6 +22,9 @@ export type Product = {
   datasheetUrl?: string;
 };
 
+import { forestryPhase4Products } from './catalogue-phase4-forestry';
+import { campingPhase4Products } from './catalogue-phase4-camping';
+
 export const categories = [
   { id: 'forestry', name: 'Forestry & Wildlife', short: 'Into the wild.', subtitle: 'Observe without disturbing.', mission: 'Wildlife monitoring, habitat research and remote observation.', image: 'forest', code: 'BIO / 01' },
   { id: 'geology', name: 'Geological Products', short: 'Read the earth.', subtitle: 'Every layer tells a story.', mission: 'Map structures, measure bearings and document the ground beneath your feet.', image: 'geology', code: 'GEO / 02' },
@@ -36,7 +39,7 @@ export const categories = [
   { id: 'mining', name: 'Mining & Geology', short: 'Read the terrain.', subtitle: 'Measure the ground.', mission: 'Explore existing geological instruments, mapping equipment, inspection tools and rugged computing for field work.', image: 'geology', code: 'GEO / 11' },
 ] as const;
 
-export const products: Product[] = [
+const baseProducts: Product[] = [
   // --- Existing Field Technology Products (Preserved & Cleaned of Legacy Subcategories) ---
   {
     slug: 'vortex-viper-hd',
@@ -5739,7 +5742,16 @@ export const products: Product[] = [
   }
 ];
 
+export const products: Product[] = [
+  ...baseProducts,
+  ...forestryPhase4Products,
+  ...campingPhase4Products,
+];
+
 export const brandDescriptions: Record<string,string> = {
+  'Coleman':'Historic outdoor equipment maker providing rugged weatherproof tents, expedition sleeping bags, portable camp stoves, cots, and reliable field illumination.',
+  'Husqvarna':'Swedish global leader in professional chainsaws, clearing saws, and outdoor power equipment engineered for tree care, logging, and heavy-duty forest operations.',
+  'Firefly Fire Pumps':'High-capacity portable fire pumps and mobile water delivery systems designed for forest fire suppression, wildland firefighting, and emergency rescue.',
   'Swarovski Optik':'Austrian manufacturer of world-class premium precision long-range spotting scopes and high-performance observation optics.',
   'Motorola Solutions':'Global leader in mission-critical wireless communications, rugged tactical two-way radios, and secure digital defense networks.',
   'Kenwood':'Leading developer of mission-critical multi-protocol VHF and UHF digital transceivers, tactical two-way radios, and professional communications.',

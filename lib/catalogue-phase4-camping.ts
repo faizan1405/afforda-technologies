@@ -24,7 +24,6 @@ export const campingPhase4Products: Product[] = [
       ['Setup System', 'Color-coded steel and fiberglass pole structure with pin-and-ring system'],
       ['Electrical Access', 'E-Port power extension cord access point'],
       ['Weight', 'Approx. 33.8 lbs (15.3 kg)'],
-      ['Manufacturer Warranty', '1-Year Limited Warranty']
     ],
     features: [
       'WeatherTec™ system features patented welded tub-style floor corners and inverted seams to keep rain out',
@@ -59,7 +58,6 @@ export const campingPhase4Products: Product[] = [
       ['Ventilation', 'Variflo™ adjustable ventilation system and reverse-angle windows'],
       ['Weight', 'Approx. 35.9 lbs (16.3 kg)'],
       ['Electrical Access', 'E-Port access for exterior power routing'],
-      ['Manufacturer Warranty', '1-Year Limited Warranty']
     ],
     features: [
       'Attached 9 x 6 ft screen room provides a shaded, insect-free staging area for fieldwork notes, meals, and boot storage',
@@ -94,7 +92,6 @@ export const campingPhase4Products: Product[] = [
       ['Door', 'Extra-wide D-door for easy gear maneuvering'],
       ['Storage', 'Mesh interior storage pockets and gear loft'],
       ['Weight', 'Approx. 16.6 lbs (7.5 kg)'],
-      ['Manufacturer Warranty', '1-Year Limited Warranty']
     ],
     features: [
       'Pre-attached quick-pitch fiberglass poles enable field crews to pitch the complete tent in under 5 minutes',
@@ -133,7 +130,6 @@ export const campingPhase4Products: Product[] = [
       ['Zipper System', 'ZipPlow™ patented 2-way snag-free heavy-duty zipper'],
       ['Accessories', 'Matching flannel pillow included'],
       ['Packing System', 'Roll Control™ fasteners and Quick Cord™ one-person tie system'],
-      ['Manufacturer Warranty', '5-Year Limited Warranty']
     ],
     features: [
       'Engineered for sub-freezing forestry camps with an official 0°F (-18°C) extreme cold weather comfort rating',
@@ -168,7 +164,6 @@ export const campingPhase4Products: Product[] = [
       ['Hood System', 'Semi-sculpted adjustable hood with cinch drawstring'],
       ['Draft Protection', 'Thermolock™ draft tube and insulated shoulder collar'],
       ['Weight', 'Approx. 5.8 lbs (2.6 kg)'],
-      ['Manufacturer Warranty', '5-Year Limited Warranty']
     ],
     features: [
       'Mummy silhouette with sculpted hood efficiently retains core body warmth in frigid sub-zero field environments',
@@ -203,7 +198,6 @@ export const campingPhase4Products: Product[] = [
       ['Draft Protection', 'Thermolock™ zipper draft baffle'],
       ['Zipper', 'ZipPlow™ 2-way snag-free zipper; compatible with second bag zip-together'],
       ['Packing', 'Roll Control™ locking pins and Quick Cord™ system'],
-      ['Manufacturer Warranty', '5-Year Limited Warranty']
     ],
     features: [
       'Comfort-rated for 20°F down to freezing, ideal for spring, autumn, and mountain forestry field missions',
@@ -243,7 +237,6 @@ export const campingPhase4Products: Product[] = [
       ['Leg Adjustment', 'Comfort Grip™ pinch-free button telescoping legs with 3 height settings'],
       ['Transport', 'Heavy-duty wheeled carry bag with dual handles included'],
       ['Weight', 'Approx. 43.4 lbs (19.7 kg)'],
-      ['Manufacturer Warranty', '1-Year Limited Warranty']
     ],
     features: [
       'OnePeak™ center hub allows a single field researcher to extend and lock the entire canopy with one central push',
@@ -279,7 +272,6 @@ export const campingPhase4Products: Product[] = [
       ['Internal Clearance', 'Engineered to fit completely over standard 6–8 ft camp picnic tables'],
       ['Weight', 'Approx. 47.9 lbs (21.7 kg)'],
       ['Portability', 'Wheeled storage bag with pull handle included'],
-      ['Manufacturer Warranty', '1-Year Limited Warranty']
     ],
     features: [
       'High-density insect-proof mesh walls keep biting flies, mosquitoes, and ticks out of camp mess and work spaces',
@@ -314,7 +306,6 @@ export const campingPhase4Products: Product[] = [
       ['Weight', 'Approx. 32.6 lbs (14.8 kg)'],
       ['Carry System', 'Compact wheeled transport bag included'],
       ['Anchoring', 'Heavy-duty ground stakes and pre-attached guy lines included'],
-      ['Manufacturer Warranty', '1-Year Limited Warranty']
     ],
     features: [
       'Optimized lightweight steel frame weighs just 32.6 lbs, making it significantly easier to carry across rough ground',
@@ -353,7 +344,6 @@ export const campingPhase4Products: Product[] = [
       ['Folded Dimensions', 'Approx. 38 in x 8 in x 4 in (97 cm x 20 cm x 10 cm)'],
       ['Weight', 'Approx. 18.2 lbs (8.3 kg)'],
       ['Accessories', 'Heavy-duty carry bag with shoulder strap included'],
-      ['Manufacturer Warranty', '1-Year Limited Warranty']
     ],
     features: [
       'Elevates field personnel 17 inches above rocky, damp, uneven, or snake-inhabited forest floors',
@@ -388,7 +378,6 @@ export const campingPhase4Products: Product[] = [
       ['Elevation', '17 in (43 cm) height above ground level'],
       ['Folded Dimensions', '40 in x 6 in x 6 in (102 cm x 15 cm x 15 cm)'],
       ['Weight', 'Approx. 21 lbs (9.5 kg)'],
-      ['Manufacturer Warranty', '1-Year Limited Warranty']
     ],
     features: [
       'Extra-long 80-inch frame comfortably supports taller field specialists and researchers up to 6 ft 6 in',
@@ -422,7 +411,6 @@ export const campingPhase4Products: Product[] = [
       ['Storage Features', 'Mesh beverage holder on right armrest + hanging side gear pocket'],
       ['Folded Portability', 'Compact quad-folding design with carry bag and shoulder strap'],
       ['Weight', 'Approx. 8.8 lbs (4.0 kg)'],
-      ['Manufacturer Warranty', '1-Year Limited Warranty']
     ],
     features: [
       'Built-in insulated soft cooler in the armrest keeps cold beverages or sample vials chilled within arm reach',
@@ -461,7 +449,6 @@ export const campingPhase4Products: Product[] = [
       ['Charging Cable', 'USB-to-USB-C charging cord nests neatly inside base compartment'],
       ['Bail Handle', 'Large folding steel bail handle with built-in hanging carabiner'],
       ['Indicators', 'LED battery state-of-charge charge indicator lights'],
-      ['Manufacturer Warranty', '3-Year Limited Warranty']
     ],
     features: [
       'High-powered 800-lumen output illuminates large field camps, mess shelters, and equipment staging bays',
@@ -496,7 +483,6 @@ export const campingPhase4Products: Product[] = [
       ['Form Factor', 'Compact field footprint suitable for tabletop or hanging placement'],
       ['Construction', 'Impact-resistant polycarbonate globe and polymer housing'],
       ['Weight', 'Approx. 1.2 lbs (0.54 kg)'],
-      ['Manufacturer Warranty', '3-Year Limited Warranty']
     ],
     features: [
       'Compact 400-lumen illumination provides warm, glare-free light ideal for tent cabins and mapping tables',
@@ -531,7 +517,6 @@ export const campingPhase4Products: Product[] = [
       ['Device Charging', 'USB 5V/1A charging port for mobile devices and instruments'],
       ['Water Resistance', 'IPX4 water-resistant engineering'],
       ['Beam Range', 'Up to 15 meters on high'],
-      ['Manufacturer Warranty', '3-Year Limited Warranty']
     ],
     features: [
       'Four detachable panels allow 4 crew members to take individual handheld lights while base keeps camp lit',
@@ -570,7 +555,6 @@ export const campingPhase4Products: Product[] = [
       ['Construction', 'Heavy-gauge stamped steel case with folding lid and heavy-duty latch'],
       ['Grate Type', 'Heavy-duty removable nickel-chrome plated steel cooking grate'],
       ['Weight', 'Approx. 12 lbs (5.4 kg)'],
-      ['Manufacturer Warranty', '5-Year Limited Warranty']
     ],
     features: [
       'Dual Fuel™ engineering operates on Coleman® Liquid Fuel or automotive unleaded gasoline found in any field post',
@@ -605,7 +589,6 @@ export const campingPhase4Products: Product[] = [
       ['Cooktop Cleanup', 'Removable chrome-plated grate and aluminized steel cooktop'],
       ['Chassis', 'Painted steel casing with recessed carry handle and secure front latch'],
       ['Weight', 'Approx. 17.5 lbs (7.9 kg)'],
-      ['Manufacturer Warranty', '3-Year Limited Warranty']
     ],
     features: [
       '3-in-1 cooking versatility allows simultaneous or alternating use of standard burner, flat griddle, and ribbed grill',
@@ -640,7 +623,6 @@ export const campingPhase4Products: Product[] = [
       ['Cooktop Surface', 'Aluminized steel cooktop for rust prevention and easy wiping'],
       ['Transport Features', 'Heavy-duty steel case with secure front latch and built-in handle'],
       ['Weight', 'Approx. 11.2 lbs (5.1 kg)'],
-      ['Manufacturer Warranty', '3-Year Limited Warranty']
     ],
     features: [
       'High-output dual burners deliver 22,000 total BTUs to rapidly boil water and prepare hot rations in cold weather',

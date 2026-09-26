@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { ArrowUpRight, Mountain, ArrowLeft } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
 import { geologySubcategories } from '@/lib/geology-categories';
+import { resolveImagePath } from '@/lib/utils';
 
 export default function GeologyCategory() {
   const [quote, setQuote] = useState(false);
@@ -42,7 +43,7 @@ export default function GeologyCategory() {
         <div className="mission-grid">
           {geologySubcategories.map((sub, index) => (
             <a key={sub.id} href={`/categories/geology/${sub.slug}`} className="mission mission-geology reveal is-visible">
-               <img src={sub.image || '/images/geology.webp'} alt={sub.name} loading="lazy" width={700} height={850}/>
+               <img src={resolveImagePath(sub.image, 'geology')} alt={sub.name} loading="lazy" width={700} height={850}/>
                <div className="mission-overlay"/>
                <div className="mission-top"><span>SUB / {(index+1).toString().padStart(2, '0')}</span><Mountain size={21}/></div>
                <div className="mission-content">

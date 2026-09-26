@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { ArrowUpRight, Trees, Navigation, Flame, ArrowLeft, Binoculars, Tent, Axe } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
 import { forestSubcategories } from '@/lib/forest-categories';
+import { resolveImagePath } from '@/lib/utils';
 
 const subcategoryIcons = [Trees, Navigation, Flame, Binoculars, Tent, Axe];
 
@@ -47,7 +48,7 @@ export default function ForestWildlifeCategory() {
         <div className="mission-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))' }}>
           {forestSubcategories.map((sub, index) => {
             const Icon = subcategoryIcons[index % subcategoryIcons.length];
-            const bgImage = sub.image || '/images/forest.webp';
+            const bgImage = resolveImagePath(sub.image, 'forest');
             return (
               <a key={sub.id} href={`/categories/forest-wildlife/${sub.slug}`} className="mission mission-forestry reveal is-visible">
                 <img src={bgImage} alt={sub.name} loading="lazy" width={700} height={850}/>
