@@ -26,6 +26,7 @@ import { forestryPhase4Products } from './catalogue-phase4-forestry';
 import { campingPhase4Products } from './catalogue-phase4-camping';
 import { phase5Phase1Products } from './catalogue-phase5';
 import { phase5Phase2aProducts } from './catalogue-phase5-phase2a';
+import { phase5Phase2bProducts } from './catalogue-phase5-phase2b';
 
 export const categories = [
   { id: 'forestry', name: 'Forestry & Wildlife', short: 'Into the wild.', subtitle: 'Observe without disturbing.', mission: 'Wildlife monitoring, habitat research and remote observation.', image: 'forest', code: 'BIO / 01' },
@@ -5785,6 +5786,7 @@ export const products: Product[] = [
   ...campingPhase4Products,
   ...phase5Phase1Products,
   ...phase5Phase2aProducts,
+  ...phase5Phase2bProducts,
 ];
 
 export const brandDescriptions: Record<string,string> = {
@@ -5810,8 +5812,8 @@ export const brandDescriptions: Record<string,string> = {
   'Panasonic Toughbook':'Rugged computing platforms configured for mobile professional work.',
   'DGPS solutions':'Tell us your survey accuracy, correction network and field workflow requirements. Our team will help identify an appropriate DGPS solution.',
   'Suunto':'Dependable sighting compasses and navigation tools for the field.',
-  'MINOX':'Digital night vision for observation beyond daylight.',
-  'Open Acoustic Devices':'Compact acoustic loggers for ecological research and wildlife monitoring.',
+  'MINOX':'German precision observation optics, high-performance binoculars, and covert wildlife trail cameras for field research and game monitoring.',
+  'Open Acoustic Devices':'Pioneering open-source autonomous bioacoustic loggers, underwater acoustic monitors, and ultrasonic sensors for biodiversity research.',
   'Breithaupt Kassel':'Precision German stratum compasses, geological pocket transits, and surveying instruments crafted since 1762.',
   'Estwing':'The standard in solid steel geological hammers, rock picks, and chisels forged in the USA since 1923.',
   'Leica Geosystems':'Industry benchmark precision measuring solutions, total stations, and laser distance meters.',
@@ -5833,13 +5835,14 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
     'Mapping & Navigation': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-gpsmap-65s', 'professional-gnss-receiver', 'rtk-dgps', 'laser-rangefinder', 'uav-drone', 'suunto-kb-14-360'],
     'Remote Sensing & Drones': ['uav-drone', 'multispectral-camera', 'lidar-system', 'forestry-boundary-mapping-services'],
     'Fire Suppression': ['backpack-fire-pump', 'portable-fire-pump', 'firefly-black-hawk-bh1-4h', 'firefly-black-panther-bp4', 'firefly-mfp-275-p', 'firefly-mfp-800-p', 'firefly-mfp-1300-p', 'pulaski-forestry-axe', 'drip-torch', 'fire-weather-meter'],
-    'Wildlife monitoring': ['browning-strike-force-pro-dcl', 'audiomoth', 'song-meter-micro-2', 'wildlife-acoustics-song-meter-sm4bat-fs', 'vortex-triumph-hd-10x42', 'ir-camera-trap', 'gps-wildlife-tracking-collar', 'solar-cctv-camera', 'cctv-surveillance-camera'],
-    'Night observation': ['hikmicro-lynx-lh25', 'minox-nvd-650', 'nightfox-swift-2-pro', 'nightfox-prowl'],
+    'Wildlife monitoring': ['browning-strike-force-pro-dcl', 'audiomoth', 'hydromoth', 'audiomoth-gps', 'song-meter-micro-2', 'wildlife-acoustics-song-meter-sm4bat-fs', 'vortex-triumph-hd-10x42', 'minox-dtc-460', 'minox-dtc-1200', 'keepguard-kg795', 'keepguard-kw561', 'keepguard-kw571-4g', 'keepguard-kg891', 'ir-camera-trap', 'gps-wildlife-tracking-collar', 'solar-cctv-camera', 'cctv-surveillance-camera'],
+    'Night observation': ['hikmicro-lynx-lh25', 'minox-nvd-650', 'seek-thermal-reveal-pro', 'nightfox-swift-2-pro', 'nightfox-prowl'],
     'Camping, Safety & Power': ['field-tent', 'helmet', 'husqvarna-technical-forest-helmet', 'husqvarna-functional-chainsaw-chaps', 'weather-monitoring-kit', 'portable-power-station'],
   },
   'Surveying & Mapping': {
     'Navigation': ['garmin-gpsmap-65s', 'garmin-montana-700', 'suunto-kb-14-360'],
     'DGPS positioning': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'rtk-dgps', 'professional-gnss-receiver'],
+    'Distance measurement': ['leica-disto-laser-distance-meter', 'leica-disto-d5', 'leica-disto-x6', 'leica-na730-plus', 'leica-rugby-610'],
     'Field computing': ['geomate-fc2-controller', 'panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2', 'panasonic-toughbook-33', 'panasonic-toughbook-s1', 'electronic-data-collector'],
   },
   'Geology & Research': {
@@ -5852,23 +5855,23 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
     'Sample sieving & analysis': ['200mm-glenammer-sieves', 'geo-sieves'],
     'Expedition communication & hydration': ['brutforce-field-radio', 'lifestraw-go-series'],
   },
-  'Industrial Inspection': { 'Confined-space inspection':['ralcam-h408b'], 'Thermal observation':['hikmicro-e20-plus','hikmicro-lynx-lh25', 'hikmicro-m30'], 'Field computing':['panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2'] },
-  'Field Operations': { 'Team communication':['brutforce-field-radio', 'kenwood-tk-3701d', 'kenwood-nx-1300de'], 'Navigation':['garmin-gpsmap-65s','suunto-mc2', 'suunto-kb-14-360', 'suunto-race-2'], 'Night observation':['hikmicro-lynx-lh25','minox-nvd-650', 'nightfox-swift-2-pro'] },
+  'Industrial Inspection': { 'Confined-space inspection':['ralcam-h408b'], 'Thermal observation':['hikmicro-e20-plus','hikmicro-lynx-lh25', 'hikmicro-m30', 'seek-thermal-reveal-pro', 'seek-thermal-compactpro'], 'Field computing':['panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2'] },
+  'Field Operations': { 'Team communication':['brutforce-field-radio', 'kenwood-tk-3701d', 'kenwood-nx-1300de', 'motorola-mototrbo-r2', 'motorola-mototrbo-r7', 'motorola-mototrbo-dp4400e', 'motorola-mototrbo-dp4801e', 'motorola-sl1600'], 'Navigation':['garmin-gpsmap-65s','suunto-mc2', 'suunto-kb-14-360', 'suunto-race-2'], 'Night observation':['hikmicro-lynx-lh25','minox-nvd-650', 'nightfox-swift-2-pro'] },
   'Defense & Paramilitary': {
-    'Thermal Imaging':['hikmicro-lynx-lh25'],
+    'Thermal Imaging':['hikmicro-lynx-lh25', 'seek-thermal-reveal-pro', 'seek-thermal-reveal-firepro-x', 'seek-thermal-attackpro'],
     'Night Vision':['minox-nvd-650', 'nightfox-swift-2-pro', 'nightfox-prowl'],
     'GPS / Navigation':['garmin-gpsmap-65s','garmin-montana-700','suunto-mc2', 'suunto-kb-14-360', 'suunto-mb-6-global', 'suunto-race-2'],
-    'Binoculars / Optics':['vortex-viper-hd','vortex-diamondback-hd'],
-    'Communication':['brutforce-field-radio', 'kenwood-nx-5200-vhf', 'kenwood-nx-5300-uhf', 'kenwood-tk-3701d', 'kenwood-nx-1300de', 'kenwood-nx-3320e'],
+    'Binoculars / Optics':['vortex-viper-hd','vortex-diamondback-hd', 'swarovski-el-10x42', 'swarovski-nl-pure-10x42', 'swarovski-atx-interior-85', 'swarovski-cl-companion-8x30', 'minox-x-active-8x44', 'minox-x-lite-10x42'],
+    'Communication':['brutforce-field-radio', 'kenwood-nx-5200-vhf', 'kenwood-nx-5300-uhf', 'kenwood-tk-3701d', 'kenwood-nx-1300de', 'kenwood-nx-3320e', 'motorola-mototrbo-r2', 'motorola-mototrbo-r7', 'motorola-mototrbo-dp4400e', 'motorola-mototrbo-dp4801e', 'motorola-sl1600'],
     'Rugged Computing':['panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2', 'panasonic-toughbook-33', 'panasonic-toughbook-s1'],
-    'Surveillance / Monitoring':['browning-strike-force-pro-dcl','hikmicro-lynx-lh25','minox-nvd-650', 'nightfox-swift-2-pro'],
+    'Surveillance / Monitoring':['browning-strike-force-pro-dcl','hikmicro-lynx-lh25','minox-nvd-650', 'nightfox-swift-2-pro', 'cp-plus-4g-solar-ptz-camera', 'cp-plus-outdoor-ir-bullet', 'cp-plus-25x-network-ptz', 'cp-plus-16ch-4k-nvr', 'keepguard-kg795', 'keepguard-kw571-4g'],
   },
   'Mining & Geology': {
     'Geological Survey': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'breithaupt-3030-cocla', 'breithaupt-necli', 'breithaupt-cobru', 'brunton-omnislope', 'estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-plastic-gold-pan', 'estwing-steel-gold-pan'],
     'Mapping / GNSS': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-gpsmap-65s', 'garmin-gpsmap-65', 'garmin-etrex-se', 'garmin-montana-700'],
     'Compasses / Pocket Transits': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'breithaupt-3030-cocla', 'breithaupt-cobru', 'suunto-kb-14-360', 'suunto-mb-6-global'],
     'Geological Hammers / Rock Picks': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-rock-chisels'],
-    'Distance Measurement': ['leica-disto-laser-distance-meter', 'garmin-gpsmap-65s', 'garmin-montana-700'],
+    'Distance Measurement': ['leica-disto-laser-distance-meter', 'leica-disto-d5', 'leica-disto-x6', 'leica-na730-plus', 'leica-rugby-610', 'garmin-gpsmap-65s', 'garmin-montana-700'],
     'Rugged Computing': ['geomate-fc2-controller', 'panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2', 'panasonic-toughbook-33', 'panasonic-toughbook-s1'],
     'Field Inspection': ['geo-premier-triplet-hand-lens', 'ralcam-h408b'],
   },
