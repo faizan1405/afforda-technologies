@@ -27,6 +27,7 @@ import { campingPhase4Products } from './catalogue-phase4-camping';
 import { phase5Phase1Products } from './catalogue-phase5';
 import { phase5Phase2aProducts } from './catalogue-phase5-phase2a';
 import { phase5Phase2bProducts } from './catalogue-phase5-phase2b';
+import { phase5Phase2cProducts } from './catalogue-phase5-phase2c';
 
 export const categories = [
   { id: 'forestry', name: 'Forestry & Wildlife', short: 'Into the wild.', subtitle: 'Observe without disturbing.', mission: 'Wildlife monitoring, habitat research and remote observation.', image: 'forest', code: 'BIO / 01' },
@@ -5787,6 +5788,7 @@ export const products: Product[] = [
   ...phase5Phase1Products,
   ...phase5Phase2aProducts,
   ...phase5Phase2bProducts,
+  ...phase5Phase2cProducts,
 ];
 
 export const brandDescriptions: Record<string,string> = {
@@ -5807,6 +5809,7 @@ export const brandDescriptions: Record<string,string> = {
   'Brunton':'Tools for reading the earth. Explore geological transits and precision field compasses.',
   'Browning':'Observe life in the wild with dedicated trail-camera technology.',
   'Brutforce':'Keep field teams connected with portable communication products.',
+  'BRUTFORCE':'High-output searchlights, digital relay mesh radios, and license-free field communications engineered for remote expeditions and rugged terrain.',
   'Ralcam':'Reach difficult spaces with articulating inspection camera systems.',
   'HIKMICRO':'See temperature and heat signatures with portable thermal imaging.',
   'Panasonic Toughbook':'Rugged computing platforms configured for mobile professional work.',
@@ -5847,16 +5850,16 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
   },
   'Geology & Research': {
     'Compass & transit measurement': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'breithaupt-3030-cocla', 'breithaupt-necli', 'breithaupt-cobru', 'suunto-kb-14-360', 'suunto-mb-6-global', 'brunton-omnislope'],
-    'Rock sampling & hammers': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-rock-chisels', 'estwing-plastic-gold-pan', 'estwing-steel-gold-pan'],
-    'Magnification & loupes': ['geo-premier-triplet-hand-lens', 'geological-hand-lens'],
+    'Rock sampling & hammers': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-rock-chisels', 'faithfull-chisel-point-crowbar', 'faithfull-sledge-hammer-10lb', 'faithfull-wrecking-bar', 'faithfull-cold-chisel-guard', 'estwing-plastic-gold-pan', 'estwing-steel-gold-pan'],
+    'Magnification & loupes': ['geo-premier-triplet-hand-lens', 'geo-premier-triplet-20x', 'geo-premier-uv-led-10x', 'geo-premier-dual-triplet', 'geo-premier-triplet-15x', 'geological-hand-lens'],
     'Mapping & GNSS': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-etrex-se', 'garmin-gpsmap-65', 'garmin-gpsmap-65s'],
-    'Field notebooks & measuring': ['chartwell-collimation-book-2426', 'edding-mapping-pen-01', 'edding-8014-laboratory-marker', 'edding-750-industrial-paint-marker', 'geological-measuring-tape'],
+    'Field notebooks & measuring': ['chartwell-collimation-book-2426', 'chartwell-level-book-2416', 'chartwell-field-book-2026', 'chartwell-dimension-book-2242', 'chartwell-cross-section-2114', 'staedtler-pigment-liner-mapping-pen', 'staedtler-mars-technico-780', 'staedtler-lumocolor-352', 'staedtler-lumocolor-duo-348', 'staedtler-lumocolor-316', 'edding-mapping-pen-01', 'edding-8014-laboratory-marker', 'edding-750-industrial-paint-marker', 'geological-measuring-tape'],
     'Mineral property testing': ['tungsten-carbide-scriber-with-magnet-black', 'mohs-hardness-tile', 'streak-plates-white', 'acid-bottles'],
     'Sample sieving & analysis': ['200mm-glenammer-sieves', 'geo-sieves'],
-    'Expedition communication & hydration': ['brutforce-field-radio', 'lifestraw-go-series'],
+    'Expedition communication & hydration': ['brutforce-field-radio', 'brutforce-bfr-002', 'brutforce-bfr-030i', 'lifestraw-go-series', 'lifestraw-peak-series-personal-straw', 'lifestraw-peak-series-squeeze-1l', 'lifestraw-peak-series-gravity-3l', 'lifestraw-community'],
   },
-  'Industrial Inspection': { 'Confined-space inspection':['ralcam-h408b'], 'Thermal observation':['hikmicro-e20-plus','hikmicro-lynx-lh25', 'hikmicro-m30', 'seek-thermal-reveal-pro', 'seek-thermal-compactpro'], 'Field computing':['panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2'] },
-  'Field Operations': { 'Team communication':['brutforce-field-radio', 'kenwood-tk-3701d', 'kenwood-nx-1300de', 'motorola-mototrbo-r2', 'motorola-mototrbo-r7', 'motorola-mototrbo-dp4400e', 'motorola-mototrbo-dp4801e', 'motorola-sl1600'], 'Navigation':['garmin-gpsmap-65s','suunto-mc2', 'suunto-kb-14-360', 'suunto-race-2'], 'Night observation':['hikmicro-lynx-lh25','minox-nvd-650', 'nightfox-swift-2-pro'] },
+  'Industrial Inspection': { 'Confined-space inspection':['ralcam-h408b', 'ralcam-f606a', 'ralcam-h406b', 'ralcam-f408a', 'ralcam-f406a'], 'Thermal observation':['hikmicro-e20-plus','hikmicro-lynx-lh25', 'hikmicro-m30', 'seek-thermal-reveal-pro', 'seek-thermal-compactpro'], 'Field computing':['panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2'] },
+  'Field Operations': { 'Team communication':['brutforce-field-radio', 'brutforce-bfr-002', 'brutforce-bfr-030i', 'brutforce-bfb-005', 'kenwood-tk-3701d', 'kenwood-nx-1300de', 'motorola-mototrbo-r2', 'motorola-mototrbo-r7', 'motorola-mototrbo-dp4400e', 'motorola-mototrbo-dp4801e', 'motorola-sl1600'], 'Navigation':['garmin-gpsmap-65s','suunto-mc2', 'suunto-kb-14-360', 'suunto-race-2'], 'Night observation':['hikmicro-lynx-lh25','minox-nvd-650', 'nightfox-swift-2-pro'] },
   'Defense & Paramilitary': {
     'Thermal Imaging':['hikmicro-lynx-lh25', 'seek-thermal-reveal-pro', 'seek-thermal-reveal-firepro-x', 'seek-thermal-attackpro'],
     'Night Vision':['minox-nvd-650', 'nightfox-swift-2-pro', 'nightfox-prowl'],
@@ -5870,10 +5873,10 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
     'Geological Survey': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'breithaupt-3030-cocla', 'breithaupt-necli', 'breithaupt-cobru', 'brunton-omnislope', 'estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-plastic-gold-pan', 'estwing-steel-gold-pan'],
     'Mapping / GNSS': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-gpsmap-65s', 'garmin-gpsmap-65', 'garmin-etrex-se', 'garmin-montana-700'],
     'Compasses / Pocket Transits': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'breithaupt-3030-cocla', 'breithaupt-cobru', 'suunto-kb-14-360', 'suunto-mb-6-global'],
-    'Geological Hammers / Rock Picks': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-rock-chisels'],
+    'Geological Hammers / Rock Picks': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-rock-chisels', 'faithfull-chisel-point-crowbar', 'faithfull-sledge-hammer-10lb', 'faithfull-wrecking-bar', 'faithfull-cold-chisel-guard'],
     'Distance Measurement': ['leica-disto-laser-distance-meter', 'leica-disto-d5', 'leica-disto-x6', 'leica-na730-plus', 'leica-rugby-610', 'garmin-gpsmap-65s', 'garmin-montana-700'],
     'Rugged Computing': ['geomate-fc2-controller', 'panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2', 'panasonic-toughbook-33', 'panasonic-toughbook-s1'],
-    'Field Inspection': ['geo-premier-triplet-hand-lens', 'ralcam-h408b'],
+    'Field Inspection': ['geo-premier-triplet-hand-lens', 'geo-premier-triplet-20x', 'geo-premier-uv-led-10x', 'ralcam-h408b', 'ralcam-f606a', 'ralcam-h406b'],
   },
 };
 
