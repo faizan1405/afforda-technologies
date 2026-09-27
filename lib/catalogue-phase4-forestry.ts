@@ -6,6 +6,7 @@ export const forestryPhase4Products: Product[] = [
   // =========================================================================
   {
     slug: 'browning-strike-force-fhdr40',
+    aliases: ['browning-strike-force-fhdr', 'strike-force-fhdr'],
     name: 'Strike Force FHDR40',
     brand: 'Browning',
     category: 'forestry',

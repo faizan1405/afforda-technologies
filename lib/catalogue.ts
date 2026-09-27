@@ -24,6 +24,7 @@ export type Product = {
 
 import { forestryPhase4Products } from './catalogue-phase4-forestry';
 import { campingPhase4Products } from './catalogue-phase4-camping';
+import { phase5Phase1Products } from './catalogue-phase5';
 
 export const categories = [
   { id: 'forestry', name: 'Forestry & Wildlife', short: 'Into the wild.', subtitle: 'Observe without disturbing.', mission: 'Wildlife monitoring, habitat research and remote observation.', image: 'forest', code: 'BIO / 01' },
@@ -82,7 +83,41 @@ const baseProducts: Product[] = [
   { slug:'hikmicro-lynx-lh25',name:'LYNX LH25 2.0',brand:'HIKMICRO',category:'thermal',image:'lynx',gallery:['lynx','lynx-side'],label:'THERMAL MONOCULAR',summary:'A compact thermal monocular that reveals subtle heat signatures, with a sensitive detector and a detailed OLED view.',specs:[['Detector resolution','384 × 288'],['Lens','25 mm, F1.0'],['Thermal sensitivity','NETD <20 mK'],['Detection range','Up to 1,200 m'],['Weight','275 g'],['Battery life','Up to 6.5 hours']],features:['12 μm detector with high thermal sensitivity','1024 × 768 OLED display','Replaceable rechargeable Li-ion battery','Compact and ergonomic field design'],page:40,subcategories:['defense-thermal','defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['thermal','defense','forestry'],tags:['Thermal & Night Observation','Thermal Cameras','Thermal Monoculars','Infrared Observation'] },
   { slug:'browning-strike-force-pro-dcl',name:'Strike Force Pro DCL',brand:'Browning',category:'forestry',image:'browning',gallery:['browning'],label:'WILDLIFE TRAIL CAMERA',summary:'Dual camera lens technology captures the field by day and night, with a fast trigger for fleeting wildlife encounters.',specs:[['Image resolution','26 megapixels'],['Trigger speed','0.15 seconds'],['Flash range','Up to 130 ft'],['Viewing screen','1.5-inch color'],['Lens system','Dual camera lens technology']],features:['Separate lens technology optimized for day and night','Fast trigger for wildlife monitoring','On-camera color viewing screen','Long-range flash capability'],page:21,subcategories:['defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['forestry','defense'],tags:['Camera Traps'] },
   { slug:'brunton-geolite',name:'Geo Lite™ Transit F-5030',brand:'Brunton',category:'geology',image:'geolite-open',gallery:['geolite-open','geolite'],label:'GEOLOGICAL TRANSIT COMPASS',summary:'Compact aluminum geological transit combining direct-read azimuth measurement with a hinge clinometer for strike and dip field readings.',specs:[['Model','Geo Lite™ Transit F-5030'],['Body Construction','Compact aluminum body (approx. 30% smaller than full-size transit)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° azimuth scale)'],['Vertical Angle','±1° with 1° graduations (±90° range)'],['Declination Adjustment','Tool-free magnetic declination adjustment ±180°'],['Needle Dampening','Induction damped needle on sapphire jewel suspension'],['Leveling Vials','Dual bubble vials (circular and tubular)'],['Sighting System','Precision mirror with sighting hole and sighting line'],['Protection','Silicone protective cover included'],['Mounting','Tripod mountable with 1/4-20 threading']],features:['Compact lightweight aluminum body roughly 30% smaller than traditional pocket transits','High-precision azimuth accuracy of ±0.5° with 1° graduations on a 0–360° scale','Integrated vertical clinometer reads slope and dip to ±1° across ±90° range','User-friendly tool-free magnetic declination adjustment with ±180° range','Induction damped needle stabilizes quickly for fast and repeatable field readings','Dual bubble vials (tubular and circular) ensure perfect level alignment','Reflective sighting mirror with center sighting hole for accurate bearing acquisition','Supplied with custom silicone protective cover for field impact resistance'],page:27,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Geological Compasses / Pocket Transits','Field Compasses / Baseplate Compasses'] },
-  { slug:'panasonic-toughbook',name:'TOUGHBOOK FZ-55',brand:'Panasonic Toughbook',category:'computing',image:'toughbook',gallery:['toughbook'],label:'RUGGED FIELD COMPUTING',summary:'A modular laptop platform for demanding mobile work. Ask our team to configure a TOUGHBOOK around your field applications.',specs:[['Product family','Panasonic TOUGHBOOK'],['Catalogue model','FZ-55'],['Form factor','Rugged laptop'],['Configuration','Confirmed with your quotation']],features:['Built for mobile field workflows','Flexible configuration options','Suitable for field data collection and review','Project-specific configuration support'],page:47,subcategories:['defense-rugged','defense-field-operations','mining-rugged'],categoryIds:['computing','defense','mining'],tags:['Rugged Tablets'] },
+  {
+    slug: 'panasonic-toughbook-55',
+    aliases: ['panasonic-toughbook', 'toughbook-55', 'panasonic-fz-55'],
+    name: 'Panasonic TOUGHBOOK 55',
+    brand: 'Panasonic Toughbook',
+    category: 'computing',
+    image: 'panasonic-toughbook-55',
+    gallery: ['panasonic-toughbook-55'],
+    label: 'SEMI-RUGGED 14" MODULAR LAPTOP',
+    summary: '14.0-inch semi-rugged modular notebook designed for mobile field professionals, featuring MIL-STD-810H and IP53 certification, up to 1000 nit sunlight-viewable touchscreen, customizable xPAK expansion bays, and up to 38 hours of dual-battery runtime.',
+    specs: [
+      ['Form Factor & Display', '14.0" Active Matrix (TFT) FHD (1920 x 1080) Touchscreen (up to 1,000 cd/m², 10-finger capacitive)'],
+      ['Processor Platform', 'Intel® Core™ i5 / i7 vPro™ processor architecture'],
+      ['System Memory', '16 GB to 64 GB DDR4 RAM'],
+      ['Storage', '512 GB to 2 TB quick-release NVMe OPAL SSD with integrated heater'],
+      ['Rugged Testing & Ingress', 'MIL-STD-810H certified, IP53 water and dust resistance, 91 cm (3-foot) drop tested'],
+      ['Chassis Construction', 'Lightweight magnesium alloy chassis with built-in ergonomic carry handle'],
+      ['Modular Expansion', '3 xPAK expansion bays (Front, Right, Rear) for dedicated GPU, second SSD, or smart card reader'],
+      ['Battery & Runtime', 'Hot-swappable battery system; up to 19 hours with single battery, up to 38 hours with dual batteries'],
+      ['Operating Temperature', '-29°C to +60°C (-20°F to 140°F)'],
+      ['Weight & Dimensions', '345 x 272 x 32.8 mm; approx. 2.08 kg to 2.22 kg']
+    ],
+    features: [
+      'Versatile semi-rugged magnesium construction provides lightweight mobility with 91 cm drop protection',
+      '1000-nit high-brightness display allows effortless outdoor reading with glove and rain touch modes',
+      'Modular xPAK bays allow field-swappable upgrades including fingerprint readers, smart card, and discrete GPU',
+      'Dual battery design delivers exceptional endurance up to 38 hours for multi-day field operations',
+      'Spill-resistant keyboard and ports keep operations running in outdoor rain and dusty survey sites',
+      'Integrated carry handle and slim 32.8 mm profile provide effortless portability across field stations'
+    ],
+    page: 47,
+    subcategories: ['defense-rugged', 'defense-field-operations', 'mining-rugged'],
+    categoryIds: ['computing', 'defense', 'mining'],
+    tags: ['Rugged Laptops', 'Semi-Rugged Computing', 'Defense Computing']
+  },
   {
     slug: 'vortex-diamondback-hd',
     aliases: ['vortex-diamondback-hd-8x42'],
@@ -5360,6 +5395,7 @@ const baseProducts: Product[] = [
 
   {
     slug: 'gardepro-x50s-cellular',
+    aliases: ['gardepro-x50', 'gardepro-x50-cellular'],
     name: 'GardePro X50S Cellular Trail Camera',
     brand: 'GardePro',
     category: 'forestry',
@@ -5746,6 +5782,7 @@ export const products: Product[] = [
   ...baseProducts,
   ...forestryPhase4Products,
   ...campingPhase4Products,
+  ...phase5Phase1Products,
 ];
 
 export const brandDescriptions: Record<string,string> = {
@@ -5801,7 +5838,7 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
   'Surveying & Mapping': {
     'Navigation': ['garmin-gpsmap-65s', 'garmin-montana-700'],
     'DGPS positioning': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'rtk-dgps', 'professional-gnss-receiver'],
-    'Field computing': ['geomate-fc2-controller', 'panasonic-toughbook', 'electronic-data-collector'],
+    'Field computing': ['geomate-fc2-controller', 'panasonic-toughbook-55', 'panasonic-toughbook-40', 'electronic-data-collector'],
   },
   'Geology & Research': {
     'Compass & transit measurement': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'brunton-omnislope'],
@@ -5821,7 +5858,7 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
     'GPS / Navigation':['garmin-gpsmap-65s','garmin-montana-700','suunto-mc2'],
     'Binoculars / Optics':['vortex-viper-hd','vortex-diamondback-hd'],
     'Communication':['brutforce-field-radio'],
-    'Rugged Computing':['panasonic-toughbook'],
+    'Rugged Computing':['panasonic-toughbook-55', 'panasonic-toughbook-40'],
     'Surveillance / Monitoring':['browning-strike-force-pro-dcl','hikmicro-lynx-lh25','minox-nvd-650'],
   },
   'Mining & Geology': {
@@ -5830,7 +5867,7 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
     'Compasses / Pocket Transits': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru'],
     'Geological Hammers / Rock Picks': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-rock-chisels'],
     'Distance Measurement': ['leica-disto-laser-distance-meter', 'garmin-gpsmap-65s', 'garmin-montana-700'],
-    'Rugged Computing': ['geomate-fc2-controller', 'panasonic-toughbook'],
+    'Rugged Computing': ['geomate-fc2-controller', 'panasonic-toughbook-55', 'panasonic-toughbook-40'],
     'Field Inspection': ['geo-premier-triplet-hand-lens', 'ralcam-h408b'],
   },
 };
