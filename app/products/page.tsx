@@ -259,16 +259,6 @@ export default function ProductsPage() {
                 {activeBrandInfo.shortDescription}
               </p>
               <div className="brand-intro-footer">
-                {activeBrandInfo.website && (
-                  <a
-                    href={activeBrandInfo.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="brand-website-link"
-                  >
-                    Visit {activeBrandInfo.name} Official Website <ArrowUpRight size={15} />
-                  </a>
-                )}
                 <button
                   type="button"
                   onClick={() => setQuote(true)}
@@ -280,7 +270,7 @@ export default function ProductsPage() {
             </div>
           )}
 
-          <div className="catalogue-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '2rem', display: 'grid' }}>
+          <div className="catalogue-grid" style={{ padding: 0 }}>
             {filteredProducts.map(p => (
               <a key={p.slug} href={`/products/${p.slug}`} className="product-panel compact-product" style={{ textDecoration: 'none' }}>
                 <div className="product-visual">
