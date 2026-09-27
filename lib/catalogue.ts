@@ -25,6 +25,7 @@ export type Product = {
 import { forestryPhase4Products } from './catalogue-phase4-forestry';
 import { campingPhase4Products } from './catalogue-phase4-camping';
 import { phase5Phase1Products } from './catalogue-phase5';
+import { phase5Phase2aProducts } from './catalogue-phase5-phase2a';
 
 export const categories = [
   { id: 'forestry', name: 'Forestry & Wildlife', short: 'Into the wild.', subtitle: 'Observe without disturbing.', mission: 'Wildlife monitoring, habitat research and remote observation.', image: 'forest', code: 'BIO / 01' },
@@ -5783,6 +5784,7 @@ export const products: Product[] = [
   ...forestryPhase4Products,
   ...campingPhase4Products,
   ...phase5Phase1Products,
+  ...phase5Phase2aProducts,
 ];
 
 export const brandDescriptions: Record<string,string> = {
@@ -5827,47 +5829,47 @@ export const brandDescriptions: Record<string,string> = {
 
 export const finderOptions: Record<string, Record<string, string[]>> = {
   'Forestry & Wildlife': {
-    'Forest Measurement': ['diameter-tape-dbh-tape', 'digital-tree-caliper', 'clinometer', 'hypsometer', 'laser-rangefinder'],
-    'Mapping & Navigation': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'garmin-gpsmap-65s', 'professional-gnss-receiver', 'rtk-dgps', 'laser-rangefinder', 'uav-drone'],
+    'Forest Measurement': ['diameter-tape-dbh-tape', 'digital-tree-caliper', 'clinometer', 'hypsometer', 'laser-rangefinder', 'suunto-pm-5-360'],
+    'Mapping & Navigation': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-gpsmap-65s', 'professional-gnss-receiver', 'rtk-dgps', 'laser-rangefinder', 'uav-drone', 'suunto-kb-14-360'],
     'Remote Sensing & Drones': ['uav-drone', 'multispectral-camera', 'lidar-system', 'forestry-boundary-mapping-services'],
-    'Fire Suppression': ['backpack-fire-pump', 'portable-fire-pump', 'pulaski-forestry-axe', 'drip-torch', 'fire-weather-meter'],
-    'Wildlife monitoring': ['browning-strike-force-pro-dcl', 'audiomoth', 'song-meter-micro-2', 'vortex-triumph-hd-10x42', 'ir-camera-trap', 'gps-wildlife-tracking-collar', 'solar-cctv-camera', 'cctv-surveillance-camera'],
-    'Night observation': ['hikmicro-lynx-lh25', 'minox-nvd-650'],
-    'Camping, Safety & Power': ['field-tent', 'helmet', 'weather-monitoring-kit', 'portable-power-station'],
+    'Fire Suppression': ['backpack-fire-pump', 'portable-fire-pump', 'firefly-black-hawk-bh1-4h', 'firefly-black-panther-bp4', 'firefly-mfp-275-p', 'firefly-mfp-800-p', 'firefly-mfp-1300-p', 'pulaski-forestry-axe', 'drip-torch', 'fire-weather-meter'],
+    'Wildlife monitoring': ['browning-strike-force-pro-dcl', 'audiomoth', 'song-meter-micro-2', 'wildlife-acoustics-song-meter-sm4bat-fs', 'vortex-triumph-hd-10x42', 'ir-camera-trap', 'gps-wildlife-tracking-collar', 'solar-cctv-camera', 'cctv-surveillance-camera'],
+    'Night observation': ['hikmicro-lynx-lh25', 'minox-nvd-650', 'nightfox-swift-2-pro', 'nightfox-prowl'],
+    'Camping, Safety & Power': ['field-tent', 'helmet', 'husqvarna-technical-forest-helmet', 'husqvarna-functional-chainsaw-chaps', 'weather-monitoring-kit', 'portable-power-station'],
   },
   'Surveying & Mapping': {
-    'Navigation': ['garmin-gpsmap-65s', 'garmin-montana-700'],
-    'DGPS positioning': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'rtk-dgps', 'professional-gnss-receiver'],
-    'Field computing': ['geomate-fc2-controller', 'panasonic-toughbook-55', 'panasonic-toughbook-40', 'electronic-data-collector'],
+    'Navigation': ['garmin-gpsmap-65s', 'garmin-montana-700', 'suunto-kb-14-360'],
+    'DGPS positioning': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'rtk-dgps', 'professional-gnss-receiver'],
+    'Field computing': ['geomate-fc2-controller', 'panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2', 'panasonic-toughbook-33', 'panasonic-toughbook-s1', 'electronic-data-collector'],
   },
   'Geology & Research': {
-    'Compass & transit measurement': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'brunton-omnislope'],
+    'Compass & transit measurement': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'breithaupt-3030-cocla', 'breithaupt-necli', 'breithaupt-cobru', 'suunto-kb-14-360', 'suunto-mb-6-global', 'brunton-omnislope'],
     'Rock sampling & hammers': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-rock-chisels', 'estwing-plastic-gold-pan', 'estwing-steel-gold-pan'],
     'Magnification & loupes': ['geo-premier-triplet-hand-lens', 'geological-hand-lens'],
-    'Mapping & GNSS': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'garmin-etrex-se', 'garmin-gpsmap-65', 'garmin-gpsmap-65s'],
-    'Field notebooks & measuring': ['chartwell-collimation-book-2426', 'edding-mapping-pen-01', 'geological-measuring-tape'],
+    'Mapping & GNSS': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-etrex-se', 'garmin-gpsmap-65', 'garmin-gpsmap-65s'],
+    'Field notebooks & measuring': ['chartwell-collimation-book-2426', 'edding-mapping-pen-01', 'edding-8014-laboratory-marker', 'edding-750-industrial-paint-marker', 'geological-measuring-tape'],
     'Mineral property testing': ['tungsten-carbide-scriber-with-magnet-black', 'mohs-hardness-tile', 'streak-plates-white', 'acid-bottles'],
     'Sample sieving & analysis': ['200mm-glenammer-sieves', 'geo-sieves'],
     'Expedition communication & hydration': ['brutforce-field-radio', 'lifestraw-go-series'],
   },
-  'Industrial Inspection': { 'Confined-space inspection':['ralcam-h408b'], 'Thermal observation':['hikmicro-e20-plus','hikmicro-lynx-lh25'], 'Field computing':['panasonic-toughbook'] },
-  'Field Operations': { 'Team communication':['brutforce-field-radio'], 'Navigation':['garmin-gpsmap-65s','suunto-mc2'], 'Night observation':['hikmicro-lynx-lh25','minox-nvd-650'] },
+  'Industrial Inspection': { 'Confined-space inspection':['ralcam-h408b'], 'Thermal observation':['hikmicro-e20-plus','hikmicro-lynx-lh25', 'hikmicro-m30'], 'Field computing':['panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2'] },
+  'Field Operations': { 'Team communication':['brutforce-field-radio', 'kenwood-tk-3701d', 'kenwood-nx-1300de'], 'Navigation':['garmin-gpsmap-65s','suunto-mc2', 'suunto-kb-14-360', 'suunto-race-2'], 'Night observation':['hikmicro-lynx-lh25','minox-nvd-650', 'nightfox-swift-2-pro'] },
   'Defense & Paramilitary': {
     'Thermal Imaging':['hikmicro-lynx-lh25'],
-    'Night Vision':['minox-nvd-650'],
-    'GPS / Navigation':['garmin-gpsmap-65s','garmin-montana-700','suunto-mc2'],
+    'Night Vision':['minox-nvd-650', 'nightfox-swift-2-pro', 'nightfox-prowl'],
+    'GPS / Navigation':['garmin-gpsmap-65s','garmin-montana-700','suunto-mc2', 'suunto-kb-14-360', 'suunto-mb-6-global', 'suunto-race-2'],
     'Binoculars / Optics':['vortex-viper-hd','vortex-diamondback-hd'],
-    'Communication':['brutforce-field-radio'],
-    'Rugged Computing':['panasonic-toughbook-55', 'panasonic-toughbook-40'],
-    'Surveillance / Monitoring':['browning-strike-force-pro-dcl','hikmicro-lynx-lh25','minox-nvd-650'],
+    'Communication':['brutforce-field-radio', 'kenwood-nx-5200-vhf', 'kenwood-nx-5300-uhf', 'kenwood-tk-3701d', 'kenwood-nx-1300de', 'kenwood-nx-3320e'],
+    'Rugged Computing':['panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2', 'panasonic-toughbook-33', 'panasonic-toughbook-s1'],
+    'Surveillance / Monitoring':['browning-strike-force-pro-dcl','hikmicro-lynx-lh25','minox-nvd-650', 'nightfox-swift-2-pro'],
   },
   'Mining & Geology': {
-    'Geological Survey': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'brunton-omnislope', 'estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-plastic-gold-pan', 'estwing-steel-gold-pan'],
-    'Mapping / GNSS': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'garmin-gpsmap-65s', 'garmin-gpsmap-65', 'garmin-etrex-se', 'garmin-montana-700'],
-    'Compasses / Pocket Transits': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru'],
+    'Geological Survey': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'breithaupt-3030-cocla', 'breithaupt-necli', 'breithaupt-cobru', 'brunton-omnislope', 'estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-plastic-gold-pan', 'estwing-steel-gold-pan'],
+    'Mapping / GNSS': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-gpsmap-65s', 'garmin-gpsmap-65', 'garmin-etrex-se', 'garmin-montana-700'],
+    'Compasses / Pocket Transits': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'breithaupt-3030-cocla', 'breithaupt-cobru', 'suunto-kb-14-360', 'suunto-mb-6-global'],
     'Geological Hammers / Rock Picks': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-rock-chisels'],
     'Distance Measurement': ['leica-disto-laser-distance-meter', 'garmin-gpsmap-65s', 'garmin-montana-700'],
-    'Rugged Computing': ['geomate-fc2-controller', 'panasonic-toughbook-55', 'panasonic-toughbook-40'],
+    'Rugged Computing': ['geomate-fc2-controller', 'panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2', 'panasonic-toughbook-33', 'panasonic-toughbook-s1'],
     'Field Inspection': ['geo-premier-triplet-hand-lens', 'ralcam-h408b'],
   },
 };
