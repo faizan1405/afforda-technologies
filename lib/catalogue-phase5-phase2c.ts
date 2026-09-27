@@ -875,7 +875,7 @@ export const phase5Phase2cProducts: Product[] = [
     ],
     page: 47,
     subcategories: ['field-hydration', 'expedition-gear'],
-    categoryIds: ['geology', 'forestry', 'camping'],
+    categoryIds: ['geology', 'forestry'],
     tags: ['Water Filtration', 'Personal Water Straw', 'Field Hydration', 'Survival Gear']
   },
   {
@@ -909,7 +909,7 @@ export const phase5Phase2cProducts: Product[] = [
     ],
     page: 47,
     subcategories: ['field-hydration', 'expedition-gear'],
-    categoryIds: ['geology', 'forestry', 'camping'],
+    categoryIds: ['geology', 'forestry'],
     tags: ['Water Filtration', 'Squeeze Bottle', 'Field Hydration', 'Ultralight Gear']
   },
   {
@@ -943,7 +943,7 @@ export const phase5Phase2cProducts: Product[] = [
     ],
     page: 47,
     subcategories: ['field-hydration', 'expedition-gear'],
-    categoryIds: ['geology', 'forestry', 'camping'],
+    categoryIds: ['geology', 'forestry'],
     tags: ['Water Filtration', 'Gravity System', 'Basecamp Water', 'Expedition Equipment']
   },
   {
@@ -977,7 +977,7 @@ export const phase5Phase2cProducts: Product[] = [
     ],
     page: 47,
     subcategories: ['field-hydration', 'expedition-gear'],
-    categoryIds: ['geology', 'forestry', 'camping'],
+    categoryIds: ['geology', 'forestry'],
     tags: ['Water Purifiers', 'Community Water', 'Ultrafiltration', 'Camp Water Systems']
   }
 ];
