@@ -4,6 +4,7 @@ import { ArrowUpRight, ArrowLeft } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
 import { products, type Product } from '@/lib/catalogue';
 import { forestTagsBySubcategory } from '@/lib/forest-categories';
+import { productMatchesFilter } from '@/lib/product-taxonomy';
 
 function ProductLink({ product }: { product: Product }) {
   const spec1 = product.specs[0]?.[1];
@@ -50,7 +51,7 @@ export default function SubcategoryClient({ subcategory }: { subcategory: { id: 
   let subProducts = products.filter(p => p.subcategories?.includes(subcategory.id));
   
   if (activeTag) {
-    subProducts = subProducts.filter(p => p.tags?.includes(activeTag));
+    subProducts = subProducts.filter(p => productMatchesFilter(p, activeTag));
   }
 
   function openQuote(equipment = '') {

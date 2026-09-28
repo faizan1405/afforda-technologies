@@ -6,6 +6,7 @@ import { Footer, Header, QuoteDialog } from '@/components/site/shared';
 import { products, type Product } from '@/lib/catalogue';
 import type { SpecializedCategory, SpecializedSubcategory } from '@/lib/specialized-categories';
 import { resolveImagePath } from '@/lib/utils';
+import { productMatchesFilter } from '@/lib/product-taxonomy';
 
 function ProductLink({ product }: { product: Product }) {
   return <a className="product-panel" href={`/products/${product.slug}`}>
@@ -53,7 +54,7 @@ export function SpecializedSubcategoryPage({ category, subcategory }: { category
   const [quote, setQuote] = useState(false);
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const matchingProducts = products.filter(product => product.subcategories?.includes(subcategory.id));
-  const visibleProducts = activeTag ? matchingProducts.filter(product => product.tags?.includes(activeTag)) : matchingProducts;
+  const visibleProducts = activeTag ? matchingProducts.filter(product => productMatchesFilter(product, activeTag)) : matchingProducts;
 
   return <main id="top">
     <Header onQuote={() => setQuote(true)} />

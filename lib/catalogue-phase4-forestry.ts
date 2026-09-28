@@ -42,7 +42,7 @@ export const forestryPhase4Products: Product[] = [
     page: 48,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Camera Traps', 'Non-Cellular Trail Cameras']
+    tags: ['Camera Traps', 'Cellular Trail Cameras', 'Non-Cellular Trail Cameras']
   },
   {
     slug: 'browning-recon-force-elite-hp5-ultra',
@@ -80,7 +80,7 @@ export const forestryPhase4Products: Product[] = [
     page: 49,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Camera Traps', 'Non-Cellular Trail Cameras']
+    tags: ['Camera Traps', 'Cellular Trail Cameras', 'Non-Cellular Trail Cameras']
   },
   {
     slug: 'browning-spec-ops-elite-hp5-ultra',
@@ -118,7 +118,7 @@ export const forestryPhase4Products: Product[] = [
     page: 50,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Camera Traps', 'Non-Cellular Trail Cameras']
+    tags: ['Camera Traps', 'Cellular Trail Cameras', 'Non-Cellular Trail Cameras']
   },
 
   // =========================================================================
@@ -158,7 +158,7 @@ export const forestryPhase4Products: Product[] = [
     page: 51,
     subcategories: ['forestry-tools-cutting-equipment'],
     categoryIds: ['forestry'],
-    tags: ['Chainsaws', 'Forestry Power Equipment']
+    tags: ['Forestry Tools & Cutting', 'Camping & Field Equipment', 'Chainsaws', 'Forestry Power Equipment']
   },
   {
     slug: 'husqvarna-545-mark-ii',
@@ -193,7 +193,7 @@ export const forestryPhase4Products: Product[] = [
     page: 52,
     subcategories: ['forestry-tools-cutting-equipment'],
     categoryIds: ['forestry'],
-    tags: ['Chainsaws', 'Forestry Power Equipment']
+    tags: ['Forestry Tools & Cutting', 'Camping & Field Equipment', 'Chainsaws', 'Forestry Power Equipment']
   },
   {
     slug: 'husqvarna-460-rancher',
@@ -229,7 +229,7 @@ export const forestryPhase4Products: Product[] = [
     page: 53,
     subcategories: ['forestry-tools-cutting-equipment'],
     categoryIds: ['forestry'],
-    tags: ['Chainsaws', 'Forestry Power Equipment']
+    tags: ['Forestry Tools & Cutting', 'Camping & Field Equipment', 'Chainsaws', 'Forestry Power Equipment']
   },
 
   // =========================================================================
@@ -269,7 +269,7 @@ export const forestryPhase4Products: Product[] = [
     page: 54,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Fire Pumps & Backpack Pumps']
+    tags: ['Fire Fighting Equipment', 'Camping & Field Equipment', 'Fire Pumps & Backpack Pumps']
   },
   {
     slug: 'firefly-black-panther-bp4',
@@ -305,7 +305,7 @@ export const forestryPhase4Products: Product[] = [
     page: 55,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Fire Pumps & Backpack Pumps']
+    tags: ['Fire Fighting Equipment', 'Camping & Field Equipment', 'Fire Pumps & Backpack Pumps']
   },
   {
     slug: 'firefly-mfp-275-p',
@@ -341,7 +341,7 @@ export const forestryPhase4Products: Product[] = [
     page: 56,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Fire Pumps & Backpack Pumps']
+    tags: ['Fire Fighting Equipment', 'Camping & Field Equipment', 'Fire Pumps & Backpack Pumps']
   },
 
   // =========================================================================
@@ -389,6 +389,6 @@ export const forestryPhase4Products: Product[] = [
     page: 57,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['thermal', 'forestry'],
-    tags: ['Thermal Cameras', 'Firefighting Thermal Cameras']
+    tags: ['Thermal Cameras', 'Firefighting & Search/Rescue Thermal', 'Fire Fighting Equipment', 'Firefighting Thermal Cameras']
   }
 ];

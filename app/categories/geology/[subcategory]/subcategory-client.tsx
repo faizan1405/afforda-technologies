@@ -4,6 +4,7 @@ import { ArrowUpRight, ArrowLeft } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
 import { products, type Product } from '@/lib/catalogue';
 import { geologyTagsBySubcategory, type GeologySubcategory } from '@/lib/geology-categories';
+import { productMatchesFilter } from '@/lib/product-taxonomy';
 
 function ProductLink({ product }: { product: Product }) {
   return (
@@ -44,7 +45,7 @@ export default function SubcategoryClient({ subcategory }: { subcategory: Geolog
   let subProducts = products.filter(p => p.subcategories?.includes(subcategory.id));
 
   if (activeTag) {
-    subProducts = subProducts.filter(p => p.tags?.includes(activeTag));
+    subProducts = subProducts.filter(p => productMatchesFilter(p, activeTag));
   }
 
   function openQuote(equipment = '') {

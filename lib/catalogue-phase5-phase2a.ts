@@ -34,7 +34,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 30,
     subcategories: ['gps-survey-mapping-products', 'geological-field-mapping', 'mining-mapping'],
     categoryIds: ['surveying', 'geology', 'mining'],
-    tags: ['GNSS Receivers', 'RTK Rover', 'Surveying Equipment', 'DGPS']
+    tags: ['GNSS / RTK Receivers', 'GPS & GNSS']
   },
 
   // =========================================================================
@@ -70,7 +70,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 38,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Bioacoustic Recorders', 'Ultrasonic Bat Detectors', 'Wildlife Monitoring', 'Acoustic Recorders']
+    tags: ['Acoustic Monitoring']
   },
 
   // =========================================================================
@@ -105,7 +105,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 44,
     subcategories: ['forestry-tools-cutting-equipment', 'field-safety-ppe'],
     categoryIds: ['forestry'],
-    tags: ['Forestry Safety & PPE', 'Protective Helmets', 'Forestry Equipment', 'Chainsaw Safety']
+    tags: ['Forestry Tools & Cutting', 'Camping & Field Equipment']
   },
   {
     slug: 'husqvarna-functional-chainsaw-chaps',
@@ -136,7 +136,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 44,
     subcategories: ['forestry-tools-cutting-equipment', 'field-safety-ppe'],
     categoryIds: ['forestry'],
-    tags: ['Chainsaw Protective Gear', 'Forestry PPE', 'Field Safety Gear', 'Forestry Equipment']
+    tags: ['Forestry Tools & Cutting', 'Camping & Field Equipment']
   },
 
   // =========================================================================
@@ -172,7 +172,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 45,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Fire Pumps & Backpack Pumps', 'Forest Firefighting', 'Portable Pumps', 'Fire Suppression']
+    tags: ['Firefighting & Search/Rescue Thermal', 'Fire Fighting Equipment', 'Camping & Field Equipment', 'Fire Pumps & Backpack Pumps']
   },
   {
     slug: 'firefly-mfp-1300-p',
@@ -204,7 +204,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 45,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Fire Pumps & Backpack Pumps', 'Forest Firefighting', 'High Capacity Pumps', 'Wildfire Defense']
+    tags: ['Firefighting & Search/Rescue Thermal', 'Fire Fighting Equipment', 'Camping & Field Equipment', 'Fire Pumps & Backpack Pumps']
   },
 
   // =========================================================================
@@ -240,7 +240,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 28,
     subcategories: ['defense-night', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['thermal', 'defense', 'forestry'],
-    tags: ['Night Vision Goggles', 'Tactical Night Vision', 'Helmet Mount NVG', 'Wildlife Monitoring']
+    tags: ['Night Vision Devices', 'Tactical Communications', 'Camping & Field Equipment']
   },
   {
     slug: 'nightfox-prowl',
@@ -272,7 +272,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 28,
     subcategories: ['defense-night', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['thermal', 'defense', 'forestry'],
-    tags: ['Night Vision Monoculars', 'Tactical Optics', 'Night Observation', 'Wildlife Monitoring']
+    tags: ['Night Vision Devices', 'Rifle Scopes & Tactical Optics', 'Tactical Communications', 'Night Vision Monoculars']
   },
 
   // =========================================================================
@@ -307,7 +307,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 49,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Geological Markers', 'Field Mapping Supplies', 'Sample Identification', 'Archival Markers']
+    tags: ['Field Mapping & Marking']
   },
   {
     slug: 'edding-750-industrial-paint-marker',
@@ -338,7 +338,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 49,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Industrial Paint Markers', 'Geological Markers', 'Core Tray Marking', 'Field Accessories']
+    tags: ['Field Mapping & Marking']
   },
 
   // =========================================================================
@@ -374,7 +374,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 47,
     subcategories: ['defense-rugged', 'defense-field-operations', 'mining-rugged'],
     categoryIds: ['computing', 'defense', 'mining'],
-    tags: ['Rugged Tablets', 'Fully Rugged Computing', 'Field Data Collection', 'Defense Computing']
+    tags: ['Rugged Tablets', 'Field Books & Accessories']
   },
   {
     slug: 'panasonic-toughbook-33',
@@ -406,7 +406,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 47,
     subcategories: ['defense-rugged', 'defense-field-operations', 'mining-rugged'],
     categoryIds: ['computing', 'defense', 'mining'],
-    tags: ['Rugged Laptops', '2-in-1 Detachable', 'Fully Rugged Computing', 'Field Computing']
+    tags: ['Rugged Laptops', 'Rugged Tablets', 'Field Books & Accessories']
   },
   {
     slug: 'panasonic-toughbook-s1',
@@ -438,7 +438,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 47,
     subcategories: ['defense-rugged', 'defense-field-operations', 'mining-rugged'],
     categoryIds: ['computing', 'defense', 'mining'],
-    tags: ['Rugged Tablets', 'Android Rugged Tablet', 'Field Data Collection', 'Handheld Computing']
+    tags: ['Rugged Tablets', 'Rugged Mobile Computing', 'Field Books & Accessories']
   },
 
   // =========================================================================
@@ -474,7 +474,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 48,
     subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
     categoryIds: ['geology', 'mining', 'surveying'],
-    tags: ['Geological Compasses', 'Stratum Compasses', 'Clar Compass', 'Field Measurement']
+    tags: ['Geological Compasses']
   },
   {
     slug: 'breithaupt-necli',
@@ -506,7 +506,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 48,
     subcategories: ['geological-field-mapping', 'mining-survey', 'mining-compasses'],
     categoryIds: ['geology', 'mining', 'surveying'],
-    tags: ['Clinometers', 'Optical Clinometers', 'Survey Measurement', 'Height Meters']
+    tags: ['Geological Compasses', 'Clinometers & Forest Measurement', 'Forestry Measurement', 'Clinometers & Hypsometers']
   },
   {
     slug: 'breithaupt-cobru',
@@ -538,7 +538,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 48,
     subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
     categoryIds: ['geology', 'mining', 'surveying'],
-    tags: ['Pocket Transits', 'Geological Compasses', 'Survey Measurement', 'Field Transits']
+    tags: ['Geological Compasses']
   },
 
   // =========================================================================
@@ -574,7 +574,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 26,
     subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
     categoryIds: ['communication', 'defense'],
-    tags: ['Two-Way Radios', 'Field Communications', 'License-Free Radios', 'Digital Transceivers']
+    tags: ['Two-Way Radios', 'Digital / DMR Radios', 'Field Communications']
   },
   {
     slug: 'kenwood-nx-1300de',
@@ -606,7 +606,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 26,
     subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
     categoryIds: ['communication', 'defense'],
-    tags: ['Two-Way Radios', 'Field Communications', 'DMR Radios', 'Tactical Radios']
+    tags: ['Two-Way Radios', 'Digital / DMR Radios', 'Tactical Communications', 'Field Communications']
   },
   {
     slug: 'kenwood-nx-3320e',
@@ -638,7 +638,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 26,
     subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
     categoryIds: ['communication', 'defense'],
-    tags: ['Two-Way Radios', 'Field Communications', 'GPS Radios', 'Encrypted Radios']
+    tags: ['Two-Way Radios', 'Digital / DMR Radios', 'Field Communications']
   },
 
   // =========================================================================
@@ -674,7 +674,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 24,
     subcategories: ['defense-navigation', 'defense-field-operations'],
     categoryIds: ['navigation', 'defense', 'surveying'],
-    tags: ['Bearing Compasses', 'Precision Compasses', 'Field Navigation', 'Surveying Compasses']
+    tags: ['GPS & GNSS', 'Compasses & Field Navigation', 'Industrial Inspection']
   },
   {
     slug: 'suunto-pm-5-360',
@@ -706,7 +706,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 24,
     subcategories: ['defense-navigation', 'defense-field-operations'],
     categoryIds: ['navigation', 'forestry', 'geology'],
-    tags: ['Clinometers', 'Height Meters', 'Forestry Measurement', 'Slope Measurement']
+    tags: ['Clinometers & Forest Measurement', 'Forestry Measurement', 'Clinometers & Hypsometers']
   },
   {
     slug: 'suunto-mb-6-global',
@@ -738,7 +738,7 @@ export const phase5Phase2aProducts: Product[] = [
     page: 24,
     subcategories: ['defense-navigation', 'defense-field-operations'],
     categoryIds: ['navigation', 'defense'],
-    tags: ['Sighting Compasses', 'Mirror Compasses', 'Global Compasses', 'Field Navigation']
+    tags: ['GPS & GNSS', 'Compasses & Field Navigation']
   },
   {
     slug: 'suunto-race-2',
@@ -770,6 +770,6 @@ export const phase5Phase2aProducts: Product[] = [
     page: 24,
     subcategories: ['defense-navigation'],
     categoryIds: ['navigation', 'defense'],
-    tags: ['Smartwatches', 'Expedition GPS', 'AMOLED Watches', 'Wearable Navigation']
+    tags: ['Wearable GPS & Smartwatches', 'GPS & GNSS']
   }
 ];

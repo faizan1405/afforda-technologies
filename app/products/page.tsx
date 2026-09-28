@@ -6,6 +6,7 @@ import { Header, Footer, QuoteDialog } from '@/components/site/shared';
 import { categories, products, productBelongsToCategory } from '@/lib/catalogue';
 import { navigationBrands, matchProductBrand } from '@/lib/navigation-data';
 import { getBrandInfo } from '@/lib/brand-info';
+import { CANONICAL_PRODUCT_TYPES, CATEGORY_FILTER_GROUPS, productMatchesFilter } from '@/lib/product-taxonomy';
 
 export default function ProductsPage() {
   const [quote, setQuote] = useState(false);
@@ -43,18 +44,19 @@ export default function ProductsPage() {
       result = result.filter(p => matchProductBrand(p, activeBrand));
     }
     if (activeTag !== 'all') {
-      result = result.filter(p => p.tags?.includes(activeTag));
+      result = result.filter(p =>
+        productMatchesFilter(p, activeTag, activeCategory !== 'all' ? activeCategory : undefined)
+      );
     }
     return result;
   }, [activeCategory, activeBrand, activeTag]);
 
   const allTags = useMemo(() => {
-    const tags = new Set<string>();
-    products.forEach(p => {
-      p.tags?.forEach(t => tags.add(t));
-    });
-    return Array.from(tags).sort();
-  }, []);
+    if (activeCategory !== 'all' && CATEGORY_FILTER_GROUPS[activeCategory]) {
+      return CATEGORY_FILTER_GROUPS[activeCategory];
+    }
+    return CANONICAL_PRODUCT_TYPES;
+  }, [activeCategory]);
 
   const allBrands = useMemo(() => {
     const brandSet = new Set<string>();

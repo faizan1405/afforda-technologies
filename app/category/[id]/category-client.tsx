@@ -37,20 +37,11 @@ function ProductLink({ product }: { product: Product }) {
 }
 
 import type { Category } from './page';
+import { getCategoryFilters, productMatchesFilter } from '@/lib/product-taxonomy';
 
 interface CategoryClientProps {
   category: Category;
 }
-
-const CANONICAL_SURVEYING_TAGS = [
-  'GNSS / RTK Receivers',
-  'Handheld GPS',
-  'Data Collectors & Controllers',
-  'Total Stations & Levels',
-  'Compasses & Field Measurement',
-  'Survey Accessories',
-  'Remote Sensing & Drones',
-];
 
 export default function CategoryClient({ category }: CategoryClientProps) {
   const [quote, setQuote] = useState(false);
@@ -59,14 +50,11 @@ export default function CategoryClient({ category }: CategoryClientProps) {
 
   const categoryProducts = products.filter(p => productBelongsToCategory(p, category.id));
 
-  // Extract tags for filtering (canonical taxonomy for surveying, deduplicated tags for others)
-  const availableTags = category.id === 'surveying'
-    ? CANONICAL_SURVEYING_TAGS.filter(tag => categoryProducts.some(p => p.tags?.includes(tag)))
-    : Array.from(new Set(categoryProducts.flatMap(p => p.tags || [])))
-        .filter(tag => tag !== category.name && tag !== 'GPS, Survey & Mapping Products');
+  // Extract canonical filters with counts for this category
+  const availableFilters = getCategoryFilters(category.id, categoryProducts);
 
   const displayedProducts = activeTag
-    ? categoryProducts.filter(p => p.tags?.includes(activeTag))
+    ? categoryProducts.filter(p => productMatchesFilter(p, activeTag, category.id))
     : categoryProducts;
 
   function openQuote(equipment = '') {
@@ -263,7 +251,7 @@ export default function CategoryClient({ category }: CategoryClientProps) {
           </div>
         </div>
 
-        {availableTags.length > 1 && (
+        {availableFilters.length > 0 && (
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '2.5rem' }}>
             <button
               onClick={() => setActiveTag(null)}
@@ -272,19 +260,16 @@ export default function CategoryClient({ category }: CategoryClientProps) {
             >
               All {category.name} ({categoryProducts.length})
             </button>
-            {availableTags.map(tag => {
-              const count = categoryProducts.filter(p => p.tags?.includes(tag)).length;
-              return (
-                <button
-                  key={tag}
-                  onClick={() => setActiveTag(activeTag === tag ? null : tag)}
-                  className={`button ${activeTag === tag ? 'button-yellow' : 'button-outline'}`}
-                  style={{ minHeight: '40px', padding: '8px 16px', fontSize: '13px' }}
-                >
-                  {tag} ({count})
-                </button>
-              );
-            })}
+            {availableFilters.map(({ tag, count }) => (
+              <button
+                key={tag}
+                onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+                className={`button ${activeTag === tag ? 'button-yellow' : 'button-outline'}`}
+                style={{ minHeight: '40px', padding: '8px 16px', fontSize: '13px' }}
+              >
+                {tag} ({count})
+              </button>
+            ))}
           </div>
         )}
 

@@ -36,7 +36,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 14,
     subcategories: ['geological-field-mapping', 'mining-survey', 'mining-distance'],
     categoryIds: ['surveying', 'geology', 'mining'],
-    tags: ['Laser Distance Meters', 'Surveying Equipment', 'Distance Measurement', 'Field Measurement']
+    tags: ['Laser Rangefinders', 'Survey & Measurement', 'Laser Distance Meters']
   },
   {
     slug: 'leica-disto-x6',
@@ -70,7 +70,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 14,
     subcategories: ['geological-field-mapping', 'mining-survey', 'mining-distance'],
     categoryIds: ['surveying', 'geology', 'mining'],
-    tags: ['Laser Distance Meters', 'Surveying Equipment', '3D Measurement', 'P2P Technology']
+    tags: ['Laser Rangefinders', 'Survey & Measurement', 'Laser Distance Meters']
   },
   {
     slug: 'leica-na730-plus',
@@ -104,7 +104,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 15,
     subcategories: ['geological-field-mapping', 'mining-survey'],
     categoryIds: ['surveying', 'geology', 'mining'],
-    tags: ['Optical Levels', 'Auto Levels', 'Surveying Equipment', 'Precision Leveling']
+    tags: ['Total Stations & Levels', 'Industrial Inspection', 'Survey & Measurement']
   },
   {
     slug: 'leica-rugby-610',
@@ -138,7 +138,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 15,
     subcategories: ['geological-field-mapping', 'mining-survey'],
     categoryIds: ['surveying', 'geology', 'mining'],
-    tags: ['Rotating Lasers', 'Laser Levels', 'Surveying Equipment', 'Elevation Control']
+    tags: ['Total Stations & Levels', 'Survey & Measurement']
   },
 
   // =========================================================================
@@ -176,7 +176,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 20,
     subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
     categoryIds: ['communication', 'defense'],
-    tags: ['Two-Way Radios', 'Field Communications', 'Tactical Radios', 'DMR']
+    tags: ['Two-Way Radios', 'Digital / DMR Radios', 'Tactical Communications', 'Field Communications']
   },
   {
     slug: 'motorola-mototrbo-dp4400e',
@@ -210,7 +210,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 20,
     subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
     categoryIds: ['communication', 'defense'],
-    tags: ['Two-Way Radios', 'Field Communications', 'Industrial Radios', 'DMR']
+    tags: ['Two-Way Radios', 'Digital / DMR Radios', 'Field Communications']
   },
   {
     slug: 'motorola-mototrbo-dp4801e',
@@ -244,7 +244,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 20,
     subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
     categoryIds: ['communication', 'defense'],
-    tags: ['Two-Way Radios', 'GPS Radios', 'Field Communications', 'Tactical Radios']
+    tags: ['Two-Way Radios', 'Digital / DMR Radios', 'Tactical Communications', 'Field Communications']
   },
   {
     slug: 'motorola-sl1600',
@@ -278,7 +278,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 21,
     subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
     categoryIds: ['communication', 'defense'],
-    tags: ['Two-Way Radios', 'Slim Radios', 'Field Communications', 'DMR']
+    tags: ['Two-Way Radios', 'Digital / DMR Radios', 'Field Communications']
   },
 
   // =========================================================================
@@ -316,7 +316,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 10,
     subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['optics', 'defense', 'forestry'],
-    tags: ['Binoculars', 'Observation Optics', 'European Optics', 'Wildlife Observation']
+    tags: ['Binoculars', 'Observation Optics']
   },
   {
     slug: 'swarovski-nl-pure-10x42',
@@ -350,7 +350,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 10,
     subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['optics', 'defense', 'forestry'],
-    tags: ['Binoculars', 'Observation Optics', 'European Optics', 'Wide Angle Optics']
+    tags: ['Binoculars', 'Observation Optics']
   },
   {
     slug: 'swarovski-atx-interior-85',
@@ -384,7 +384,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 11,
     subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['optics', 'defense', 'forestry'],
-    tags: ['Spotting Scopes', 'Observation Optics', 'European Optics', 'Long-Range Surveillance']
+    tags: ['Binoculars', 'Spotting Scopes', 'Observation Optics']
   },
   {
     slug: 'swarovski-cl-companion-8x30',
@@ -418,7 +418,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 11,
     subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['optics', 'defense', 'forestry'],
-    tags: ['Binoculars', 'Compact Binoculars', 'Observation Optics', 'European Optics']
+    tags: ['Binoculars', 'Observation Optics']
   },
 
   // =========================================================================
@@ -456,7 +456,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 25,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Camera Traps', 'Trail Cameras', 'Wildlife Monitoring', 'Infrared Cameras']
+    tags: ['Camera Traps']
   },
   {
     slug: 'minox-dtc-1200',
@@ -490,7 +490,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 25,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Cellular Trail Cameras', 'Camera Traps', '4G Surveillance', 'Wildlife Monitoring']
+    tags: ['Camera Traps', 'Cellular Trail Cameras']
   },
   {
     slug: 'minox-x-active-8x44',
@@ -524,7 +524,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 26,
     subcategories: ['defense-optics', 'wildlife-monitoring-surveillance'],
     categoryIds: ['optics', 'forestry'],
-    tags: ['Binoculars', 'Observation Optics', 'Forestry Optics', 'All-Round Binoculars']
+    tags: ['Binoculars', 'Observation Optics']
   },
   {
     slug: 'minox-x-lite-10x42',
@@ -558,7 +558,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 26,
     subcategories: ['defense-optics', 'wildlife-monitoring-surveillance'],
     categoryIds: ['optics', 'forestry'],
-    tags: ['Binoculars', 'Observation Optics', 'Lightweight Binoculars', 'Nature Observation']
+    tags: ['Binoculars', 'Observation Optics']
   },
 
   // =========================================================================
@@ -596,7 +596,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 45,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-night', 'defense-surveillance'],
     categoryIds: ['thermal', 'forestry', 'defense'],
-    tags: ['Thermal Cameras', 'Thermal Imaging', 'Handheld Thermal', 'Night Observation']
+    tags: ['Thermal Cameras', 'Night Vision Devices', 'Industrial & Radiometric Thermal']
   },
   {
     slug: 'seek-thermal-reveal-firepro-x',
@@ -630,7 +630,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 45,
     subcategories: ['defense-night', 'defense-surveillance', 'defense-field-operations'],
     categoryIds: ['thermal', 'defense'],
-    tags: ['Thermal Cameras', 'Search and Rescue', 'Tactical Thermal', 'Firefighting Cameras']
+    tags: ['Thermal Cameras', 'Firefighting & Search/Rescue Thermal', 'Tactical Communications', 'Fire Fighting Equipment']
   },
   {
     slug: 'seek-thermal-compactpro',
@@ -664,7 +664,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 46,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-night', 'inspection-equipment'],
     categoryIds: ['thermal', 'inspection', 'forestry'],
-    tags: ['Thermal Cameras', 'Mobile Thermal', 'Smartphone Thermal', 'Radiometric Inspection']
+    tags: ['Thermal Cameras', 'Mobile Thermal Imaging', 'Industrial & Radiometric Thermal', 'Two-Way Radios']
   },
   {
     slug: 'seek-thermal-attackpro',
@@ -698,7 +698,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 46,
     subcategories: ['defense-night', 'defense-surveillance', 'defense-field-operations'],
     categoryIds: ['thermal', 'defense'],
-    tags: ['Thermal Cameras', 'Tactical Thermal', 'Search and Rescue', 'Decision Making Cameras']
+    tags: ['Thermal Cameras', 'Firefighting & Search/Rescue Thermal', 'Tactical Communications']
   },
 
   // =========================================================================
@@ -736,7 +736,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 44,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Bioacoustics', 'Acoustic Loggers', 'Underwater Bioacoustics', 'Marine Research']
+    tags: ['Acoustic Monitoring', 'Forestry Measurement']
   },
   {
     slug: 'audiomoth-ipx7-waterproof-case',
@@ -770,7 +770,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 44,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Acoustic Enclosures', 'AudioMoth Accessories', 'Waterproof Cases', 'Bioacoustics']
+    tags: ['Acoustic Monitoring']
   },
   {
     slug: 'audiomoth-gps',
@@ -804,7 +804,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 44,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Bioacoustics', 'Acoustic Loggers', 'GPS Acoustic', 'Acoustic Localization']
+    tags: ['Acoustic Monitoring', 'Forestry Measurement']
   },
   {
     slug: 'audiomoth-usb-microphone',
@@ -838,7 +838,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 45,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Bioacoustics', 'USB Microphones', 'Ultrasonic Microphones', 'Acoustic Sensors']
+    tags: ['Acoustic Monitoring']
   },
 
   // =========================================================================
@@ -876,7 +876,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 32,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Camera Traps', 'Trail Cameras', 'Wildlife Monitoring', 'Anti-Poaching']
+    tags: ['Camera Traps']
   },
   {
     slug: 'keepguard-kw561',
@@ -910,7 +910,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 32,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Camera Traps', 'Trail Cameras', 'Wildlife Monitoring', 'Dual Sensor Cameras']
+    tags: ['Camera Traps']
   },
   {
     slug: 'keepguard-kw571-4g',
@@ -944,7 +944,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 33,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Cellular Trail Cameras', '4G Surveillance', 'Live Streaming Cameras', 'Anti-Poaching']
+    tags: ['Camera Traps', 'Cellular Trail Cameras']
   },
   {
     slug: 'keepguard-kg891',
@@ -978,7 +978,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 33,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Camera Traps', 'Trail Cameras', '4K Wildlife Cameras', 'Dual Lens Cameras']
+    tags: ['Camera Traps']
   },
 
   // =========================================================================
@@ -1016,7 +1016,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 40,
     subcategories: ['defense-surveillance', 'defense-field-operations'],
     categoryIds: ['defense', 'communication'],
-    tags: ['PTZ Cameras', '4G Cameras', 'Solar Cameras', 'Perimeter Security']
+    tags: ['Surveillance', 'Communication Accessories']
   },
   {
     slug: 'cp-plus-outdoor-ir-bullet',
@@ -1050,7 +1050,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 40,
     subcategories: ['defense-surveillance', 'defense-field-operations'],
     categoryIds: ['defense'],
-    tags: ['Bullet Cameras', 'CCTV Cameras', 'Outdoor Surveillance', 'Perimeter Security']
+    tags: ['Surveillance']
   },
   {
     slug: 'cp-plus-25x-network-ptz',
@@ -1084,7 +1084,7 @@ export const phase5Phase2bProducts: Product[] = [
     page: 41,
     subcategories: ['defense-surveillance', 'defense-field-operations'],
     categoryIds: ['defense'],
-    tags: ['PTZ Cameras', 'Speed Dome Cameras', 'Long-Range Surveillance', 'Perimeter Security']
+    tags: ['Surveillance', 'Communication Accessories']
   },
   {
     slug: 'cp-plus-16ch-4k-nvr',
@@ -1118,6 +1118,6 @@ export const phase5Phase2bProducts: Product[] = [
     page: 41,
     subcategories: ['defense-surveillance', 'defense-field-operations'],
     categoryIds: ['defense', 'computing'],
-    tags: ['Network Video Recorders', 'NVR', 'Surveillance Systems', 'CCTV Recorders']
+    tags: ['Surveillance', 'Rugged Computing', 'Accessories / Expansion']
   }
 ];
