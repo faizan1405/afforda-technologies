@@ -14,22 +14,8 @@ export const geologySubcategories: GeologySubcategory[] = [
   },
 ];
 
+import { SPECIALIZED_FILTER_GROUPS } from './product-taxonomy';
+
 export const geologyTagsBySubcategory: Record<string, string[]> = {
-  'geological-field-mapping': [
-    'Geological Compasses / Pocket Transits',
-    'Field Compasses / Baseplate Compasses',
-    'Geological Hammers',
-    'Engineer’s Hammers',
-    'Field Hammers',
-    'Rock Hammers',
-    'Rock Picks',
-    'Gold Pans',
-    'Prospecting Tools',
-    'Field Hand Lens / Loupe',
-    'Pocket Magnifiers',
-    'Geological Scales',
-    'Field Measuring Rods',
-    'GPS / GNSS Receivers',
-    'Laser Distance Meters',
-  ],
+  'geological-field-mapping': SPECIALIZED_FILTER_GROUPS['geological-field-mapping'] || [],
 };

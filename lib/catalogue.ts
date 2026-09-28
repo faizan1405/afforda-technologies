@@ -82,10 +82,10 @@ const baseProducts: Product[] = [
     categoryIds: ['optics', 'defense', 'forestry'],
     tags: ['Binoculars', 'Observation Optics']
   },
-  { slug:'garmin-gpsmap-65s',name:'Handheld GPS (GPSMAP® 65s)',brand:'Garmin',category:'navigation',image:'gpsmap',gallery:['gpsmap'],label:'MULTI-BAND GPS',summary:'Find your way in challenging environments with multi-band positioning, expanded satellite support and a sunlight-readable color display.',specs:[['Display','2.6-inch color'],['Positioning','Multi-band GNSS'],['Battery life','Up to 16 hours in GPS mode'],['Navigation','Built-in navigation sensors (ABC)'],['Planning','Garmin Explore compatibility']],features:['Multi-band technology for challenging locations','Sunlight-readable color display','Built-in 3-axis compass & barometric altimeter','Plan and organize with the Garmin Explore app'],page:12,subcategories:['geological-field-mapping','gps-survey-mapping-products','defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','geology','defense','mining','surveying'],tags:['Handheld GPS','GPS/GNSS Devices','GPS','GPS / GNSS Receivers'] },
-  { slug:'hikmicro-lynx-lh25',name:'LYNX LH25 2.0',brand:'HIKMICRO',category:'thermal',image:'lynx',gallery:['lynx','lynx-side'],label:'THERMAL MONOCULAR',summary:'A compact thermal monocular that reveals subtle heat signatures, with a sensitive detector and a detailed OLED view.',specs:[['Detector resolution','384 × 288'],['Lens','25 mm, F1.0'],['Thermal sensitivity','NETD <20 mK'],['Detection range','Up to 1,200 m'],['Weight','275 g'],['Battery life','Up to 6.5 hours']],features:['12 μm detector with high thermal sensitivity','1024 × 768 OLED display','Replaceable rechargeable Li-ion battery','Compact and ergonomic field design'],page:40,subcategories:['defense-thermal','defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['thermal','defense','forestry'],tags:['Thermal & Night Observation','Thermal Cameras','Thermal Monoculars','Infrared Observation'] },
-  { slug:'browning-strike-force-pro-dcl',name:'Strike Force Pro DCL',brand:'Browning',category:'forestry',image:'browning',gallery:['browning'],label:'WILDLIFE TRAIL CAMERA',summary:'Dual camera lens technology captures the field by day and night, with a fast trigger for fleeting wildlife encounters.',specs:[['Image resolution','26 megapixels'],['Trigger speed','0.15 seconds'],['Flash range','Up to 130 ft'],['Viewing screen','1.5-inch color'],['Lens system','Dual camera lens technology']],features:['Separate lens technology optimized for day and night','Fast trigger for wildlife monitoring','On-camera color viewing screen','Long-range flash capability'],page:21,subcategories:['defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['forestry','defense'],tags:['Camera Traps'] },
-  { slug:'brunton-geolite',name:'Geo Lite™ Transit F-5030',brand:'Brunton',category:'geology',image:'geolite-open',gallery:['geolite-open','geolite'],label:'GEOLOGICAL TRANSIT COMPASS',summary:'Compact aluminum geological transit combining direct-read azimuth measurement with a hinge clinometer for strike and dip field readings.',specs:[['Model','Geo Lite™ Transit F-5030'],['Body Construction','Compact aluminum body (approx. 30% smaller than full-size transit)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° azimuth scale)'],['Vertical Angle','±1° with 1° graduations (±90° range)'],['Declination Adjustment','Tool-free magnetic declination adjustment ±180°'],['Needle Dampening','Induction damped needle on sapphire jewel suspension'],['Leveling Vials','Dual bubble vials (circular and tubular)'],['Sighting System','Precision mirror with sighting hole and sighting line'],['Protection','Silicone protective cover included'],['Mounting','Tripod mountable with 1/4-20 threading']],features:['Compact lightweight aluminum body roughly 30% smaller than traditional pocket transits','High-precision azimuth accuracy of ±0.5° with 1° graduations on a 0–360° scale','Integrated vertical clinometer reads slope and dip to ±1° across ±90° range','User-friendly tool-free magnetic declination adjustment with ±180° range','Induction damped needle stabilizes quickly for fast and repeatable field readings','Dual bubble vials (tubular and circular) ensure perfect level alignment','Reflective sighting mirror with center sighting hole for accurate bearing acquisition','Supplied with custom silicone protective cover for field impact resistance'],page:27,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Geological Compasses / Pocket Transits','Field Compasses / Baseplate Compasses'] },
+  { slug:'garmin-gpsmap-65s',name:'Handheld GPS (GPSMAP® 65s)',brand:'Garmin',category:'navigation',image:'gpsmap',gallery:['gpsmap'],label:'MULTI-BAND GPS',summary:'Find your way in challenging environments with multi-band positioning, expanded satellite support and a sunlight-readable color display.',specs:[['Display','2.6-inch color'],['Positioning','Multi-band GNSS'],['Battery life','Up to 16 hours in GPS mode'],['Navigation','Built-in navigation sensors (ABC)'],['Planning','Garmin Explore compatibility']],features:['Multi-band technology for challenging locations','Sunlight-readable color display','Built-in 3-axis compass & barometric altimeter','Plan and organize with the Garmin Explore app'],page:12,subcategories:['geological-field-mapping','gps-survey-mapping-products','defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','geology','defense','mining','surveying'],tags: ['GNSS / RTK Receivers', 'Handheld GPS', 'GPS & GNSS', 'GPS/GNSS Devices', 'GPS / GNSS Receivers'] },
+  { slug:'hikmicro-lynx-lh25',name:'LYNX LH25 2.0',brand:'HIKMICRO',category:'thermal',image:'lynx',gallery:['lynx','lynx-side'],label:'THERMAL MONOCULAR',summary:'A compact thermal monocular that reveals subtle heat signatures, with a sensitive detector and a detailed OLED view.',specs:[['Detector resolution','384 × 288'],['Lens','25 mm, F1.0'],['Thermal sensitivity','NETD <20 mK'],['Detection range','Up to 1,200 m'],['Weight','275 g'],['Battery life','Up to 6.5 hours']],features:['12 μm detector with high thermal sensitivity','1024 × 768 OLED display','Replaceable rechargeable Li-ion battery','Compact and ergonomic field design'],page:40,subcategories:['defense-thermal','defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['thermal','defense','forestry'],tags: ['Thermal Cameras', 'Thermal Monoculars & Binoculars', 'Night Vision Devices', 'Infrared & Illumination', 'Two-Way Radios', 'Digital / DMR Radios', 'Thermal & Night Observation', 'Thermal Monoculars', 'Infrared Observation'] },
+  { slug:'browning-strike-force-pro-dcl',name:'Strike Force Pro DCL',brand:'Browning',category:'forestry',image:'browning',gallery:['browning'],label:'WILDLIFE TRAIL CAMERA',summary:'Dual camera lens technology captures the field by day and night, with a fast trigger for fleeting wildlife encounters.',specs:[['Image resolution','26 megapixels'],['Trigger speed','0.15 seconds'],['Flash range','Up to 130 ft'],['Viewing screen','1.5-inch color'],['Lens system','Dual camera lens technology']],features:['Separate lens technology optimized for day and night','Fast trigger for wildlife monitoring','On-camera color viewing screen','Long-range flash capability'],page:21,subcategories:['defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['forestry','defense'],tags: ['Camera Traps'] },
+  { slug:'brunton-geolite',name:'Geo Lite™ Transit F-5030',brand:'Brunton',category:'geology',image:'geolite-open',gallery:['geolite-open','geolite'],label:'GEOLOGICAL TRANSIT COMPASS',summary:'Compact aluminum geological transit combining direct-read azimuth measurement with a hinge clinometer for strike and dip field readings.',specs:[['Model','Geo Lite™ Transit F-5030'],['Body Construction','Compact aluminum body (approx. 30% smaller than full-size transit)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° azimuth scale)'],['Vertical Angle','±1° with 1° graduations (±90° range)'],['Declination Adjustment','Tool-free magnetic declination adjustment ±180°'],['Needle Dampening','Induction damped needle on sapphire jewel suspension'],['Leveling Vials','Dual bubble vials (circular and tubular)'],['Sighting System','Precision mirror with sighting hole and sighting line'],['Protection','Silicone protective cover included'],['Mounting','Tripod mountable with 1/4-20 threading']],features:['Compact lightweight aluminum body roughly 30% smaller than traditional pocket transits','High-precision azimuth accuracy of ±0.5° with 1° graduations on a 0–360° scale','Integrated vertical clinometer reads slope and dip to ±1° across ±90° range','User-friendly tool-free magnetic declination adjustment with ±180° range','Induction damped needle stabilizes quickly for fast and repeatable field readings','Dual bubble vials (tubular and circular) ensure perfect level alignment','Reflective sighting mirror with center sighting hole for accurate bearing acquisition','Supplied with custom silicone protective cover for field impact resistance'],page:27,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags: ['Geological Compasses', 'Compasses & Field Navigation', 'Geological Compasses / Pocket Transits', 'Field Compasses / Baseplate Compasses'] },
   {
     slug: 'panasonic-toughbook-55',
     aliases: ['panasonic-toughbook', 'toughbook-55', 'panasonic-fz-55'],
@@ -119,7 +119,7 @@ const baseProducts: Product[] = [
     page: 47,
     subcategories: ['defense-rugged', 'defense-field-operations', 'mining-rugged'],
     categoryIds: ['computing', 'defense', 'mining'],
-    tags: ['Rugged Laptops', 'Semi-Rugged Computing', 'Defense Computing']
+    tags: ['Rugged Laptops', 'Field Books & Accessories']
   },
   {
     slug: 'vortex-diamondback-hd',
@@ -158,14 +158,14 @@ const baseProducts: Product[] = [
     categoryIds: ['optics', 'defense', 'forestry'],
     tags: ['Binoculars', 'Observation Optics']
   },
-  { slug:'garmin-montana-700',name:'Montana® 700',brand:'Garmin',category:'navigation',image:'montana',gallery:['montana'],label:'TOUCHSCREEN GPS',summary:'Large-format navigation for journeys on foot or by vehicle, combining a 5-inch touchscreen with outdoor navigation sensors.',specs:[['Display','5-inch touchscreen'],['Positioning','Multiple GNSS networks'],['Battery life','18+ hours in GPS mode'],['Navigation sensors','Altimeter, barometer, compass'],['Mapping','Routable roads and trails']],features:['Large touchscreen for clear map viewing','Rugged construction for outdoor navigation','ABC sensors for awareness in the field','Mapping support for roads and trails'],page:15,subcategories:['defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','defense','mining'],tags:['GPS/GNSS Devices','GPS'] },
-  { slug:'ralcam-h408b',name:'H408B Borescope',brand:'Ralcam',category:'inspection',image:'ralcam',gallery:['ralcam'],label:'ARTICULATING INSPECTION',summary:'Inspect confined spaces with an articulating camera and a dedicated display, built for automotive and machinery inspection.',specs:[['Display','4.3-inch'],['Camera resolution','1920 × 1080'],['Probe diameter','8.5 mm'],['Battery','Replaceable 2,600 mAh'],['Lighting','10 adjustable LEDs']],features:['Articulating lens for difficult viewing angles','Capture images and video','High-temperature protection','Dedicated screen for on-site inspections'],page:17,subcategories:['mining-inspection'],categoryIds:['inspection','mining'] },
-  { slug:'brutforce-field-radio',name:'BFR-001 License-Free Walkie-Talkie',brand:'BRUTFORCE',category:'communication',image:'radio',gallery:['radio','radio-side'],label:'LICENSE-FREE FIELD RADIO',summary:'License-free two-way field radio operating on the 446 MHz band with 16 channels, up to 5 km line-of-sight range, and a long-life 2,600 mAh Li-ion battery.',specs:[['Model','BFR-001'],['Frequency range','446.00–446.02 MHz (License-free UHF)'],['Channels','16 pre-programmed channels with CTCSS/DCS'],['Operating range','Up to 5 km (line-of-sight depending on terrain)'],['Battery','2,600 mAh Li-ion rechargeable battery'],['Operating temperature','−25°C to +55°C'],['Compliance','WPC Approved (License-free in India)']],features:['16 pre-set channels with CTCSS/DCS sub-codes for private team coordination','Up to 5 km range depending on line-of-sight for field and mountain operations','WPC approved for license-free professional operation across India','Rugged compact housing with voice-operated VOX and emergency alert'],page:34,subcategories:['field-communication-expedition-support','defense-communication','defense-field-operations'],categoryIds:['communication','geology','defense'],tags:['Field Radios'] },
-  { slug:'brunton-compro-transit',name:'ComPro™ Composite Transit F-5008',brand:'Brunton',category:'geology',image:'compro',gallery:['compro'],label:'COMPOSITE POCKET TRANSIT',summary:'Ultralight composite transit housing professional transit internals with induction dampening, precision NdFeB cast magnet, and dual sighting tools.',specs:[['Model','ComPro™ Composite Transit F-5008'],['Body Material','Composite body material (reduces weight & protects against magnetic interference)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° or quad options)'],['Clinometer Accuracy','±0.5° with 1° graduations (90° range or 100% grade scale)'],['Declination Adjustment','Tool-free magnetic declination adjustment (±180°)'],['Magnetic System','NdFeB rare-earth cast magnet needle on sapphire jewel bearing'],['Dampening','Induction dampening for rapid needle settling'],['Sighting System','Precision sighting mirror with sighting hole and sighting line'],['Environmental','Waterproof sealed housing'],['Mounting','Tripod mountable with standard ball-and-socket tripod mount']],features:['Composite body reduces overall carry weight and eliminates local magnetic interference','Precision compass azimuth accuracy of ±0.5° with 1° graduations','Vertical clinometer provides ±0.5° accuracy with 1° graduations and 10-minute vernier reading','Cast NdFeB rare-earth disc magnet on sapphire jewel bearing delivers rapid, reliable settling','Tool-free magnetic declination adjustment allows swift true north calibration in the field','Waterproof sealed body designed to withstand harsh outdoor geological and mine environments','Precision sighting mirror with see-through window and front/rear sighting guides','Ball and socket tripod mount compatibility for stabilized station mapping'],page:30,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining','surveying'],tags:['Compasses & Field Measurement', 'Geological Compasses / Pocket Transits'] },
-  { slug:'brunton-f-5012-axis',name:'Axis™ Pocket Transit F-5012',brand:'Brunton',category:'geology',image:'brunton-f-5012-axis',gallery:['brunton-f-5012-axis'],label:'AXIS POCKET TRANSIT',summary:'Patented dual-axis pocket transit enabling simultaneous measurement of strike and dip, trend and plunge, dip and dip direction, and bearings on a single setup.',specs:[['Model','Axis™ Pocket Transit F-5012'],['Hinge Design','Dual-axis hollow hinge allows measurement of strike & dip simultaneously'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° or 0–90° quad)'],['Clinometer Accuracy','±0.5° with 1° graduations'],['Declination Adjustment','Tool-free adjustable magnetic declination ±180°'],['Bearing / Dampening','Sapphire jewel bearing with induction damping'],['Level Vials','Internal tubular and circular level vials'],['Water Resistance','IPX7 / waterproof and submersible to 3 m for 30 min'],['Body Construction','CNC-machined hard-anodized aluminum body'],['Mounting','Tripod mountable with standard ball-and-socket mount']],features:['Dual-axis hollow hinge allows simultaneous measurement of strike and dip on any bedding surface (contact, foliation, or lineation)','High-precision compass azimuth accuracy of ±0.5° with 1° graduations','Vertical clinometer accuracy of ±0.5° with 1° graduations for dip and vertical angles','NdFeB cast rare-earth magnet mounted on sapphire jewel bearing with induction damping','Tool-free magnetic declination adjustment adjustable to ±180°','IPX7 waterproof construction submersible to 3 meters for 30 minutes','CNC-machined hard-anodized aluminum body designed for rugged field longevity','Internal circular and tubular level vials for stabilized direct-contact and sighting operations'],page:31,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags:['Geological Compasses / Pocket Transits'] },
-  { slug:'minox-nvd-650',name:'NVD 650',brand:'MINOX',category:'thermal',image:'minox',gallery:['minox','minox-back'],label:'DIGITAL NIGHT VISION',summary:'A digital monocular with an IR emitter and recording capability for observation in low-light field conditions.',specs:[['Optical magnification','6×'],['Digital magnification','5×'],['IR wavelength','850 nm'],['IR range','Up to 350 m'],['Use','Day and night']],features:['Built-in IR emitter','Night recording functionality','Rail for additional IR illumination','Daytime use supported'],page:45,subcategories:['defense-night','defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['thermal','defense','forestry'],tags:['Thermal & Night Observation','Night Vision Devices','Infrared Observation'] },
-  { slug:'suunto-mc2',name:'MC-2 Mirror Compass',brand:'Suunto',category:'navigation',image:'suunto',gallery:['suunto'],label:'PRECISION NAVIGATION',summary:'A sighting compass with a mirror, clinometer and adjustable declination correction for considered route finding.',specs:[['Needle','Jewel-bearing steel'],['Capsule','Liquid-filled'],['Declination','Adjustable correction'],['Measurement','Sighting and clinometer'],['Variant','Confirm hemisphere and scale']],features:['Sighting mirror and notch for bearings','Luminescent markings for low light','Baseplate with magnifying lens','Detachable snap-lock lanyard'],page:41,subcategories:['defense-navigation','defense-field-operations'],categoryIds:['navigation','defense'],tags:['Compasses','Forestry Compasses'] },
-  { slug:'audiomoth',name:'AudioMoth',brand:'Open Acoustic Devices',category:'forestry',image:'audiomoth',gallery:['audiomoth','audiomoth-case'],label:'ACOUSTIC MONITORING',summary:'A compact full-spectrum acoustic logger for listening to the natural world, with an optional protective field case.',specs:[['Sample rate','Up to 384 kHz'],['Processor','EFM32 Gecko'],['Microphone','Analog MEMS'],['Protective option','IPX7 waterproof case']],features:['Full-spectrum acoustic logging','Compact field-deployment format','Protective case with compression O-ring','Case strap for straightforward installation'],page:44,subcategories:['wildlife-monitoring-surveillance'],categoryIds:['forestry'],tags:['Bioacoustics & Acoustic Monitoring','Autonomous Recording Units','Acoustic Recorders'] },
+  { slug:'garmin-montana-700',name:'Montana® 700',brand:'Garmin',category:'navigation',image:'montana',gallery:['montana'],label:'TOUCHSCREEN GPS',summary:'Large-format navigation for journeys on foot or by vehicle, combining a 5-inch touchscreen with outdoor navigation sensors.',specs:[['Display','5-inch touchscreen'],['Positioning','Multiple GNSS networks'],['Battery life','18+ hours in GPS mode'],['Navigation sensors','Altimeter, barometer, compass'],['Mapping','Routable roads and trails']],features:['Large touchscreen for clear map viewing','Rugged construction for outdoor navigation','ABC sensors for awareness in the field','Mapping support for roads and trails'],page:15,subcategories:['defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','defense','mining'],tags: ['Handheld GPS', 'GPS & GNSS', 'GPS/GNSS Devices'] },
+  { slug:'ralcam-h408b',name:'H408B Borescope',brand:'Ralcam',category:'inspection',image:'ralcam',gallery:['ralcam'],label:'ARTICULATING INSPECTION',summary:'Inspect confined spaces with an articulating camera and a dedicated display, built for automotive and machinery inspection.',specs:[['Display','4.3-inch'],['Camera resolution','1920 × 1080'],['Probe diameter','8.5 mm'],['Battery','Replaceable 2,600 mAh'],['Lighting','10 adjustable LEDs']],features:['Articulating lens for difficult viewing angles','Capture images and video','High-temperature protection','Dedicated screen for on-site inspections'],page:17,subcategories:['mining-inspection'],categoryIds:['inspection','mining'], tags: ['Borescopes & Endoscopes', 'Industrial Inspection'] },
+  { slug:'brutforce-field-radio',name:'BFR-001 License-Free Walkie-Talkie',brand:'BRUTFORCE',category:'communication',image:'radio',gallery:['radio','radio-side'],label:'LICENSE-FREE FIELD RADIO',summary:'License-free two-way field radio operating on the 446 MHz band with 16 channels, up to 5 km line-of-sight range, and a long-life 2,600 mAh Li-ion battery.',specs:[['Model','BFR-001'],['Frequency range','446.00–446.02 MHz (License-free UHF)'],['Channels','16 pre-programmed channels with CTCSS/DCS'],['Operating range','Up to 5 km (line-of-sight depending on terrain)'],['Battery','2,600 mAh Li-ion rechargeable battery'],['Operating temperature','−25°C to +55°C'],['Compliance','WPC Approved (License-free in India)']],features:['16 pre-set channels with CTCSS/DCS sub-codes for private team coordination','Up to 5 km range depending on line-of-sight for field and mountain operations','WPC approved for license-free professional operation across India','Rugged compact housing with voice-operated VOX and emergency alert'],page:34,subcategories:['field-communication-expedition-support','defense-communication','defense-field-operations'],categoryIds:['communication','geology','defense'],tags: ['Two-Way Radios'] },
+  { slug:'brunton-compro-transit',name:'ComPro™ Composite Transit F-5008',brand:'Brunton',category:'geology',image:'compro',gallery:['compro'],label:'COMPOSITE POCKET TRANSIT',summary:'Ultralight composite transit housing professional transit internals with induction dampening, precision NdFeB cast magnet, and dual sighting tools.',specs:[['Model','ComPro™ Composite Transit F-5008'],['Body Material','Composite body material (reduces weight & protects against magnetic interference)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° or quad options)'],['Clinometer Accuracy','±0.5° with 1° graduations (90° range or 100% grade scale)'],['Declination Adjustment','Tool-free magnetic declination adjustment (±180°)'],['Magnetic System','NdFeB rare-earth cast magnet needle on sapphire jewel bearing'],['Dampening','Induction dampening for rapid needle settling'],['Sighting System','Precision sighting mirror with sighting hole and sighting line'],['Environmental','Waterproof sealed housing'],['Mounting','Tripod mountable with standard ball-and-socket tripod mount']],features:['Composite body reduces overall carry weight and eliminates local magnetic interference','Precision compass azimuth accuracy of ±0.5° with 1° graduations','Vertical clinometer provides ±0.5° accuracy with 1° graduations and 10-minute vernier reading','Cast NdFeB rare-earth disc magnet on sapphire jewel bearing delivers rapid, reliable settling','Tool-free magnetic declination adjustment allows swift true north calibration in the field','Waterproof sealed body designed to withstand harsh outdoor geological and mine environments','Precision sighting mirror with see-through window and front/rear sighting guides','Ball and socket tripod mount compatibility for stabilized station mapping'],page:30,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining','surveying'],tags: ['Geological Compasses', 'Compasses & Field Measurement', 'Geological Compasses / Pocket Transits'] },
+  { slug:'brunton-f-5012-axis',name:'Axis™ Pocket Transit F-5012',brand:'Brunton',category:'geology',image:'brunton-f-5012-axis',gallery:['brunton-f-5012-axis'],label:'AXIS POCKET TRANSIT',summary:'Patented dual-axis pocket transit enabling simultaneous measurement of strike and dip, trend and plunge, dip and dip direction, and bearings on a single setup.',specs:[['Model','Axis™ Pocket Transit F-5012'],['Hinge Design','Dual-axis hollow hinge allows measurement of strike & dip simultaneously'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° or 0–90° quad)'],['Clinometer Accuracy','±0.5° with 1° graduations'],['Declination Adjustment','Tool-free adjustable magnetic declination ±180°'],['Bearing / Dampening','Sapphire jewel bearing with induction damping'],['Level Vials','Internal tubular and circular level vials'],['Water Resistance','IPX7 / waterproof and submersible to 3 m for 30 min'],['Body Construction','CNC-machined hard-anodized aluminum body'],['Mounting','Tripod mountable with standard ball-and-socket mount']],features:['Dual-axis hollow hinge allows simultaneous measurement of strike and dip on any bedding surface (contact, foliation, or lineation)','High-precision compass azimuth accuracy of ±0.5° with 1° graduations','Vertical clinometer accuracy of ±0.5° with 1° graduations for dip and vertical angles','NdFeB cast rare-earth magnet mounted on sapphire jewel bearing with induction damping','Tool-free magnetic declination adjustment adjustable to ±180°','IPX7 waterproof construction submersible to 3 meters for 30 minutes','CNC-machined hard-anodized aluminum body designed for rugged field longevity','Internal circular and tubular level vials for stabilized direct-contact and sighting operations'],page:31,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags: ['Geological Compasses', 'Geological Compasses / Pocket Transits'] },
+  { slug:'minox-nvd-650',name:'NVD 650',brand:'MINOX',category:'thermal',image:'minox',gallery:['minox','minox-back'],label:'DIGITAL NIGHT VISION',summary:'A digital monocular with an IR emitter and recording capability for observation in low-light field conditions.',specs:[['Optical magnification','6×'],['Digital magnification','5×'],['IR wavelength','850 nm'],['IR range','Up to 350 m'],['Use','Day and night']],features:['Built-in IR emitter','Night recording functionality','Rail for additional IR illumination','Daytime use supported'],page:45,subcategories:['defense-night','defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['thermal','defense','forestry'],tags: ['Night Vision Devices', 'Infrared & Illumination', 'Thermal & Night Observation', 'Infrared Observation'] },
+  { slug:'suunto-mc2',name:'MC-2 Mirror Compass',brand:'Suunto',category:'navigation',image:'suunto',gallery:['suunto'],label:'PRECISION NAVIGATION',summary:'A sighting compass with a mirror, clinometer and adjustable declination correction for considered route finding.',specs:[['Needle','Jewel-bearing steel'],['Capsule','Liquid-filled'],['Declination','Adjustable correction'],['Measurement','Sighting and clinometer'],['Variant','Confirm hemisphere and scale']],features:['Sighting mirror and notch for bearings','Luminescent markings for low light','Baseplate with magnifying lens','Detachable snap-lock lanyard'],page:41,subcategories:['defense-navigation','defense-field-operations'],categoryIds:['navigation','defense'],tags: ['Compasses & Field Navigation', 'Compasses'] },
+  { slug:'audiomoth',name:'AudioMoth',brand:'Open Acoustic Devices',category:'forestry',image:'audiomoth',gallery:['audiomoth','audiomoth-case'],label:'ACOUSTIC MONITORING',summary:'A compact full-spectrum acoustic logger for listening to the natural world, with an optional protective field case.',specs:[['Sample rate','Up to 384 kHz'],['Processor','EFM32 Gecko'],['Microphone','Analog MEMS'],['Protective option','IPX7 waterproof case']],features:['Full-spectrum acoustic logging','Compact field-deployment format','Protective case with compression O-ring','Case strap for straightforward installation'],page:44,subcategories:['wildlife-monitoring-surveillance'],categoryIds:['forestry'],tags: ['Acoustic Monitoring', 'Bioacoustics & Acoustic Monitoring'] },
   {
     slug: 'hikmicro-e20-plus',
     name: 'E20 Plus',
@@ -228,7 +228,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Diameter Tape']
+    tags: ['Forestry Measurement', 'Forestry Measuring Tapes']
   },
   {
     slug: 'digital-tree-caliper',
@@ -256,7 +256,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Tree Calipers']
+    tags: ['Forestry Measurement', 'Tree Calipers']
   },
   {
     slug: 'wheeler-caliper',
@@ -284,7 +284,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory']
+    tags: ['Forestry Measurement']
   },
   {
     slug: 'tree-height-meter',
@@ -312,7 +312,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Height Meter']
+    tags: ['Clinometers & Forest Measurement', 'Forestry Measurement']
   },
   {
     slug: 'clinometer',
@@ -340,7 +340,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Clinometer']
+    tags: ['Clinometers & Forest Measurement', 'Forestry Measurement', 'Clinometers & Hypsometers']
   },
   {
     slug: 'hypsometer',
@@ -368,7 +368,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Hypsometer']
+    tags: ['Clinometers & Forest Measurement', 'Forestry Measurement', 'Clinometers & Hypsometers']
   },
   {
     slug: 'relaskop',
@@ -396,7 +396,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Relaskop']
+    tags: ['Forestry Measurement']
   },
   {
     slug: 'wedge-prism',
@@ -424,7 +424,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Wedge Prism']
+    tags: ['Forestry Measurement']
   },
   {
     slug: 'densiometer',
@@ -452,7 +452,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Densiometer']
+    tags: ['Forestry Measurement', 'Densiometers & Canopy']
   },
   {
     slug: 'bark-gauge',
@@ -480,7 +480,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Bark Gauge']
+    tags: ['Geological Hammers & Tools', 'Forestry Measurement']
   },
   {
     slug: 'increment-borer',
@@ -508,7 +508,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Increment Borer']
+    tags: ['Forestry Measurement', 'Increment Borers']
   },
   {
     slug: 'tally-counter',
@@ -536,7 +536,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Tally Counter']
+    tags: ['Forestry Measurement']
   },
   {
     slug: 'loggers-tape',
@@ -564,7 +564,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Loggers Tape']
+    tags: ['Forestry Measurement', 'Forestry Measuring Tapes']
   },
   {
     slug: 'measuring-tape',
@@ -592,7 +592,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory'],
     categoryIds: ['forestry'],
-    tags: ['Forest Measurement & Inventory', 'Measuring Tape']
+    tags: ['Survey & Measurement', 'Forestry Measurement']
   },
   {
     slug: 'laser-rangefinder',
@@ -620,7 +620,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-measurement-inventory', 'gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['Compasses & Field Measurement', 'Laser Rangefinder', 'Forest Measurement & Inventory']
+    tags: ['Compasses & Field Measurement', 'Laser Rangefinders', 'Forestry Measurement']
   },
 
   // =========================================================================
@@ -684,7 +684,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products', 'geological-field-mapping', 'mining-mapping'],
     categoryIds: ['surveying', 'forestry', 'geology', 'mining'],
-    tags: ['GNSS / RTK Receivers']
+    tags: ['GNSS / RTK Receivers', 'GPS & GNSS', 'Data Collectors & Controllers', 'Rugged Mobile Computing']
   },
   {
     slug: 'geomate-gbase-gnss',
@@ -854,7 +854,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GNSS / RTK Receivers']
+    tags: ['GNSS / RTK Receivers', 'GPS & GNSS']
   },
   {
     slug: 'rtk-dgps',
@@ -886,7 +886,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GNSS / RTK Receivers']
+    tags: ['GNSS / RTK Receivers', 'GPS & GNSS', 'Two-Way Radios']
   },
   {
     slug: 'sub-meter-gps',
@@ -914,7 +914,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GNSS / RTK Receivers']
+    tags: ['GNSS / RTK Receivers', 'GPS & GNSS']
   },
   {
     slug: 'centimeter-mm-accuracy-gnss',
@@ -942,7 +942,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['GNSS / RTK Receivers']
+    tags: ['GNSS / RTK Receivers', 'GPS & GNSS']
   },
   {
     slug: 'electronic-data-collector',
@@ -998,7 +998,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['Compasses & Field Measurement']
+    tags: ['Compasses & Field Measurement', 'Forestry Measurement']
   },
   {
     slug: 'staff-compass',
@@ -1026,7 +1026,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['Compasses & Field Measurement']
+    tags: ['Compasses & Field Measurement', 'Forestry Measurement']
   },
   {
     slug: 'altimeter',
@@ -1054,7 +1054,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['Compasses & Field Measurement']
+    tags: ['Compasses & Field Measurement', 'Forestry Measurement']
   },
   {
     slug: 'total-station',
@@ -1082,7 +1082,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['Total Stations & Levels']
+    tags: ['Total Stations & Levels', 'Survey & Measurement']
   },
   {
     slug: 'automatic-level',
@@ -1110,7 +1110,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['Total Stations & Levels']
+    tags: ['Total Stations & Levels', 'Survey & Measurement']
   },
   {
     slug: 'survey-tripod',
@@ -1138,7 +1138,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['Survey Accessories']
+    tags: ['Tripods & Accessories', 'Survey Accessories']
   },
   {
     slug: 'measuring-rod',
@@ -1194,7 +1194,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['Survey Accessories']
+    tags: ['Field Mapping & Marking', 'Survey Accessories']
   },
   {
     slug: 'flagging-tape',
@@ -1222,7 +1222,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['gps-survey-mapping-products'],
     categoryIds: ['forestry', 'surveying'],
-    tags: ['Survey Accessories']
+    tags: ['Survey Accessories', 'Forestry Measurement']
   },
   {
     slug: 'field-data-recorder',
@@ -1393,7 +1393,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Backpack Fire Pump']
+    tags: ['Fire Fighting Equipment', 'Camping & Field Equipment']
   },
   {
     slug: 'portable-fire-pump',
@@ -1421,7 +1421,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Portable Fire Pump']
+    tags: ['Fire Fighting Equipment']
   },
   {
     slug: 'fire-rake',
@@ -1448,7 +1448,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Fire Rake']
+    tags: ['Fire Fighting Equipment']
   },
   {
     slug: 'fire-swatter',
@@ -1476,7 +1476,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Fire Swatter']
+    tags: ['Fire Fighting Equipment']
   },
   {
     slug: 'pulaski-forestry-axe',
@@ -1504,7 +1504,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Pulaski Axe']
+    tags: ['Forestry Tools & Cutting', 'Fire Fighting Equipment', 'Pulaski Axes & Fire Hand Tools']
   },
   {
     slug: 'forestry-axe',
@@ -1532,7 +1532,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Forestry Axe']
+    tags: ['Forestry Tools & Cutting', 'Fire Fighting Equipment', 'Cutting & Felling Tools']
   },
   {
     slug: 'mcleod-tool',
@@ -1560,7 +1560,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'McLeod Tool']
+    tags: ['Fire Fighting Equipment']
   },
   {
     slug: 'fire-beater',
@@ -1588,7 +1588,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Fire Beater']
+    tags: ['Fire Fighting Equipment']
   },
   {
     slug: 'drip-torch',
@@ -1616,7 +1616,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Drip Torch']
+    tags: ['Fire Fighting Equipment', 'Drip Torches & Ignition']
   },
   {
     slug: 'fire-shelter',
@@ -1644,7 +1644,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Fire Shelter']
+    tags: ['Fire Fighting Equipment', 'Camping & Field Equipment']
   },
   {
     slug: 'fire-weather-meter',
@@ -1672,7 +1672,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Fire Weather Meter']
+    tags: ['Fire Fighting Equipment', 'Camping & Field Equipment']
   },
   {
     slug: 'weather-monitoring-kit',
@@ -1700,7 +1700,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products', 'forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Weather Kit', 'Fire Weather & Safety', 'Weather Monitoring']
+    tags: ['Fire Fighting Equipment', 'Camping & Field Equipment', 'Fire Weather & Safety', 'Weather Monitoring']
   },
   {
     slug: 'water-tank',
@@ -1728,7 +1728,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Water Tank']
+    tags: ['Fire Fighting Equipment']
   },
   {
     slug: 'fire-hose',
@@ -1756,7 +1756,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Fire Hose']
+    tags: ['Fire Fighting Equipment']
   },
   {
     slug: 'hose-reel',
@@ -1784,7 +1784,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Hose Reel']
+    tags: ['Fire Fighting Equipment']
   },
   {
     slug: 'portable-water-pump',
@@ -1812,7 +1812,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Portable Water Pump']
+    tags: ['Fire Fighting Equipment']
   },
   {
     slug: 'fire-extinguisher',
@@ -1840,7 +1840,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Fire Extinguisher']
+    tags: ['Fire Fighting Equipment']
   },
   {
     slug: 'firefighting-backpack',
@@ -1868,7 +1868,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'Firefighting Backpack']
+    tags: ['Firefighting & Search/Rescue Thermal', 'Fire Fighting Equipment', 'Camping & Field Equipment']
   },
   {
     slug: 'personal-protective-equipment',
@@ -1896,7 +1896,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forest-fire-fighting-products'],
     categoryIds: ['forestry'],
-    tags: ['Forest Fire-Fighting Products', 'PPE']
+    tags: ['Fire Fighting Equipment', 'Camping & Field Equipment']
   },
 
   // =========================================================================
@@ -1930,7 +1930,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Camera Traps', 'Infrared Observation']
+    tags: ['Infrared & Illumination', 'Camera Traps', 'Infrared Observation']
   },
   {
     slug: 'white-flash-camera-trap',
@@ -1986,7 +1986,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Camera Traps', 'Wildlife Tracking']
+    tags: ['Wildlife Tracking', 'Camera Traps', 'Cellular Trail Cameras']
   },
   {
     slug: 'solar-camera-trap',
@@ -2047,7 +2047,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'optics'],
-    tags: ['Binoculars', 'Optics & Observation']
+    tags: ['Binoculars', 'Observation Optics']
   },
   {
     slug: 'vortex-crossfire-hd-10x50',
@@ -2078,7 +2078,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'optics'],
-    tags: ['Binoculars', 'Optics & Observation']
+    tags: ['Binoculars', 'Observation Optics', 'Fire Fighting Equipment']
   },
   {
     slug: 'vortex-diamondback-hd-10x50',
@@ -2109,7 +2109,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-optics'],
     categoryIds: ['forestry', 'optics', 'defense'],
-    tags: ['Binoculars', 'Optics & Observation', 'Observation Optics']
+    tags: ['Binoculars', 'Observation Optics']
   },
 
   // --- Spotting Scopes (Official Vortex Optics) ---
@@ -2143,7 +2143,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'optics'],
-    tags: ['Spotting Scopes', 'Optics & Observation']
+    tags: ['Binoculars', 'Spotting Scopes', 'Observation Optics']
   },
   {
     slug: 'vortex-razor-hd-27-60x85',
@@ -2175,7 +2175,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-optics', 'defense-surveillance'],
     categoryIds: ['forestry', 'optics', 'defense'],
-    tags: ['Spotting Scopes', 'Optics & Observation', 'Observation Optics']
+    tags: ['Binoculars', 'Spotting Scopes', 'Observation Optics']
   },
 
   // --- Monocular (Official Vortex Optics) ---
@@ -2209,7 +2209,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'optics'],
-    tags: ['Monoculars', 'Optics & Observation']
+    tags: ['Monoculars', 'Observation Optics']
   },
 
   // --- Laser Rangefinders (Official Vortex Optics) ---
@@ -2244,7 +2244,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'optics'],
-    tags: ['Laser Rangefinders', 'Optics & Observation']
+    tags: ['Binoculars', 'Laser Rangefinders', 'Observation Optics']
   },
   {
     slug: 'vortex-triumph-hd-850',
@@ -2276,7 +2276,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'optics'],
-    tags: ['Laser Rangefinders', 'Optics & Observation']
+    tags: ['Binoculars', 'Laser Rangefinders', 'Observation Optics']
   },
   {
     slug: 'vortex-diamondback-hd-2000',
@@ -2308,7 +2308,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'optics'],
-    tags: ['Laser Rangefinders', 'Optics & Observation']
+    tags: ['Binoculars', 'Laser Rangefinders', 'Observation Optics']
   },
 
   // --- Thermal & Night Observation Products ---
@@ -2338,7 +2338,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'thermal'],
-    tags: ['Thermal & Night Observation', 'Thermal Cameras', 'Infrared Observation']
+    tags: ['Thermal Cameras', 'Night Vision Devices', 'Infrared & Illumination', 'Thermal & Night Observation', 'Infrared Observation']
   },
   {
     slug: 'hikmicro-habrok-multi-spectrum-binocular',
@@ -2367,7 +2367,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'thermal', 'optics'],
-    tags: ['Thermal & Night Observation', 'Thermal Binoculars', 'Infrared Observation', 'Binoculars']
+    tags: ['Thermal Cameras', 'Thermal Monoculars & Binoculars', 'Night Vision Devices', 'Infrared & Illumination', 'Thermal & Night Observation', 'Infrared Observation', 'Binoculars']
   },
 
   // --- Bioacoustics & Acoustic Monitoring Products ---
@@ -2401,7 +2401,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Bioacoustics & Acoustic Monitoring', 'Autonomous Recording Units', 'Acoustic Recorders']
+    tags: ['Acoustic Monitoring', 'Bioacoustics & Acoustic Monitoring']
   },
   {
     slug: 'wildlife-microphone',
@@ -2428,7 +2428,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Bioacoustics & Acoustic Monitoring', 'Acoustic Recorders']
+    tags: ['Acoustic Monitoring', 'Bioacoustics & Acoustic Monitoring']
   },
   {
     slug: 'ultrasonic-wildlife-detector',
@@ -2455,7 +2455,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Bioacoustics & Acoustic Monitoring', 'Autonomous Recording Units', 'Acoustic Recorders']
+    tags: ['Acoustic Monitoring', 'Bioacoustics & Acoustic Monitoring']
   },
   {
     slug: 'bat-detector',
@@ -2482,7 +2482,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Bioacoustics & Acoustic Monitoring', 'Acoustic Recorders']
+    tags: ['Acoustic Monitoring', 'Bioacoustics & Acoustic Monitoring']
   },
   {
     slug: 'acoustic-sensor',
@@ -2509,7 +2509,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Bioacoustics & Acoustic Monitoring', 'Autonomous Recording Units']
+    tags: ['Acoustic Monitoring', 'Bioacoustics & Acoustic Monitoring']
   },
 
   // --- Wildlife Tracking (GPS Collars) ---
@@ -2538,7 +2538,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'navigation'],
-    tags: ['Wildlife Tracking', 'GPS Wildlife Collars']
+    tags: ['Wildlife Tracking']
   },
 
   // --- Security & Surveillance (Generic Families) ---
@@ -2567,7 +2567,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Security & Surveillance', 'Solar Surveillance', 'Wildlife Monitoring', 'Forest Security & Surveillance']
+    tags: ['Camera Traps', 'Security & Surveillance', 'Solar Surveillance']
   },
   {
     slug: 'cctv-surveillance-camera',
@@ -2594,7 +2594,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Security & Surveillance', 'Long-Range Cameras', 'Wildlife Monitoring', 'Forest Security & Surveillance']
+    tags: ['Thermal Monoculars & Binoculars', 'Camera Traps', 'Security & Surveillance']
   },
 
   // =========================================================================
@@ -2627,7 +2627,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping & Expedition', 'Camping Tents', 'Field Tent']
+    tags: ['Camping & Field Equipment', 'Camping Tents']
   },
   {
     slug: 'sleeping-bag',
@@ -2654,7 +2654,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping & Expedition', 'Sleeping Bags & Bedding', 'Sleeping Bag']
+    tags: ['Camping & Field Equipment', 'Sleeping Bags & Bedding']
   },
   {
     slug: 'backpack',
@@ -2681,7 +2681,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping & Expedition', 'Backpacks & Field Carry', 'Backpack']
+    tags: ['Camping & Field Equipment', 'Backpacks & Field Carry']
   },
   {
     slug: 'field-shelter',
@@ -2708,7 +2708,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping & Expedition', 'Shelters & Canopies', 'Field Shelter']
+    tags: ['Fire Fighting Equipment', 'Camping & Field Equipment', 'Shelters & Canopies']
   },
 
   // --- Field Safety / PPE ---
@@ -2737,7 +2737,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Field Safety / PPE', 'Helmet']
+    tags: ['Camping & Field Equipment', 'Field Safety / PPE']
   },
   {
     slug: 'safety-glasses',
@@ -2764,7 +2764,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Field Safety / PPE', 'Safety Glasses']
+    tags: ['Camping & Field Equipment', 'Field Safety / PPE']
   },
   {
     slug: 'gloves',
@@ -2791,7 +2791,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Field Safety / PPE', 'Gloves']
+    tags: ['Camping & Field Equipment', 'Field Safety / PPE']
   },
   {
     slug: 'chainsaw-protection',
@@ -2818,7 +2818,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Field Safety / PPE', 'Chainsaw Protection']
+    tags: ['Forestry Tools & Cutting', 'Camping & Field Equipment', 'Field Safety / PPE']
   },
   {
     slug: 'safety-shoes',
@@ -2845,7 +2845,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Field Safety / PPE', 'Safety Shoes']
+    tags: ['Camping & Field Equipment', 'Field Safety / PPE']
   },
   {
     slug: 'high-visibility-clothing',
@@ -2872,7 +2872,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Field Safety / PPE', 'High-Visibility Clothing']
+    tags: ['Camping & Field Equipment', 'Field Safety / PPE']
   },
 
   // --- Weather Monitoring ---
@@ -2901,7 +2901,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Weather Monitoring', 'Climate Monitoring Equipment']
+    tags: ['Camping & Field Equipment', 'Weather Monitoring']
   },
   {
     slug: 'portable-weather-station',
@@ -2928,7 +2928,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Weather Monitoring', 'Portable Weather Station']
+    tags: ['Camping & Field Equipment', 'Weather Monitoring']
   },
 
   // --- Power & Field Electronics ---
@@ -2957,7 +2957,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Power & Field Electronics', 'Portable Power Station']
+    tags: ['Camping & Field Equipment', 'Power & Field Electronics']
   },
   {
     slug: 'solar-panel',
@@ -2984,7 +2984,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Power & Field Electronics', 'Solar Panel']
+    tags: ['Camping & Field Equipment', 'Power & Field Electronics']
   },
   {
     slug: 'battery-pack',
@@ -3011,7 +3011,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Power & Field Electronics', 'Battery Pack']
+    tags: ['Acoustic Monitoring', 'Camping & Field Equipment', 'Power & Field Electronics']
   },
   {
     slug: 'charger',
@@ -3038,7 +3038,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Power & Field Electronics', 'Charger']
+    tags: ['Camping & Field Equipment', 'Power & Field Electronics']
   },
   {
     slug: 'waterproof-case',
@@ -3065,7 +3065,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Power & Field Electronics', 'Waterproof Case']
+    tags: ['Camping & Field Equipment', 'Power & Field Electronics']
   },
 
   // =========================================================================
@@ -3107,7 +3107,7 @@ const baseProducts: Product[] = [
     page: 31,
     subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Geological Compasses / Pocket Transits']
+    tags: ['Geological Compasses', 'Geological Compasses / Pocket Transits']
   },
   {
     slug: 'brunton-truarc-15',
@@ -3140,7 +3140,7 @@ const baseProducts: Product[] = [
     page: 31,
     subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-compasses'],
     categoryIds: ['geology', 'navigation', 'mining'],
-    tags: ['Geological Compasses / Pocket Transits', 'Field Compasses / Baseplate Compasses']
+    tags: ['Geological Compasses', 'Compasses & Field Navigation', 'Geological Compasses / Pocket Transits', 'Field Compasses / Baseplate Compasses']
   },
   {
     slug: 'brunton-truarc-20',
@@ -3175,7 +3175,7 @@ const baseProducts: Product[] = [
     page: 31,
     subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-compasses'],
     categoryIds: ['geology', 'navigation', 'mining'],
-    tags: ['Geological Compasses / Pocket Transits', 'Field Compasses / Baseplate Compasses']
+    tags: ['Geological Compasses', 'Compasses & Field Navigation', 'Geological Compasses / Pocket Transits', 'Field Compasses / Baseplate Compasses']
   },
   {
     slug: 'brunton-truarc-5',
@@ -3207,7 +3207,7 @@ const baseProducts: Product[] = [
     page: 31,
     subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-compasses'],
     categoryIds: ['geology', 'navigation', 'mining'],
-    tags: ['Geological Compasses / Pocket Transits', 'Field Compasses / Baseplate Compasses']
+    tags: ['Geological Compasses', 'Compasses & Field Navigation', 'Geological Compasses / Pocket Transits', 'Field Compasses / Baseplate Compasses']
   },
   {
     slug: 'breithaupt-3031-gekom',
@@ -3236,7 +3236,7 @@ const baseProducts: Product[] = [
     page: 28,
     subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Geological Compasses / Pocket Transits']
+    tags: ['Geological Compasses', 'Geological Compasses / Pocket Transits']
   },
   {
     slug: 'breithaupt-3032-gebru',
@@ -3265,7 +3265,7 @@ const baseProducts: Product[] = [
     page: 28,
     subcategories: ['geological-field-mapping', 'mining-field-mapping', 'mining-survey', 'mining-compasses'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Geological Compasses / Pocket Transits']
+    tags: ['Geological Compasses', 'Geological Compasses / Pocket Transits']
   },
   {
     slug: 'brunton-omnislope',
@@ -3294,7 +3294,7 @@ const baseProducts: Product[] = [
     page: 28,
     subcategories: ['geological-field-mapping', 'forest-measurement-inventory', 'mining-survey'],
     categoryIds: ['geology', 'forestry', 'mining'],
-    tags: ['Geological Compasses / Pocket Transits']
+    tags: ['Geological Compasses', 'Clinometers & Forest Measurement', 'Forestry Measurement', 'Geological Compasses / Pocket Transits']
   },
 
   // --- 2. Geological Hammers & Rock Tools ---
@@ -3326,7 +3326,7 @@ const baseProducts: Product[] = [
     page: 46,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Geological Hammers', 'Rock Hammers', 'Rock Picks']
+    tags: ['Geological Hammers & Tools', 'Geological Hammers', 'Rock Hammers', 'Rock Picks']
   },
   {
     slug: 'estwing-e3-24blc',
@@ -3356,7 +3356,7 @@ const baseProducts: Product[] = [
     page: 46,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Geological Hammers', 'Field Hammers']
+    tags: ['Geological Hammers & Tools', 'Geological Hammers', 'Field Hammers']
   },
   {
     slug: 'estwing-e3-23lp',
@@ -3386,7 +3386,7 @@ const baseProducts: Product[] = [
     page: 46,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Geological Hammers', 'Rock Hammers', 'Rock Picks']
+    tags: ['Geological Hammers & Tools', 'Geological Hammers', 'Rock Hammers', 'Rock Picks']
   },
   {
     slug: 'estwing-engineers-hammer-e6-48e',
@@ -3416,7 +3416,7 @@ const baseProducts: Product[] = [
     page: 46,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Geological Hammers', 'Engineer’s Hammers', 'Field Hammers']
+    tags: ['Geological Hammers & Tools', 'Geological Hammers', 'Engineer’s Hammers', 'Field Hammers']
   },
   {
     slug: 'estwing-rock-pick-square-head-e6-24pc',
@@ -3446,7 +3446,7 @@ const baseProducts: Product[] = [
     page: 46,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Geological Hammers', 'Rock Hammers', 'Rock Picks']
+    tags: ['Geological Hammers & Tools', 'Geological Hammers', 'Rock Hammers', 'Rock Picks']
   },
 
   // --- 3. Geological Prospecting & Gold Pans ---
@@ -3478,7 +3478,7 @@ const baseProducts: Product[] = [
     page: 46,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Gold Pans', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Gold Pans', 'Prospecting Tools']
   },
   {
     slug: 'estwing-steel-gold-pan',
@@ -3508,7 +3508,7 @@ const baseProducts: Product[] = [
     page: 46,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Gold Pans', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Gold Pans', 'Prospecting Tools']
   },
   {
     slug: 'estwing-rock-chisels',
@@ -3536,7 +3536,7 @@ const baseProducts: Product[] = [
     page: 29,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Rock Chisels', 'Geological Hammers', 'Rock Hammers', 'Rock Picks']
+    tags: ['Geological Hammers & Tools', 'Geological Hammers', 'Rock Hammers', 'Rock Picks']
   },
 
   // --- 3. Hand Lenses & Magnification ---
@@ -3566,7 +3566,7 @@ const baseProducts: Product[] = [
     page: 30,
     subcategories: ['geological-field-mapping', 'mining-inspection'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Field Loupes', 'Field Hand Lens / Loupe', 'Pocket Magnifiers']
+    tags: ['Hand Lenses & Inspection', 'Field Hand Lens / Loupe', 'Pocket Magnifiers']
   },
   {
     slug: 'geo-premier-triplet-hand-lens',
@@ -3594,7 +3594,7 @@ const baseProducts: Product[] = [
     page: 30,
     subcategories: ['geological-field-mapping', 'mining-inspection'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Triplet Hand Lenses', 'Field Hand Lens / Loupe', 'Pocket Magnifiers']
+    tags: ['Hand Lenses & Inspection', 'Field Hand Lens / Loupe', 'Pocket Magnifiers']
   },
 
   // --- 4. GPS, Mapping & Distance Measurement ---
@@ -3625,7 +3625,7 @@ const baseProducts: Product[] = [
     page: 13,
     subcategories: ['geological-field-mapping', 'gps-survey-mapping-products', 'defense-navigation', 'mining-field-mapping', 'mining-mapping'],
     categoryIds: ['navigation', 'geology', 'defense', 'mining'],
-    tags: ['Handheld GPS', 'GPS/GNSS Devices', 'GPS', 'GPS / GNSS Receivers']
+    tags: ['GNSS / RTK Receivers', 'Handheld GPS', 'GPS & GNSS', 'GPS/GNSS Devices', 'GPS / GNSS Receivers']
   },
   {
     slug: 'garmin-gpsmap-65',
@@ -3653,7 +3653,7 @@ const baseProducts: Product[] = [
     page: 13,
     subcategories: ['geological-field-mapping', 'gps-survey-mapping-products', 'defense-navigation', 'mining-field-mapping', 'mining-mapping'],
     categoryIds: ['navigation', 'geology', 'defense', 'mining'],
-    tags: ['Handheld GPS', 'GPS/GNSS Devices', 'GPS', 'GPS / GNSS Receivers']
+    tags: ['GNSS / RTK Receivers', 'Handheld GPS', 'GPS & GNSS', 'GPS/GNSS Devices', 'GPS / GNSS Receivers']
   },
   {
     slug: 'leica-disto-laser-distance-meter',
@@ -3682,7 +3682,7 @@ const baseProducts: Product[] = [
     page: 14,
     subcategories: ['geological-field-mapping', 'mining-survey', 'mining-distance'],
     categoryIds: ['surveying', 'geology', 'mining'],
-    tags: ['Compasses & Field Measurement', 'Laser Distance Meters', 'Distance Measurement']
+    tags: ['Compasses & Field Measurement', 'Survey & Measurement', 'Laser Distance Meters']
   },
 
   // --- 5. Field Notebooks, Pens & Measuring Tools ---
@@ -3712,7 +3712,7 @@ const baseProducts: Product[] = [
     page: 31,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'surveying', 'mining'],
-    tags: ['Survey Accessories', 'Field Notebooks', 'Survey Books', 'Geological Scales']
+    tags: ['Field Mapping & Marking', 'Field Books & Accessories', 'Survey Accessories', 'Geological Scales']
   },
   {
     slug: 'edding-mapping-pen-01',
@@ -3738,7 +3738,7 @@ const baseProducts: Product[] = [
     page: 31,
     subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Mapping Pens & Markers', 'Field Pens', 'Geological Scales']
+    tags: ['Field Mapping & Marking', 'Geological Scales']
   },
   {
     slug: 'edding-mapping-pen-03',
@@ -3764,7 +3764,7 @@ const baseProducts: Product[] = [
     page: 31,
     subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Mapping Pens & Markers', 'Field Pens', 'Geological Scales']
+    tags: ['Field Mapping & Marking', 'Geological Scales']
   },
   {
     slug: 'edding-mapping-pen-05',
@@ -3790,7 +3790,7 @@ const baseProducts: Product[] = [
     page: 31,
     subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Mapping Pens & Markers', 'Field Pens', 'Geological Scales']
+    tags: ['Field Mapping & Marking', 'Geological Scales']
   },
   {
     slug: 'staedtler-pigment-liner-mapping-pen',
@@ -3816,7 +3816,7 @@ const baseProducts: Product[] = [
     page: 31,
     subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Mapping Pens & Markers', 'Field Pens', 'Geological Scales']
+    tags: ['Field Mapping & Marking', 'Geological Scales']
   },
   {
     slug: 'china-graph-pencils',
@@ -3842,7 +3842,7 @@ const baseProducts: Product[] = [
     page: 32,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Mapping Pens & Markers', 'Field Markers', 'Geological Scales']
+    tags: ['Field Mapping & Marking', 'Geological Scales']
   },
   {
     slug: 'geological-measuring-tape',
@@ -3869,7 +3869,7 @@ const baseProducts: Product[] = [
     page: 32,
     subcategories: ['geological-field-mapping', 'mining-survey', 'mining-distance'],
     categoryIds: ['geology', 'surveying', 'mining'],
-    tags: ['Survey Accessories', 'Measuring Tapes', 'Field Measuring Rods', 'Geological Scales']
+    tags: ['Field Mapping & Marking', 'Survey & Measurement', 'Survey Accessories', 'Forestry Measurement', 'Field Measuring Rods', 'Geological Scales']
   },
 
   // --- 6. Mineral Hardness & Property Testing ---
@@ -3897,7 +3897,7 @@ const baseProducts: Product[] = [
     page: 33,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Acid Testing', 'Property Testing', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: 'mohs-hardness-tile',
@@ -3923,7 +3923,7 @@ const baseProducts: Product[] = [
     page: 33,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Mohs Hardness Testing', 'Property Testing', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: 'pendulum-pencil-magnet',
@@ -3949,7 +3949,7 @@ const baseProducts: Product[] = [
     page: 33,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Magnetic Scribers', 'Property Testing', 'Prospecting Tools']
+    tags: ['Field Mapping & Marking', 'Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: 'steel-point-scriber',
@@ -3975,7 +3975,7 @@ const baseProducts: Product[] = [
     page: 33,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Mohs Hardness Testing', 'Property Testing', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: 'streak-plates-black',
@@ -4001,7 +4001,7 @@ const baseProducts: Product[] = [
     page: 34,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Streak Plates', 'Property Testing', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: 'streak-plates-white',
@@ -4027,7 +4027,7 @@ const baseProducts: Product[] = [
     page: 34,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Streak Plates', 'Property Testing', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: 'swing-magnetic-pen',
@@ -4053,7 +4053,7 @@ const baseProducts: Product[] = [
     page: 34,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Magnetic Scribers', 'Property Testing', 'Prospecting Tools']
+    tags: ['Field Mapping & Marking', 'Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: 'tungsten-carbide-scriber-with-magnet-black',
@@ -4079,7 +4079,7 @@ const baseProducts: Product[] = [
     page: 34,
     subcategories: ['geological-field-mapping', 'mining-field-mapping'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Magnetic Scribers', 'Mohs Hardness Testing', 'Property Testing', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Prospecting Tools']
   },
 
   // --- 7. Geological Sieves & Sample Analysis ---
@@ -4108,7 +4108,7 @@ const baseProducts: Product[] = [
     page: 35,
     subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Analytical Test Sieves', 'Geological Sieves', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: '150mm-glenammer-sieves',
@@ -4135,7 +4135,7 @@ const baseProducts: Product[] = [
     page: 35,
     subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Analytical Test Sieves', 'Geological Sieves', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: '200mm-glenammer-sieves',
@@ -4163,7 +4163,7 @@ const baseProducts: Product[] = [
     page: 35,
     subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Analytical Test Sieves', 'Geological Sieves', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: '200mm-half-height-glenammer-sieves',
@@ -4190,7 +4190,7 @@ const baseProducts: Product[] = [
     page: 35,
     subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Half Height Sieves', 'Geological Sieves', 'Prospecting Tools']
+    tags: ['Clinometers & Forest Measurement', 'Forestry Measurement', 'Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: '300mm-glenammer-sieves',
@@ -4217,7 +4217,7 @@ const baseProducts: Product[] = [
     page: 36,
     subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Analytical Test Sieves', 'Geological Sieves', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: '300mm-half-height-glenammer-sieves',
@@ -4244,7 +4244,7 @@ const baseProducts: Product[] = [
     page: 36,
     subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Half Height Sieves', 'Geological Sieves', 'Prospecting Tools']
+    tags: ['Clinometers & Forest Measurement', 'Forestry Measurement', 'Sample Collection & Storage', 'Prospecting Tools']
   },
   {
     slug: 'geo-sieves',
@@ -4272,7 +4272,7 @@ const baseProducts: Product[] = [
     page: 36,
     subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Field Sieve Sets', 'Geological Sieves', 'Prospecting Tools']
+    tags: ['Sample Collection & Storage', 'Prospecting Tools']
   },
 
   // --- 8. Field Communication & Expedition Support ---
@@ -4303,7 +4303,7 @@ const baseProducts: Product[] = [
     page: 37,
     subcategories: ['geological-field-mapping'],
     categoryIds: ['geology'],
-    tags: ['Hydration & Water Filtration', 'Expedition Support']
+    tags: ['Camping & Field Equipment']
   }
 ,
 
@@ -4377,7 +4377,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'wildlife-monitoring-surveillance'],
     categoryIds: ['optics', 'defense', 'forestry'],
-    tags: ['Binoculars', 'Observation Optics']
+    tags: ['Binoculars', 'Observation Optics', 'Fire Fighting Equipment']
   },
 
   {
@@ -4593,7 +4593,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['optics', 'defense', 'forestry'],
-    tags: ['Spotting Scopes', 'Observation Optics']
+    tags: ['Binoculars', 'Spotting Scopes', 'Observation Optics']
   },
 
   {
@@ -4629,7 +4629,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'forest-measurement-inventory', 'wildlife-monitoring-surveillance', 'mining-survey'],
     categoryIds: ['optics', 'defense', 'forestry', 'mining', 'surveying'],
-    tags: ['Compasses & Field Measurement', 'Laser Rangefinders', 'Rangefinders', 'Observation Optics']
+    tags: ['Compasses & Field Measurement', 'Binoculars', 'Laser Rangefinders', 'Observation Optics']
   },
 
   {
@@ -4665,7 +4665,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'forest-measurement-inventory', 'wildlife-monitoring-surveillance', 'mining-survey'],
     categoryIds: ['optics', 'defense', 'forestry', 'mining', 'surveying'],
-    tags: ['Compasses & Field Measurement', 'Laser Rangefinders', 'Rangefinders', 'Observation Optics']
+    tags: ['Compasses & Field Measurement', 'Binoculars', 'Laser Rangefinders', 'Observation Optics']
   },
 
   {
@@ -4701,7 +4701,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'wildlife-monitoring-surveillance', 'forest-measurement-inventory'],
     categoryIds: ['optics', 'defense', 'forestry'],
-    tags: ['Laser Rangefinders', 'Binoculars', 'Observation Optics']
+    tags: ['Binoculars', 'Laser Rangefinders', 'Observation Optics']
   },
 
   {
@@ -4737,7 +4737,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-tactical'],
     categoryIds: ['optics', 'defense'],
-    tags: ['Laser Rangefinders', 'Rifle Scopes', 'Tactical Optics', 'Observation Optics']
+    tags: ['Binoculars', 'Laser Rangefinders', 'Rifle Scopes & Tactical Optics', 'Observation Optics', 'Tactical Communications', 'Rifle Scopes']
   },
 
   {
@@ -4773,7 +4773,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['optics', 'defense', 'forestry'],
-    tags: ['Laser Rangefinders', 'Binoculars', 'Observation Optics']
+    tags: ['Binoculars', 'Laser Rangefinders', 'Observation Optics']
   },
 
   {
@@ -4807,7 +4807,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance', 'mining-survey'],
     categoryIds: ['optics', 'defense', 'forestry', 'surveying'],
-    tags: ['Survey Accessories', 'Tripods & Supports', 'Observation Optics']
+    tags: ['Binoculars', 'Tripods & Accessories', 'Observation Optics', 'Survey Accessories', 'Tripods & Supports']
   },
 
   {
@@ -4841,7 +4841,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance', 'mining-survey'],
     categoryIds: ['optics', 'defense', 'forestry', 'surveying'],
-    tags: ['Survey Accessories', 'Tripods & Supports', 'Observation Optics']
+    tags: ['Binoculars', 'Tripods & Accessories', 'Observation Optics', 'Survey Accessories', 'Tripods & Supports']
   },
 
   {
@@ -4875,7 +4875,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-surveillance', 'wildlife-monitoring-surveillance', 'mining-survey'],
     categoryIds: ['optics', 'defense', 'forestry', 'surveying'],
-    tags: ['Survey Accessories', 'Tripods & Supports', 'Observation Optics']
+    tags: ['Binoculars', 'Tripods & Accessories', 'Observation Optics', 'Survey Accessories', 'Tripods & Supports']
   },
 
   {
@@ -4910,7 +4910,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-thermal', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['thermal', 'defense', 'forestry'],
-    tags: ['Thermal Monoculars', 'Thermal Cameras', 'Laser Rangefinders', 'Infrared Observation']
+    tags: ['Thermal Cameras', 'Thermal Monoculars & Binoculars', 'Infrared & Illumination', 'Laser Rangefinders', 'Thermal Monoculars', 'Infrared Observation']
   },
 
   {
@@ -4945,7 +4945,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-thermal', 'wildlife-monitoring-surveillance'],
     categoryIds: ['thermal', 'defense', 'forestry', 'inspection'],
-    tags: ['Thermal Cameras', 'Infrared Observation']
+    tags: ['Thermal Cameras', 'Industrial & Radiometric Thermal', 'Infrared & Illumination', 'Infrared Observation']
   },
 
   {
@@ -4980,7 +4980,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-thermal', 'wildlife-monitoring-surveillance'],
     categoryIds: ['thermal', 'defense', 'forestry', 'inspection'],
-    tags: ['Thermal Cameras', 'Mobile Thermal Imaging', 'Infrared Observation']
+    tags: ['Thermal Cameras', 'Mobile Thermal Imaging', 'Infrared & Illumination', 'Infrared Observation']
   },
 
   {
@@ -5016,7 +5016,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-thermal', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['thermal', 'defense', 'forestry'],
-    tags: ['Thermal Monoculars', 'Thermal Cameras', 'Infrared Observation']
+    tags: ['Thermal Cameras', 'Thermal Monoculars & Binoculars', 'Infrared & Illumination', 'Thermal Monoculars', 'Infrared Observation']
   },
 
   {
@@ -5050,7 +5050,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Bioacoustics & Acoustic Monitoring', 'Autonomous Recording Units', 'Acoustic Recorders']
+    tags: ['Acoustic Monitoring', 'Bioacoustics & Acoustic Monitoring']
   },
 
   {
@@ -5083,7 +5083,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Bioacoustics & Acoustic Monitoring', 'Autonomous Recording Units', 'Acoustic Recorders', 'Ultrasonic Bat Recorders']
+    tags: ['Acoustic Monitoring', 'Bioacoustics & Acoustic Monitoring']
   },
 
   {
@@ -5115,7 +5115,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Bioacoustics & Acoustic Monitoring', 'Acoustic Analysis Software', 'Field Software']
+    tags: ['Acoustic Monitoring', 'Bioacoustics & Acoustic Monitoring']
   },
 
   {
@@ -5150,7 +5150,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-tactical'],
     categoryIds: ['optics', 'defense'],
-    tags: ['Rifle Scopes', 'Tactical Optics', 'Observation Optics']
+    tags: ['Binoculars', 'Rifle Scopes & Tactical Optics', 'Observation Optics', 'Tactical Communications', 'Rifle Scopes']
   },
 
   {
@@ -5187,7 +5187,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-tactical'],
     categoryIds: ['optics', 'defense'],
-    tags: ['Rifle Scopes', 'Tactical Optics', 'Observation Optics']
+    tags: ['Binoculars', 'Rifle Scopes & Tactical Optics', 'Observation Optics', 'Tactical Communications', 'Rifle Scopes']
   },
 
   {
@@ -5223,7 +5223,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-tactical'],
     categoryIds: ['optics', 'defense'],
-    tags: ['Rifle Scopes', 'Tactical Optics', 'Observation Optics']
+    tags: ['Binoculars', 'Rifle Scopes & Tactical Optics', 'Observation Optics', 'Tactical Communications', 'Rifle Scopes']
   },
 
   {
@@ -5258,7 +5258,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-tactical'],
     categoryIds: ['optics', 'defense'],
-    tags: ['Rifle Scopes', 'Tactical Optics', 'Observation Optics']
+    tags: ['Binoculars', 'Rifle Scopes & Tactical Optics', 'Observation Optics', 'Tactical Communications', 'Fire Fighting Equipment', 'Rifle Scopes']
   },
 
   {
@@ -5293,7 +5293,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-optics', 'defense-tactical'],
     categoryIds: ['optics', 'defense'],
-    tags: ['Rifle Scopes', 'Tactical Optics', 'Observation Optics']
+    tags: ['Binoculars', 'Rifle Scopes & Tactical Optics', 'Observation Optics', 'Tactical Communications', 'Rifle Scopes']
   },
 
   {
@@ -5327,7 +5327,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-night', 'defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['thermal', 'defense', 'forestry'],
-    tags: ['Night Vision Binoculars', 'Laser Rangefinders', 'Night Vision Devices', 'Infrared Observation']
+    tags: ['Night Vision Devices', 'Infrared & Illumination', 'Laser Rangefinders', 'Night Vision Binoculars', 'Infrared Observation']
   },
 
   {
@@ -5360,7 +5360,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-night', 'defense-tactical', 'wildlife-monitoring-surveillance'],
     categoryIds: ['thermal', 'defense', 'forestry'],
-    tags: ['Night Vision Binoculars', 'Night Vision Devices', 'Infrared Observation']
+    tags: ['Night Vision Devices', 'Infrared & Illumination', 'Night Vision Binoculars', 'Infrared Observation']
   },
 
   {
@@ -5393,7 +5393,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-night', 'defense-tactical', 'wildlife-monitoring-surveillance'],
     categoryIds: ['thermal', 'defense', 'forestry'],
-    tags: ['Night Vision Binoculars', 'Night Vision Devices', 'Infrared Observation']
+    tags: ['Night Vision Devices', 'Infrared & Illumination', 'Night Vision Binoculars', 'Infrared Observation']
   },
 
   {
@@ -5428,7 +5428,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Cellular Trail Cameras', 'Camera Traps', 'Wildlife Cameras']
+    tags: ['Camera Traps', 'Cellular Trail Cameras', 'Wildlife Cameras']
   },
 
   {
@@ -5462,7 +5462,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Wi-Fi Trail Cameras', 'Camera Traps', 'Wildlife Cameras']
+    tags: ['Camera Traps', 'Wi-Fi Trail Cameras', 'Wildlife Cameras']
   },
 
   {
@@ -5496,7 +5496,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-surveillance', 'wildlife-monitoring-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Cellular Trail Cameras', 'Camera Traps', 'Wildlife Cameras']
+    tags: ['Camera Traps', 'Cellular Trail Cameras', 'Wildlife Cameras']
   },
 
   {
@@ -5563,7 +5563,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
     categoryIds: ['communication', 'defense'],
-    tags: ['Two-Way Radios', 'Field Communications', 'Tactical Communications']
+    tags: ['Two-Way Radios', 'Digital / DMR Radios', 'Tactical Communications', 'Field Communications']
   },
 
   {
@@ -5597,7 +5597,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-surveillance', 'defense-communication', 'defense-field-operations'],
     categoryIds: ['defense', 'communication'],
-    tags: ['Body-Worn Cameras', 'Field Communications', 'Tactical & Personal Gear']
+    tags: ['Tactical Communications', 'Communication Accessories', 'Body-Worn Cameras', 'Field Communications']
   },
 
   {
@@ -5631,7 +5631,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
     categoryIds: ['communication', 'defense'],
-    tags: ['P25 / Multi-Protocol Radios', 'Two-Way Radios', 'Field Communications', 'Tactical Communications']
+    tags: ['Two-Way Radios', 'Digital / DMR Radios', 'Tactical Communications', 'P25 / Multi-Protocol Radios', 'Field Communications']
   },
 
   {
@@ -5665,7 +5665,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-communication', 'defense-field-operations', 'field-communication-expedition-support'],
     categoryIds: ['communication', 'defense'],
-    tags: ['P25 / Multi-Protocol Radios', 'Two-Way Radios', 'Field Communications', 'Tactical Communications']
+    tags: ['Two-Way Radios', 'Digital / DMR Radios', 'Tactical Communications', 'P25 / Multi-Protocol Radios', 'Field Communications']
   },
 
   {
@@ -5693,7 +5693,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-field-operations', 'defense-tactical', 'forestry-camping-safety-climate'],
     categoryIds: ['defense', 'forestry'],
-    tags: ['Torches', 'Field Lighting', 'Tactical & Personal Gear']
+    tags: ['Infrared & Illumination', 'Tactical Communications', 'Fire Fighting Equipment', 'Camping & Field Equipment', 'Torches']
   },
 
   {
@@ -5721,7 +5721,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-field-operations', 'defense-tactical', 'forestry-camping-safety-climate'],
     categoryIds: ['defense', 'forestry'],
-    tags: ['Headlamps', 'Field Lighting', 'Tactical & Personal Gear']
+    tags: ['Infrared & Illumination', 'Tactical Communications', 'Camping & Field Equipment', 'Headlamps']
   },
 
   {
@@ -5749,7 +5749,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-field-operations', 'defense-tactical'],
     categoryIds: ['defense'],
-    tags: ['Helmet-Mounted Lights', 'Field Lighting', 'Tactical & Personal Gear']
+    tags: ['Infrared & Illumination', 'Tactical Communications', 'Camping & Field Equipment', 'Helmet-Mounted Lights']
   },
 
   {
@@ -5777,7 +5777,7 @@ const baseProducts: Product[] = [
     page: 1,
     subcategories: ['defense-field-operations', 'defense-surveillance', 'defense-night'],
     categoryIds: ['defense', 'thermal'],
-    tags: ['Infrared Search Lights', 'Field Lighting', 'Infrared Observation', 'Thermal & Night Observation']
+    tags: ['Night Vision Devices', 'Infrared & Illumination', 'Camping & Field Equipment', 'Infrared Search Lights', 'Infrared Observation', 'Thermal & Night Observation']
   }
 ];
 

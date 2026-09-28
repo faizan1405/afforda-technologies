@@ -36,7 +36,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['defense-surveillance', 'mining-inspection', 'industrial-inspection'],
     categoryIds: ['inspection', 'defense', 'mining'],
-    tags: ['Borescopes', 'Articulating Endoscopes', 'Automotive Inspection', 'Industrial Inspection']
+    tags: ['Industrial & Radiometric Thermal', 'Borescopes & Endoscopes', 'Automotive Inspection', 'Industrial Inspection']
   },
   {
     slug: 'ralcam-h406b',
@@ -70,7 +70,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['mining-inspection', 'industrial-inspection'],
     categoryIds: ['inspection', 'mining'],
-    tags: ['Borescopes', 'Standalone Inspection', 'Industrial Borescopes', 'Non-Destructive Testing']
+    tags: ['Borescopes & Endoscopes', 'Industrial Inspection']
   },
   {
     slug: 'ralcam-f408a',
@@ -104,7 +104,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['defense-surveillance', 'mining-inspection', 'industrial-inspection'],
     categoryIds: ['inspection', 'defense', 'mining'],
-    tags: ['Borescopes', 'Pipe Inspection', 'Engine Borescope', 'Industrial Inspection']
+    tags: ['Industrial & Radiometric Thermal', 'Borescopes & Endoscopes', 'Pipe Inspection', 'Industrial Inspection']
   },
   {
     slug: 'ralcam-f406a',
@@ -138,7 +138,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['mining-inspection', 'industrial-inspection'],
     categoryIds: ['inspection', 'mining'],
-    tags: ['Borescopes', 'Precision Inspection', 'Endoscopes', 'Automotive Diagnostics']
+    tags: ['Borescopes & Endoscopes', 'Automotive Inspection', 'Industrial Inspection']
   },
 
   // =========================================================================
@@ -176,7 +176,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['defense-tactical-comm', 'forestry-operations'],
     categoryIds: ['communication', 'defense', 'forestry'],
-    tags: ['Two-Way Radios', 'License-Free Radios', 'Field Communication', 'PMR446']
+    tags: ['Two-Way Radios']
   },
   {
     slug: 'brutforce-bfr-030i',
@@ -210,7 +210,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['defense-tactical-comm', 'forestry-operations'],
     categoryIds: ['communication', 'defense', 'forestry'],
-    tags: ['Two-Way Radios', 'Mesh Radios', 'Digital Relay Radio', 'Tactical Communication']
+    tags: ['Two-Way Radios', 'Digital / DMR Radios', 'Tactical Communications']
   },
   {
     slug: 'brutforce-bfb-005',
@@ -244,7 +244,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['defense-tactical-comm', 'forestry-operations'],
     categoryIds: ['communication', 'defense'],
-    tags: ['Base Station', 'Vehicle Transceiver', 'Field Communication', 'Tactical Radios']
+    tags: ['Two-Way Radios', 'Tactical Communications', 'Base Stations']
   },
   {
     slug: 'brutforce-ranger-55w',
@@ -278,7 +278,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['defense-surveillance', 'forestry-operations'],
     categoryIds: ['communication', 'defense', 'forestry'],
-    tags: ['Searchlights', 'Tactical Illumination', 'Perimeter Security', 'Field Lighting']
+    tags: ['Infrared & Illumination', 'Tactical Communications', 'Communication Accessories', 'Camping & Field Equipment']
   },
 
   // =========================================================================
@@ -316,7 +316,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'mining-exploration'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Hand Lenses', 'Geological Loupes', 'Field Magnification', 'Mineral Identification']
+    tags: ['Hand Lenses & Inspection']
   },
   {
     slug: 'geo-premier-uv-led-10x',
@@ -350,7 +350,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'mining-exploration'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Hand Lenses', 'UV Loupes', 'Fluorescent Minerals', 'Mineral Identification']
+    tags: ['Hand Lenses & Inspection']
   },
   {
     slug: 'geo-premier-dual-triplet',
@@ -384,7 +384,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'mining-exploration'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Hand Lenses', 'Dual Loupe', 'Geological Field Tools', 'Mineralogy']
+    tags: ['Hand Lenses & Inspection']
   },
   {
     slug: 'geo-premier-triplet-15x',
@@ -418,7 +418,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'mining-exploration'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Hand Lenses', 'Geological Loupes', 'Wide Field Optics', 'Mineral Identification']
+    tags: ['Hand Lenses & Inspection']
   },
 
   // =========================================================================
@@ -456,7 +456,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'surveying-records'],
     categoryIds: ['geology', 'surveying', 'mining'],
-    tags: ['Field Notebooks', 'Level Books', 'Waterproof Books', 'Survey Stationery']
+    tags: ['Total Stations & Levels', 'Survey & Measurement', 'Field Books & Accessories']
   },
   {
     slug: 'chartwell-field-book-2026',
@@ -490,7 +490,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'surveying-records'],
     categoryIds: ['geology', 'surveying', 'mining'],
-    tags: ['Field Notebooks', 'Survey Books', 'Waterproof Books', 'Chain Survey']
+    tags: ['Field Books & Accessories']
   },
   {
     slug: 'chartwell-dimension-book-2242',
@@ -524,7 +524,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'surveying-records'],
     categoryIds: ['geology', 'surveying', 'mining'],
-    tags: ['Field Notebooks', 'Dimension Books', 'Waterproof Books', 'Civil Engineering']
+    tags: ['Field Books & Accessories']
   },
   {
     slug: 'chartwell-cross-section-2114',
@@ -558,7 +558,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'surveying-records'],
     categoryIds: ['geology', 'surveying', 'mining'],
-    tags: ['Field Notebooks', 'Cross Section Books', 'Waterproof Books', 'Geological Stratigraphy']
+    tags: ['Field Books & Accessories']
   },
 
   // =========================================================================
@@ -596,7 +596,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'survey-drafting'],
     categoryIds: ['geology', 'surveying'],
-    tags: ['Leadholders', 'Clutch Pencils', 'Geological Mapping', 'Drafting Tools']
+    tags: ['Field Mapping & Marking']
   },
   {
     slug: 'staedtler-lumocolor-352',
@@ -630,7 +630,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'survey-drafting'],
     categoryIds: ['geology', 'surveying'],
-    tags: ['Permanent Markers', 'Sample Bag Marking', 'Core Logging', 'Waterproof Markers']
+    tags: ['Field Mapping & Marking']
   },
   {
     slug: 'staedtler-lumocolor-duo-348',
@@ -664,7 +664,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'survey-drafting'],
     categoryIds: ['geology', 'surveying'],
-    tags: ['Permanent Markers', 'Dual Tip Markers', 'Geological Mapping', 'Field Stationery']
+    tags: ['Field Mapping & Marking']
   },
   {
     slug: 'staedtler-lumocolor-316',
@@ -698,7 +698,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'survey-drafting'],
     categoryIds: ['geology', 'surveying'],
-    tags: ['Map Markers', 'Non-Permanent Markers', 'Map Overlays', 'Geological Drafting']
+    tags: ['Field Mapping & Marking']
   },
 
   // =========================================================================
@@ -736,7 +736,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'mining-exploration'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Crowbars', 'Digging Bars', 'Geological Excavation', 'Field Tools']
+    tags: ['Geological Hammers & Tools']
   },
   {
     slug: 'faithfull-sledge-hammer-10lb',
@@ -770,7 +770,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'mining-exploration'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Sledge Hammers', 'Rock Breaking', 'Mining Tools', 'Geological Field Tools']
+    tags: ['Geological Hammers & Tools']
   },
   {
     slug: 'faithfull-wrecking-bar',
@@ -804,7 +804,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'mining-exploration'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Pry Bars', 'Wrecking Bars', 'Core Box Tools', 'Field Tools']
+    tags: ['Geological Hammers & Tools']
   },
   {
     slug: 'faithfull-cold-chisel-guard',
@@ -838,7 +838,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['geological-field-mapping', 'mineral-testing'],
     categoryIds: ['geology', 'mining'],
-    tags: ['Chisels', 'Cold Chisels', 'Safety Hand Guard', 'Geological Sampling']
+    tags: ['Geological Hammers & Tools', 'Camping & Field Equipment']
   },
 
   // =========================================================================
@@ -876,7 +876,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['field-hydration', 'expedition-gear'],
     categoryIds: ['geology', 'forestry'],
-    tags: ['Water Filtration', 'Personal Water Straw', 'Field Hydration', 'Survival Gear']
+    tags: ['Camping & Field Equipment']
   },
   {
     slug: 'lifestraw-peak-series-squeeze-1l',
@@ -910,7 +910,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['field-hydration', 'expedition-gear'],
     categoryIds: ['geology', 'forestry'],
-    tags: ['Water Filtration', 'Squeeze Bottle', 'Field Hydration', 'Ultralight Gear']
+    tags: ['Camping & Field Equipment']
   },
   {
     slug: 'lifestraw-peak-series-gravity-3l',
@@ -944,7 +944,7 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['field-hydration', 'expedition-gear'],
     categoryIds: ['geology', 'forestry'],
-    tags: ['Water Filtration', 'Gravity System', 'Basecamp Water', 'Expedition Equipment']
+    tags: ['Camping & Field Equipment']
   },
   {
     slug: 'lifestraw-community',
@@ -978,6 +978,6 @@ export const phase5Phase2cProducts: Product[] = [
     page: 47,
     subcategories: ['field-hydration', 'expedition-gear'],
     categoryIds: ['geology', 'forestry'],
-    tags: ['Water Purifiers', 'Community Water', 'Ultrafiltration', 'Camp Water Systems']
+    tags: ['Camping & Field Equipment']
   }
 ];

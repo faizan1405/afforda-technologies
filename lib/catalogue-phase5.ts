@@ -36,7 +36,7 @@ export const phase5Phase1Products: Product[] = [
     page: 25,
     subcategories: ['defense-navigation'],
     categoryIds: ['navigation', 'defense'],
-    tags: ['Smartwatches', 'Multisport Smartwatches', 'Wearable GPS', 'Navigation']
+    tags: ['Wearable GPS & Smartwatches', 'GPS & GNSS']
   },
   {
     slug: 'garmin-instinct-crossover-standard',
@@ -70,7 +70,7 @@ export const phase5Phase1Products: Product[] = [
     page: 26,
     subcategories: ['defense-navigation'],
     categoryIds: ['navigation', 'defense'],
-    tags: ['Smartwatches', 'Hybrid Smartwatches', 'Wearable GPS', 'Navigation']
+    tags: ['Wearable GPS & Smartwatches', 'GPS & GNSS']
   },
   {
     slug: 'garmin-foretrex-901-ballistic',
@@ -105,7 +105,7 @@ export const phase5Phase1Products: Product[] = [
     page: 27,
     subcategories: ['defense-navigation'],
     categoryIds: ['navigation', 'defense'],
-    tags: ['Handheld GPS', 'Wrist-Mounted GPS', 'Tactical Navigation', 'Navigation']
+    tags: ['Handheld GPS', 'Wearable GPS & Smartwatches', 'GPS & GNSS', 'Tactical Communications']
   },
 
   // =========================================================================
@@ -146,7 +146,7 @@ export const phase5Phase1Products: Product[] = [
     page: 51,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Camera Traps', 'Non-Cellular Trail Cameras']
+    tags: ['Camera Traps', 'Cellular Trail Cameras', 'Non-Cellular Trail Cameras']
   },
   {
     slug: 'browning-dark-ops-pro-dcl-nano',
@@ -184,7 +184,7 @@ export const phase5Phase1Products: Product[] = [
     page: 52,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Camera Traps', 'Non-Cellular Trail Cameras']
+    tags: ['Camera Traps', 'Cellular Trail Cameras', 'Non-Cellular Trail Cameras']
   },
   {
     slug: 'browning-dark-ops-fhdr',
@@ -221,7 +221,7 @@ export const phase5Phase1Products: Product[] = [
     page: 53,
     subcategories: ['wildlife-monitoring-surveillance', 'defense-surveillance'],
     categoryIds: ['forestry', 'defense'],
-    tags: ['Camera Traps', 'Non-Cellular Trail Cameras']
+    tags: ['Camera Traps', 'Cellular Trail Cameras', 'Non-Cellular Trail Cameras']
   },
 
   // =========================================================================
@@ -261,7 +261,7 @@ export const phase5Phase1Products: Product[] = [
     page: 54,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Camera Traps', 'Non-Cellular Trail Cameras']
+    tags: ['Camera Traps', 'Cellular Trail Cameras', 'Non-Cellular Trail Cameras']
   },
   {
     slug: 'gardepro-a3s',
@@ -297,7 +297,7 @@ export const phase5Phase1Products: Product[] = [
     page: 55,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Camera Traps', 'Non-Cellular Trail Cameras']
+    tags: ['Camera Traps', 'Cellular Trail Cameras', 'Non-Cellular Trail Cameras']
   },
   {
     slug: 'gardepro-e5-2-0',
@@ -332,7 +332,7 @@ export const phase5Phase1Products: Product[] = [
     page: 56,
     subcategories: ['wildlife-monitoring-surveillance'],
     categoryIds: ['forestry'],
-    tags: ['Camera Traps', 'Non-Cellular Trail Cameras']
+    tags: ['Camera Traps', 'Cellular Trail Cameras', 'Non-Cellular Trail Cameras']
   },
 
   // =========================================================================
@@ -372,7 +372,7 @@ export const phase5Phase1Products: Product[] = [
     page: 57,
     subcategories: ['defense-surveillance'],
     categoryIds: ['thermal', 'defense', 'mining'],
-    tags: ['Thermal Imaging Cameras', 'Handheld Thermography', 'Thermal & Night Vision', 'Industrial Inspection']
+    tags: ['Thermal Cameras', 'Night Vision Devices', 'Industrial & Radiometric Thermal', 'Industrial Inspection']
   },
 
   // =========================================================================
@@ -411,6 +411,6 @@ export const phase5Phase1Products: Product[] = [
     page: 58,
     subcategories: ['defense-rugged', 'defense-field-operations', 'mining-rugged'],
     categoryIds: ['computing', 'defense', 'mining'],
-    tags: ['Rugged Laptops', 'Fully Rugged Computing', 'Defense Computing']
+    tags: ['Rugged Laptops', 'Field Books & Accessories']
   }
 ];

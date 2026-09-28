@@ -6,6 +6,7 @@ import { Footer, Header, QuoteDialog } from '@/components/site/shared';
 import { products, type Product } from '@/lib/catalogue';
 import type { SpecializedCategory, SpecializedSubcategory } from '@/lib/specialized-categories';
 import { resolveImagePath } from '@/lib/utils';
+import { getSpecializedSubcategoryFilters, productMatchesSpecializedFilter } from '@/lib/product-taxonomy';
 
 function ProductLink({ product }: { product: Product }) {
   return <a className="product-panel" href={`/products/${product.slug}`}>
@@ -53,16 +54,17 @@ export function SpecializedSubcategoryPage({ category, subcategory }: { category
   const [quote, setQuote] = useState(false);
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const matchingProducts = products.filter(product => product.subcategories?.includes(subcategory.id));
-  const visibleProducts = activeTag ? matchingProducts.filter(product => product.tags?.includes(activeTag)) : matchingProducts;
+  const availableFilters = getSpecializedSubcategoryFilters(subcategory.id, matchingProducts);
+  const visibleProducts = activeTag ? matchingProducts.filter(product => productMatchesSpecializedFilter(product, activeTag, subcategory.id)) : matchingProducts;
 
   return <main id="top">
     <Header onQuote={() => setQuote(true)} />
     <div className="product-breadcrumb"><a href="/#equipment"><ArrowLeft size={14}/> Products</a><span>/</span><a href={category.path}>{category.name}</a><span>/</span><span>{subcategory.name}</span></div>
     <section className="section-padding" style={{ paddingTop: '4rem', paddingBottom: '2rem' }}>
-      <div className="section-heading" style={{ marginBottom: '2rem' }}><div><span className="eyebrow"><span className="yellow-rule"/> {subcategory.name.toUpperCase()}</span><h1 style={{ fontSize: 'var(--text-6xl)', fontWeight: 600, letterSpacing: '-0.02em', lineHeight: 1, textTransform: 'uppercase', marginBottom: '1rem' }}>{subcategory.name}</h1></div></div>
-      {subcategory.tags && <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '3rem' }}>
-        <button onClick={() => setActiveTag(null)} className={`button ${activeTag === null ? 'button-yellow' : 'button-outline'}`}>All Products</button>
-        {subcategory.tags.map(tag => <button key={tag} onClick={() => setActiveTag(tag)} className={`button ${activeTag === tag ? 'button-yellow' : 'button-outline'}`}>{tag}</button>)}
+      <div className="section-heading" style={{ marginBottom: '2rem' }}><div><span className="eyebrow"><span className="yellow-rule"/> {subcategory.name.toUpperCase()}</span><h1 style={{ fontSize: 'var(--text-6xl)', fontWeight: 600, letterSpacing: '-0.02em', lineHeight: 1, textTransform: 'uppercase', marginBottom: '1rem' }}>{subcategory.name}</h1><p style={{ color: 'var(--muted-foreground)', fontSize: '15px', margin: 0 }}>{visibleProducts.length} {visibleProducts.length === 1 ? 'product' : 'products'} available in this sector.</p></div></div>
+      {availableFilters.length > 0 && <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '3rem' }}>
+        <button onClick={() => setActiveTag(null)} className={`button ${activeTag === null ? 'button-yellow' : 'button-outline'}`} style={{ minHeight: '40px', padding: '8px 16px', fontSize: '13px' }}>All Products ({matchingProducts.length})</button>
+        {availableFilters.map(({ tag, count }) => <button key={tag} onClick={() => setActiveTag(activeTag === tag ? null : tag)} className={`button ${activeTag === tag ? 'button-yellow' : 'button-outline'}`} style={{ minHeight: '40px', padding: '8px 16px', fontSize: '13px' }}>{tag} ({count})</button>)}
       </div>}
       {visibleProducts.length > 0 ? (
         <div className="catalogue-grid">{visibleProducts.map(product => <ProductLink key={product.slug} product={product}/>)}</div>

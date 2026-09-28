@@ -4,6 +4,7 @@ import { ArrowUpRight, ArrowLeft } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
 import { products, type Product } from '@/lib/catalogue';
 import { forestTagsBySubcategory } from '@/lib/forest-categories';
+import { getSpecializedSubcategoryFilters, productMatchesSpecializedFilter } from '@/lib/product-taxonomy';
 
 function ProductLink({ product }: { product: Product }) {
   const spec1 = product.specs[0]?.[1];
@@ -45,13 +46,12 @@ export default function SubcategoryClient({ subcategory }: { subcategory: { id: 
   const [quoteEquipment, setQuoteEquipment] = useState('');
   const [activeTag, setActiveTag] = useState<string | null>(null);
 
-  const tags = forestTagsBySubcategory[subcategory.id] || [];
+  const baseProducts = products.filter(p => p.subcategories?.includes(subcategory.id));
+  const availableFilters = getSpecializedSubcategoryFilters(subcategory.id, baseProducts);
   
-  let subProducts = products.filter(p => p.subcategories?.includes(subcategory.id));
-  
-  if (activeTag) {
-    subProducts = subProducts.filter(p => p.tags?.includes(activeTag));
-  }
+  const displayedProducts = activeTag
+    ? baseProducts.filter(p => productMatchesSpecializedFilter(p, activeTag, subcategory.id))
+    : baseProducts;
 
   function openQuote(equipment = '') {
     setQuoteEquipment(equipment);
@@ -77,36 +77,36 @@ export default function SubcategoryClient({ subcategory }: { subcategory: { id: 
               {subcategory.name}
             </h1>
             <p style={{ color: 'var(--muted-foreground)', fontSize: '15px', margin: 0 }}>
-              {subProducts.length} products available in this sector.
+              {displayedProducts.length} {displayedProducts.length === 1 ? 'product' : 'products'} available in this sector.
             </p>
           </div>
         </div>
 
-        {tags.length > 0 && (
+        {availableFilters.length > 0 && (
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '2.5rem' }}>
             <button 
               onClick={() => setActiveTag(null)}
               className={`button ${activeTag === null ? 'button-yellow' : 'button-outline'}`}
               style={{ minHeight: '40px', padding: '8px 16px', fontSize: '13px' }}
             >
-              All Products ({products.filter(p => p.subcategories?.includes(subcategory.id)).length})
+              All Products ({baseProducts.length})
             </button>
-            {tags.map(tag => (
+            {availableFilters.map(({ tag, count }) => (
               <button 
                 key={tag}
-                onClick={() => setActiveTag(tag)}
+                onClick={() => setActiveTag(activeTag === tag ? null : tag)}
                 className={`button ${activeTag === tag ? 'button-yellow' : 'button-outline'}`}
                 style={{ minHeight: '40px', padding: '8px 16px', fontSize: '13px' }}
               >
-                {tag}
+                {tag} ({count})
               </button>
             ))}
           </div>
         )}
 
-        {subProducts.length > 0 ? (
+        {displayedProducts.length > 0 ? (
           <div className="catalogue-grid" style={{ padding: 0 }}>
-            {subProducts.map(p => <ProductLink key={p.slug} product={p} />)}
+            {displayedProducts.map(p => <ProductLink key={p.slug} product={p} />)}
           </div>
         ) : (
           <div style={{ padding: '60px 20px', textAlign: 'center', background: 'var(--surface-sunken)', borderRadius: '8px', border: '1px solid var(--border)' }}>

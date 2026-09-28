@@ -36,7 +36,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping Tents']
+    tags: ['Camping & Field Equipment', 'Camping Tents']
   },
   {
     slug: 'coleman-weathermaster-6-person-screen-room',
@@ -70,7 +70,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping Tents']
+    tags: ['Camping & Field Equipment', 'Camping Tents']
   },
   {
     slug: 'coleman-skydome-6-person-camping-tent',
@@ -104,7 +104,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping Tents']
+    tags: ['Camping & Field Equipment', 'Camping Tents']
   },
 
   // =========================================================================
@@ -142,7 +142,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Sleeping Bags & Bedding']
+    tags: ['Camping & Field Equipment', 'Sleeping Bags & Bedding']
   },
   {
     slug: 'coleman-north-rim-0f-mummy-sleeping-bag',
@@ -176,7 +176,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Sleeping Bags & Bedding']
+    tags: ['Camping & Field Equipment', 'Sleeping Bags & Bedding']
   },
   {
     slug: 'coleman-brazos-20f-sleeping-bag',
@@ -210,7 +210,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Sleeping Bags & Bedding']
+    tags: ['Camping & Field Equipment', 'Sleeping Bags & Bedding']
   },
 
   // =========================================================================
@@ -249,7 +249,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Shelters & Canopies']
+    tags: ['Fire Fighting Equipment', 'Camping & Field Equipment', 'Shelters & Canopies']
   },
   {
     slug: 'coleman-back-home-10-5x9-screen-canopy',
@@ -284,7 +284,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Shelters & Canopies']
+    tags: ['Fire Fighting Equipment', 'Camping & Field Equipment', 'Shelters & Canopies']
   },
   {
     slug: 'coleman-flex-n-go-10x10-shelter',
@@ -318,7 +318,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Shelters & Canopies']
+    tags: ['Fire Fighting Equipment', 'Camping & Field Equipment', 'Shelters & Canopies']
   },
 
   // =========================================================================
@@ -356,7 +356,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camp Furniture & Cots']
+    tags: ['Camping & Field Equipment', 'Camp Furniture & Cots']
   },
   {
     slug: 'coleman-pack-away-camping-cot-side-table',
@@ -390,7 +390,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camp Furniture & Cots']
+    tags: ['Camping & Field Equipment', 'Camp Furniture & Cots']
   },
   {
     slug: 'coleman-cooler-quad-camping-chair',
@@ -423,7 +423,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camp Furniture & Cots']
+    tags: ['Camping & Field Equipment', 'Camp Furniture & Cots']
   },
 
   // =========================================================================
@@ -461,7 +461,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping Lighting']
+    tags: ['Camping & Field Equipment', 'Camping Lighting']
   },
   {
     slug: 'coleman-classic-recharge-400-lantern',
@@ -495,7 +495,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping Lighting']
+    tags: ['Camping & Field Equipment', 'Camping Lighting']
   },
   {
     slug: 'coleman-quad-pro-800l-led-lantern',
@@ -529,7 +529,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camping Lighting']
+    tags: ['Camping & Field Equipment', 'Camping Lighting']
   },
 
   // =========================================================================
@@ -567,7 +567,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camp Cooking & Essentials']
+    tags: ['Camping & Field Equipment', 'Camp Cooking & Essentials']
   },
   {
     slug: 'coleman-cascade-3-in-1-camping-stove',
@@ -601,7 +601,7 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camp Cooking & Essentials']
+    tags: ['Camping & Field Equipment', 'Camp Cooking & Essentials']
   },
   {
     slug: 'coleman-triton-2-burner-camping-stove',
@@ -635,6 +635,6 @@ export const campingPhase4Products: Product[] = [
     page: 1,
     subcategories: ['forestry-camping-safety-climate-products'],
     categoryIds: ['forestry'],
-    tags: ['Camp Cooking & Essentials']
+    tags: ['Camping & Field Equipment', 'Camp Cooking & Essentials']
   }
 ];
