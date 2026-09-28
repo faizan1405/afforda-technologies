@@ -634,3 +634,855 @@ export function getCategoryFilters(
 export const CANONICAL_PRODUCT_TYPES: string[] = Array.from(
   new Set(Object.values(CATEGORY_FILTER_GROUPS).flat())
 ).sort((a, b) => a.localeCompare(b));
+
+/**
+ * PHASE 6B — SPECIALIZED SUBCATEGORY FILTER GROUPS
+ * Curated canonical filter sets (target 2-7 filters) for specialized subcategories across:
+ * - Forestry & Wildlife (6 subcategories)
+ * - Geology (1 subcategory)
+ * - Defense & Paramilitary (8 subcategories)
+ * - Mining & Geology (7 subcategories)
+ */
+export const SPECIALIZED_FILTER_GROUPS: Record<string, string[]> = {
+  // Forestry Subcategories
+  'forest-measurement-inventory': [
+    'Tree Measurement',
+    'Height & Slope Measurement',
+    'Rangefinders',
+    'Increment & Growth Measurement',
+    'Canopy Measurement',
+  ],
+  'gps-survey-mapping-products': [
+    'GNSS / RTK',
+    'Handheld GPS',
+    'Data Collectors',
+    'Survey Instruments',
+    'Compasses & Field Measurement',
+    'Survey Accessories',
+    'Remote Sensing & Drones',
+  ],
+  'forest-fire-fighting-products': [
+    'Fire Pumps',
+    'Fire Hand Tools',
+    'Thermal & Detection',
+    'Ignition Equipment',
+    'Fire Safety & Weather',
+  ],
+  'wildlife-monitoring-surveillance': [
+    'Camera Traps',
+    'Cellular & Remote Surveillance',
+    'Observation Optics',
+    'Thermal & Night Observation',
+    'Acoustic Monitoring',
+    'Wildlife Tracking',
+  ],
+  'forestry-camping-safety-climate-products': [
+    'Tents & Shelters',
+    'Sleeping & Camp Furniture',
+    'Lighting & Power',
+    'Camp Cooking & Essentials',
+    'Field Safety / PPE',
+    'Weather & Field Electronics',
+  ],
+  'forestry-tools-cutting-equipment': [
+    'Chainsaws',
+    'Forestry Cutting Tools',
+    'Forestry Safety / PPE',
+  ],
+
+  // Geology Subcategory
+  'geological-field-mapping': [
+    'Geological Compasses',
+    'Geological Hammers & Picks',
+    'Hand Lenses & Inspection',
+    'Field Mapping & Marking',
+    'Prospecting & Sampling',
+    'GPS & Survey Instruments',
+    'Field Measurement',
+  ],
+
+  // Defense & Paramilitary Subcategories
+  'defense-thermal': [
+    'Thermal Cameras',
+    'Thermal Monoculars & Binoculars',
+    'Mobile Thermal Imaging',
+  ],
+  'defense-night': [
+    'Night Vision Binoculars',
+    'Night Vision Monoculars & Goggles',
+    'Infrared & Thermal Systems',
+  ],
+  'defense-surveillance': [
+    'Camera Traps',
+    'Cellular / Remote Surveillance',
+    'Thermal & Night Surveillance',
+    'Body-Worn Surveillance',
+    'Observation Optics',
+  ],
+  'defense-navigation': [
+    'Handheld GPS',
+    'GNSS / Navigation Devices',
+    'Compasses',
+  ],
+  'defense-optics': [
+    'Binoculars',
+    'Spotting Scopes',
+    'Laser Rangefinders',
+    'Rifle Scopes / Tactical Optics',
+    'Tripods & Supports',
+  ],
+  'defense-communication': [
+    'Two-Way Radios',
+    'Digital / Tactical Radios',
+    'Communication Accessories / Base Stations',
+  ],
+  'defense-rugged': [
+    'Rugged Laptops',
+    'Rugged Tablets',
+    'Rugged Mobile Computing',
+  ],
+  'defense-field-operations': [
+    'Tactical Communications',
+    'Tactical Illumination & Searchlights',
+    'Field Navigation & Compasses',
+    'Night & Thermal Observation',
+    'Rugged Computing & Surveillance',
+  ],
+
+  // Mining & Geology Subcategories
+  'mining-field-mapping': [
+    'Geological Field Tools',
+    'Field Mapping & Marking',
+    'Compasses',
+    'Mapping & GNSS',
+  ],
+  'mining-survey': [
+    'Compasses & Pocket Transits',
+    'Survey Instruments & Accessories',
+    'Distance Measurement',
+  ],
+  'mining-mapping': [
+    'GNSS / RTK Receivers',
+    'Handheld GPS',
+  ],
+  'mining-compasses': [
+    'Pocket Transits',
+    'Baseplate & Field Compasses',
+  ],
+  'mining-inspection': [
+    'Borescopes & Video Inspection',
+    'Hand Lenses & Magnifiers',
+  ],
+  'mining-rugged': [
+    'Rugged Laptops',
+    'Rugged Tablets & Controllers',
+  ],
+  'mining-distance': [
+    'Distance Measurement',
+    'GPS & Survey Instruments',
+  ],
+};
+
+/**
+ * Maps a specialized filter in a given subcategory to matching products.
+ */
+export function productMatchesSpecializedFilter(
+  product: Product,
+  filter: string,
+  subcategoryId?: string
+): boolean {
+  const pTags = new Set(product.tags || []);
+  const slug = product.slug.toLowerCase();
+
+  switch (filter) {
+    // --- Forestry: Forest Measurement & Inventory ---
+    case 'Tree Measurement':
+      return (
+        pTags.has('Forestry Measuring Tapes') ||
+        pTags.has('Tree Calipers') ||
+        slug.includes('tape') ||
+        slug.includes('caliper') ||
+        slug.includes('bark-gauge') ||
+        slug.includes('tally') ||
+        slug.includes('relaskop')
+      );
+    case 'Height & Slope Measurement':
+      return (
+        pTags.has('Clinometers & Hypsometers') ||
+        pTags.has('Clinometers & Forest Measurement') ||
+        slug.includes('clinometer') ||
+        slug.includes('hypsometer') ||
+        slug.includes('pm-5') ||
+        slug.includes('omnislope') ||
+        slug.includes('relaskop')
+      );
+    case 'Rangefinders':
+      return (
+        pTags.has('Laser Rangefinders') ||
+        slug.includes('rangefinder') ||
+        slug.includes('disto')
+      );
+    case 'Increment & Growth Measurement':
+      return (
+        pTags.has('Increment Borers') ||
+        slug.includes('borer')
+      );
+    case 'Canopy Measurement':
+      return (
+        pTags.has('Densiometers & Canopy') ||
+        slug.includes('densiometer') ||
+        slug.includes('prism')
+      );
+
+    // --- Forestry: GPS, Survey & Mapping Products ---
+    case 'GNSS / RTK':
+    case 'GNSS / RTK Receivers':
+      return (
+        pTags.has('GNSS / RTK Receivers') ||
+        (pTags.has('GPS & GNSS') && !pTags.has('Handheld GPS')) ||
+        slug.includes('gnss') ||
+        slug.includes('rtk')
+      );
+    case 'Handheld GPS':
+      return (
+        pTags.has('Handheld GPS') ||
+        slug.includes('gpsmap') ||
+        slug.includes('etrex') ||
+        slug.includes('montana')
+      );
+    case 'Data Collectors':
+      return (
+        pTags.has('Data Collectors & Controllers') ||
+        slug.includes('controller') ||
+        slug.includes('data-collector')
+      );
+    case 'Survey Instruments':
+      return (
+        pTags.has('Total Stations & Levels') ||
+        slug.includes('total-station') ||
+        slug.includes('level') ||
+        slug.includes('na730') ||
+        slug.includes('rugby')
+      );
+    case 'Compasses & Field Measurement':
+      return (
+        pTags.has('Compasses & Field Measurement') ||
+        pTags.has('Compasses & Field Navigation') ||
+        pTags.has('Geological Compasses') ||
+        slug.includes('compass')
+      );
+    case 'Survey Accessories':
+      return (
+        pTags.has('Survey Accessories') ||
+        slug.includes('tripod') ||
+        slug.includes('rod') ||
+        slug.includes('flagging')
+      );
+    case 'Remote Sensing & Drones':
+      return (
+        pTags.has('Remote Sensing & Drones') ||
+        slug.includes('drone') ||
+        slug.includes('lidar') ||
+        (slug.includes('camera') && !slug.includes('trail'))
+      );
+
+    // --- Forestry: Forest Fire-Fighting Products ---
+    case 'Fire Pumps':
+      return (
+        pTags.has('Fire Pumps & Backpack Pumps') ||
+        slug.includes('pump') ||
+        slug.includes('tank')
+      );
+    case 'Fire Hand Tools':
+      return (
+        pTags.has('Pulaski Axes & Fire Hand Tools') ||
+        slug.includes('axe') ||
+        slug.includes('pulaski') ||
+        slug.includes('rake') ||
+        slug.includes('swatter') ||
+        slug.includes('beater') ||
+        slug.includes('mcleod')
+      );
+    case 'Thermal & Detection':
+      return (
+        pTags.has('Firefighting Thermal Cameras') ||
+        pTags.has('Thermal Cameras') ||
+        pTags.has('Firefighting & Search/Rescue Thermal') ||
+        slug.includes('thermal') ||
+        slug.includes('firepro') ||
+        slug.includes('attackpro')
+      );
+    case 'Ignition Equipment':
+      return (
+        pTags.has('Drip Torches & Ignition') ||
+        slug.includes('torch') ||
+        slug.includes('drip')
+      );
+    case 'Fire Safety & Weather':
+      return (
+        pTags.has('Fire Weather & Safety') ||
+        slug.includes('weather') ||
+        slug.includes('shelter') ||
+        slug.includes('hose') ||
+        slug.includes('extinguisher') ||
+        slug.includes('protective-equipment')
+      );
+
+    // --- Forestry: Wildlife Monitoring & Surveillance ---
+    case 'Camera Traps':
+      return (
+        (pTags.has('Camera Traps') ||
+          pTags.has('Non-Cellular Trail Cameras') ||
+          pTags.has('Wildlife Cameras')) &&
+        !pTags.has('Cellular Trail Cameras') &&
+        !slug.includes('4g') &&
+        !slug.includes('cellular')
+      );
+    case 'Cellular & Remote Surveillance':
+      return (
+        pTags.has('Cellular Trail Cameras') ||
+        pTags.has('Solar Surveillance') ||
+        pTags.has('Security & Surveillance') ||
+        pTags.has('Wi-Fi Trail Cameras') ||
+        slug.includes('cellular') ||
+        slug.includes('solar') ||
+        slug.includes('4g') ||
+        slug.includes('cctv')
+      );
+    case 'Observation Optics':
+      return (
+        pTags.has('Observation Optics') ||
+        pTags.has('Binoculars') ||
+        pTags.has('Spotting Scopes') ||
+        pTags.has('Monoculars') ||
+        pTags.has('Laser Rangefinders')
+      );
+    case 'Thermal & Night Observation':
+      return (
+        pTags.has('Thermal & Night Observation') ||
+        pTags.has('Night Vision Devices') ||
+        pTags.has('Thermal Cameras') ||
+        pTags.has('Infrared Observation') ||
+        slug.includes('thermal') ||
+        slug.includes('night') ||
+        slug.includes('vulpes') ||
+        slug.includes('corsac') ||
+        slug.includes('nvd') ||
+        slug.includes('lynx') ||
+        slug.includes('habrok')
+      );
+    case 'Acoustic Monitoring':
+      return (
+        pTags.has('Bioacoustics & Acoustic Monitoring') ||
+        pTags.has('Acoustic Monitoring') ||
+        slug.includes('song-meter') ||
+        slug.includes('acoustic') ||
+        slug.includes('audiomoth') ||
+        slug.includes('hydromoth') ||
+        slug.includes('echo-meter')
+      );
+    case 'Wildlife Tracking':
+      return (
+        pTags.has('Wildlife Tracking') ||
+        slug.includes('tracker') ||
+        slug.includes('telemetry') ||
+        slug.includes('vhf') ||
+        slug.includes('collar') ||
+        slug.includes('alpha')
+      );
+
+    // --- Forestry: Camping, Safety & Climate Products ---
+    case 'Tents & Shelters':
+      return (
+        pTags.has('Camping Tents') ||
+        pTags.has('Shelters & Canopies') ||
+        slug.includes('tent') ||
+        slug.includes('shelter') ||
+        slug.includes('canopy')
+      );
+    case 'Sleeping & Camp Furniture':
+      return (
+        pTags.has('Sleeping Bags & Bedding') ||
+        pTags.has('Camp Furniture & Cots') ||
+        slug.includes('sleeping') ||
+        slug.includes('cot') ||
+        slug.includes('chair') ||
+        slug.includes('bed')
+      );
+    case 'Lighting & Power':
+      return (
+        pTags.has('Camping Lighting') ||
+        pTags.has('Power & Field Electronics') ||
+        slug.includes('lantern') ||
+        slug.includes('power') ||
+        slug.includes('generator') ||
+        slug.includes('battery') ||
+        slug.includes('solar')
+      );
+    case 'Camp Cooking & Essentials':
+      return (
+        pTags.has('Camp Cooking & Essentials') ||
+        slug.includes('stove') ||
+        slug.includes('cooler') ||
+        slug.includes('cook') ||
+        slug.includes('water')
+      );
+    case 'Field Safety / PPE':
+    case 'Forestry Safety / PPE':
+      return (
+        pTags.has('Field Safety / PPE') ||
+        slug.includes('first-aid') ||
+        slug.includes('helmet') ||
+        slug.includes('chaps') ||
+        slug.includes('vest') ||
+        slug.includes('protective')
+      );
+    case 'Weather & Field Electronics':
+      return (
+        pTags.has('Weather Monitoring') ||
+        pTags.has('Backpacks & Field Carry') ||
+        slug.includes('kestrel') ||
+        slug.includes('weather') ||
+        slug.includes('backpack') ||
+        slug.includes('pack')
+      );
+
+    // --- Forestry: Forestry Tools & Cutting Equipment ---
+    case 'Chainsaws':
+      return (
+        pTags.has('Chainsaws') ||
+        slug.includes('chainsaw') ||
+        slug.includes('550-xp') ||
+        slug.includes('572-xp') ||
+        slug.includes('592-xp') ||
+        slug.includes('ms-')
+      );
+    case 'Forestry Cutting Tools':
+      return (
+        pTags.has('Cutting & Felling Tools') ||
+        pTags.has('Forestry Power Equipment') ||
+        slug.includes('axe') ||
+        slug.includes('clearing') ||
+        slug.includes('saw') ||
+        slug.includes('wedge') ||
+        slug.includes('hook')
+      );
+
+    // --- Geology: Geological Field & Mapping Products ---
+    case 'Geological Compasses':
+      return (
+        pTags.has('Geological Compasses') ||
+        pTags.has('Geological Compasses / Pocket Transits') ||
+        pTags.has('Field Compasses / Baseplate Compasses') ||
+        slug.includes('brunton') ||
+        slug.includes('breithaupt') ||
+        slug.includes('suunto-pm')
+      );
+    case 'Geological Hammers & Picks':
+      return (
+        pTags.has('Geological Hammers') ||
+        pTags.has('Geological Hammers & Tools') ||
+        pTags.has('Engineer’s Hammers') ||
+        pTags.has('Field Hammers') ||
+        pTags.has('Rock Hammers') ||
+        pTags.has('Rock Picks') ||
+        slug.includes('hammer') ||
+        slug.includes('pick') ||
+        slug.includes('estwing') ||
+        slug.includes('chisel') ||
+        slug.includes('crowbar') ||
+        slug.includes('wrecking')
+      );
+    case 'Hand Lenses & Inspection':
+      return (
+        pTags.has('Field Hand Lens / Loupe') ||
+        pTags.has('Pocket Magnifiers') ||
+        pTags.has('Hand Lenses & Inspection') ||
+        slug.includes('lens') ||
+        slug.includes('loupe') ||
+        slug.includes('magnifier')
+      );
+    case 'Field Mapping & Marking':
+      return (
+        pTags.has('Geological Scales') ||
+        pTags.has('Field Measuring Rods') ||
+        pTags.has('Field Mapping & Marking') ||
+        pTags.has('Field Books & Accessories') ||
+        slug.includes('scale') ||
+        slug.includes('marker') ||
+        slug.includes('tape') ||
+        slug.includes('book') ||
+        slug.includes('notebook') ||
+        slug.includes('chartwell') ||
+        slug.includes('edding')
+      );
+    case 'Prospecting & Sampling':
+      return (
+        pTags.has('Gold Pans') ||
+        pTags.has('Prospecting Tools') ||
+        pTags.has('Sample Collection & Storage') ||
+        slug.includes('pan') ||
+        slug.includes('sieve') ||
+        slug.includes('shovel') ||
+        slug.includes('sample') ||
+        slug.includes('bag') ||
+        slug.includes('lifestraw')
+      );
+    case 'GPS & Survey Instruments':
+      return (
+        pTags.has('GPS / GNSS Receivers') ||
+        pTags.has('GPS & GNSS') ||
+        pTags.has('Handheld GPS') ||
+        pTags.has('Survey & Measurement') ||
+        slug.includes('gps') ||
+        slug.includes('gnss') ||
+        slug.includes('montana')
+      );
+    case 'Field Measurement':
+      return (
+        pTags.has('Laser Distance Meters') ||
+        pTags.has('Clinometers & Forest Measurement') ||
+        pTags.has('Forestry Measurement') ||
+        slug.includes('disto') ||
+        slug.includes('clinometer') ||
+        slug.includes('omnislope')
+      );
+
+    // --- Defense: Thermal Imaging & Detection ---
+    case 'Thermal Cameras':
+      return (
+        pTags.has('Thermal Cameras') ||
+        slug.includes('firepro') ||
+        slug.includes('attackpro')
+      );
+    case 'Thermal Monoculars & Binoculars':
+      return (
+        pTags.has('Thermal Monoculars & Binoculars') ||
+        pTags.has('Thermal Monoculars') ||
+        slug.includes('lynx') ||
+        slug.includes('habrok')
+      );
+    case 'Mobile Thermal Imaging':
+      return (
+        pTags.has('Mobile Thermal Imaging') ||
+        slug.includes('compactpro') ||
+        slug.includes('e20-plus')
+      );
+
+    // --- Defense: Night Vision Systems ---
+    case 'Night Vision Binoculars':
+      return (
+        pTags.has('Night Vision Binoculars') ||
+        slug.includes('corsac') ||
+        slug.includes('swift')
+      );
+    case 'Night Vision Monoculars & Goggles':
+      return (
+        pTags.has('Night Vision Monoculars') ||
+        pTags.has('Night Vision Devices') ||
+        slug.includes('prowl') ||
+        slug.includes('cape') ||
+        slug.includes('whisper') ||
+        slug.includes('advocate') ||
+        slug.includes('stalker') ||
+        slug.includes('vulpes') ||
+        slug.includes('nvd-650')
+      );
+    case 'Infrared & Thermal Systems':
+      return (
+        pTags.has('Infrared & Illumination') ||
+        pTags.has('Infrared Search Lights') ||
+        pTags.has('Thermal Cameras') ||
+        slug.includes('xb5') ||
+        slug.includes('red-sub-zero') ||
+        slug.includes('swift') ||
+        slug.includes('cape') ||
+        slug.includes('thermal') ||
+        slug.includes('firepro') ||
+        slug.includes('attackpro') ||
+        slug.includes('compactpro')
+      );
+
+    // --- Defense: Surveillance & Monitoring ---
+    case 'Cellular / Remote Surveillance':
+      return (
+        pTags.has('Cellular Trail Cameras') ||
+        pTags.has('Wi-Fi Trail Cameras') ||
+        pTags.has('Surveillance') ||
+        slug.includes('4g') ||
+        slug.includes('ptz') ||
+        slug.includes('cctv') ||
+        slug.includes('nvr') ||
+        slug.includes('bullet')
+      );
+    case 'Thermal & Night Surveillance':
+      return (
+        pTags.has('Thermal Cameras') ||
+        pTags.has('Night Vision Devices') ||
+        pTags.has('Infrared & Illumination') ||
+        pTags.has('Borescopes & Endoscopes') ||
+        slug.includes('lynx') ||
+        slug.includes('nvd') ||
+        slug.includes('swift') ||
+        slug.includes('prowl') ||
+        slug.includes('m30') ||
+        slug.includes('thermal') ||
+        slug.includes('search-light') ||
+        slug.includes('ranger') ||
+        slug.includes('ralcam')
+      );
+    case 'Body-Worn Surveillance':
+      return (
+        pTags.has('Body-Worn Cameras') ||
+        slug.includes('body')
+      );
+
+    // --- Defense: Navigation & GPS ---
+    case 'GNSS / Navigation Devices':
+      return (
+        pTags.has('GPS & GNSS') ||
+        pTags.has('GNSS / RTK Receivers') ||
+        pTags.has('Wearable GPS & Smartwatches') ||
+        slug.includes('fenix') ||
+        slug.includes('instinct') ||
+        slug.includes('race') ||
+        slug.includes('gnss')
+      );
+    case 'Compasses':
+      return (
+        pTags.has('Compasses') ||
+        pTags.has('Compasses & Field Navigation') ||
+        pTags.has('Geological Compasses') ||
+        slug.includes('mc2') ||
+        slug.includes('kb-14') ||
+        slug.includes('mb-6') ||
+        slug.includes('pm-5')
+      );
+
+    // --- Defense: Optics & Observation ---
+    case 'Binoculars':
+      return pTags.has('Binoculars');
+    case 'Spotting Scopes':
+      return pTags.has('Spotting Scopes');
+    case 'Laser Rangefinders':
+      return pTags.has('Laser Rangefinders');
+    case 'Rifle Scopes / Tactical Optics':
+      return (
+        pTags.has('Rifle Scopes & Tactical Optics') ||
+        pTags.has('Rifle Scopes')
+      );
+    case 'Tripods & Supports':
+      return (
+        pTags.has('Tripods & Accessories') ||
+        pTags.has('Tripods & Supports')
+      );
+
+    // --- Defense: Communication Systems ---
+    case 'Two-Way Radios':
+      return (
+        pTags.has('Two-Way Radios') ||
+        slug.includes('bfr') ||
+        slug.includes('tk-') ||
+        slug.includes('r2') ||
+        slug.includes('sl1600')
+      );
+    case 'Digital / Tactical Radios':
+      return (
+        pTags.has('Digital / DMR Radios') ||
+        pTags.has('Tactical Communications') ||
+        slug.includes('dmr') ||
+        slug.includes('drr') ||
+        slug.includes('nx-') ||
+        slug.includes('r7') ||
+        slug.includes('dp4400') ||
+        slug.includes('dp4801')
+      );
+    case 'Communication Accessories / Base Stations':
+      return (
+        pTags.has('Communication Accessories') ||
+        pTags.has('Base Stations') ||
+        slug.includes('battery') ||
+        slug.includes('base') ||
+        slug.includes('bfb')
+      );
+
+    // --- Defense: Rugged Computing ---
+    case 'Rugged Laptops':
+      return pTags.has('Rugged Laptops');
+    case 'Rugged Tablets':
+      return pTags.has('Rugged Tablets');
+    case 'Rugged Mobile Computing':
+      return (
+        pTags.has('Rugged Mobile Computing') ||
+        slug.includes('fc2') ||
+        slug.includes('controller')
+      );
+
+    // --- Defense: Field Operations Products ---
+    case 'Tactical Communications':
+      return (
+        pTags.has('Tactical Communications') ||
+        pTags.has('Two-Way Radios') ||
+        pTags.has('Digital / DMR Radios')
+      );
+    case 'Tactical Illumination & Searchlights':
+      return (
+        pTags.has('Infrared & Illumination') ||
+        pTags.has('Torches') ||
+        pTags.has('Headlamps') ||
+        pTags.has('Helmet-Mounted Lights') ||
+        pTags.has('Infrared Search Lights') ||
+        slug.includes('torch') ||
+        slug.includes('light') ||
+        slug.includes('peli')
+      );
+    case 'Field Navigation & Compasses':
+      return (
+        pTags.has('Compasses & Field Navigation') ||
+        pTags.has('Handheld GPS') ||
+        pTags.has('Wearable GPS & Smartwatches') ||
+        pTags.has('GPS & GNSS') ||
+        slug.includes('mc2') ||
+        slug.includes('kb-14') ||
+        slug.includes('race') ||
+        slug.includes('gpsmap') ||
+        slug.includes('pm-5')
+      );
+    case 'Night & Thermal Observation':
+      return (
+        pTags.has('Thermal Cameras') ||
+        pTags.has('Night Vision Devices') ||
+        pTags.has('Thermal & Night Observation') ||
+        slug.includes('lynx') ||
+        slug.includes('nvd') ||
+        slug.includes('swift')
+      );
+    case 'Rugged Computing & Surveillance':
+      return (
+        pTags.has('Rugged Laptops') ||
+        pTags.has('Rugged Tablets') ||
+        pTags.has('Surveillance') ||
+        slug.includes('toughbook') ||
+        slug.includes('cp-plus') ||
+        slug.includes('camera')
+      );
+
+    // --- Mining & Geology Filters ---
+    case 'Geological Field Tools':
+      return (
+        pTags.has('Geological Field Tools') ||
+        pTags.has('Geological Hammers & Tools') ||
+        pTags.has('Sample Collection & Storage')
+      );
+    case 'Compasses & Pocket Transits':
+      return (
+        pTags.has('Geological Compasses') ||
+        pTags.has('Compasses & Field Navigation') ||
+        pTags.has('Geological Compasses / Pocket Transits') ||
+        pTags.has('Clinometers & Forest Measurement') ||
+        pTags.has('Clinometers & Hypsometers') ||
+        slug.includes('brunton') ||
+        slug.includes('breithaupt')
+      );
+    case 'Survey Instruments & Accessories':
+      return (
+        pTags.has('Total Stations & Levels') ||
+        pTags.has('Survey & Measurement') ||
+        pTags.has('Survey Accessories') ||
+        pTags.has('Tripods & Accessories') ||
+        pTags.has('Tripods & Supports') ||
+        slug.includes('total-station') ||
+        slug.includes('level') ||
+        slug.includes('na730') ||
+        slug.includes('rugby') ||
+        slug.includes('carbon') ||
+        slug.includes('tripod')
+      );
+    case 'Mapping & GNSS':
+      return (
+        pTags.has('Mapping & GNSS') ||
+        pTags.has('GPS & GNSS') ||
+        pTags.has('GNSS / RTK Receivers') ||
+        pTags.has('Handheld GPS') ||
+        slug.includes('gpsmap') ||
+        slug.includes('montana') ||
+        slug.includes('etrex') ||
+        slug.includes('gnss') ||
+        slug.includes('fc2')
+      );
+    case 'Pocket Transits':
+      return (
+        pTags.has('Geological Compasses / Pocket Transits') ||
+        slug.includes('transit') ||
+        slug.includes('axis') ||
+        slug.includes('gekom') ||
+        slug.includes('gebru') ||
+        slug.includes('cocla') ||
+        slug.includes('cobru')
+      );
+    case 'Baseplate & Field Compasses':
+      return (
+        pTags.has('Field Compasses / Baseplate Compasses') ||
+        pTags.has('Compasses & Field Navigation') ||
+        slug.includes('geolite') ||
+        slug.includes('truarc') ||
+        slug.includes('necli')
+      );
+    case 'Borescopes & Video Inspection':
+      return (
+        pTags.has('Borescopes & Endoscopes') ||
+        pTags.has('Industrial Inspection') ||
+        slug.includes('ralcam')
+      );
+    case 'Hand Lenses & Magnifiers':
+      return (
+        pTags.has('Hand Lenses & Inspection') ||
+        pTags.has('Pocket Magnifiers') ||
+        pTags.has('Field Hand Lens / Loupe') ||
+        slug.includes('lens')
+      );
+    case 'Rugged Tablets & Controllers':
+      return (
+        pTags.has('Rugged Tablets') ||
+        pTags.has('Rugged Mobile Computing') ||
+        pTags.has('Data Collectors & Controllers') ||
+        slug.includes('toughbook-g2') ||
+        slug.includes('toughbook-33') ||
+        slug.includes('toughbook-s1') ||
+        slug.includes('fc2')
+      );
+    case 'Distance Measurement':
+      return (
+        pTags.has('Distance Measurement') ||
+        pTags.has('Laser Distance Meters') ||
+        pTags.has('Laser Rangefinders') ||
+        pTags.has('Field Measuring Rods') ||
+        slug.includes('disto') ||
+        slug.includes('distance') ||
+        slug.includes('measuring-tape')
+      );
+
+    default:
+      if (pTags.has(filter)) return true;
+      return productMatchesFilter(product, filter, subcategoryId);
+  }
+}
+
+/**
+ * Returns active canonical filters with accurate product counts for a specialized subcategory page.
+ */
+export function getSpecializedSubcategoryFilters(
+  subcategoryId: string,
+  subcategoryProducts: Product[]
+): { tag: string; count: number }[] {
+  const allowedFilters = SPECIALIZED_FILTER_GROUPS[subcategoryId] || [];
+
+  return allowedFilters
+    .map(filter => {
+      const count = subcategoryProducts.filter(p =>
+        productMatchesSpecializedFilter(p, filter, subcategoryId)
+      ).length;
+      return { tag: filter, count };
+    })
+    .filter(f => f.count > 0);
+}

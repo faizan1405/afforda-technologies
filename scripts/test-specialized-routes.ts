@@ -2,52 +2,43 @@ import { products } from '../lib/catalogue';
 import { forestSubcategories, forestTagsBySubcategory } from '../lib/forest-categories';
 import { geologySubcategories, geologyTagsBySubcategory } from '../lib/geology-categories';
 import { defenseCategory, miningCategory } from '../lib/specialized-categories';
-import { productMatchesFilter } from '../lib/product-taxonomy';
+import { productMatchesSpecializedFilter, getSpecializedSubcategoryFilters } from '../lib/product-taxonomy';
 
 console.log('=== TESTING SPECIALIZED SUBCATEGORY ROUTES ===\n');
 
-// 1. Forest & Wildlife subcategories
-console.log('--- Forest & Wildlife Subcategories ---');
-for (const sub of forestSubcategories) {
+const allSubs = [
+  ...forestSubcategories.map(s => ({ ...s, section: 'Forestry', tags: forestTagsBySubcategory[s.id] || [] })),
+  ...geologySubcategories.map(s => ({ ...s, section: 'Geology', tags: geologyTagsBySubcategory[s.id] || [] })),
+  ...defenseCategory.subcategories.map(s => ({ ...s, section: 'Defense', tags: s.tags || [] })),
+  ...miningCategory.subcategories.map(s => ({ ...s, section: 'Mining', tags: s.tags || [] })),
+];
+
+let allPassed = true;
+
+for (const sub of allSubs) {
   const subProducts = products.filter(p => p.subcategories?.includes(sub.id));
-  console.log(`Subcategory: "${sub.name}" (${sub.id}) - Products: ${subProducts.length}`);
-  const tags = forestTagsBySubcategory[sub.id] || [];
-  for (const tag of tags) {
-    const directMatches = subProducts.filter(p => p.tags?.includes(tag));
-    const taxonomyMatches = subProducts.filter(p => productMatchesFilter(p, tag));
-    console.log(`  Tag: "${tag}" -> Direct: ${directMatches.length} | Taxonomy: ${taxonomyMatches.length}`);
+  const availableFilters = getSpecializedSubcategoryFilters(sub.id, subProducts);
+  console.log(`[${sub.section}] Subcategory: "${sub.name}" (${sub.id}) - Total Products: ${subProducts.length} - Active Filters: ${availableFilters.length}`);
+  
+  const covered = new Set<string>();
+  for (const filter of availableFilters) {
+    const matches = subProducts.filter(p => productMatchesSpecializedFilter(p, filter.tag, sub.id));
+    console.log(`  Filter: "${filter.tag}" -> Count: ${filter.count} (Matches: ${matches.length})`);
+    matches.forEach(p => covered.add(p.slug));
+  }
+  
+  const uncovered = subProducts.filter(p => !covered.has(p.slug));
+  if (uncovered.length > 0) {
+    allPassed = false;
+    console.error(`  >>> ERROR: ${uncovered.length} orphan products in ${sub.id}:`, uncovered.map(p => p.slug));
+  } else {
+    console.log(`  >>> PASSED: 100% coverage, 0 orphans.\n`);
   }
 }
 
-// 2. Geology subcategories
-console.log('\n--- Geology Subcategories ---');
-for (const sub of geologySubcategories) {
-  const subProducts = products.filter(p => p.subcategories?.includes(sub.id));
-  console.log(`Subcategory: "${sub.name}" (${sub.id}) - Products: ${subProducts.length}`);
-  const tags = geologyTagsBySubcategory[sub.id] || [];
-  for (const tag of tags) {
-    const directMatches = subProducts.filter(p => p.tags?.includes(tag));
-    const taxonomyMatches = subProducts.filter(p => productMatchesFilter(p, tag));
-    console.log(`  Tag: "${tag}" -> Direct: ${directMatches.length} | Taxonomy: ${taxonomyMatches.length}`);
-  }
-}
-
-// 3. Defense subcategories
-console.log('\n--- Defense Subcategories ---');
-for (const sub of defenseCategory.subcategories) {
-  const subProducts = products.filter(p => p.subcategories?.includes(sub.id));
-  console.log(`Subcategory: "${sub.name}" (${sub.id}) - Products: ${subProducts.length}`);
-  const tags = sub.tags || [];
-  for (const tag of tags) {
-    const directMatches = subProducts.filter(p => p.tags?.includes(tag));
-    const taxonomyMatches = subProducts.filter(p => productMatchesFilter(p, tag));
-    console.log(`  Tag: "${tag}" -> Direct: ${directMatches.length} | Taxonomy: ${taxonomyMatches.length}`);
-  }
-}
-
-// 4. Mining subcategories
-console.log('\n--- Mining Subcategories ---');
-for (const sub of miningCategory.subcategories) {
-  const subProducts = products.filter(p => p.subcategories?.includes(sub.id));
-  console.log(`Subcategory: "${sub.name}" (${sub.id}) - Products: ${subProducts.length}`);
+if (!allPassed) {
+  console.error('\nFAILED: Some subcategories had orphan products.');
+  process.exit(1);
+} else {
+  console.log('\nSUCCESS: All 22 subcategories passed with 100% coverage!');
 }
