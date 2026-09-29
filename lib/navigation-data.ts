@@ -186,6 +186,20 @@ export const navigationBrands: BrandNavItem[] = [
     specialty: 'Portable Wildfire Suppression Pumps',
     code: 'PMP',
     href: '/products?brand=Firefly+Fire+Pumps'
+  },
+  {
+    name: 'Canon',
+    queryParam: 'Canon',
+    specialty: 'Image Stabilized Binoculars & Optics',
+    code: 'JPN',
+    href: '/products?brand=Canon'
+  },
+  {
+    name: 'GoPro',
+    queryParam: 'GoPro',
+    specialty: 'Action Cameras & 360° Field Imaging',
+    code: 'USA',
+    href: '/products?brand=GoPro'
   }
 ];
 
@@ -196,6 +210,12 @@ export function matchProductBrand(product: Product, brandFilter: string): boolea
   const slug = product.slug.toLowerCase();
   const name = product.name.toLowerCase();
 
+  if (filter === 'canon') {
+    return pb === 'canon';
+  }
+  if (filter === 'gopro') {
+    return pb === 'gopro';
+  }
   if (filter === 'audiomoth' || filter.includes('wildlife acoustics') || filter.includes('audiomoth')) {
     return pb === 'open acoustic devices' || pb.includes('wildlife acoustics') || slug.includes('audiomoth') || name.includes('audiomoth') || slug.includes('song-meter');
   }

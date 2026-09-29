@@ -39,6 +39,12 @@ export const brandDatabase: Record<string, BrandInfo> = {
       'Pioneer in precision navigation since 1894, renowned globally for gold-standard Pocket Transits, geological measurement systems, and outdoor orientation instruments.',
     website: 'https://www.brunton.com',
   },
+  Canon: {
+    name: 'Canon',
+    specialty: 'IMAGE STABILIZED OPTICS & FIELD OBSERVATION',
+    shortDescription:
+      'World-renowned precision optics manufacturer delivering advanced image-stabilized binoculars, Porro prism observation instruments, and specialized field optics engineered for steady, high-magnification handheld viewing in demanding operational environments.',
+  },
   'CP PLUS': {
     name: 'CP PLUS',
     specialty: 'CCTV & Security Surveillance Systems',
@@ -114,6 +120,12 @@ export const brandDatabase: Record<string, BrandInfo> = {
     shortDescription:
       'High-precision GNSS base and rover systems, centimeter-accurate RTK positioning receivers, and rugged survey controllers for geospatial professionals.',
     website: 'https://geomatepositioning.com',
+  },
+  GoPro: {
+    name: 'GoPro',
+    specialty: 'ACTION CAMERAS & 360° FIELD IMAGING',
+    shortDescription:
+      'Pioneering manufacturer of compact, ultra-rugged action cameras and 360-degree spherical imaging systems engineered for outdoor, field operations, and mobile tactical capture.',
   },
   'Glenammer Engineering': {
     name: 'Glenammer Engineering',
