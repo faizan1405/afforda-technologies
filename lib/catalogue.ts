@@ -28,6 +28,7 @@ import { phase5Phase1Products } from './catalogue-phase5';
 import { phase5Phase2aProducts } from './catalogue-phase5-phase2a';
 import { phase5Phase2bProducts } from './catalogue-phase5-phase2b';
 import { phase5Phase2cProducts } from './catalogue-phase5-phase2c';
+import { canonGoProProducts } from './catalogue-canon-gopro';
 
 export const categories = [
   { id: 'forestry', name: 'Forestry & Wildlife', short: 'Into the wild.', subtitle: 'Observe without disturbing.', mission: 'Wildlife monitoring, habitat research and remote observation.', image: 'forest', code: 'BIO / 01' },
@@ -5789,9 +5790,12 @@ export const products: Product[] = [
   ...phase5Phase2aProducts,
   ...phase5Phase2bProducts,
   ...phase5Phase2cProducts,
+  ...canonGoProProducts,
 ];
 
 export const brandDescriptions: Record<string,string> = {
+  'Canon': 'World-renowned Japanese manufacturer of precision image-stabilized binoculars, field observation optics, and professional imaging instruments.',
+  'GoPro': 'Pioneer of rugged, compact action cameras and 360-degree field imaging systems built for high-resolution video capture and tactical field documentation.',
   'Coleman':'Historic outdoor equipment maker providing rugged weatherproof tents, expedition sleeping bags, portable camp stoves, cots, and reliable field illumination.',
   'Husqvarna':'Swedish global leader in professional chainsaws, clearing saws, and outdoor power equipment engineered for tree care, logging, and heavy-duty forest operations.',
   'Firefly Fire Pumps':'High-capacity portable fire pumps and mobile water delivery systems designed for forest fire suppression, wildland firefighting, and emergency rescue.',

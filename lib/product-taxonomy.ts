@@ -92,6 +92,7 @@ export const CATEGORY_FILTER_GROUPS: Record<string, string[]> = {
     'Communications',
     'Rugged Computing',
     'Field Operations',
+    'Action Cameras',
   ],
   mining: [
     'Geological Field Tools',
@@ -278,6 +279,21 @@ export const TAG_ALIASES: Record<string, string[]> = {
   'Speed Dome Cameras': ['Surveillance'],
   'Network Video Recorders': ['Accessories / Expansion', 'Surveillance'],
   'NVR': ['Accessories / Expansion', 'Surveillance'],
+
+  // --- Action Cameras & 360° Field Imaging ---
+  'Action Cameras': ['Action Cameras', 'Surveillance', 'Field Operations'],
+  'Action Camera': ['Action Cameras', 'Surveillance', 'Field Operations'],
+  'Sports Cameras': ['Action Cameras', 'Surveillance', 'Field Operations'],
+  'Sports Camera': ['Action Cameras', 'Surveillance', 'Field Operations'],
+  'POV Cameras': ['Action Cameras', 'Surveillance', 'Field Operations'],
+  'POV Camera': ['Action Cameras', 'Surveillance', 'Field Operations'],
+  'Wearable Action Cameras': ['Action Cameras', 'Surveillance', 'Field Operations'],
+  'Wearable Action Camera': ['Action Cameras', 'Surveillance', 'Field Operations'],
+  'Wearable Cameras': ['Action Cameras', 'Surveillance', 'Field Operations'],
+  'Wearable Camera': ['Action Cameras', 'Surveillance', 'Field Operations'],
+  '360 Cameras': ['Action Cameras', 'Surveillance', 'Field Operations'],
+  '360 Camera': ['Action Cameras', 'Surveillance', 'Field Operations'],
+  'Field Imaging Cameras': ['Action Cameras', 'Surveillance', 'Field Operations'],
 
   // --- Bioacoustics / Acoustic Monitoring ---
   'Acoustic Monitoring': ['Acoustic Monitoring', 'Surveillance'],
@@ -717,6 +733,7 @@ export const SPECIALIZED_FILTER_GROUPS: Record<string, string[]> = {
     'Cellular / Remote Surveillance',
     'Thermal & Night Surveillance',
     'Body-Worn Surveillance',
+    'Action Cameras',
     'Observation Optics',
   ],
   'defense-navigation': [
@@ -747,6 +764,7 @@ export const SPECIALIZED_FILTER_GROUPS: Record<string, string[]> = {
     'Field Navigation & Compasses',
     'Night & Thermal Observation',
     'Rugged Computing & Surveillance',
+    'Action Cameras',
   ],
 
   // Mining & Geology Subcategories
@@ -1235,6 +1253,13 @@ export function productMatchesSpecializedFilter(
       return (
         pTags.has('Body-Worn Cameras') ||
         slug.includes('body')
+      );
+    case 'Action Cameras':
+      return (
+        pTags.has('Action Cameras') ||
+        slug.includes('gopro') ||
+        slug.includes('hero') ||
+        slug.includes('max')
       );
 
     // --- Defense: Navigation & GPS ---
