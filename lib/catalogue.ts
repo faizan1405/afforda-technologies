@@ -29,6 +29,7 @@ import { phase5Phase2aProducts } from './catalogue-phase5-phase2a';
 import { phase5Phase2bProducts } from './catalogue-phase5-phase2b';
 import { phase5Phase2cProducts } from './catalogue-phase5-phase2c';
 import { canonGoProProducts } from './catalogue-canon-gopro';
+import { phase7GarminProducts } from './catalogue-phase7-garmin';
 
 export const categories = [
   { id: 'forestry', name: 'Forestry & Wildlife', short: 'Into the wild.', subtitle: 'Observe without disturbing.', mission: 'Wildlife monitoring, habitat research and remote observation.', image: 'forest', code: 'BIO / 01' },
@@ -83,7 +84,48 @@ const baseProducts: Product[] = [
     categoryIds: ['optics', 'defense', 'forestry'],
     tags: ['Binoculars', 'Observation Optics']
   },
-  { slug:'garmin-gpsmap-65s',name:'Handheld GPS (GPSMAP® 65s)',brand:'Garmin',category:'navigation',image:'gpsmap',gallery:['gpsmap'],label:'MULTI-BAND GPS',summary:'Find your way in challenging environments with multi-band positioning, expanded satellite support and a sunlight-readable color display.',specs:[['Display','2.6-inch color'],['Positioning','Multi-band GNSS'],['Battery life','Up to 16 hours in GPS mode'],['Navigation','Built-in navigation sensors (ABC)'],['Planning','Garmin Explore compatibility']],features:['Multi-band technology for challenging locations','Sunlight-readable color display','Built-in 3-axis compass & barometric altimeter','Plan and organize with the Garmin Explore app'],page:12,subcategories:['geological-field-mapping','gps-survey-mapping-products','defense-navigation','defense-field-operations','mining-field-mapping','mining-mapping','mining-distance'],categoryIds:['navigation','geology','defense','mining','surveying'],tags: ['GNSS / RTK Receivers', 'Handheld GPS', 'GPS & GNSS', 'GPS/GNSS Devices', 'GPS / GNSS Receivers'] },
+  {
+    slug: 'garmin-gpsmap-65s',
+    aliases: ['handheld-gps-gpsmap-65s', 'gpsmap-65s', 'garmin-65s'],
+    name: 'GPSMAP® 65s',
+    brand: 'Garmin',
+    category: 'navigation',
+    image: 'gpsmap',
+    gallery: ['gpsmap'],
+    label: 'MULTI-BAND GPS',
+    summary: 'Find your way in challenging environments with multi-band positioning, expanded satellite support and a sunlight-readable color display.',
+    specs: [
+      ['Display', '2.6-inch color TFT (160 x 240 pixels), sunlight-readable'],
+      ['Positioning', 'Multi-band GNSS (GPS, GLONASS, Galileo, QZSS, IRNSS)'],
+      ['Battery life', 'Up to 16 hours in GPS mode (2 AA batteries)'],
+      ['Navigation sensors', '3-axis tilt-compensated electronic compass & barometric altimeter (ABC)'],
+      ['Internal memory', '16 GB internal storage (microSD™ card slot compatible up to 32 GB)'],
+      ['Water rating', 'IPX7 waterproof'],
+      ['Preloaded maps', 'TopoActive maps (routable roads and trails)'],
+      ['Planning', 'Garmin Explore app & website compatibility'],
+    ],
+    features: [
+      'Multi-band technology and expanded GNSS support provide optimal accuracy in steep country, urban canyons and dense forests',
+      'Sunlight-readable 2.6-inch color display for easy viewing in all field conditions',
+      'Navigate trails with built-in ABC sensors including 3-axis tilt-compensated electronic compass and barometric altimeter',
+      'Preloaded TopoActive maps provide routable street and off-road networks, waterways, natural features, and points of interest',
+      'Rugged construction with IPX7 water rating for all-weather durability',
+      'Plan, review, and sync waypoints, routes, and tracks using the Garmin Explore app and website',
+      'Up to 16 hours of continuous GPS navigation powered by 2 standard AA batteries',
+    ],
+    page: 12,
+    subcategories: [
+      'geological-field-mapping',
+      'gps-survey-mapping-products',
+      'defense-navigation',
+      'defense-field-operations',
+      'mining-field-mapping',
+      'mining-mapping',
+      'mining-distance',
+    ],
+    categoryIds: ['navigation', 'geology', 'defense', 'mining', 'surveying'],
+    tags: ['Handheld GPS', 'GPS & GNSS', 'GPS/GNSS Devices', 'GPS / GNSS Receivers'],
+  },
   { slug:'hikmicro-lynx-lh25',name:'LYNX LH25 2.0',brand:'HIKMICRO',category:'thermal',image:'lynx',gallery:['lynx','lynx-side'],label:'THERMAL MONOCULAR',summary:'A compact thermal monocular that reveals subtle heat signatures, with a sensitive detector and a detailed OLED view.',specs:[['Detector resolution','384 × 288'],['Lens','25 mm, F1.0'],['Thermal sensitivity','NETD <20 mK'],['Detection range','Up to 1,200 m'],['Weight','275 g'],['Battery life','Up to 6.5 hours']],features:['12 μm detector with high thermal sensitivity','1024 × 768 OLED display','Replaceable rechargeable Li-ion battery','Compact and ergonomic field design'],page:40,subcategories:['defense-thermal','defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['thermal','defense','forestry'],tags: ['Thermal Cameras', 'Thermal Monoculars & Binoculars', 'Night Vision Devices', 'Infrared & Illumination', 'Two-Way Radios', 'Digital / DMR Radios', 'Thermal & Night Observation', 'Thermal Monoculars', 'Infrared Observation'] },
   { slug:'browning-strike-force-pro-dcl',name:'Strike Force Pro DCL',brand:'Browning',category:'forestry',image:'browning',gallery:['browning'],label:'WILDLIFE TRAIL CAMERA',summary:'Dual camera lens technology captures the field by day and night, with a fast trigger for fleeting wildlife encounters.',specs:[['Image resolution','26 megapixels'],['Trigger speed','0.15 seconds'],['Flash range','Up to 130 ft'],['Viewing screen','1.5-inch color'],['Lens system','Dual camera lens technology']],features:['Separate lens technology optimized for day and night','Fast trigger for wildlife monitoring','On-camera color viewing screen','Long-range flash capability'],page:21,subcategories:['defense-surveillance','wildlife-monitoring-surveillance'],categoryIds:['forestry','defense'],tags: ['Camera Traps'] },
   { slug:'brunton-geolite',name:'Geo Lite™ Transit F-5030',brand:'Brunton',category:'geology',image:'geolite-open',gallery:['geolite-open','geolite'],label:'GEOLOGICAL TRANSIT COMPASS',summary:'Compact aluminum geological transit combining direct-read azimuth measurement with a hinge clinometer for strike and dip field readings.',specs:[['Model','Geo Lite™ Transit F-5030'],['Body Construction','Compact aluminum body (approx. 30% smaller than full-size transit)'],['Azimuth Accuracy','±0.5° with 1° graduations (0–360° azimuth scale)'],['Vertical Angle','±1° with 1° graduations (±90° range)'],['Declination Adjustment','Tool-free magnetic declination adjustment ±180°'],['Needle Dampening','Induction damped needle on sapphire jewel suspension'],['Leveling Vials','Dual bubble vials (circular and tubular)'],['Sighting System','Precision mirror with sighting hole and sighting line'],['Protection','Silicone protective cover included'],['Mounting','Tripod mountable with 1/4-20 threading']],features:['Compact lightweight aluminum body roughly 30% smaller than traditional pocket transits','High-precision azimuth accuracy of ±0.5° with 1° graduations on a 0–360° scale','Integrated vertical clinometer reads slope and dip to ±1° across ±90° range','User-friendly tool-free magnetic declination adjustment with ±180° range','Induction damped needle stabilizes quickly for fast and repeatable field readings','Dual bubble vials (tubular and circular) ensure perfect level alignment','Reflective sighting mirror with center sighting hole for accurate bearing acquisition','Supplied with custom silicone protective cover for field impact resistance'],page:27,subcategories:['geological-field-mapping','mining-field-mapping','mining-survey','mining-compasses'],categoryIds:['geology','mining'],tags: ['Geological Compasses', 'Compasses & Field Navigation', 'Geological Compasses / Pocket Transits', 'Field Compasses / Baseplate Compasses'] },
@@ -5791,6 +5833,7 @@ export const products: Product[] = [
   ...phase5Phase2bProducts,
   ...phase5Phase2cProducts,
   ...canonGoProProducts,
+  ...phase7GarminProducts,
 ];
 
 export const brandDescriptions: Record<string,string> = {
@@ -5839,7 +5882,7 @@ export const brandDescriptions: Record<string,string> = {
 export const finderOptions: Record<string, Record<string, string[]>> = {
   'Forestry & Wildlife': {
     'Forest Measurement': ['diameter-tape-dbh-tape', 'digital-tree-caliper', 'clinometer', 'hypsometer', 'laser-rangefinder', 'suunto-pm-5-360'],
-    'Mapping & Navigation': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-gpsmap-65s', 'professional-gnss-receiver', 'rtk-dgps', 'laser-rangefinder', 'uav-drone', 'suunto-kb-14-360'],
+    'Mapping & Navigation': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-gpsmap-65s', 'garmin-etrex-22x', 'garmin-etrex-32x', 'garmin-gps-12h', 'garmin-gpsmap-79s', 'professional-gnss-receiver', 'rtk-dgps', 'laser-rangefinder', 'uav-drone', 'suunto-kb-14-360'],
     'Remote Sensing & Drones': ['uav-drone', 'multispectral-camera', 'lidar-system', 'forestry-boundary-mapping-services'],
     'Fire Suppression': ['backpack-fire-pump', 'portable-fire-pump', 'firefly-black-hawk-bh1-4h', 'firefly-black-panther-bp4', 'firefly-mfp-275-p', 'firefly-mfp-800-p', 'firefly-mfp-1300-p', 'pulaski-forestry-axe', 'drip-torch', 'fire-weather-meter'],
     'Wildlife monitoring': ['browning-strike-force-pro-dcl', 'audiomoth', 'hydromoth', 'audiomoth-gps', 'song-meter-micro-2', 'wildlife-acoustics-song-meter-sm4bat-fs', 'vortex-triumph-hd-10x42', 'minox-dtc-460', 'minox-dtc-1200', 'keepguard-kg795', 'keepguard-kw561', 'keepguard-kw571-4g', 'keepguard-kg891', 'ir-camera-trap', 'gps-wildlife-tracking-collar', 'solar-cctv-camera', 'cctv-surveillance-camera'],
@@ -5847,7 +5890,7 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
     'Camping, Safety & Power': ['field-tent', 'helmet', 'husqvarna-technical-forest-helmet', 'husqvarna-functional-chainsaw-chaps', 'weather-monitoring-kit', 'portable-power-station'],
   },
   'Surveying & Mapping': {
-    'Navigation': ['garmin-gpsmap-65s', 'garmin-montana-700', 'suunto-kb-14-360'],
+    'Navigation': ['garmin-gpsmap-65s', 'garmin-montana-700', 'garmin-montana-710', 'suunto-kb-14-360'],
     'DGPS positioning': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'rtk-dgps', 'professional-gnss-receiver'],
     'Distance measurement': ['leica-disto-laser-distance-meter', 'leica-disto-d5', 'leica-disto-x6', 'leica-na730-plus', 'leica-rugby-610'],
     'Field computing': ['geomate-fc2-controller', 'panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2', 'panasonic-toughbook-33', 'panasonic-toughbook-s1', 'electronic-data-collector'],
@@ -5856,7 +5899,7 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
     'Compass & transit measurement': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'breithaupt-3030-cocla', 'breithaupt-necli', 'breithaupt-cobru', 'suunto-kb-14-360', 'suunto-mb-6-global', 'brunton-omnislope'],
     'Rock sampling & hammers': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-rock-chisels', 'faithfull-chisel-point-crowbar', 'faithfull-sledge-hammer-10lb', 'faithfull-wrecking-bar', 'faithfull-cold-chisel-guard', 'estwing-plastic-gold-pan', 'estwing-steel-gold-pan'],
     'Magnification & loupes': ['geo-premier-triplet-hand-lens', 'geo-premier-triplet-20x', 'geo-premier-uv-led-10x', 'geo-premier-dual-triplet', 'geo-premier-triplet-15x', 'geological-hand-lens'],
-    'Mapping & GNSS': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-etrex-se', 'garmin-gpsmap-65', 'garmin-gpsmap-65s'],
+    'Mapping & GNSS': ['geomate-gnss-receiver', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-etrex-se', 'garmin-etrex-22x', 'garmin-etrex-32x', 'garmin-gpsmap-65', 'garmin-gpsmap-65s', 'garmin-montana-710'],
     'Field notebooks & measuring': ['chartwell-collimation-book-2426', 'chartwell-level-book-2416', 'chartwell-field-book-2026', 'chartwell-dimension-book-2242', 'chartwell-cross-section-2114', 'staedtler-pigment-liner-mapping-pen', 'staedtler-mars-technico-780', 'staedtler-lumocolor-352', 'staedtler-lumocolor-duo-348', 'staedtler-lumocolor-316', 'edding-mapping-pen-01', 'edding-8014-laboratory-marker', 'edding-750-industrial-paint-marker', 'geological-measuring-tape'],
     'Mineral property testing': ['tungsten-carbide-scriber-with-magnet-black', 'mohs-hardness-tile', 'streak-plates-white', 'acid-bottles'],
     'Sample sieving & analysis': ['200mm-glenammer-sieves', 'geo-sieves'],
@@ -5867,7 +5910,7 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
   'Defense & Paramilitary': {
     'Thermal Imaging':['hikmicro-lynx-lh25', 'seek-thermal-reveal-pro', 'seek-thermal-reveal-firepro-x', 'seek-thermal-attackpro'],
     'Night Vision':['minox-nvd-650', 'nightfox-swift-2-pro', 'nightfox-prowl'],
-    'GPS / Navigation':['garmin-gpsmap-65s','garmin-montana-700','suunto-mc2', 'suunto-kb-14-360', 'suunto-mb-6-global', 'suunto-race-2'],
+    'GPS / Navigation':['garmin-gpsmap-65s','garmin-montana-700','garmin-montana-710','garmin-gps-12h','garmin-gpsmap-79s','suunto-mc2', 'suunto-kb-14-360', 'suunto-mb-6-global', 'suunto-race-2'],
     'Binoculars / Optics':['vortex-viper-hd','vortex-diamondback-hd', 'swarovski-el-10x42', 'swarovski-nl-pure-10x42', 'swarovski-atx-interior-85', 'swarovski-cl-companion-8x30', 'minox-x-active-8x44', 'minox-x-lite-10x42'],
     'Communication':['brutforce-field-radio', 'kenwood-nx-5200-vhf', 'kenwood-nx-5300-uhf', 'kenwood-tk-3701d', 'kenwood-nx-1300de', 'kenwood-nx-3320e', 'motorola-mototrbo-r2', 'motorola-mototrbo-r7', 'motorola-mototrbo-dp4400e', 'motorola-mototrbo-dp4801e', 'motorola-sl1600'],
     'Rugged Computing':['panasonic-toughbook-55', 'panasonic-toughbook-40', 'panasonic-toughbook-g2', 'panasonic-toughbook-33', 'panasonic-toughbook-s1'],
@@ -5875,7 +5918,7 @@ export const finderOptions: Record<string, Record<string, string[]>> = {
   },
   'Mining & Geology': {
     'Geological Survey': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'breithaupt-3030-cocla', 'breithaupt-necli', 'breithaupt-cobru', 'brunton-omnislope', 'estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-plastic-gold-pan', 'estwing-steel-gold-pan'],
-    'Mapping / GNSS': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-gpsmap-65s', 'garmin-gpsmap-65', 'garmin-etrex-se', 'garmin-montana-700'],
+    'Mapping / GNSS': ['geomate-gnss-receiver', 'geomate-gbase-gnss', 'geomate-sg6l-gnss', 'geomate-sg7-gnss', 'garmin-gpsmap-65s', 'garmin-gpsmap-65', 'garmin-etrex-se', 'garmin-montana-700', 'garmin-montana-710'],
     'Compasses / Pocket Transits': ['brunton-f-5012-axis', 'brunton-geolite', 'brunton-compro-transit', 'brunton-geo-pocket-transit-f-5010', 'brunton-truarc-15', 'brunton-truarc-20', 'brunton-truarc-5', 'breithaupt-3031-gekom', 'breithaupt-3032-gebru', 'breithaupt-3030-cocla', 'breithaupt-cobru', 'suunto-kb-14-360', 'suunto-mb-6-global'],
     'Geological Hammers / Rock Picks': ['estwing-e3-22p', 'estwing-e3-24blc', 'estwing-e3-23lp', 'estwing-engineers-hammer-e6-48e', 'estwing-rock-pick-square-head-e6-24pc', 'estwing-rock-chisels', 'faithfull-chisel-point-crowbar', 'faithfull-sledge-hammer-10lb', 'faithfull-wrecking-bar', 'faithfull-cold-chisel-guard'],
     'Distance Measurement': ['leica-disto-laser-distance-meter', 'leica-disto-d5', 'leica-disto-x6', 'leica-na730-plus', 'leica-rugby-610', 'garmin-gpsmap-65s', 'garmin-montana-700'],
