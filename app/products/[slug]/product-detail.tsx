@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Crosshair, MessageCircle, Plus, Minus, FileText } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Crosshair, MessageCircle, Plus, Minus } from 'lucide-react';
 import { Header, Footer, QuoteDialog } from '@/components/site/shared';
 import { VortexVipWarranty } from '@/components/site/vortex-vip-warranty';
 import { brandDescriptions, categories, products, whatsAppUrl, getRelatedProducts, type Product } from '@/lib/catalogue';
@@ -107,28 +107,6 @@ export default function ProductDetail({ product }: { product: Product }) {
           <p className="detail-availability">Configuration, availability and delivery confirmed with your quotation.</p>
 
           {product.brand === 'Vortex Optics' && <VortexVipWarranty />}
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '12px' }}>
-            {product.datasheetUrl && (
-              <a
-                className="text-link catalogue-source"
-                href={product.datasheetUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
-              >
-                <FileText size={16} /> Download Official Datasheet (PDF) <ArrowUpRight size={16} />
-              </a>
-            )}
-            <a
-              className="text-link catalogue-source"
-              href={`/afforda-catalogue.pdf#page=${product.page}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View in the AFFORDA catalogue <ArrowUpRight size={16} />
-            </a>
-          </div>
         </div>
       </section>
 
